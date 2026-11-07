@@ -17,8 +17,34 @@ export function loginView(ctx, root) {
       <button class="btn primary" style="width:100%">Skicka inloggningslänk</button>
     </form>
     <div id="sent" hidden class="notice ok" style="margin-top:14px"></div>
+    <form id="code-form" hidden style="margin-top:14px">
+      <div class="field"><label for="code">Kod från mejlet</label><input type="text" id="code" required inputmode="numeric" autocomplete="one-time-code" pattern="[0-9 ]{6,12}" maxlength="12" placeholder="123456"></div>
+      <button class="btn primary" style="width:100%">Logga in med koden</button>
+    </form>
     <p class="small muted" style="margin-top:18px">Har du inget konto? Använd delningslänken du fått för att ansöka om åtkomst.</p>
   </div></div>`;
+  let sentTo = "";
+  root.querySelector("#code-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector("button");
+    const code = root.querySelector("#code").value.replace(/\s+/g, "");
+    btn.disabled = true;
+    btn.textContent = "Loggar in …";
+    try {
+      await ctx.cloud.verifyEmailCode(sentTo, code);
+      ctx.auth.error = null;
+      await ctx.auth.refreshProfile();
+      if (ctx.auth.hasAccess()) ctx.sync?.flush();
+      ctx.go("#/");
+      ctx.render();
+    } catch (err) {
+      toast(/expired|invalid|otp/i.test(`${err.code} ${err.message}`)
+        ? "Koden är fel eller har gått ut. Begär en ny kod och försök igen."
+        : err.message, "err", 8000);
+      btn.disabled = false;
+      btn.textContent = "Logga in med koden";
+    }
+  });
   root.querySelector("#login").addEventListener("submit", async (e) => {
     e.preventDefault();
     const btn = e.target.querySelector("button");
@@ -27,9 +53,12 @@ export function loginView(ctx, root) {
     btn.textContent = "Skickar …";
     try {
       await ctx.cloud.sendMagicLink(email, APP_URL());
+      sentTo = email;
       const s = root.querySelector("#sent");
       s.hidden = false;
-      s.innerHTML = `Klart! Öppna mejlet till <b>${esc(email)}</b> och klicka på länken. Den gäller i en timme.`;
+      s.innerHTML = `Klart! Vi har mejlat <b>${esc(email)}</b>. Klicka på länken i mejlet, <b>eller</b> skriv in koden från mejlet här nedanför. Det fungerar även i den installerade appen. Koden gäller i en timme.`;
+      root.querySelector("#code-form").hidden = false;
+      root.querySelector("#code").focus();
     } catch (err) {
       const msg = /signups not allowed|user not found|not allowed for otp/i.test(err.message)
         ? "Det finns inget godkänt konto för den adressen. Ansök via delningslänken eller kontakta administratören."

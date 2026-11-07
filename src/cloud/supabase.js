@@ -154,6 +154,21 @@ export class Cloud {
     return this.raw(`/auth/v1/otp${q}`, { method: "POST", body: { email, create_user: false }, auth: false });
   }
 
+  /** Loggar in med engångskoden från mejlet (alternativ till att klicka på länken). */
+  async verifyEmailCode(email, token) {
+    const data = await this.raw("/auth/v1/verify", {
+      method: "POST", body: { type: "email", email, token }, auth: false,
+    });
+    if (!data?.access_token) throw new CloudError("Koden kunde inte verifieras.", 401, "otp");
+    this.setSession({
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      expires_at: data.expires_at || Math.floor(Date.now() / 1000) + Number(data.expires_in || 3600),
+      user: data.user || null,
+    });
+    return true;
+  }
+
   async getUser() {
     return this.raw("/auth/v1/user");
   }
