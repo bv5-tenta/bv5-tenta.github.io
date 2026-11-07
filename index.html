@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BV5 Tentasimulator</title>
+  <meta name="description" content="Tentasimulator och studieplattform för Basvetenskap 5 på läkarprogrammet – gamla tentor, metakognitiv analys, Öva på dina fel och Anki-export.">
+  <meta name="theme-color" content="#8f1d5f" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1b19" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="BV5 Tenta">
+  <link rel="stylesheet" href="src/styles.css">
+  <script>
+    /* Tema innan första målning, så att mörkt läge inte blinkar. */
+    try {
+      var t = JSON.parse(localStorage.getItem("bv5.theme") || "null");
+      if (t === "dark" || t === "light") document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar" id="topbar"></header>
+  <main id="main">
+    <div id="boot" class="loading-screen">
+      <div><span class="spinner"></span><p id="boot-status">Startar BV5 Tentasimulator …</p></div>
+    </div>
+  </main>
+  <noscript><p style="padding:24px">BV5 Tentasimulator kräver JavaScript.</p></noscript>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
