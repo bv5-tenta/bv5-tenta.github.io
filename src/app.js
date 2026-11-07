@@ -12,6 +12,7 @@ import { resultsView, gradeView } from "./views/results.js";
 import { importView } from "./views/import.js";
 import { adminView } from "./views/admin.js";
 import { loginView, applyView, statusView } from "./views/access.js";
+import { welcomeView } from "./views/welcome.js";
 
 const app = document.getElementById("app");
 
@@ -123,15 +124,16 @@ function parseRoute() {
   if (p[0] === "admin") return { name: "admin", tab: p[1] || "oversikt", query };
   if (p[0] === "ansok") return { name: "apply", code: p[1] || "", query };
   if (p[0] === "logga-in") return { name: "login", query };
+  if (p[0] === "valkommen") return { name: "welcome", query };
   return { name: "home", query };
 }
 
 const VIEWS = {
-  home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
+  welcome: welcomeView, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
   practice: practiceView, history: historyView, import: importView, admin: adminView,
   apply: applyView, login: loginView, status: statusView,
 };
-const PUBLIC = new Set(["apply", "login"]);
+const PUBLIC = new Set(["apply", "login", "welcome"]);
 const NAV = [
   ["home", "#/", "Hem"],
   ["exams", "#/tentor", "Tentor"],
@@ -160,8 +162,16 @@ function renderChrome() {
   const top = document.getElementById("topbar");
   if (!top || !ctx.store) return;
   const inRunner = route.name === "runner";
+  const onWelcome = route.name === "welcome";
   const loggedOut = ctx.auth.mode === "cloud" && ctx.auth.status() !== "active";
-  top.hidden = inRunner;
+  top.hidden = inRunner || onWelcome;
+  const tabs = document.getElementById("site-tabs");
+  if (tabs) {
+    tabs.hidden = inRunner;
+    tabs.innerHTML = `
+      <a href="#/valkommen" ${onWelcome ? 'aria-current="page"' : ""}>Välkommen</a>
+      <a href="#/" ${onWelcome ? "" : 'aria-current="page"'}>Tentasimulator</a>`;
+  }
   const s = syncState();
   const nav = loggedOut ? [] : [...NAV, ...(ctx.auth.isAdmin() ? [["import", "#/importera", "Importera"], ["admin", "#/admin", "Admin"]] : [])];
   top.innerHTML = `
@@ -265,6 +275,8 @@ async function boot() {
   const status = document.getElementById("boot-status");
   const say = (t) => { if (status) status.textContent = t; };
   try {
+    // Appen öppnar alltid på välkomstfliken (men inte när en inloggningslänk eller annan sida öppnas).
+    if (["", "#", "#/"].includes(location.hash)) history.replaceState(null, "", "#/valkommen");
     say("Kontrollerar inloggning …");
     await ctx.auth.init();
     say("Öppnar den lokala databasen …");

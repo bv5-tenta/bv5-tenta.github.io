@@ -115,6 +115,43 @@ img { max-width: 100%; }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
+/* ---------- flikar överst (Välkommen / Tentasimulator) ---------- */
+.site-tabs {
+  display: flex; justify-content: center; gap: 4px;
+  padding: 8px 16px 0;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--line);
+}
+.site-tabs[hidden] { display: none; }
+.site-tabs a {
+  text-decoration: none; color: var(--ink-2); font-weight: 600; font-size: 14px;
+  padding: 8px 18px; border-radius: 10px 10px 0 0;
+  border: 1px solid transparent; border-bottom: 0; margin-bottom: -1px;
+}
+.site-tabs a:hover { color: var(--ink); background: var(--surface-3); }
+.site-tabs a[aria-current="page"] { background: var(--paper); color: var(--accent); border-color: var(--line); }
+
+/* ---------- välkomstsidan ---------- */
+.welcome {
+  min-height: calc(100vh - 160px);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 24px 0;
+}
+.welcome-art {
+  width: min(340px, 78vw); height: auto;
+  mix-blend-mode: multiply; /* vit bakgrund i bilden smälter in i sidan */
+  margin-bottom: 8px;
+}
+.welcome-kicker { margin: 0; color: var(--ink-3); font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; }
+.welcome-title { margin: 4px 0 12px; font-size: clamp(40px, 8vw, 68px); letter-spacing: -0.03em; line-height: 1; color: var(--ink); }
+.welcome-lead { margin: 0 0 24px; max-width: 460px; color: var(--ink-2); font-size: 17px; }
+.welcome-cta { font-size: 16px; padding: 12px 22px; }
+.welcome-credit { margin: 40px 0 0; color: var(--ink-3); font-size: 14px; font-style: italic; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .welcome-art { filter: invert(1) hue-rotate(180deg); mix-blend-mode: screen; }
+}
+:root[data-theme="dark"] .welcome-art { filter: invert(1) hue-rotate(180deg); mix-blend-mode: screen; }
+
 /* ---------- skal ---------- */
 .topbar {
   position: sticky; top: 0; z-index: 30;
