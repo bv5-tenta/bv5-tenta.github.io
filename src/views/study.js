@@ -4,6 +4,7 @@ import { esc, on, toast, modal, setTitle, confirmDialog } from "../ui/dom.js";
 import { formatDateTime, formatDuration, pct } from "../core/text.js";
 import { buildWeakQuiz, buildBankQuiz, filterWeakBank, inCategory } from "../core/quiz.js";
 import { STATE_LABELS } from "../core/mastery.js";
+import { rankConcepts, PRIO_TEXT } from "../core/concepts.js";
 import { exportAnkiDialog } from "./anki.js";
 import { reviewItemHtml } from "./results.js";
 
@@ -157,7 +158,48 @@ export async function practiceView(ctx, root) {
   let tab = "active";
   let filters = { categories: ["wrong", "unsure", "cannot"], modules: [] };
 
+  const concepts = () => rankConcepts(progress, qmap, store.library, filters);
+
+  function conceptsHtml() {
+    const list = concepts();
+    if (!list.length) return `<div class="empty"><div class="big">🎯</div><p>${bank.length ? "Inga koncept att studera med det här filtret." : "Gör en tenta så räknar appen ut vilka lärandemål du behöver läsa på."}</p></div>`;
+    const sections = [1, 2, 3].map((prio) => {
+      const items = list.filter((c) => c.prio === prio);
+      if (!items.length) return "";
+      const cards = items.map((c) => {
+        const pctMiss = Math.round(c.rate * 100);
+        const rows = c.items.map(({ question: q, progress: p }) => {
+          const exam = store.exams.get(q.exam_id);
+          const cats = [p.times_wrong ? `<span class="chip err">Fel ×${p.times_wrong}</span>` : "", p.times_unsure ? `<span class="chip unsure">🟨 ×${p.times_unsure}</span>` : "", p.times_cannot ? `<span class="chip cannot">🟥 ×${p.times_cannot}</span>` : ""].join(" ");
+          return `<li><div><b>${esc(exam?.code || q.exam_code || "")} #${q.number}</b> <span class="small">${esc(q.stem.length > 140 ? `${q.stem.slice(0, 140)}…` : q.stem)}</span>
+            <div style="margin-top:4px">${cats} <span class="chip ${p.state === "mastered" ? "ok" : p.state === "learning" ? "teal" : "warn"}">${STATE_LABELS[p.state]}</span></div></div>
+            <button class="btn small ghost" data-show="${esc(q.id)}">Visa</button></li>`;
+        }).join("");
+        return `<div class="concept prio-${prio}">
+          <div class="concept-head">
+            <div>
+              <a class="concept-title" href="${esc(c.url)}" target="_blank" rel="noopener">📖 ${esc(c.label)} ↗</a>
+              <div class="small muted">${esc(store.library.moduleName(c.modul))}</div>
+            </div>
+            <button class="btn small primary" data-practice="${esc(c.key)}">Öva (${c.open.length})</button>
+          </div>
+          <div class="concept-stats">
+            <span class="chip err"><b>${c.misses}</b>&nbsp;miss${c.misses === 1 ? "" : "ar"} av ${c.seen} svar (${pctMiss} %)</span>
+            <span class="chip">${c.missedQuestions} av ${c.answered} besvarade frågor</span>
+            ${c.mastered ? `<span class="chip ok">${c.mastered} bemästrade</span>` : ""}
+          </div>
+          <div class="meter" aria-hidden="true"><span style="width:${pctMiss}%"></span></div>
+          <details><summary>Frågor du missat (${c.items.length})</summary><ul class="concept-qs">${rows}</ul></details>
+        </div>`;
+      }).join("");
+      return `<section class="prio-section"><h3><span class="prio-badge prio-${prio}">PRIO ${prio}</span> <span class="count">${items.length} koncept</span></h3>
+        <p class="small muted">${esc(PRIO_TEXT[prio])}</p>${cards}</section>`;
+    }).join("");
+    return `<p class="small muted" style="margin-top:0">Rangordnat utifrån dina svar på tentor och quiz. Klicka på ett lärandemål för att läsa det i biblioteket, eller öva direkt på frågorna. Filtren för kategorier och moduler ovan gäller även här.</p>${sections}`;
+  }
+
   function listHtml() {
+    if (tab === "concepts") return conceptsHtml();
     const list = tab === "active"
       ? filterWeakBank(bank, qmap, { ...filters, states: ["weak", "learning"] })
       : mastered;
@@ -210,6 +252,7 @@ export async function practiceView(ctx, root) {
         <div class="tabs" role="tablist">
           <button data-tab="active" role="tab" aria-selected="${tab === "active"}">Att öva på <span class="count">${active.length}</span></button>
           <button data-tab="mastered" role="tab" aria-selected="${tab === "mastered"}">Bemästrade <span class="count">${mastered.length}</span></button>
+          <button data-tab="concepts" role="tab" aria-selected="${tab === "concepts"}">Koncept att studera <span class="count" id="concept-count">${concepts().length}</span></button>
         </div>
         <div id="pl">${listHtml()}</div>
       </div>`;
@@ -234,7 +277,20 @@ export async function practiceView(ctx, root) {
   offs.push(on(root, "change", "#pq input", () => {
     readFilters();
     updateCount();
+    const cc = root.querySelector("#concept-count");
+    if (cc) cc.textContent = String(concepts().length);
     root.querySelector("#pl").innerHTML = listHtml();
+  }));
+  offs.push(on(root, "click", "[data-practice]", async (e, el) => {
+    const c = concepts().find((x) => x.key === el.dataset.practice);
+    if (!c) return;
+    const ids = buildWeakQuiz(c.open, qmap, { categories: ["wrong", "unsure", "cannot"], count: c.open.length, order: "weakest" });
+    if (!ids.length) {
+      toast("Inga frågor att öva på för det här konceptet.");
+      return;
+    }
+    const a = await store.createAttempt({ mode: "practice", title: `Koncept · ${c.label} · ${ids.length} frågor`, question_ids: ids });
+    ctx.go(`#/forsok/${a.id}`);
   }));
   offs.push(on(root, "submit", "#pq", async (e) => {
     e.preventDefault();

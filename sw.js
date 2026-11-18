@@ -5,7 +5,7 @@
  * - VERSION uppdateras av scripts/release.mjs när filerna ändras.
  */
 
-const VERSION = "bv5-2026-11-07-allafacit1";
+const VERSION = "bv5-2026-11-18-koncept1";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -22,6 +22,7 @@ const PRECACHE = [
   "./src/core/mastery.js",
   "./src/core/library.js",
   "./src/core/quiz.js",
+  "./src/core/concepts.js",
   "./src/data/idb.js",
   "./src/data/store.js",
   "./src/cloud/supabase.js",

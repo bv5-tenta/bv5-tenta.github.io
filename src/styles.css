@@ -548,3 +548,29 @@ dialog.modal::backdrop { background: rgba(20, 18, 16, 0.45); }
 .ok-ico { color: var(--ok); font-weight: 700; }
 .err-ico { color: var(--err); font-weight: 700; }
 .footer { color: var(--ink-3); font-size: 13px; text-align: center; padding: 24px 16px 40px; }
+
+/* ---------- Koncept att studera ---------- */
+.prio-section { margin: 8px 0 22px; }
+.prio-section h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 4px; font-size: 18px; }
+.prio-section h3 .count { color: var(--ink-3); font-weight: 600; font-size: 14px; }
+.prio-badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 800; letter-spacing: 0.04em; }
+.prio-badge.prio-1 { background: var(--err-soft); color: var(--err); }
+.prio-badge.prio-2 { background: var(--warn-soft); color: var(--warn); }
+.prio-badge.prio-3 { background: var(--teal-soft); color: var(--teal); }
+.concept { border: 1px solid var(--line); border-left-width: 4px; border-radius: var(--r); padding: 14px 16px; margin-top: 10px; background: var(--surface); }
+.concept.prio-1 { border-left-color: var(--err); }
+.concept.prio-2 { border-left-color: var(--warn); }
+.concept.prio-3 { border-left-color: var(--teal); }
+.concept-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.concept-title { font-weight: 700; font-size: 16px; color: var(--accent); text-decoration: none; }
+.concept-title:hover { text-decoration: underline; }
+.concept-stats { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.concept .meter { height: 6px; border-radius: 999px; background: var(--surface-3); overflow: hidden; margin-top: 10px; }
+.concept .meter span { display: block; height: 100%; background: var(--err); border-radius: 999px; }
+.concept.prio-2 .meter span { background: var(--warn); }
+.concept.prio-3 .meter span { background: var(--teal); }
+.concept details { margin-top: 10px; }
+.concept summary { cursor: pointer; font-weight: 600; font-size: 14px; color: var(--ink-2); }
+.concept-qs { list-style: none; padding: 0; margin: 8px 0 0; }
+.concept-qs li { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+@media (max-width: 600px) { .concept-head { flex-direction: column; } }
