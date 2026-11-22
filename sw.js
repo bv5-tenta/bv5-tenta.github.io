@@ -5,7 +5,7 @@
  * - VERSION uppdateras av scripts/release.mjs när filerna ändras.
  */
 
-const VERSION = "bv5-2026-11-22-593ac5b2";
+const VERSION = "bv5-2026-11-22-b7a57b12";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -37,6 +37,8 @@ const PRECACHE = [
   "./src/views/admin.js",
   "./src/views/access.js",
   "./src/views/welcome.js",
+  "./src/views/library.js",
+  "./src/core/markdown.js",
   "./src/anki/zip.js",
   "./src/anki/cards.js",
   "./src/anki/apkg.js",
@@ -47,6 +49,7 @@ const PRECACHE = [
   "./vendor/sql-wasm.wasm",
   "./data/bibliotek-index.json",
   "./data/fragebank-seed.json",
+  "./data/bibliotek-del2.json",
   "./icons/caduceus.jpg",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
