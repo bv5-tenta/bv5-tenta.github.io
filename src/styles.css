@@ -146,6 +146,39 @@ img { max-width: 100%; }
 .welcome-title { margin: 4px 0 12px; font-size: clamp(40px, 8vw, 68px); letter-spacing: -0.03em; line-height: 1; color: var(--ink); }
 .welcome-lead { margin: 0 0 24px; max-width: 460px; color: var(--ink-2); font-size: 17px; }
 .welcome-cta { font-size: 16px; padding: 12px 22px; }
+
+/* Val mellan Del 1 och Del 2 */
+.part-choice {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;
+  width: min(560px, 100%); margin: 4px auto 0;
+}
+.part-card {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 20px 22px 18px; text-align: left; text-decoration: none; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r);
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.part-card:hover { transform: translateY(-2px); border-color: var(--accent-line); box-shadow: 0 2px 4px rgba(31, 28, 26, .06), 0 14px 30px -16px rgba(31, 28, 26, .35); }
+.part-card:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.part-label { font-size: 12px; font-weight: 700; letter-spacing: .16em; color: var(--ink-3); }
+.part-name { font-size: 34px; font-weight: 750; letter-spacing: -.02em; line-height: 1.1; color: var(--accent); }
+.part-meta { font-size: 14px; color: var(--ink-2); margin-top: 2px; }
+.part-go {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 14px;
+  font-size: 14px; font-weight: 650; color: var(--accent);
+}
+.part-go svg { width: 16px; height: 16px; transition: transform .15s ease; }
+.part-card:hover .part-go svg { transform: translateX(3px); }
+.part-card.soon .part-name { color: var(--ink-2); }
+.part-card.soon .part-go { color: var(--warn); background: var(--warn-soft); padding: 3px 10px; border-radius: 999px; }
+@media (max-width: 520px) {
+  .part-choice { grid-template-columns: 1fr; }
+}
+.part2 .part2-card { max-width: 460px; margin: 0 auto 20px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.part2 .part2-card p { margin: 0; color: var(--ink-2); }
+.btn-row.center { justify-content: center; }
+.btn-row .btn svg { width: 16px; height: 16px; vertical-align: -3px; }
 .welcome-credit { margin: 40px 0 0; color: var(--ink-3); font-size: 14px; font-style: italic; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .welcome-art { filter: invert(1) hue-rotate(180deg); mix-blend-mode: screen; }

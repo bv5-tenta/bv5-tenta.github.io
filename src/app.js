@@ -12,7 +12,7 @@ import { resultsView, gradeView } from "./views/results.js";
 import { importView } from "./views/import.js";
 import { adminView } from "./views/admin.js";
 import { loginView, applyView, statusView } from "./views/access.js";
-import { welcomeView } from "./views/welcome.js";
+import { welcomeView, part2View } from "./views/welcome.js";
 
 const app = document.getElementById("app");
 
@@ -125,15 +125,16 @@ function parseRoute() {
   if (p[0] === "ansok") return { name: "apply", code: p[1] || "", query };
   if (p[0] === "logga-in") return { name: "login", query };
   if (p[0] === "valkommen") return { name: "welcome", query };
+  if (p[0] === "del-2") return { name: "part2", query };
   return { name: "home", query };
 }
 
 const VIEWS = {
-  welcome: welcomeView, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
+  welcome: welcomeView, part2: part2View, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
   practice: practiceView, history: historyView, import: importView, admin: adminView,
   apply: applyView, login: loginView, status: statusView,
 };
-const PUBLIC = new Set(["apply", "login", "welcome"]);
+const PUBLIC = new Set(["apply", "login", "welcome", "part2"]);
 const NAV = [
   ["home", "#/", "Hem"],
   ["exams", "#/tentor", "Tentor"],
@@ -163,19 +164,21 @@ function renderChrome() {
   if (!top || !ctx.store) return;
   const inRunner = route.name === "runner";
   const onWelcome = route.name === "welcome";
+  const onPart2 = route.name === "part2";
   const loggedOut = ctx.auth.mode === "cloud" && ctx.auth.status() !== "active";
-  top.hidden = inRunner || onWelcome;
+  top.hidden = inRunner || onWelcome || onPart2;
   const tabs = document.getElementById("site-tabs");
   if (tabs) {
     tabs.hidden = inRunner;
     tabs.innerHTML = `
       <a href="#/valkommen" ${onWelcome ? 'aria-current="page"' : ""}>Välkommen</a>
-      <a href="#/" ${onWelcome ? "" : 'aria-current="page"'}>Tentasimulator</a>`;
+      <a href="#/" ${onWelcome || onPart2 ? "" : 'aria-current="page"'}>Del 1</a>
+      <a href="#/del-2" ${onPart2 ? 'aria-current="page"' : ""}>Del 2</a>`;
   }
   const s = syncState();
   const nav = loggedOut ? [] : [...NAV, ...(ctx.auth.isAdmin() ? [["import", "#/importera", "Importera"], ["admin", "#/admin", "Admin"]] : [])];
   top.innerHTML = `
-    <a class="brand" href="#/"><span class="brand-mark">BV5</span><span>Tentasimulator<small>Basvetenskap 5 · Läkarprogrammet</small></span></a>
+    <a class="brand" href="#/"><span class="brand-mark">BV5</span><span>Tentasimulator<small>Basvetenskap 5 · Del 1 · Läkarprogrammet</small></span></a>
     ${nav.length ? `<button class="btn icon ghost menu-toggle" data-act="menu" aria-label="Meny" aria-expanded="false">☰</button>` : ""}
     <nav class="nav" id="nav">${nav.map(([name, href, label]) => `<a href="${href}" ${route.name === name ? 'aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
     <div class="topbar-right">
