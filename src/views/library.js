@@ -29,13 +29,14 @@ let cache = null;
 export function loadLibrary(ctx) {
   if (!cache) {
     const get = (p) => ctx.store.fetchJson(p).catch(() => null);
-    cache = Promise.all([get("data/bibliotek-del1.json"), get("data/bibliotek-del2.json"), get("data/tentaanalys.json")]).then(([d1, d2, ta]) => buildModel(ctx, d1, d2, ta));
+    cache = Promise.all([get("data/bibliotek-del1.json"), get("data/bibliotek-del2.json"), get("data/tentaanalys.json"), get("data/fran-tentorna.json")])
+      .then(([d1, d2, ta, ft]) => buildModel(ctx, d1, d2, ta, ft));
     cache.catch(() => (cache = null));
   }
   return cache;
 }
 
-function buildModel(ctx, d1, d2, ta) {
+function buildModel(ctx, d1, d2, ta, ft) {
   const modules = new Map();
   const objectives = [];
   const byId = new Map();
@@ -43,7 +44,7 @@ function buildModel(ctx, d1, d2, ta) {
   const bilder = { ...(d1?.bilder || {}) };
   const add = (src, del, format) => {
     for (const m of src?.modules || []) {
-      const mod = { nr: m.nr, titel: m.titel, beskrivning: m.beskrivning || "", del, submoduler: [] };
+      const mod = { nr: m.nr, titel: m.titel, beskrivning: m.beskrivning || "", del, submoduler: [], komplettering: m.komplettering || "", komplMal: m.komplettering_mal || [] };
       for (const s of m.submoduler || []) {
         const sid = s.id || `${m.nr}.${s.nr}`;
         const sub = { id: sid, nr: s.nr, titel: s.titel, modul: m.nr, del, mal: [] };
@@ -51,6 +52,7 @@ function buildModel(ctx, d1, d2, ta) {
           const item = {
             id: o.id, titel: o.titel, delmal: o.delmal || [], modul: m.nr, modul_titel: m.titel, sub: sid, sub_titel: s.titel, del,
             format: o.format || format, body: o.innehall ?? o.sammanfattning ?? "", quiz: o.quiz || [],
+            slides: o.slides || [], franTentorna: ft?.mal?.[o.id] || [],
           };
           sub.mal.push(item);
           objectives.push(item);
@@ -71,7 +73,8 @@ function buildModel(ctx, d1, d2, ta) {
   }
   for (const nr of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]) if (!modules.has(nr)) modules.set(nr, { nr, titel: `Modul ${nr}`, del: nr <= 8 ? 1 : 2, submoduler: [] });
   objectives.sort((a, b) => cmpId(a.id, b.id));
-  return { modules, objectives, byId, subs, bilder, ta, ok: { d1: Boolean(d1), d2: Boolean(d2), ta: Boolean(ta) } };
+  const extra = { d1: d1?.komplettering || {}, d2: d2?.komplettering || {} };
+  return { modules, objectives, byId, subs, bilder, ta, extra, ok: { d1: Boolean(d1), d2: Boolean(d2), ta: Boolean(ta) } };
 }
 
 function cmpId(a, b) {
@@ -137,11 +140,27 @@ function understandingDot(id) {
   return `<span class="u-dot ${cls}" title="Visad förståelse: ${s.sure} säkert rätt, ${s.guessed} gissat rätt, ${s.wrong} fel"></span>`;
 }
 
+/** Viktighetsnivå utifrån hur många tidigare tentor målet har examinerats på. */
+export function importance(M, o) {
+  const a = M.ta?.delar?.[o.del];
+  const n = Number(a?.mal?.[o.id]?.antal_tentor || 0);
+  const tot = Number(a?.antal_tentor || 0);
+  if (n >= 3) return { k: "hot", icon: "🔥", label: "Återkommande", text: `${n} av ${tot} tentor`, n };
+  if (n >= 1) return { k: "once", icon: "★", label: "Har kommit på tenta", text: `${n} av ${tot} tentor`, n };
+  return { k: "none", icon: "○", label: "Ej examinerat – bra att känna till", text: `0 av ${tot} tentor`, n };
+}
+function impBadge(n, tot) {
+  if (n >= 2) return `<span class="imp hot" title="Har kommit på ${n} tentor">🔥 ${n} tentor</span>`;
+  if (n === 1) return `<span class="imp once" title="Har kommit på 1 tenta">★ 1 tenta</span>`;
+  return `<span class="imp none" title="Inte examinerat på de ${tot} tentorna – bra att känna till">○ bra att känna till</span>`;
+}
+
 function examFreq(M, o) {
   const a = M.ta?.delar?.[o.del];
   const m = a?.mal?.[o.id];
   if (!a) return "";
-  return m ? `<span class="chip freq" title="${m.fragor} frågor på ${m.antal_tentor} av ${a.antal_tentor} tentor ${a.period}">${m.antal_tentor}/${a.antal_tentor} tentor</span>` : `<span class="chip freq none" title="Ingen koppling till de ${a.antal_tentor} tentorna ${a.period}">ej på tenta</span>`;
+  const imp = importance(M, o);
+  return m ? `<span class="chip freq ${imp.k}" title="${m.fragor} frågor på ${m.antal_tentor} av ${a.antal_tentor} tentor ${a.period}">${imp.icon} ${m.antal_tentor}/${a.antal_tentor} tentor</span>` : `<span class="chip freq none" title="Ingen koppling till de ${a.antal_tentor} tentorna ${a.period}">ej på tenta</span>`;
 }
 
 /* ---------- översikt ---------- */
@@ -202,6 +221,11 @@ function modulePage(M, nr, rat = null) {
         <ol class="lib-objlist2">${s.mal.map((o) => objectiveRow(M, o)).join("")}</ol>
       </section>`)
     .join("");
+  const kompl = m.komplettering
+    ? `<section class="lib-kompl" id="kompletterande"><h2>Kompletterande – inte ur kursmaterialet</h2>
+        <p class="small muted">Lärandemål som föreläsningarna inte förklarar fullt ut kompletteras här med information från säkra källor (vårdprogram, myndigheter och vetenskapliga översikter). Det här ingår alltså inte i kursens eget material – källorna står sist.</p>
+        <div class="lib-text2">${renderMarkdown(m.komplettering).html}</div></section>`
+    : "";
   return `<article class="lib2" style="--mh:${hue(nr)}">
     <header class="lib-hero"><div class="lib-hero-inner">
       ${crumbs([["Bibliotek", `#/bibliotek?del=${m.del}`], [`Del ${m.del}`, `#/bibliotek?del=${m.del}`], [`Modul ${nr}`, null]])}
@@ -214,7 +238,9 @@ function modulePage(M, nr, rat = null) {
     <div class="lib-layout single"><div class="lib-main wide">
       ${rat ? `<a class="rat-callout" href="#/rat/${nr}"><span class="rat-callout-ico">🧪</span><span><b>RAT inför modul ${nr}</b><br><span class="small">${rat.question_count} frågor i InteDashboard-format över alla delmoduler – lämna in och få en analys av vad du ska prioritera.</span></span><span class="rat-callout-go">Starta →</span></a>` : ""}
       <p class="small muted lib-legend"><span class="lib-check on">✓</span> genomgånget · <span class="u-dot good"></span> säkert rätt · <span class="u-dot mid"></span> gissat · <span class="u-dot bad"></span> fel på quiz · <span class="chip freq">x/y tentor</span> förekomst på tidigare tentor</p>
+      <p class="small muted imp-legend"><b>Viktighet:</b> <span class="imp hot">🔥 Återkommande</span> 3 tentor eller fler · <span class="imp once">★ Har kommit</span> 1–2 tentor · <span class="imp none">○ Bra att känna till</span> inte examinerat</p>
       ${subs || `<div class="card"><h2>Innehåll saknas</h2><p>Modulens lärandemål är inte inlagda. Det som behövs är modulens <b>nedbrutna lärandemål</b> och <b>föreläsnings-PDF:er</b>.</p></div>`}
+      ${kompl}
     </div></div>
   </article>`;
 }
@@ -286,6 +312,32 @@ function quizHtml(items, { title = "Testa dig själv", id = "testa-dig", intro =
 }
 
 /** Kopplar varje quizfråga till det stycke i texten som bäst förklarar den. */
+/** Markerar varje avsnitt i texten med hur många tentor dess innehåll har examinerats på. */
+function markSectionImportance(root, ctx, o, M) {
+  if (!o) return;
+  const secs = [...root.querySelectorAll(".lib-text2 .md-sec:not(.lib-fran)")].map((s) => ({ el: s, toks: new Set(tokenize(s.textContent)), exams: new Set() }));
+  if (!secs.length) return;
+  const qs = examQuestions(ctx, o.id);
+  if (!qs.length) return;
+  for (const q of qs) {
+    const right = (q.options || []).filter((x) => x.is_correct).map((x) => x.text).join(" ");
+    const t = tokenize(`${q.stem} ${right} ${q.explanation || ""}`);
+    let best = null, bestScore = 0;
+    for (const s of secs) {
+      const hits = t.filter((w) => s.toks.has(w)).length;
+      const score = hits / Math.sqrt(s.toks.size + 20);
+      if (score > bestScore) [best, bestScore] = [s, score];
+    }
+    if (best && bestScore > 0.1) best.exams.add(q.exam_id);
+  }
+  const tot = M.ta?.delar?.[o.del]?.antal_tentor || 0;
+  for (const s of secs) {
+    const h = s.el.querySelector("h3");
+    if (h && !h.querySelector(".imp")) h.insertAdjacentHTML("beforeend", impBadge(s.exams.size, tot));
+    s.el.classList.add(s.exams.size >= 2 ? "imp-hot" : s.exams.size === 1 ? "imp-once" : "imp-none");
+  }
+}
+
 function linkQuizToSections(root) {
   const secs = [...root.querySelectorAll(".lib-text2 .md-sec")].map((s) => ({ id: s.id, title: s.querySelector("h3")?.textContent.replace(/^\d+/, "").trim() || "", toks: new Set(tokenize(s.textContent)) }));
   if (!secs.length) return;
@@ -411,6 +463,44 @@ function progressPanel(o, nQuiz) {
   </section>`;
 }
 
+/** Begrepp som examinerats men inte täcks av löptexten – så att allt som kommit på tentan finns i biblioteket. */
+function franTentornaHtml(o) {
+  const L = o.franTentorna || [];
+  if (!L.length) return "";
+  return `<section class="md-sec lib-fran" id="ocksa-examinerat"><h3><span class="md-sec-nr">+</span>Också examinerat på tentorna</h3>
+    <p class="small muted">Begrepp som har kommit på tidigare tentor inom det här målet, förklarade ett och ett. Det som kommit flest gånger står först.</p>
+    <div class="ft-list">${L.map((x) => `<div class="ft-item" data-n="${x.tentor.length}">
+      <div class="ft-head">${impBadge(x.tentor.length)}${x.svar ? `<b>${esc(x.svar)}</b>` : ""}</div>
+      <p>${esc(x.text)}</p>
+      <p class="ft-src small muted">${esc(x.tentor.map((t) => t.replace(/^Del 2 /, "")).join(" · "))}</p>
+    </div>`).join("")}</div></section>`;
+}
+
+/** Alla föreläsningssidor som handlar om målet, grupperade per föreläsning. */
+function slidesHtml(o) {
+  if (!o.slides?.length) return "";
+  const groups = new Map();
+  o.slides.forEach((x, i) => {
+    if (!groups.has(x.kalla)) groups.set(x.kalla, []);
+    groups.get(x.kalla).push({ ...x, i });
+  });
+  const FIRST = 12;
+  let shown = 0;
+  const body = [...groups.entries()].map(([kalla, L]) => `<div class="slide-group"><h3>${esc(kalla)} <span class="muted small">· ${L.length} ${L.length === 1 ? "sida" : "sidor"}</span></h3>
+    <div class="slide-grid">${L.map((x) => {
+      const hide = shown++ >= FIRST;
+      return `<button type="button" class="slide-thumb" data-slide="${x.i}" ${hide ? "data-more hidden" : ""} title="${esc(x.rubrik || "")}">
+        <img src="${esc(x.fil)}" alt="${esc(`${kalla}, sida ${x.sida}${x.rubrik ? ` – ${x.rubrik}` : ""}`)}" loading="lazy" decoding="async">
+        <span>s. ${x.sida}${x.rubrik ? ` · ${esc(x.rubrik.slice(0, 60))}` : ""}</span></button>`;
+    }).join("")}</div></div>`).join("");
+  return `<section class="lib-slides" id="alla-bilder">
+    <h2>Alla bilder från föreläsningarna <span class="chip">${o.slides.length}</span></h2>
+    <p class="small muted">Varje föreläsningssida som handlar om det här målet, i föreläsningens ordning. Klicka för att förstora och bläddra med ← →.</p>
+    ${body}
+    ${o.slides.length > FIRST ? `<button type="button" class="btn small" data-act="more-slides">Visa alla ${o.slides.length} sidor</button>` : ""}
+  </section>`;
+}
+
 function objectivePage(ctx, M, id) {
   const o = M.byId.get(id);
   if (!o) return { html: notFound() };
@@ -421,10 +511,13 @@ function objectivePage(ctx, M, id) {
   const items = quizItems(ctx, M, o);
   const mins = readingMinutes(o.body.replace(/<[^>]+>/g, " "));
   const hist = examHistoryHtml(ctx, M, o);
+  const imp = importance(M, o);
   const toc = [
     ...(r.key.length ? [{ id: "det-viktigaste", text: "Det viktigaste" }] : []),
     ...(o.delmal.length ? [{ id: "du-ska-kunna", text: "Du ska kunna" }] : []),
     ...r.toc,
+    ...(o.franTentorna?.length ? [{ id: "ocksa-examinerat", text: `Också examinerat (${o.franTentorna.length})` }] : []),
+    ...(o.slides?.length ? [{ id: "alla-bilder", text: `Alla föreläsningsbilder (${o.slides.length})` }] : []),
     ...(hist ? [{ id: "tidigare-tentor", text: "Så har det examinerats" }] : []),
     ...(items.length ? [{ id: "testa-dig", text: `Testa dig själv (${items.length})` }] : []),
   ];
@@ -438,8 +531,10 @@ function objectivePage(ctx, M, id) {
       <p class="lib-hero-kicker">Del ${o.del} · ${esc(o.sub)} ${esc(o.sub_titel)}</p>
       <h1><span class="lib-hero-id">${esc(o.id)}</span>${esc(o.titel)}</h1>
       <div class="lib-hero-meta">
+        <span class="imp-chip ${imp.k}" title="${esc(imp.text)}">${imp.icon} ${esc(imp.label)} · ${esc(imp.text)}</span>
         <span>⏱ ${mins} min läsning</span>
-        ${r.figures ? `<span>🖼 ${r.figures} föreläsningsfigurer</span>` : o.del === 2 ? `<span class="missing" title="Figurerna ur föreläsnings-PDF:erna är inte inlagda för det här målet än">🖼 Figurer ej inlagda än</span>` : ""}
+        ${r.figures ? `<span>🖼 ${r.figures} förklarade figurer</span>` : ""}
+        ${o.slides?.length ? `<a href="#" data-jump="alla-bilder">🗂 ${o.slides.length} föreläsningssidor</a>` : ""}
         ${hist ? `<a href="#" data-jump="tidigare-tentor">📊 Så har det examinerats</a>` : ""}
         ${items.length ? `<a href="#" data-jump="testa-dig">✓ ${items.length} kontrollfrågor</a>` : ""}
       </div></div></header>
@@ -451,7 +546,9 @@ function objectivePage(ctx, M, id) {
         ${r.key.length ? `<section class="lib-key" id="det-viktigaste"><h2><span aria-hidden="true">⚡</span> Det viktigaste</h2><ol>${r.key.map((k) => `<li>${k}</li>`).join("")}</ol></section>` : ""}
         ${progressPanel(o, items.length)}
         ${goals}
-        <div class="lib-text2">${r.html || `<p class="muted">Sammanfattningen är inte skriven än.</p>`}</div>
+        <div class="lib-text2">${r.html || `<p class="muted">Sammanfattningen är inte skriven än.</p>`}${franTentornaHtml(o)}</div>
+        ${M.modules.get(o.modul)?.komplMal?.includes(o.id) ? `<a class="lib-kompl-note" href="#/bibliotek/modul/${o.modul}?till=kompletterande">📚 <span><b>Kompletterande information</b> om det här målet finns sist på modulsidan – från säkra källor utanför kursmaterialet.</span> →</a>` : ""}
+        ${slidesHtml(o)}
         ${hist}
         ${items.length ? quizHtml(items) : ""}
         <nav class="lib-pager2">
@@ -552,6 +649,7 @@ export async function libraryView(ctx, root, route) {
   root.innerHTML = html;
   if (!M.ok.d2 || !M.ok.d1) root.insertAdjacentHTML("afterbegin", `<div class="notice warn">Delar av biblioteket kunde inte laddas (${[!M.ok.d1 && "del 1", !M.ok.d2 && "del 2"].filter(Boolean).join(", ")}). Kontrollera nätet och ladda om.</div>`);
   linkQuizToSections(root);
+  markSectionImportance(root, ctx, objective, M);
 
   const jump = (id, flash = false) => {
     const el = document.getElementById(id);
@@ -565,6 +663,7 @@ export async function libraryView(ctx, root, route) {
     }
   };
   if (q.ova) setTimeout(() => jump("testa-dig", true), 60);
+  if (q.till) setTimeout(() => jump(q.till, true), 80);
   if (q.fraga) setTimeout(() => jump(document.getElementById(`fraga-${q.fraga}`) ? `fraga-${q.fraga}` : "tidigare-tentor", true), 60);
 
   const score = (quiz) => {
@@ -641,6 +740,11 @@ export async function libraryView(ctx, root, route) {
     }),
     on(root, "click", "[data-act=reroll]", () => ctx.render()),
     on(root, "click", "[data-zoom]", (e, el) => openLightbox(el.dataset.zoom, el.dataset.caption, el)),
+    on(root, "click", "[data-slide]", (e, el) => objective && openGallery(objective.slides, Number(el.dataset.slide), el)),
+    on(root, "click", "[data-act=more-slides]", (e, el) => {
+      root.querySelectorAll("[data-more]").forEach((x) => (x.hidden = false));
+      el.remove();
+    }),
     on(root, "click", "[data-jump]", (e, el) => {
       e.preventDefault();
       jump(el.dataset.jump, true);
@@ -676,6 +780,60 @@ function openLightbox(src, caption, opener) {
   });
   document.addEventListener("keydown", onKey);
   document.body.appendChild(box);
+  box.querySelector(".lightbox-close").focus();
+}
+
+/** Bildvisare för föreläsningssidor: pilar, tangentbord och svep. */
+function openGallery(list, start, opener) {
+  document.querySelector(".lightbox")?.remove();
+  let i = start;
+  const box = document.createElement("div");
+  box.className = "lightbox gallery";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-modal", "true");
+  box.innerHTML = `<figure><img alt=""><figcaption></figcaption></figure>
+    <button type="button" class="lightbox-close" aria-label="Stäng">×</button>
+    <button type="button" class="gal-nav prev" aria-label="Föregående sida">‹</button>
+    <button type="button" class="gal-nav next" aria-label="Nästa sida">›</button>`;
+  const img = box.querySelector("img");
+  const cap = box.querySelector("figcaption");
+  const show = () => {
+    const x = list[i];
+    img.src = x.fil;
+    img.alt = `${x.kalla}, sida ${x.sida}`;
+    cap.textContent = `${x.kalla} · sida ${x.sida}  (${i + 1} av ${list.length})`;
+    box.querySelector(".prev").disabled = i === 0;
+    box.querySelector(".next").disabled = i === list.length - 1;
+    const nx = list[i + 1];
+    if (nx) new Image().src = nx.fil;
+  };
+  const go = (d) => { i = Math.max(0, Math.min(list.length - 1, i + d)); show(); };
+  const close = () => {
+    box.remove();
+    document.removeEventListener("keydown", onKey);
+    opener?.focus?.();
+  };
+  const onKey = (e) => {
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowRight") { e.preventDefault(); go(1); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); }
+  };
+  box.addEventListener("click", (e) => {
+    if (e.target.closest(".prev")) go(-1);
+    else if (e.target.closest(".next")) go(1);
+    else if (e.target === box || e.target.closest(".lightbox-close")) close();
+  });
+  let sx = null;
+  box.addEventListener("touchstart", (e) => { sx = e.touches[0].clientX; }, { passive: true });
+  box.addEventListener("touchend", (e) => {
+    if (sx === null) return;
+    const dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+    sx = null;
+  });
+  document.addEventListener("keydown", onKey);
+  document.body.appendChild(box);
+  show();
   box.querySelector(".lightbox-close").focus();
 }
 

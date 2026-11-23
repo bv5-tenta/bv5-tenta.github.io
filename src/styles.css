@@ -1243,3 +1243,54 @@ a.feat-card:hover { transform: translateY(-2px); border-color: #c9952a; box-shad
 .lib2 .lib-check.on { background: linear-gradient(180deg, var(--gold-1), var(--gold-3)); border-color: var(--gold-3); color: #1f1504; }
 .lib2 .rat-callout, .rat-callout { background: radial-gradient(500px 120px at 90% -20%, rgba(222,176,72,.28), transparent 70%), linear-gradient(135deg, #1b160c, #050403); border: 1px solid #3a2e17; color: #fff8e6; }
 .rat-callout-go { color: var(--gold-1, #f6d77a); }
+
+/* ---------- alla föreläsningsbilder ---------- */
+.lib-slides { margin: 34px 0; padding: 22px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); }
+.lib-slides h2 { margin: 0 0 6px; font-size: 21px; display: flex; align-items: center; gap: 10px; }
+.slide-group { margin-top: 18px; }
+.slide-group h3 { margin: 0 0 10px; font-size: 15.5px; color: var(--h-ink); }
+.slide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; }
+.slide-thumb { display: flex; flex-direction: column; gap: 6px; padding: 0; border: 1px solid var(--line); border-radius: 10px; background: #fff; overflow: hidden; cursor: zoom-in; text-align: left; font: inherit; color: var(--ink); transition: border-color .12s, transform .12s, box-shadow .12s; }
+.slide-thumb[hidden] { display: none; }
+.slide-thumb:hover { border-color: var(--gold-2, var(--h)); transform: translateY(-1px); box-shadow: 0 10px 22px -16px rgba(0,0,0,.5); }
+.slide-thumb img { width: 100%; aspect-ratio: 16 / 10; object-fit: contain; background: #fff; border-bottom: 1px solid var(--line); }
+.slide-thumb span { padding: 0 9px 8px; font-size: 12px; line-height: 1.35; color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; background: var(--surface); }
+:root[data-theme="dark"] .slide-thumb { background: var(--surface); }
+.lib-slides > .btn { margin-top: 16px; }
+.gallery .gal-nav { position: fixed; top: 50%; transform: translateY(-50%); width: 52px; height: 72px; border: 0; border-radius: 12px; background: rgba(255,255,255,.14); color: #fff; font-size: 40px; line-height: 1; cursor: pointer; }
+.gallery .gal-nav:disabled { opacity: .25; cursor: default; }
+.gallery .gal-nav.prev { left: 14px; } .gallery .gal-nav.next { right: 14px; }
+.gallery .gal-nav:hover:not(:disabled) { background: rgba(246,215,122,.3); }
+@media (max-width: 700px) { .slide-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gallery .gal-nav { width: 40px; height: 56px; font-size: 30px; } }
+
+/* ---------- viktighetsnivåer ---------- */
+.imp { display: inline-flex; align-items: center; gap: 4px; margin-left: 10px; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 700; vertical-align: middle; white-space: nowrap; letter-spacing: 0; }
+.imp.hot { background: linear-gradient(180deg, #f6d77a, #d9a838); color: #2a1b03; }
+.imp.once { background: var(--h-soft, #fbf4e2); color: var(--h-ink, #5a3f07); border: 1px solid var(--h-line, #ecd9a8); }
+.imp.none { background: var(--surface-2); color: var(--ink-3); border: 1px dashed var(--line); font-weight: 600; }
+.md-sec.imp-hot > h3 { position: relative; }
+.md-sec.imp-hot { border-left: 3px solid var(--gold-2, #d9a838); padding-left: 14px; margin-left: -17px; }
+.lib-hero-meta > .imp-chip.hot { background: linear-gradient(180deg, #f6d77a, #c9952a); color: #1f1504; border-color: #e6c36a; }
+.lib-hero-meta > .imp-chip.none { border-style: dashed; }
+.chip.freq.hot { background: linear-gradient(180deg, #f6d77a, #d9a838) !important; color: #2a1b03 !important; border-color: transparent !important; }
+.lib-fran { margin-top: 30px; }
+.ft-list { display: grid; gap: 12px; margin-top: 12px; }
+.ft-item { padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+.ft-item[data-n="1"] { border-color: var(--h-line, var(--line)); }
+.ft-item:not([data-n="1"]) { border-color: var(--gold-2, #d9a838); box-shadow: inset 3px 0 0 var(--gold-2, #d9a838); }
+.ft-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.ft-head .imp { margin-left: 0; }
+.ft-head b { font-size: 16px; color: var(--h-ink); }
+.ft-item p { margin: 0; line-height: 1.6; }
+.ft-item .ft-src { margin-top: 6px; }
+.imp-legend { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.imp-legend .imp { margin-left: 0; }
+
+/* ---------- kompletterande, inte ur kursmaterialet ---------- */
+.lib-kompl { margin: 36px 0 10px; padding: 24px 26px; border-radius: var(--r); border: 1px dashed var(--gold-2, #d9a838); background: linear-gradient(180deg, var(--h-soft, #fbf4e2), transparent 160px), var(--surface); }
+.lib-kompl > h2 { margin: 0 0 6px; font-size: 22px; display: flex; align-items: center; gap: 10px; }
+.lib-kompl > h2::before { content: "📚"; }
+.lib-kompl h4 { margin: 22px 0 8px; font-size: 17px; color: var(--h-ink); }
+.lib-kompl a { color: var(--h, var(--accent)); }
+.lib-kompl-note { display: flex; align-items: center; gap: 12px; margin: 18px 0; padding: 12px 16px; border-radius: 12px; border: 1px dashed var(--gold-2, #d9a838); background: var(--h-soft, #fbf4e2); color: var(--ink); text-decoration: none; }
+.lib-kompl-note:hover { border-style: solid; }
