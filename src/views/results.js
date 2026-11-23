@@ -4,6 +4,7 @@ import { esc, on, toast, ringSvg, timeChartSvg, setTitle, lightbox } from "../ui
 import { formatDuration, formatDateTime, pct } from "../core/text.js";
 import { META_LABELS, hasAnswer, gradeResponse, maxPoints } from "../core/grading.js";
 import { exportAnkiDialog } from "./anki.js";
+import { loadLibrary } from "./library.js";
 
 const LETTERS = "ABCDEFGHIJ";
 
@@ -53,9 +54,41 @@ export function reviewItemHtml(store, q, r, opts = {}) {
       : `<ul class="options" style="gap:6px">${optionLines}</ul>`}
     ${expl.text ? `<div class="explain"><b>${expl.source === "fraga" ? "Förklaring" : "Ur kursbiblioteket"}:</b> ${esc(expl.text)}${q.key_points?.length ? `<ul>${q.key_points.map((k) => `<li>${esc(k)}</li>`).join("")}</ul>` : ""}</div>` : ""}
     ${q.correction_note ? `<div class="notice warn small" style="margin-top:8px">${esc(q.correction_note)}</div>` : ""}
-    <a class="lib-link" href="${esc(link.url)}" target="_blank" rel="noopener">📖 ${link.level === "objective" ? "Lärandemål" : "Läs i"} ${esc(link.label)}${theme ? ` · ${esc(theme.tema)}` : ""} ↗</a>
+    <div class="lib-links"><a class="lib-link" href="${esc(link.url)}${link.level === "objective" ? `?fraga=${encodeURIComponent(q.id)}` : ""}">📖 Förstå varför: ${link.level === "objective" ? "lärandemål" : "läs i"} ${esc(link.label)}${theme ? ` · ${esc(theme.tema)}` : ""}</a>${
+      link.level === "objective" ? `<a class="lib-link" href="${esc(link.url)}?ova=1">✓ Ny kontrollfråga på samma mål</a>` : ""}</div>
     ${!objective && link.level === "module" ? `<span class="small muted"> (modulen saknar nedbrutna lärandemål i biblioteket)</span>` : ""}
   </div>`;
+}
+
+/** "Nästa steg": felbesvarade och rätt-men-osäkra frågor grupperade per lärandemål,
+    med vägen svar → förklaring → rätt stycke i biblioteket → ny kontrollfråga. */
+function nextStepsHtml(s, lib, titleOf = () => "") {
+  const groups = new Map();
+  let unmapped = 0;
+  const add = (i, kind) => {
+    const id = i.question.objective_id;
+    if (!id) {
+      unmapped++;
+      return;
+    }
+    if (!groups.has(id)) groups.set(id, { id, wrong: 0, guessed: 0, first: i.question.id, modul: i.question.modul });
+    groups.get(id)[kind]++;
+  };
+  for (const i of s.items) {
+    if (i.question.type === "freetext" || !hasAnswer(i.question, i.response)) continue;
+    if (i.grade.is_correct === false) add(i, "wrong");
+    else if (i.grade.is_correct && (i.response?.flag_unsure || i.response?.flag_cannot)) add(i, "guessed");
+  }
+  const list = [...groups.values()].sort((a, b) => b.wrong * 2 + b.guessed - (a.wrong * 2 + a.guessed)).slice(0, 8);
+  if (!list.length && !unmapped) return "";
+  return `<div class="card next-steps"><h2>Nästa steg</h2>
+    <p class="muted small" style="margin-top:-6px">Lärandemål där du svarade fel eller hade rätt men var osäker. Förstå varför → läs rätt stycke → lös en ny fråga som prövar samma förståelse.</p>
+    <ol class="next-list">${list.map((g) => {
+      const o = lib.objective(g.id);
+      return `<li><div><b>${g.id}</b> ${esc(o?.titel || titleOf(g.id))}<div class="small muted">${g.wrong ? `${g.wrong} fel` : ""}${g.wrong && g.guessed ? " · " : ""}${g.guessed ? `${g.guessed} rätt men osäker` : ""}</div></div>
+        <div class="btn-row"><a class="btn small" href="#/bibliotek/${encodeURIComponent(g.id)}?fraga=${encodeURIComponent(g.first)}">📖 Förstå varför</a><a class="btn small primary" href="#/bibliotek/${encodeURIComponent(g.id)}?ova=1">Ny kontrollfråga</a></div></li>`;
+    }).join("")}</ol>
+    ${unmapped ? `<p class="small muted">${unmapped} av dina fel/osäkra frågor saknar koppling till ett lärandemål – där är underlaget för litet för en riktad repetition. De finns i listan nedan.</p>` : ""}</div>`;
 }
 
 export async function resultsView(ctx, root, params) {
@@ -76,6 +109,7 @@ export async function resultsView(ctx, root, params) {
   }
   setTitle(`Resultat ${a.title}`);
   const lib = store.library;
+  const L = await loadLibrary(ctx).catch(() => null);
   let tab = "wrong";
   let metaFilter = null;
 
@@ -152,6 +186,8 @@ export async function resultsView(ctx, root, params) {
         </div>
       </div>
     </div>
+
+    ${nextStepsHtml(s, lib, (id) => L?.byId.get(id)?.titel || "")}
 
     <div class="card">
       <h2>Metakognition</h2>

@@ -14,6 +14,7 @@ import { adminView } from "./views/admin.js";
 import { loginView, applyView, statusView } from "./views/access.js";
 import { welcomeView, part2View } from "./views/welcome.js";
 import { libraryView } from "./views/library.js";
+import { analysisView } from "./views/analysis.js";
 
 const app = document.getElementById("app");
 
@@ -112,7 +113,9 @@ function parseRoute() {
   const [path, qs] = raw.split("?");
   const p = path.split("/").filter(Boolean).map(decodeURIComponent);
   const query = Object.fromEntries(new URLSearchParams(qs || ""));
-  if (!p.length) return { name: "home", query };
+  if (!p.length) return { name: "welcome", query };
+  if (p[0] === "traning") return { name: "home", query };
+  if (p[0] === "tidigare-tentor") return { name: "analysis", query };
   if (p[0] === "tentor") return { name: "exams", query };
   if (p[0] === "forsok" && p[1]) {
     if (p[2] === "resultat") return { name: "results", id: p[1], query };
@@ -128,17 +131,17 @@ function parseRoute() {
   if (p[0] === "valkommen") return { name: "welcome", query };
   if (p[0] === "del-2") return { name: "part2", query };
   if (p[0] === "bibliotek") return { name: "library", parts: p.slice(1), query };
-  return { name: "home", query };
+  return { name: "welcome", query };
 }
 
 const VIEWS = {
-  welcome: welcomeView, part2: part2View, library: libraryView, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
+  welcome: welcomeView, part2: part2View, library: libraryView, analysis: analysisView, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
   practice: practiceView, history: historyView, import: importView, admin: adminView,
   apply: applyView, login: loginView, status: statusView,
 };
 const PUBLIC = new Set(["apply", "login", "welcome", "part2"]);
 const NAV = [
-  ["home", "#/", "Hem"],
+  ["home", "#/traning", "Översikt"],
   ["exams", "#/tentor", "Tentor"],
   ["practice", "#/ova", "Öva på dina fel"],
   ["history", "#/historik", "Historik"],
@@ -169,20 +172,22 @@ function renderChrome() {
   const onPart2 = route.name === "part2";
   const onLibrary = route.name === "library";
   const loggedOut = ctx.auth.mode === "cloud" && ctx.auth.status() !== "active";
-  top.hidden = inRunner || onWelcome || onPart2 || onLibrary;
+  top.hidden = inRunner || onWelcome || onPart2 || onLibrary || route.name === "analysis";
   const tabs = document.getElementById("site-tabs");
   if (tabs) {
     tabs.hidden = inRunner;
+    const area = onWelcome ? "start" : onLibrary ? "bib" : route.name === "analysis" ? "ana" : "train";
+    const cur = (k) => (area === k ? 'aria-current="page"' : "");
     tabs.innerHTML = `
-      <a href="#/valkommen" ${onWelcome ? 'aria-current="page"' : ""}>Välkommen</a>
-      <a href="#/" ${onWelcome || onPart2 || onLibrary ? "" : 'aria-current="page"'}>Del 1</a>
-      <a href="#/del-2" ${onPart2 ? 'aria-current="page"' : ""}>Del 2</a>
-      <a href="#/bibliotek" ${onLibrary ? 'aria-current="page"' : ""}>Bibliotek</a>`;
+      <a href="#/" ${cur("start")}>Start</a>
+      <a href="#/bibliotek" ${cur("bib")}><span class="tab-pre">Plugga · </span>Bibliotek</a>
+      <a href="#/traning" ${cur("train")}><span class="tab-pre">Träna · </span>Tentor</a>
+      <a href="#/tidigare-tentor" ${cur("ana")}>Tidigare tentor</a>`;
   }
   const s = syncState();
   const nav = loggedOut ? [] : [...NAV, ...(ctx.auth.isAdmin() ? [["import", "#/importera", "Importera"], ["admin", "#/admin", "Admin"]] : [])];
   top.innerHTML = `
-    <a class="brand" href="#/"><span class="brand-mark">BV5</span><span>Tentasimulator<small>Basvetenskap 5 · Del 1 · Läkarprogrammet</small></span></a>
+    <a class="brand" href="#/traning"><span class="brand-mark">BV5</span><span>Tentaträning<small>Basvetenskap 5 · Del 1 och Del 2</small></span></a>
     ${nav.length ? `<button class="btn icon ghost menu-toggle" data-act="menu" aria-label="Meny" aria-expanded="false">☰</button>` : ""}
     <nav class="nav" id="nav">${nav.map(([name, href, label]) => `<a href="${href}" ${route.name === name ? 'aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
     <div class="topbar-right">
@@ -283,7 +288,7 @@ async function boot() {
   const say = (t) => { if (status) status.textContent = t; };
   try {
     // Appen öppnar alltid på välkomstfliken (men inte när en inloggningslänk eller annan sida öppnas).
-    if (["", "#", "#/"].includes(location.hash)) history.replaceState(null, "", "#/valkommen");
+    if (["", "#"].includes(location.hash)) history.replaceState(null, "", "#/");
     say("Kontrollerar inloggning …");
     await ctx.auth.init();
     say("Öppnar den lokala databasen …");

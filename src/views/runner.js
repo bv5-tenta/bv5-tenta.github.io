@@ -363,7 +363,7 @@ export async function runnerView(ctx, root, params) {
       stopClocks();
       await persist();
       toast("Försöket är sparat. Fortsätt när du vill från startsidan.");
-      ctx.go("#/");
+      ctx.go("#/traning");
     }
   }));
   offs.push(on(root, "input", "[data-free]", (e, el) => {

@@ -32,8 +32,8 @@ export async function homeView(ctx, root) {
 
   root.innerHTML = `
     <div class="page-head"><div>
-      <h1>${name && !ctx.auth.profile?.local ? `Hej ${esc(name)}!` : "BV5 Tentasimulator"}</h1>
-      <p class="lead">${exams.length} gamla tentor och ${totalQ.toLocaleString("sv-SE")} frågor, kopplade till kursbibliotekets lärandemål.</p>
+      <p class="welcome-kicker">Basvetenskap 5 · Träna inför tentan</p><h1>${name && !ctx.auth.profile?.local ? `Hej ${esc(name)}!` : "Träna inför tentan"}</h1>
+      <p class="lead">${exams.length} gamla tentor (del 1 och del 2) och ${totalQ.toLocaleString("sv-SE")} frågor, kopplade till bibliotekets lärandemål.</p>
     </div>
     <div class="btn-row"><a class="btn primary" href="#/tentor">Starta en tenta</a><a class="btn" href="#/ova">Öva på dina fel</a></div></div>
 
@@ -50,8 +50,9 @@ export async function homeView(ctx, root) {
       <div class="card stat"><div class="label">Bemästrade</div><div class="value">${mastered}</div><div class="sub">${store.settings.mastery_streak} rätt i rad utan flagga</div></div>
     </div>
 
-    <div class="grid cols-3" style="margin-top:16px">
-      <a class="card" href="#/tentor" style="text-decoration:none;color:inherit"><h3>📝 Tentamen</h3><p class="muted small">Hela tentor med riktig tidsgräns, som i Inspera.</p></a>
+    <div class="grid cols-4" style="margin-top:16px">
+      <a class="card" href="#/tentor" style="text-decoration:none;color:inherit"><h3>📝 Skriv en hel tenta</h3><p class="muted small">Del 1 eller del 2 med riktig tidsgräns, som i Inspera.</p></a>
+      <a class="card" href="#/tidigare-tentor" style="text-decoration:none;color:inherit"><h3>📊 Tidigare tentor</h3><p class="muted small">Vilka mål som återkommer, hur ofta och på vilket djup.</p></a>
       <a class="card" href="#/tentor?quiz=1" style="text-decoration:none;color:inherit"><h3>🎯 Eget quiz</h3><p class="muted small">Välj moduler och antal frågor ur hela frågebanken.</p></a>
       <a class="card" href="#/ova" style="text-decoration:none;color:inherit"><h3>🔁 Öva på dina fel</h3><p class="muted small">Allt du svarat fel på eller flaggat, tills det sitter.</p></a>
     </div>`;
@@ -75,7 +76,9 @@ export async function examsView(ctx, root, params) {
     const p = pct(a.score, a.max_score);
     if (!best.has(a.exam_id) || p > best.get(a.exam_id)) best.set(a.exam_id, p);
   }
-  const exams = store.listExams();
+  const del = Number(params?.query?.del) === 2 ? 2 : 1;
+  const allExams = store.listExams();
+  const exams = allExams.filter((e) => (e.del || 1) === del);
   const groups = new Map();
   for (const e of exams) {
     const y = e.term ? `20${e.term.slice(2)}` : "Övriga";
@@ -84,8 +87,13 @@ export async function examsView(ctx, root, params) {
   }
 
   root.innerHTML = `
-    <div class="page-head"><div><h1>Tentor</h1><p class="lead">Välj en gammal tenta att skriva under tidsgräns, eller bygg ett eget quiz.</p></div>
+    <div class="page-head"><div><h1>Tentasimulering</h1><p class="lead">Välj en gammal tenta att skriva under tidsgräns, eller bygg ett eget quiz. Efter inlämning går varje fel direkt till rätt lärandemål i biblioteket.</p></div>
     <button class="btn primary" data-act="quiz">🎯 Eget quiz</button></div>
+    <div class="tabs" role="tablist" style="margin-bottom:14px">
+      <a role="tab" href="#/tentor?del=1" aria-selected="${del === 1}">Del 1 <span class="count">${allExams.filter((e) => (e.del || 1) === 1).length} tentor</span></a>
+      <a role="tab" href="#/tentor?del=2" aria-selected="${del === 2}">Del 2 <span class="count">${allExams.filter((e) => e.del === 2).length} tentor</span></a>
+    </div>
+    ${del === 2 ? `<p class="notice small">Del 2: 10 flervalsfrågor och 8 essäpoäng per modul. Essäerna självbedöms mot tentans svarsförslag där ett sådant finns. Tidsgränsen (240 min) är ett antagande – ändra den om er tenta har en annan längd.</p>` : ""}
     ${[...groups].map(([y, list]) => `<div class="year-head">${esc(y)}</div><div class="exam-list">${list.map((e) => {
       const qn = e.question_count || store.examQuestions(e.id).length;
       const b = best.get(e.id);
@@ -178,7 +186,7 @@ export async function practiceView(ctx, root) {
         return `<div class="concept prio-${prio}">
           <div class="concept-head">
             <div>
-              <a class="concept-title" href="${esc(c.url)}" target="_blank" rel="noopener">📖 ${esc(c.label)} ↗</a>
+              <a class="concept-title" href="${esc(c.url)}">📖 ${esc(c.label)}</a>
               <div class="small muted">${esc(store.library.moduleName(c.modul))}</div>
             </div>
             <button class="btn small primary" data-practice="${esc(c.key)}">Öva (${c.open.length})</button>
@@ -211,7 +219,7 @@ export async function practiceView(ctx, root) {
       const cats = [p.times_wrong ? `<span class="chip err">Fel ×${p.times_wrong}</span>` : "", p.times_unsure ? `<span class="chip unsure">🟨 ×${p.times_unsure}</span>` : "", p.times_cannot ? `<span class="chip cannot">🟥 ×${p.times_cannot}</span>` : ""].join(" ");
       return `<tr>
         <td><b>${esc(exam?.code || q.exam_code || "")} #${q.number}</b><div class="small">${esc(q.stem.length > 150 ? `${q.stem.slice(0, 150)}…` : q.stem)}</div>
-          <a class="small" href="${esc(link.url)}" target="_blank" rel="noopener">📖 ${esc(link.label)} ↗</a></td>
+          <a class="small" href="${esc(link.url)}">📖 ${esc(link.label)}</a></td>
         <td>${cats}</td>
         <td><span class="chip ${p.state === "mastered" ? "ok" : p.state === "learning" ? "teal" : "warn"}">${STATE_LABELS[p.state]}</span><div class="small muted" style="margin-top:4px">${p.correct_streak}/${goal} i rad</div></td>
         <td class="num"><button class="btn small ghost" data-show="${esc(q.id)}">Visa</button></td>

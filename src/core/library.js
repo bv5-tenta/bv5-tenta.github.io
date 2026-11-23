@@ -4,11 +4,12 @@ import { tokenize, trigrams, jaccard, normalizeForHash } from "./text.js";
 
 export const LIBRARY_BASE = "https://ybgdon7.github.io/bibliotek/";
 
+/* Länkar går till appens eget bibliotek (#/bibliotek/…); base behålls i signaturen för bakåtkompatibilitet. */
 export function objectiveUrl(base, modul, sub, id) {
-  return `${base}#/kurs/bv5/modul/${modul}/sub/${sub}/mal/${encodeURIComponent(id)}`;
+  return `#/bibliotek/${encodeURIComponent(id)}`;
 }
 export function moduleUrl(base, modul) {
-  return `${base}#/kurs/bv5/modul/${modul}`;
+  return `#/bibliotek/modul/${modul}`;
 }
 
 /* ---------- BM25 ---------- */
@@ -65,15 +66,15 @@ export class Library {
     this.themes = new Map();
     this.modules = new Map();
     for (const m of index.modules || []) {
-      this.modules.set(m.nr, { nr: m.nr, titel: m.titel, url: m.url || moduleUrl(this.base, m.nr) });
+      this.modules.set(m.nr, { nr: m.nr, titel: m.titel, url: moduleUrl(this.base, m.nr) });
       for (const s of m.submoduler || []) {
         for (const o of s.mal || []) {
-          this.objectives.set(o.id, { ...o, modul: m.nr, sub: s.nr, sub_titel: s.titel, modul_titel: m.titel });
+          this.objectives.set(o.id, { ...o, modul: m.nr, sub: s.nr, sub_titel: s.titel, modul_titel: m.titel, url: objectiveUrl(this.base, m.nr, s.nr, o.id) });
         }
       }
     }
     for (const tm of index.ta_modules || []) {
-      if (!this.modules.has(tm.nr)) this.modules.set(tm.nr, { nr: tm.nr, titel: tm.namn, url: tm.url || moduleUrl(this.base, tm.nr) });
+      if (!this.modules.has(tm.nr)) this.modules.set(tm.nr, { nr: tm.nr, titel: tm.namn, url: moduleUrl(this.base, tm.nr) });
     }
     for (const t of index.themes || []) this.themes.set(t.id, t);
     this._bm25 = null;
@@ -96,10 +97,14 @@ export class Library {
   /** Bästa länk för en fråga: lärandemål > modul > bibliotekets startsida. */
   linkFor(q) {
     const o = this.objective(q.objective_id);
-    if (o) return { url: o.url || objectiveUrl(this.base, o.modul, o.sub, o.id), label: `${o.id} ${o.titel}`, level: "objective", objective: o };
+    if (o) return { url: objectiveUrl(this.base, o.modul, o.sub, o.id), label: `${o.id} ${o.titel}`, level: "objective", objective: o };
+    if (/^\d+\.\d+\.\d+$/.test(String(q.objective_id || ""))) {
+      return { url: objectiveUrl(this.base, q.modul, null, q.objective_id), label: `Lärandemål ${q.objective_id}`, level: "objective", objective: { id: q.objective_id } };
+    }
+    if (Number(q.modul) >= 1) return { url: moduleUrl(this.base, q.modul), label: this.module(q.modul) ? `Modul ${q.modul} · ${this.module(q.modul).titel}` : `Modul ${q.modul}`, level: "module", objective: null };
     const m = this.module(q.modul);
     if (m) return { url: m.url, label: `Modul ${m.nr} · ${m.titel}`, level: "module", objective: null };
-    return { url: this.base, label: "Lärandemålsbiblioteket", level: "library", objective: null };
+    return { url: "#/bibliotek", label: "Lärandemålsbiblioteket", level: "library", objective: null };
   }
 
   /** Förklaring: frågans egen, annars det stycke i lärandemålet som bäst matchar frågan. */

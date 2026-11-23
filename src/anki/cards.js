@@ -2,6 +2,9 @@
 
 import { esc } from "../core/text.js";
 
+/** Den publicerade sajten – används för länkar i Anki-korten. */
+export const PUBLIC_SITE = "https://bv5-tenta.github.io/";
+
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 /* Syns i filnamnet på exporten så att man ser vilken kortmall filen har. */
 export const CARD_VERSION = "v7";
@@ -70,7 +73,7 @@ export function buildNote(q, ctx) {
   const correct = (q.options || []).map((o, i) => ({ ...o, letter: LETTERS[i] })).filter((o) => o.is_correct);
   const wrong = (q.options || []).map((o, i) => ({ ...o, letter: LETTERS[i] })).filter((o) => !o.is_correct);
   const expl = library ? library.explanationFor(q) : { text: q.explanation || "", source: "fraga" };
-  const link = library ? library.linkFor(q) : { url: "https://ybgdon7.github.io/bibliotek/", label: "Lärandemålsbiblioteket", level: "library" };
+  const link = library ? library.linkFor(q) : { url: "#/bibliotek", label: "Lärandemålsbiblioteket", level: "library" };
   const objective = link.objective;
   const theme = library?.theme(q.theme_id);
 
@@ -96,7 +99,9 @@ export function buildNote(q, ctx) {
   const loField = objective
     ? `${esc(objective.id)} ${esc(objective.titel)}<br><span class="bv5-sub">${esc(moduleName)}${theme ? ` · ${esc(theme.tema)}` : ""}</span>`
     : esc(moduleName);
-  const linkField = `<a href="${esc(link.url)}">Läs i kursbiblioteket: ${esc(link.label)}</a>`;
+  // Anki öppnar länkar utanför appen: interna bibliotekslänkar (#/bibliotek/…) görs absoluta mot den publicerade sajten.
+  const href = String(link.url || "").startsWith("#") ? `${PUBLIC_SITE}${link.url}` : link.url;
+  const linkField = `<a href="${esc(href)}">Läs i kursbiblioteket: ${esc(link.label)}</a>`;
   const source = esc(sourceLabel(q, exam));
 
   const tags = ["BV5", `Modul_${q.modul ?? "okand"}`];

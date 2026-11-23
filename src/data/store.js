@@ -84,7 +84,7 @@ export class Store {
     const questions = [];
     for (const e of seed.exams) {
       const { questions: qs, ...exam } = e;
-      exams.push({ ...exam, status: "published", pass_points: null, created_at: exam.created_at || seed.built_at });
+      exams.push({ ...exam, status: "published", pass_points: exam.pass_points ?? null, created_at: exam.created_at || seed.built_at });
       for (const q of qs) {
         if (edited.has(q.id)) continue;
         questions.push({
