@@ -1204,3 +1204,42 @@ a.feat-card:hover { transform: translateY(-2px); border-color: #c9952a; box-shad
 }
 @media (max-width: 560px) { .home-features { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .feat-card { transition: none; } }
+
+/* ---------- biblioteket i svart och guld (samma känsla som startsidan) ---------- */
+.lib2, .lib-mod2, .home2 {
+  --gold-1: #f6d77a; --gold-2: #d9a838; --gold-3: #b8861f; --gold-4: #8a6114;
+  --h: #9c7114; --h-soft: #fbf4e2; --h-line: #ecd9a8; --h-ink: #5a3f07;
+}
+:root[data-theme="dark"] .lib2, :root[data-theme="dark"] .lib-mod2 { --h: #e3bd62; --h-soft: #261f12; --h-line: #4a3c1f; --h-ink: #f2dca0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lib2, :root:not([data-theme="light"]) .lib-mod2 { --h: #e3bd62; --h-soft: #261f12; --h-line: #4a3c1f; --h-ink: #f2dca0; } }
+.lib-hero {
+  background:
+    radial-gradient(900px 340px at 88% -30%, rgba(222,176,72,.30), transparent 70%),
+    radial-gradient(600px 260px at 10% 120%, rgba(222,176,72,.12), transparent 70%),
+    linear-gradient(135deg, #1b160c 0%, #0b0906 55%, #030302 100%);
+  border-bottom: 1px solid #3a2e17;
+}
+.lib-hero-kicker { color: var(--gold-1); opacity: .9; }
+.lib-hero .lib-crumbs, .lib-hero .lib-crumbs a { color: rgba(246,215,122,.82); }
+.lib-hero .lib-crumbs a:hover { color: #fff3cc; }
+.lib-hero h1 { color: #fff8e6; }
+.lib-hero-id { background: linear-gradient(180deg, var(--gold-1), var(--gold-3)); color: #1f1504; border-color: #e6c36a; }
+.lib-hero-meta > * { background: rgba(246,215,122,.10); border-color: rgba(246,215,122,.35); color: #fbeac0; }
+.lib-hero-meta a:hover { background: rgba(246,215,122,.22); }
+.lib-hero-lead { color: rgba(255,244,214,.82); }
+.lib-key { border-top-color: var(--gold-2); }
+.lib-key li::before { background: linear-gradient(180deg, var(--gold-1), var(--gold-3)); color: #1f1504; }
+.lib-key h2 { color: var(--h-ink); }
+.md-sec-nr { background: #17130b; color: var(--gold-1); border-color: #3a2e17; }
+.lib-mod2::before { background: linear-gradient(90deg, #17130b, var(--gold-3) 45%, var(--gold-1)); }
+.lib-mod2:hover { border-color: var(--gold-2); }
+.freqbar i { background: var(--gold-3); }
+.lib-bar i { background: linear-gradient(90deg, var(--gold-3), var(--gold-2)); }
+.lib2 .btn.primary, .lib2 .lib-goal-btn { background: #17130b; border-color: #17130b; color: var(--gold-1); }
+.lib2 .btn.primary:hover { background: #2a2214; }
+@keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(217,168,56,.5); } 100% { box-shadow: 0 0 0 14px rgba(217,168,56,0); } }
+.lib2 .lib-id { color: var(--h); }
+.lib2 .chip.freq:not(.none) { background: var(--h-soft); color: var(--h-ink); border-color: var(--h-line); }
+.lib2 .lib-check.on { background: linear-gradient(180deg, var(--gold-1), var(--gold-3)); border-color: var(--gold-3); color: #1f1504; }
+.lib2 .rat-callout, .rat-callout { background: radial-gradient(500px 120px at 90% -20%, rgba(222,176,72,.28), transparent 70%), linear-gradient(135deg, #1b160c, #050403); border: 1px solid #3a2e17; color: #fff8e6; }
+.rat-callout-go { color: var(--gold-1, #f6d77a); }
