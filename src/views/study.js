@@ -27,7 +27,7 @@ export async function homeView(ctx, root) {
   const mastered = progress.filter((p) => p.state === "mastered").length;
   const last = done[0];
   const exams = store.listExams();
-  const totalQ = [...store.questions.values()].length;
+  const totalQ = [...store.questions.values()].filter((q) => store.isOfficial(q)).length;
   const name = ctx.auth.displayName().split(" ")[0];
 
   root.innerHTML = `
@@ -49,6 +49,8 @@ export async function homeView(ctx, root) {
       <div class="card stat"><div class="label">Att öva på</div><div class="value">${weak}</div><div class="sub">fel, osäkra och kan ej</div></div>
       <div class="card stat"><div class="label">Bemästrade</div><div class="value">${mastered}</div><div class="sub">${store.settings.mastery_streak} rätt i rad utan flagga</div></div>
     </div>
+
+    ${store.listRats().length ? `<a class="rat-callout" href="#/rat" style="margin-top:16px"><span class="rat-callout-ico">🧪</span><span><b>RAT inför modulerna 9–12</b><br><span class="small">Simulerade iRAT i samma format som InteDashboard, med analys per delmodul och Anki-export.</span></span><span class="rat-callout-go">Till RAT →</span></a>` : ""}
 
     <div class="grid cols-4" style="margin-top:16px">
       <a class="card" href="#/tentor" style="text-decoration:none;color:inherit"><h3>📝 Skriv en hel tenta</h3><p class="muted small">Del 1 eller del 2 med riktig tidsgräns, som i Inspera.</p></a>

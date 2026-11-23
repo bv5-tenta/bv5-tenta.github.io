@@ -24,7 +24,7 @@ function pickFeatured(ctx, M) {
       .map((x) => x.match(/!\[([^\]]*)\]\((data\/[^\s)]+)/))
       .find((m) => !/-sida\.jpg$/.test(m[2]) && /cirkulation|shunt/i.test(m[1])) || (o.body.match(/!\[([^\]]*)\]\((data\/[^\s)]+)/) || null);
     if (!fig) continue;
-    const q = [...ctx.store.questions.values()].find((x) => x.objective_id === o.id && x.options?.length && x.explanation);
+    const q = [...ctx.store.questions.values()].find((x) => x.objective_id === o.id && x.options?.length && x.explanation && ctx.store.isOfficial(x));
     return { o, key: r.key, caption: fig[1].split(/\s*\|\|\s*/)[0], src: fig[2], q };
   }
   return null;
@@ -47,7 +47,7 @@ export async function welcomeView(ctx, root) {
   const fmt = (n) => n.toLocaleString("sv-SE");
   const nObj = M.objectives.length;
   const nFig = Object.keys(M.bilder).length + M.objectives.filter((o) => o.format === "md").reduce((n, o) => n + (o.body.match(/!\[/g) || []).length, 0);
-  const exams = [...ctx.store.exams.values()];
+  const exams = [...ctx.store.exams.values()].filter((e) => e.status === "published");
   const del1 = exams.filter((e) => (e.del || 1) === 1).length;
   const del2 = exams.filter((e) => e.del === 2).length;
   const repeat = progress.toRepeat().slice(0, 4).map((r) => ({ ...r, o: M.byId.get(r.id) })).filter((r) => r.o);

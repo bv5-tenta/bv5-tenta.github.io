@@ -33,6 +33,11 @@ export async function runnerView(ctx, root, params) {
     root.innerHTML = `<div class="empty"><div class="big">🔍</div><p>Försöket finns inte.</p><a class="btn" href="#/tentor">Till tentorna</a></div>`;
     return;
   }
+  if (attempt.mode === "rat") {
+    const ex = store.exams.get(attempt.exam_id);
+    ctx.go(`#/rat/${ex?.modul || 0}/${attempt.id}`, true);
+    return;
+  }
   if (attempt.submitted_at) {
     ctx.go(attempt.locked_at ? `#/forsok/${attempt.id}/resultat` : `#/forsok/${attempt.id}/bedom`, true);
     return;

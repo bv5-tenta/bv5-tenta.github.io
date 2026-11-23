@@ -83,7 +83,7 @@ function cmpId(a, b) {
 /** Officiella tentafrågor för ett mål, ur frågebanken (samma id:n som simulatorn). */
 function examQuestions(ctx, objectiveId) {
   const out = [];
-  for (const q of ctx.store.questions.values()) if (q.objective_id === objectiveId && q.status !== "struken") out.push(q);
+  for (const q of ctx.store.questions.values()) if (q.objective_id === objectiveId && q.status !== "struken" && ctx.store.isOfficial(q)) out.push(q);
   const exams = ctx.store.exams;
   return out.sort((a, b) => String(exams.get(a.exam_id)?.code).localeCompare(String(exams.get(b.exam_id)?.code)) || a.number - b.number);
 }
@@ -93,17 +93,28 @@ function examLabel(ctx, q) {
   return `${(e?.code || q.exam_code || "Tenta").replace(/^Del 2 /, "")} · fråga ${q.number}`;
 }
 
-/** Quizposter: kursquiz (del 1) eller officiella flervalsfrågor (del 2) – tydligt märkta. */
-function quizItems(ctx, o) {
-  if (o.quiz?.length) {
-    return o.quiz.map((q) => ({ id: q.id, q: q.q, options: q.options, right: [q.svar], forklaring: q.forklaring, kalla: "kursquiz", src: "Kursquiz (prototypens frågebank)", objective: o.id }));
-  }
-  return examQuestions(ctx, o.id)
-    .filter((q) => q.options?.length)
+/** Quizposter: hälften genererade frågor (kursquiz i del 1, övningsfrågor i tentastil i del 2) och hälften
+    officiella tentafrågor. Bara den "synliga" halvan av målets officiella frågor används – resten hålls dolda
+    i biblioteket och finns kvar i tentasimulatorn, så att studenten kan testa sig på okända tentafrågor senare. */
+function quizItems(ctx, M, o) {
+  const gen = (o.quiz || []).map((q) => ({
+    id: q.id, q: q.q, options: q.options, right: [q.svar], forklaring: q.forklaring, kalla: q.kalla || "kursquiz",
+    src: q.kalla === "ovning" ? "Övningsfråga i tentastil (genererad)" : "Kursquiz", objective: o.id,
+  }));
+  const vis = new Set(M.ta?.delar?.[o.del]?.mal?.[o.id]?.synliga || []);
+  const off = examQuestions(ctx, o.id)
+    .filter((q) => vis.has(q.id) && q.options?.length)
     .map((q) => ({
       id: q.id, q: q.stem.replace(/^Fråga\s+\d+\s*[:.]?\s*/i, ""), options: q.options.map((x) => x.text), right: q.options.filter((x) => x.is_correct).map((x) => x.ordinal),
       forklaring: q.explanation || "", kalla: "tenta", src: `Officiell tentafråga · ${examLabel(ctx, q)}`, objective: o.id,
-    }));
+    }))
+    .slice(0, Math.max(gen.length, 0) || 6);
+  const out = [];
+  for (let i = 0; i < Math.max(gen.length, off.length); i++) {
+    if (off[i]) out.push(off[i]);
+    if (gen[i]) out.push(gen[i]);
+  }
+  return out;
 }
 
 /* ---------- gemensamma byggblock ---------- */
@@ -180,7 +191,7 @@ function objectiveRow(M, o) {
     ${understandingDot(o.id)}${examFreq(M, o)}</a></li>`;
 }
 
-function modulePage(M, nr) {
+function modulePage(M, nr, rat = null) {
   const m = M.modules.get(nr);
   if (!m) return notFound();
   const ids = m.submoduler.flatMap((s) => s.mal.map((o) => o.id));
@@ -198,9 +209,10 @@ function modulePage(M, nr) {
       <h1>${esc(m.titel)}</h1>
       ${m.beskrivning ? `<p class="lib-hero-lead">${esc(m.beskrivning)}</p>` : ""}
       <div class="lib-hero-meta"><span>${ids.length} lärandemål</span><span>${progress.readCount(ids)} genomgångna</span>
-        ${ids.length ? `<a href="#/bibliotek/modul/${nr}/quiz">✓ Blandat modulquiz</a>` : ""}<a href="#/tidigare-tentor?del=${m.del}&modul=${nr}">📊 Tidigare tentor</a></div>
+        ${rat ? `<a href="#/rat/${nr}">🧪 RAT inför modulen</a>` : ""}${ids.length ? `<a href="#/bibliotek/modul/${nr}/quiz">✓ Blandat modulquiz</a>` : ""}<a href="#/tidigare-tentor?del=${m.del}&modul=${nr}">📊 Tidigare tentor</a></div>
     </div></header>
     <div class="lib-layout single"><div class="lib-main wide">
+      ${rat ? `<a class="rat-callout" href="#/rat/${nr}"><span class="rat-callout-ico">🧪</span><span><b>RAT inför modul ${nr}</b><br><span class="small">${rat.question_count} frågor i InteDashboard-format över alla delmoduler – lämna in och få en analys av vad du ska prioritera.</span></span><span class="rat-callout-go">Starta →</span></a>` : ""}
       <p class="small muted lib-legend"><span class="lib-check on">✓</span> genomgånget · <span class="u-dot good"></span> säkert rätt · <span class="u-dot mid"></span> gissat · <span class="u-dot bad"></span> fel på quiz · <span class="chip freq">x/y tentor</span> förekomst på tidigare tentor</p>
       ${subs || `<div class="card"><h2>Innehåll saknas</h2><p>Modulens lärandemål är inte inlagda. Det som behövs är modulens <b>nedbrutna lärandemål</b> och <b>föreläsnings-PDF:er</b>.</p></div>`}
     </div></div>
@@ -214,14 +226,14 @@ function quizPage(ctx, M, scope, key) {
     if (!s) return notFound();
     title = `Slutquiz · ${s.id} ${s.titel}`;
     back = [[`Modul ${s.modul}`, `#/bibliotek/modul/${s.modul}`], [s.id, null]];
-    pool = s.mal.flatMap((o) => quizItems(ctx, o));
+    pool = s.mal.flatMap((o) => quizItems(ctx, M, o));
     hueNr = s.modul;
   } else {
     const m = M.modules.get(key);
     if (!m) return notFound();
     title = `Blandat modulquiz · Modul ${m.nr} ${m.titel}`;
     back = [[`Modul ${m.nr}`, `#/bibliotek/modul/${m.nr}`], ["Modulquiz", null]];
-    pool = m.submoduler.flatMap((s) => s.mal.flatMap((o) => quizItems(ctx, o)));
+    pool = m.submoduler.flatMap((s) => s.mal.flatMap((o) => quizItems(ctx, M, o)));
     hueNr = m.nr;
   }
   const n = scope === "sub" ? 12 : 20;
@@ -252,7 +264,7 @@ function quizHtml(items, { title = "Testa dig själv", id = "testa-dig", intro =
       const o = showObjective && M ? M.byId.get(it.objective) : null;
       return `<li class="lq" data-qid="${esc(it.id)}" data-obj="${esc(it.objective || "")}" data-right="${esc(it.right.join(","))}">
         <div class="lq-head"><span class="lq-nr">${i + 1}</span>
-          <span class="chip ${it.kalla === "tenta" ? "official" : ""}">${it.kalla === "tenta" ? "Officiell tentafråga" : "Kursquiz"}</span>
+          <span class="chip ${it.kalla === "tenta" ? "official" : it.kalla === "ovning" ? "practice" : ""}" title="${esc(it.src)}">${it.kalla === "tenta" ? "Officiell tentafråga" : it.kalla === "ovning" ? "Övningsfråga" : "Kursquiz"}</span>
           <span class="lq-src">${esc(it.kalla === "tenta" ? it.src.replace(/^Officiell tentafråga · /, "") : "")}${o ? ` <a href="#/bibliotek/${encodeURIComponent(o.id)}">${esc(o.id)} ${esc(o.titel)}</a>` : ""}</span>
           ${prev ? `<span class="lq-prev ${prev.c ? (prev.g ? "mid" : "good") : "bad"}" title="Senaste försöket">${prev.c ? (prev.g ? "Gissat rätt senast" : "Rätt senast") : "Fel senast"}</span>` : ""}</div>
         <p class="lq-stem">${esc(it.q)}</p>
@@ -268,7 +280,7 @@ function quizHtml(items, { title = "Testa dig själv", id = "testa-dig", intro =
   const n = items.length;
   return `<section class="lib-quiz" id="${esc(id)}" data-quiz>
     <header class="lib-quiz-head"><div><h2>${esc(title)}</h2>
-      <p class="muted small">${intro || `${n} frågor. Tryck på "Jag gissar" innan du svarar om du inte är säker – då räknas ett rätt svar som gissning, inte som visad förståelse.`}</p></div>
+      <p class="muted small">${intro || `${n} frågor: ungefär hälften officiella tentafrågor och hälften övningsfrågor i samma stil. Övriga tentafrågor på målet sparas till tentasimulatorn. Tryck på "Jag gissar" innan du svarar om du inte är säker – då räknas ett rätt svar som gissning, inte som visad förståelse.`}</p></div>
       <div class="lib-score" data-score><b>0</b> / ${n} rätt<span class="small" data-guesses></span></div></header>
     <ol class="lq-list">${list}</ol></section>`;
 }
@@ -352,11 +364,13 @@ function examHistoryHtml(ctx, M, o) {
     .sort((x, y) => y[1] - x[1])
     .map(([k, n]) => `<div class="kbar"><span class="kbar-label">${esc(K_LABELS[k] || k)}</span><span class="kbar-track"><i style="width:${Math.round((n / total) * 100)}%"></i></span><span class="kbar-n">${n}</span></div>`)
     .join("");
-  const exampleIds = (m.exempel || []).slice(0, 4);
+  // Flervalsfrågorna i den synliga halvan ligger i quizen längre ned; här visas övriga (främst essäer) med facit.
   const byId = new Map(qs.map((q) => [q.id, q]));
-  const examples = exampleIds
-    .map((id) => byId.get(id) || ctx.store.questions.get(id))
-    .filter(Boolean)
+  const visible = (m.exempel || []).map((id) => byId.get(id) || ctx.store.questions.get(id)).filter(Boolean);
+  const inQuiz = visible.filter((q) => q.options?.length).length;
+  const examples = visible
+    .filter((q) => !q.options?.length)
+    .slice(0, 4)
     .map((q) => {
       const meta = M.ta.fragor?.[q.id] || {};
       const right = (q.options || []).filter((x) => x.is_correct);
@@ -379,7 +393,9 @@ function examHistoryHtml(ctx, M, o) {
     <p class="small muted">Underlag: ${esc(per)}. Förekomst: ${m.tentor.map((t) => esc(t.replace(/^Del 2 /, ""))).join(", ")}.${m.osakra_kopplingar ? ` ${m.osakra_kopplingar} av kopplingarna är automatiska och markerade för granskning.` : ""}</p>
     <div class="kbars">${bars}</div>
     <p class="lib-depth"><b>Hur djupt?</b> ${esc(K_HELP[m.dominerande] || "")}</p>
-    ${examples ? `<h3 class="lib-exam-h">Riktiga tentafrågor som belägger bedömningen</h3>${examples}` : ""}
+    ${examples ? `<h3 class="lib-exam-h">Essäfrågor från tidigare tentor</h3>${examples}` : ""}
+    ${inQuiz ? `<p class="small">${inQuiz} officiella flervalsfrågor på målet finns i <a href="#" data-jump="testa-dig">Testa dig själv</a> nedan – svara på dem innan du tittar på facit.</p>` : ""}
+    ${m.dolda ? `<p class="small muted">${m.dolda} ${m.dolda === 1 ? "tentafråga" : "tentafrågor"} på målet visas inte här – de finns kvar i tentasimulatorn så att du kan testa dig på frågor du inte sett.</p>` : ""}
     <p class="small"><a href="#/tidigare-tentor?del=${o.del}&mal=${encodeURIComponent(o.id)}">Öppna i Tidigare tentor →</a></p>
   </section>`;
 }
@@ -402,7 +418,7 @@ function objectivePage(ctx, M, id) {
   const prev = M.objectives[i - 1];
   const next = M.objectives[i + 1];
   const r = o.format === "md" ? renderMarkdown(o.body) : o.format === "html" ? renderHtmlBody(o.body, M.bilder) : renderPlainSummary(o.body);
-  const items = quizItems(ctx, o);
+  const items = quizItems(ctx, M, o);
   const mins = readingMinutes(o.body.replace(/<[^>]+>/g, " "));
   const hist = examHistoryHtml(ctx, M, o);
   const toc = [
@@ -510,7 +526,7 @@ export async function libraryView(ctx, root, route) {
   } else if (p[0] === "modul" && p[1]) {
     const nr = Number(p[1]);
     setTitle(`Modul ${nr} – Bibliotek`);
-    html = modulePage(M, nr);
+    html = modulePage(M, nr, ctx.store.ratFor(nr));
     progress.setLast(`#/bibliotek/modul/${nr}`, `Modul ${nr} ${M.modules.get(nr)?.titel || ""}`);
   } else if (p[0] === "sub" && p[1]) {
     setTitle(`Slutquiz ${p[1]} – Bibliotek`);

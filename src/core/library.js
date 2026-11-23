@@ -99,7 +99,8 @@ export class Library {
     const o = this.objective(q.objective_id);
     if (o) return { url: objectiveUrl(this.base, o.modul, o.sub, o.id), label: `${o.id} ${o.titel}`, level: "objective", objective: o };
     if (/^\d+\.\d+\.\d+$/.test(String(q.objective_id || ""))) {
-      return { url: objectiveUrl(this.base, q.modul, null, q.objective_id), label: `Lärandemål ${q.objective_id}`, level: "objective", objective: { id: q.objective_id } };
+      const titel = q.objective_titel || "";
+      return { url: objectiveUrl(this.base, q.modul, null, q.objective_id), label: titel ? `${q.objective_id} ${titel}` : `Lärandemål ${q.objective_id}`, level: "objective", objective: { id: q.objective_id, titel } };
     }
     if (Number(q.modul) >= 1) return { url: moduleUrl(this.base, q.modul), label: this.module(q.modul) ? `Modul ${q.modul} · ${this.module(q.modul).titel}` : `Modul ${q.modul}`, level: "module", objective: null };
     const m = this.module(q.modul);

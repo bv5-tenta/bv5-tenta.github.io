@@ -15,6 +15,7 @@ import { loginView, applyView, statusView } from "./views/access.js";
 import { welcomeView, part2View } from "./views/welcome.js";
 import { libraryView } from "./views/library.js";
 import { analysisView } from "./views/analysis.js";
+import { ratView } from "./views/rat.js";
 
 const app = document.getElementById("app");
 
@@ -117,6 +118,7 @@ function parseRoute() {
   if (p[0] === "traning") return { name: "home", query };
   if (p[0] === "tidigare-tentor") return { name: "analysis", query };
   if (p[0] === "tentor") return { name: "exams", query };
+  if (p[0] === "rat") return { name: "rat", modul: p[1] || null, attempt: p[2] || null, query };
   if (p[0] === "forsok" && p[1]) {
     if (p[2] === "resultat") return { name: "results", id: p[1], query };
     if (p[2] === "bedom") return { name: "grade", id: p[1], query };
@@ -135,7 +137,7 @@ function parseRoute() {
 }
 
 const VIEWS = {
-  welcome: welcomeView, part2: part2View, library: libraryView, analysis: analysisView, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
+  welcome: welcomeView, part2: part2View, library: libraryView, analysis: analysisView, rat: ratView, home: homeView, exams: examsView, runner: runnerView, results: resultsView, grade: gradeView,
   practice: practiceView, history: historyView, import: importView, admin: adminView,
   apply: applyView, login: loginView, status: statusView,
 };
@@ -167,7 +169,7 @@ function renderChrome() {
   const route = parseRoute();
   const top = document.getElementById("topbar");
   if (!top || !ctx.store) return;
-  const inRunner = route.name === "runner";
+  const inRunner = route.name === "runner" || (route.name === "rat" && !!route.attempt);
   const onWelcome = route.name === "welcome";
   const onPart2 = route.name === "part2";
   const onLibrary = route.name === "library";
@@ -176,12 +178,20 @@ function renderChrome() {
   const tabs = document.getElementById("site-tabs");
   if (tabs) {
     tabs.hidden = inRunner;
-    const area = onWelcome ? "start" : onLibrary ? "bib" : route.name === "analysis" ? "ana" : "train";
+    const area = onWelcome ? "start" : onLibrary ? "bib" : route.name === "analysis" ? "ana" : route.name === "rat" ? "rat" : "train";
     const cur = (k) => (area === k ? 'aria-current="page"' : "");
+    document.documentElement.classList.toggle("standalone", isStandalone());
+    const canBack = window.navigation?.canGoBack ?? history.length > 1;
+    const canFwd = window.navigation?.canGoForward ?? true;
     tabs.innerHTML = `
+      <span class="nav-hist" role="group" aria-label="Historik">
+        <button type="button" data-hist="back" aria-label="Tillbaka" title="Tillbaka (Alt+←)" ${canBack ? "" : "disabled"}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button type="button" data-hist="fwd" aria-label="Framåt" title="Framåt (Alt+→)" ${canFwd ? "" : "disabled"}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </span>
       <a href="#/" ${cur("start")}>Start</a>
       <a href="#/bibliotek" ${cur("bib")}><span class="tab-pre">Plugga · </span>Bibliotek</a>
       <a href="#/traning" ${cur("train")}><span class="tab-pre">Träna · </span>Tentor</a>
+      <a href="#/rat" ${cur("rat")}>RAT</a>
       <a href="#/tidigare-tentor" ${cur("ana")}>Tidigare tentor</a>`;
   }
   const s = syncState();
@@ -220,7 +230,7 @@ async function render() {
   if (["import", "admin"].includes(route.name) && !ctx.auth.isAdmin()) route = { name: "home" };
   renderChrome();
   const main = document.getElementById("main");
-  main.className = route.name === "runner" ? "wide" : "";
+  main.className = route.name === "runner" ? "wide" : route.name === "rat" && route.attempt ? "wide rat-host" : "";
   const view = document.createElement("div");
   view.className = "view";
   main.replaceChildren(view);
@@ -238,6 +248,18 @@ async function render() {
 }
 
 /* ---------- globala händelser ---------- */
+// Tillbaka/framåt: i den installerade appen (fristående fönster) finns inga webbläsarknappar.
+on(document, "click", "[data-hist]", (e, el) => {
+  if (el.dataset.hist === "back") history.back();
+  else history.forward();
+});
+document.addEventListener("keydown", (e) => {
+  if (!e.altKey || e.ctrlKey || e.metaKey) return;
+  if (/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "") || ["runner", "rat"].includes(parseRoute().name)) return;
+  if (e.key === "ArrowLeft") { e.preventDefault(); history.back(); }
+  else if (e.key === "ArrowRight") { e.preventDefault(); history.forward(); }
+});
+
 on(document, "click", "#topbar [data-act]", async (e, el) => {
   const act = el.dataset.act;
   if (act === "install") install();

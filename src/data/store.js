@@ -63,6 +63,7 @@ export class Store {
     this.library = new Library(index);
     this.libraryBuild = index.library_build || "";
     await this.ensureSeed(opts.onProgress);
+    await this.ensureRat().catch((err) => console.warn("RAT kunde inte läsas in", err));
     await this.reloadCaches();
   }
 
@@ -98,6 +99,46 @@ export class Store {
     await this.idb.bulkPut("exams", exams);
     await this.idb.bulkPut("questions", questions);
     await this.idb.put("meta", { key: "seed", value: { built_at: seed.built_at, library_build: seed.library_build, counts: seed.counts } });
+  }
+
+  /** Simulerade RAT (data/rat.json): egna "tentor" med status "rat" – syns inte i tentalistan,
+      men frågorna rättas, tidsloggas och hamnar i "Öva på dina fel" precis som tentafrågor. */
+  async ensureRat() {
+    const meta = await this.idb.get("meta", "rat");
+    let data;
+    try {
+      data = await this.fetchJson("data/rat.json");
+    } catch (err) {
+      if (meta) return;
+      throw err;
+    }
+    if (meta && meta.value.built_at === data.built_at) return;
+    const exams = [];
+    const questions = [];
+    for (const r of data.rats) {
+      const { questions: qs, ...exam } = r;
+      exams.push({ ...exam, status: "rat", created_at: data.generated });
+      await this.idb.deleteWhere("questions", "exam_id", r.id);
+      for (const q of qs) {
+        questions.push({ ...q, exam_id: r.id, exam_code: r.code, media: (q.media || []).map((m) => ({ ...m, url: `${this.base}data/${m.path}` })) });
+      }
+    }
+    await this.idb.bulkPut("exams", exams);
+    await this.idb.bulkPut("questions", questions);
+    await this.idb.put("meta", { key: "rat", value: { built_at: data.built_at } });
+  }
+
+  listRats() {
+    return [...this.exams.values()].filter((e) => e.status === "rat").sort((a, b) => (a.modul || 0) - (b.modul || 0));
+  }
+
+  ratFor(modul) {
+    return this.listRats().find((e) => Number(e.modul) === Number(modul)) || null;
+  }
+
+  /** Officiella tentafrågor (inte simulerade RAT-frågor). */
+  isOfficial(q) {
+    return !!q && q.kalla !== "simulerad-rat" && this.exams.get(q.exam_id)?.status !== "rat";
   }
 
   async reloadCaches() {
