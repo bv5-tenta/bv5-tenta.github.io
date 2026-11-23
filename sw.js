@@ -5,7 +5,7 @@
  * - VERSION uppdateras av scripts/release.mjs när filerna ändras.
  */
 
-const VERSION = "bv5-2026-11-23-34fc6eee";
+const VERSION = "bv5-2026-11-23-4f673fb1";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -55,6 +55,7 @@ const PRECACHE = [
   "./src/views/analysis.js",
   "./src/core/progress.js",
   "./src/views/rat.js",
+  "./data/home/caduceus.svg",
   "./data/rat.json",
   "./icons/caduceus.jpg",
   "./icons/icon-192.png",

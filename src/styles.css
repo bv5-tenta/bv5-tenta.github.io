@@ -1171,3 +1171,36 @@ body:has(.lib2) { overflow-x: clip; }
   .rat-user, .rat-simtag { display: none; }
   .rat-sub { padding: 10px 12px; font-size: 13px; }
 }
+
+/* ---------- startsida v3: guldcaduceus + innehållsförklaring ---------- */
+.home3 .fig-slot.gold, .fly.gold {
+  background: radial-gradient(120% 90% at 50% 38%, #3a2e17 0%, #17130b 46%, #050403 100%);
+  border: 1px solid #2c2414; box-shadow: 0 40px 80px -40px rgba(0,0,0,.75), inset 0 0 0 1px rgba(255,214,120,.06);
+}
+.home3 .fig-slot.gold img, .fly.gold img { padding: 4%; filter: drop-shadow(0 0 34px rgba(255,200,90,.16)); }
+.home3 .home-hero-fig .fig-slot { aspect-ratio: 1 / 1; max-height: min(620px, 74vh); margin-left: auto; width: 100%; }
+.home3 .home-section-fig .fig-slot { aspect-ratio: 1 / 1; max-width: 420px; }
+.home3.flight-ready:not(.reduced) .fig-slot.gold { background: transparent; box-shadow: none; border: 1px dashed var(--line); }
+.home3 .home-hero h1 { margin-bottom: 18px; }
+.home3 .home-lead { max-width: 34ch; }
+.home3 .small-lead { max-width: 52ch; font-size: 17px; }
+.btn.gold { background: linear-gradient(180deg, #f6d77a, #d9a838 55%, #b8861f); color: #241803; border-color: #a77a1c; box-shadow: 0 10px 24px -14px rgba(160,110,20,.9); }
+.btn.gold:hover { filter: brightness(1.06); border-color: #8a6114; }
+.home3 .home-resume { display: flex; margin-top: 14px; max-width: 460px; }
+.home-steps { margin: 18px 0 0; padding: 0; list-style: none; counter-reset: st; display: grid; gap: 10px; }
+.home-steps li { counter-increment: st; position: relative; padding: 12px 14px 12px 52px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); line-height: 1.5; }
+.home-steps li::before { content: counter(st); position: absolute; left: 14px; top: 11px; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 13px; color: #241803; background: linear-gradient(180deg, #f6d77a, #c9952a); }
+.home-features { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 10px 0 40px; }
+.feat-card { display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); color: var(--ink); text-decoration: none; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+a.feat-card:hover { transform: translateY(-2px); border-color: #c9952a; box-shadow: 0 18px 36px -26px rgba(120,80,10,.6); }
+.feat-ico { font-size: 26px; line-height: 1; }
+.feat-card h3 { margin: 6px 0 0; font-size: 17px; }
+.feat-card p { margin: 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.5; flex: 1; }
+.feat-go { margin-top: 6px; font-weight: 700; font-size: 14px; color: var(--accent); }
+@media (max-width: 1000px) { .home-features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 860px) {
+  .home3 .home-hero-fig .fig-slot { aspect-ratio: 1 / 1; max-height: 70vw; }
+  .home3 .home-section-fig .fig-slot { aspect-ratio: 1 / 1; max-width: 260px; margin: 0 auto; }
+}
+@media (max-width: 560px) { .home-features { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .feat-card { transition: none; } }

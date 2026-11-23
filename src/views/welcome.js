@@ -1,34 +1,16 @@
 /* Startsidan för Basvetenskap 5.
-   Första vyn: kursnamn, kort beskrivning, "Öppna biblioteket", "Starta tentasimulering" och
-   "Fortsätt där du slutade", bredvid en riktig föreläsningsfigur märkt med sitt kursavsnitt.
-   När studenten scrollar (eller klickar "Utforska avsnittet") följer samma figur med i rörelsen,
-   krymper och landar bredvid en förhandsvisning av det riktiga avsnittet i biblioteket.
+   Första vyn: kursnamn, "Öppna biblioteket", "Dags för tentaplugg?" och direkt under dem
+   "Fortsätt där du slutade", bredvid en guldcaduceus (vektor – skarp i alla upplösningar).
+   När studenten scrollar (eller klickar "Vad finns i appen?") följer bilden med i rörelsen,
+   krymper och landar bredvid förklaringen av vad appen innehåller.
    Rörelsen styrs helt av scrollpositionen (båda riktningarna), stängs av vid reducerad rörelse
    och påverkar inte layouten (figurens platser har fast storlek). Innehållet hämtas ur biblioteket. */
 
 import { esc, on, setTitle } from "../ui/dom.js";
-import { loadLibrary, hue } from "./library.js";
-import { renderMarkdown } from "../core/markdown.js";
+import { loadLibrary } from "./library.js";
 import { progress } from "../core/progress.js";
 
 const ARROW = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
-const FEATURED = ["9.3.1"];
-const LETTERS = "ABCDE";
-
-/** Väljer ett avsnitt med figur, nyckelpunkter och en facitbelagd fråga ur biblioteket. */
-function pickFeatured(ctx, M) {
-  const candidates = [...FEATURED.map((id) => M.byId.get(id)).filter(Boolean), ...M.objectives.filter((o) => o.format === "md")];
-  for (const o of candidates) {
-    const r = renderMarkdown(o.body);
-    const fig = (o.body.match(/!\[([^\]]*)\]\((data\/[^\s)]+)/g) || [])
-      .map((x) => x.match(/!\[([^\]]*)\]\((data\/[^\s)]+)/))
-      .find((m) => !/-sida\.jpg$/.test(m[2]) && /cirkulation|shunt/i.test(m[1])) || (o.body.match(/!\[([^\]]*)\]\((data\/[^\s)]+)/) || null);
-    if (!fig) continue;
-    const q = [...ctx.store.questions.values()].find((x) => x.objective_id === o.id && x.options?.length && x.explanation && ctx.store.isOfficial(x));
-    return { o, key: r.key, caption: fig[1].split(/\s*\|\|\s*/)[0], src: fig[2], q };
-  }
-  return null;
-}
 
 function resumeTarget(ctx, attempts) {
   const open = attempts.filter((a) => !a.submitted_at).sort((a, b) => String(b.updated_at || b.started_at).localeCompare(String(a.updated_at || a.started_at)))[0];
@@ -39,10 +21,11 @@ function resumeTarget(ctx, attempts) {
   return null;
 }
 
+const HERO_IMG = "data/home/caduceus.svg";
+
 export async function welcomeView(ctx, root) {
   setTitle("Basvetenskap 5");
   const [M, attempts] = await Promise.all([loadLibrary(ctx), ctx.store.listAttempts().catch(() => [])]);
-  const F = pickFeatured(ctx, M);
   const resume = resumeTarget(ctx, attempts);
   const fmt = (n) => n.toLocaleString("sv-SE");
   const nObj = M.objectives.length;
@@ -50,106 +33,75 @@ export async function welcomeView(ctx, root) {
   const exams = [...ctx.store.exams.values()].filter((e) => e.status === "published");
   const del1 = exams.filter((e) => (e.del || 1) === 1).length;
   const del2 = exams.filter((e) => e.del === 2).length;
+  const nQ = [...ctx.store.questions.values()].filter((q) => ctx.store.isOfficial(q)).length;
+  const rats = ctx.store.listRats();
   const repeat = progress.toRepeat().slice(0, 4).map((r) => ({ ...r, o: M.byId.get(r.id) })).filter((r) => r.o);
   const done = attempts.filter((a) => a.locked_at).length;
-  const label = F ? `Modul ${F.o.modul} · ${F.o.modul_titel} · ${F.o.id}` : "";
-  const figLabel = F ? `${label} ${F.o.titel}` : "";
 
-  root.innerHTML = `<div class="home2" style="--mh:${F ? hue(F.o.modul) : 325}">
+  const features = [
+    ["📚", "Lärandemålsbiblioteket", `${fmt(nObj)} lärandemål i del 1 och del 2, förklarade steg för steg med ${fmt(nFig)} figurer från föreläsningarna. Varje mål har "Det viktigaste", hur det har examinerats och ett quiz med motiverat facit.`, "#/bibliotek", "Öppna biblioteket"],
+    ["📝", "Tentasimulator", `${fmt(exams.length)} gamla tentor (${del1} i del 1, ${del2} i del 2) med ${fmt(nQ)} frågor. Skriv på tid som i salen, flagga det du är osäker på – allt sparas automatiskt.`, "#/tentor", "Välj en tenta"],
+    ["🧪", "RAT inför modulerna", rats.length ? `Simulerade iRAT för modul ${rats.map((r) => r.modul).join(", ")} i samma format som InteDashboard. Lämna in och se vilka delmoduler du ska prioritera.` : "Simulerade iRAT i samma format som InteDashboard.", "#/rat", "Gör en RAT"],
+    ["📊", "Tidigare tentor", "Vilka lärandemål som återkommer, hur ofta och på vilket djup – så att du vet var poängen brukar ligga.", "#/tidigare-tentor", "Se mönstren"],
+    ["🔁", "Öva på dina fel", "Allt du svarat fel på, gissat eller markerat som \"kan ej\" samlas här tills du klarar det flera gånger i rad.", "#/ova", "Öva nu"],
+    ["🎴", "Anki-kortlekar", "Exportera dina fel med ett klick: fråga och alternativ på framsidan, facit, förklaring, lärandemål och källa på baksidan.", "#/ova", "Exportera"],
+    ["📈", "Mitt resultat", `Poäng, tid per fråga och hur väl din känsla stämde med resultatet. ${done ? `${done} genomförda hittills.` : ""}`, "#/historik", "Se historiken"],
+    ["💻", "Fungerar som app", "Installera sidan på datorn eller mobilen med egen ikon – den fungerar även utan internet.", null, null],
+  ];
+
+  root.innerHTML = `<div class="home2 home3">
     <section class="home-hero" aria-labelledby="home-title">
       <div class="home-hero-text">
         <p class="home-kicker">Karolinska Institutet · Läkarprogrammet, termin 3</p>
         <h1 id="home-title">Basvetenskap 5</h1>
-        <p class="home-lead">Hela kursen på ett ställe: ${fmt(nObj)} lärandemål förklarade med föreläsningarnas egna figurer, ${fmt(exams.length)} gamla tentor med facit, och en analys av hur varje mål har examinerats.</p>
+        <p class="home-lead">Allt du behöver för kursen på ett ställe – från första föreläsningen till sista tentan.</p>
         <div class="home-cta">
           <a class="btn primary big" href="#/bibliotek">Öppna biblioteket ${ARROW}</a>
-          <a class="btn big" href="#/tentor">Starta tentasimulering</a>
+          <a class="btn big gold" href="#/traning">Dags för tentaplugg?</a>
         </div>
         ${resume ? `<a class="home-resume" href="${esc(resume.href)}"><span>Fortsätt där du slutade</span><b>${esc(resume.label)}</b></a>` : ""}
       </div>
-      ${F ? `<div class="home-hero-fig">
-        <div class="fig-slot" data-slot="start"><img src="${esc(F.src)}" alt="${esc(F.caption)}" decoding="async" fetchpriority="high"></div>
-        <p class="fig-label">${esc(figLabel)}</p>
-        <button class="btn ghost home-explore" data-act="explore">Utforska avsnittet <span aria-hidden="true">↓</span></button>
-      </div>` : ""}
+      <div class="home-hero-fig">
+        <div class="fig-slot gold" data-slot="start"><img src="${HERO_IMG}" alt="Guldfärgad caduceus – läkekonstens symbol" decoding="async" fetchpriority="high"></div>
+        <button class="btn ghost home-explore" data-act="explore">Vad finns i appen? <span aria-hidden="true">↓</span></button>
+      </div>
     </section>
 
-    ${F ? `<section class="home-section" id="avsnitt" aria-labelledby="avsnitt-title">
-      <div class="home-section-fig"><div class="fig-slot" data-slot="end"><img src="${esc(F.src)}" alt="" aria-hidden="true" decoding="async"></div>
-        <p class="fig-cap">${esc(F.caption)}</p></div>
+    <section class="home-section" id="innehall" aria-labelledby="innehall-title">
+      <div class="home-section-fig"><div class="fig-slot gold" data-slot="end"><img src="${HERO_IMG}" alt="" aria-hidden="true" decoding="async"></div></div>
       <div class="home-section-text">
-        <p class="home-kicker">Ur biblioteket · ${esc(label)}</p>
-        <h2 id="avsnitt-title">${esc(F.o.titel)}</h2>
-        ${F.key.length ? `<ol class="home-keys">${F.key.slice(0, 3).map((k) => `<li>${k}</li>`).join("")}</ol>` : ""}
-        <div class="home-cta"><a class="btn primary" href="#/bibliotek/${encodeURIComponent(F.o.id)}">Öppna lärandemålet ${ARROW}</a>
-          ${F.q ? `<button class="btn" data-act="tryq">Prova en tentafråga</button>` : ""}</div>
-        ${F.q ? `<div class="home-q" hidden data-q data-right="${F.q.options.filter((x) => x.is_correct).map((x) => x.ordinal).join(",")}">
-          <p class="small muted">Officiell tentafråga · ${esc((ctx.store.exams.get(F.q.exam_id)?.code || "").replace(/^Del 2 /, ""))} · fråga ${F.q.number}</p>
-          <p class="lq-stem">${esc(F.q.stem)}</p>
-          <ol class="lq-opts">${F.q.options.map((x, k) => `<li><button type="button" class="lq-opt" data-k="${x.ordinal}"><span class="lq-letter">${LETTERS[k]}</span><span>${esc(x.text)}</span></button></li>`).join("")}</ol>
-          <div class="lq-feedback" hidden><p class="lq-verdict"></p><div class="lq-why"><b>Varför:</b> ${esc(F.q.explanation)}</div>
-            <p class="lq-back"><a href="#/bibliotek/${encodeURIComponent(F.o.id)}?ova=1">Fler frågor på samma mål →</a></p></div>
-        </div>` : ""}
+        <p class="home-kicker">Vad appen innehåller</p>
+        <h2 id="innehall-title">Plugga under kursen. Träna inför tentan.</h2>
+        <p class="home-lead small-lead">Appen har två delar som hänger ihop: <b>biblioteket</b> förklarar varje lärandemål, och <b>träningen</b> visar om du kan använda det. Varje fel du gör pekar tillbaka till rätt stycke i biblioteket.</p>
+        <ol class="home-steps">
+          <li><b>Läs</b> lärandemålet som modulen handlar om just nu – med figurer och det viktigaste först.</li>
+          <li><b>Testa dig</b> med quiz, RAT och gamla tentor på tid.</li>
+          <li><b>Repetera</b> dina fel tills de sitter – i appen eller som Anki-kort.</li>
+        </ol>
       </div>
-    </section>` : ""}
+    </section>
 
-    <section class="home-modes" aria-label="Två sätt att använda sidan">
-      <div class="mode-card">
-        <p class="mode-kicker">Under kursen</p>
-        <h2>Plugga under kursen</h2>
-        <p>Börja från modulen eller lärandemålet ni har nu. Varje mål visar vad du ska kunna, var det förklaras, hur det har examinerats och ett quiz som visar om du kan använda det.</p>
-        <ul class="mode-links">
-          <li><a href="#/bibliotek?del=1">Biblioteket, del 1 <span>modul 1–8</span></a></li>
-          <li><a href="#/bibliotek?del=2">Biblioteket, del 2 <span>modul 9–12</span></a></li>
-          <li><span class="muted small">${fmt(nObj)} lärandemål · ${fmt(nFig)} föreläsningsfigurer</span></li>
-        </ul>
-      </div>
-      <div class="mode-card">
-        <p class="mode-kicker">Inför tentan</p>
-        <h2>Träna inför tentan</h2>
-        <p>Skriv en hel tenta på tid eller träna på ett kunskapsgap. Efter tentan går du från ditt svar till förklaringen, rätt stycke i biblioteket och en ny kontrollfråga.</p>
-        <ul class="mode-links">
-          <li><a href="#/tentor?del=1">Simulera del 1 <span>${del1} tentor</span></a></li>
-          <li><a href="#/tentor?del=2">Simulera del 2 <span>${del2} tentor</span></a></li>
-          <li><a href="#/ova">Öva på dina fel</a></li>
-          <li><a href="#/tidigare-tentor">Tidigare tentor <span>examinationsmönster</span></a></li>
-          <li><a href="#/historik">Mitt resultat <span>${done} genomförda</span></a></li>
-        </ul>
-      </div>
+    <section class="home-features" aria-label="Funktioner">
+      ${features.map(([ico, h, p, href, cta]) => `<${href ? `a href="${href}"` : "div"} class="feat-card">
+        <span class="feat-ico" aria-hidden="true">${ico}</span>
+        <h3>${esc(h)}</h3>
+        <p>${esc(p)}</p>
+        ${cta ? `<span class="feat-go">${esc(cta)} →</span>` : ""}
+      </${href ? "a" : "div"}>`).join("")}
     </section>
 
     ${repeat.length ? `<section class="home-repeat"><h2>Att repetera</h2><p class="small muted">Mål där du svarat fel eller gissat i bibliotekets quiz.</p><ul>${repeat
       .map((r) => `<li><a href="#/bibliotek/${encodeURIComponent(r.id)}?ova=1"><b>${esc(r.id)}</b> ${esc(r.o.titel)}</a><span class="small muted">${r.wrong} fel · ${r.guessed} gissat</span></li>`)
       .join("")}</ul></section>` : ""}
     <p class="welcome-credit">Made by Abdarrahman</p>
-    ${F ? `<figure class="fly" aria-hidden="true"><img src="${esc(F.src)}" alt="" decoding="async"></figure>` : ""}
+    <figure class="fly gold" aria-hidden="true"><img src="${HERO_IMG}" alt="" decoding="async"></figure>
   </div>`;
 
   const offs = [];
-  if (F) offs.push(setupFlight(root));
+  offs.push(setupFlight(root));
   offs.push(on(root, "click", "[data-act=explore]", () => {
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    document.getElementById("avsnitt")?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
-  }));
-  offs.push(on(root, "click", "[data-act=tryq]", (e, el) => {
-    const box = root.querySelector("[data-q]");
-    box.hidden = false;
-    el.remove();
-    box.querySelector(".lq-opt")?.focus();
-  }));
-  offs.push(on(root, "click", ".home-q .lq-opt", (e, el) => {
-    const box = el.closest("[data-q]");
-    if (box.classList.contains("answered")) return;
-    const right = box.dataset.right.split(",").map(Number);
-    const k = Number(el.dataset.k);
-    box.classList.add("answered", right.includes(k) ? "ok" : "fail");
-    box.querySelectorAll(".lq-opt").forEach((b) => {
-      const n = Number(b.dataset.k);
-      if (right.includes(n)) b.classList.add("right");
-      else if (n === k) b.classList.add("wrong");
-    });
-    box.querySelector(".lq-verdict").textContent = right.includes(k) ? "Rätt!" : `Fel – rätt svar är ${right.map((n) => LETTERS[n]).join(", ")}.`;
-    box.querySelector(".lq-feedback").hidden = false;
+    document.getElementById("innehall")?.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
   }));
   return () => offs.forEach((f) => typeof f === "function" && f());
 }
