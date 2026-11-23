@@ -476,7 +476,14 @@ function franTentornaHtml(o) {
     </div>`).join("")}</div></section>`;
 }
 
-/** Alla föreläsningssidor som handlar om målet, grupperade per föreläsning. */
+/** Kort inline-formatering för bildförklaringar: **fet** och *kursiv*. */
+function slideMd(t) {
+  return esc(t || "").replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/(^|[\s(])\*([^*\s][^*]*?)\*(?=[\s.,;:)!?]|$)/g, "$1<i>$2</i>");
+}
+/** Sidor som bara är titel, avsnittsrubrik eller referenser visas kompakt. */
+const isMinorSlide = (t) => !t || /^(Titelsida|Avsnittsrubrik|Referenslista)\b/.test(t);
+
+/** Alla föreläsningssidor som handlar om målet, var och en med en pedagogisk förklaring, grupperade per föreläsning. */
 function slidesHtml(o) {
   if (!o.slides?.length) return "";
   const groups = new Map();
@@ -484,18 +491,23 @@ function slidesHtml(o) {
     if (!groups.has(x.kalla)) groups.set(x.kalla, []);
     groups.get(x.kalla).push({ ...x, i });
   });
-  const FIRST = 12;
+  const nExpl = o.slides.filter((x) => x.text && !isMinorSlide(x.text)).length;
+  const FIRST = 8;
   let shown = 0;
   const body = [...groups.entries()].map(([kalla, L]) => `<div class="slide-group"><h3>${esc(kalla)} <span class="muted small">· ${L.length} ${L.length === 1 ? "sida" : "sidor"}</span></h3>
-    <div class="slide-grid">${L.map((x) => {
+    <div class="slide-list">${L.map((x) => {
       const hide = shown++ >= FIRST;
-      return `<button type="button" class="slide-thumb" data-slide="${x.i}" ${hide ? "data-more hidden" : ""} title="${esc(x.rubrik || "")}">
-        <img src="${esc(x.fil)}" alt="${esc(`${kalla}, sida ${x.sida}${x.rubrik ? ` – ${x.rubrik}` : ""}`)}" loading="lazy" decoding="async">
-        <span>s. ${x.sida}${x.rubrik ? ` · ${esc(x.rubrik.slice(0, 60))}` : ""}</span></button>`;
+      const minor = isMinorSlide(x.text);
+      return `<article class="slide-row${minor ? " minor" : ""}" ${hide ? "data-more hidden" : ""}>
+        <button type="button" class="slide-thumb" data-slide="${x.i}" title="Förstora">
+          <img src="${esc(x.fil)}" alt="${esc(`${kalla}, sida ${x.sida}${x.rubrik ? ` – ${x.rubrik}` : ""}`)}" loading="lazy" decoding="async">
+          <span>s. ${x.sida}</span></button>
+        <div class="slide-expl">${x.text ? `<p>${slideMd(x.text)}</p>` : `<p class="muted small">${esc(x.rubrik || "")}</p>`}</div>
+      </article>`;
     }).join("")}</div></div>`).join("");
   return `<section class="lib-slides" id="alla-bilder">
-    <h2>Alla bilder från föreläsningarna <span class="chip">${o.slides.length}</span></h2>
-    <p class="small muted">Varje föreläsningssida som handlar om det här målet, i föreläsningens ordning. Klicka för att förstora och bläddra med ← →.</p>
+    <h2>Föreläsningsbilderna förklarade <span class="chip">${o.slides.length}</span></h2>
+    <p class="small muted">Varje föreläsningssida som handlar om det här målet, i föreläsningens ordning, med en förklaring av vad bilden visar och vad du ska ta med dig${nExpl ? "" : " (förklaringar läggs till löpande)"}. Klicka på bilden för att förstora den och bläddra med ← →.</p>
     ${body}
     ${o.slides.length > FIRST ? `<button type="button" class="btn small" data-act="more-slides">Visa alla ${o.slides.length} sidor</button>` : ""}
   </section>`;
@@ -517,7 +529,7 @@ function objectivePage(ctx, M, id) {
     ...(o.delmal.length ? [{ id: "du-ska-kunna", text: "Du ska kunna" }] : []),
     ...r.toc,
     ...(o.franTentorna?.length ? [{ id: "ocksa-examinerat", text: `Också examinerat (${o.franTentorna.length})` }] : []),
-    ...(o.slides?.length ? [{ id: "alla-bilder", text: `Alla föreläsningsbilder (${o.slides.length})` }] : []),
+    ...(o.slides?.length ? [{ id: "alla-bilder", text: `Bilderna förklarade (${o.slides.length})` }] : []),
     ...(hist ? [{ id: "tidigare-tentor", text: "Så har det examinerats" }] : []),
     ...(items.length ? [{ id: "testa-dig", text: `Testa dig själv (${items.length})` }] : []),
   ];
@@ -791,17 +803,20 @@ function openGallery(list, start, opener) {
   box.className = "lightbox gallery";
   box.setAttribute("role", "dialog");
   box.setAttribute("aria-modal", "true");
-  box.innerHTML = `<figure><img alt=""><figcaption></figcaption></figure>
+  box.innerHTML = `<figure><img alt=""><figcaption></figcaption><div class="gal-expl"></div></figure>
     <button type="button" class="lightbox-close" aria-label="Stäng">×</button>
     <button type="button" class="gal-nav prev" aria-label="Föregående sida">‹</button>
     <button type="button" class="gal-nav next" aria-label="Nästa sida">›</button>`;
   const img = box.querySelector("img");
   const cap = box.querySelector("figcaption");
+  const ex = box.querySelector(".gal-expl");
   const show = () => {
     const x = list[i];
     img.src = x.fil;
     img.alt = `${x.kalla}, sida ${x.sida}`;
     cap.textContent = `${x.kalla} · sida ${x.sida}  (${i + 1} av ${list.length})`;
+    ex.innerHTML = x.text ? slideMd(x.text) : "";
+    ex.hidden = !x.text;
     box.querySelector(".prev").disabled = i === 0;
     box.querySelector(".next").disabled = i === list.length - 1;
     const nx = list[i + 1];
