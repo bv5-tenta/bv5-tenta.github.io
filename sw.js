@@ -5,7 +5,7 @@
  * - VERSION uppdateras av scripts/release.mjs när filerna ändras.
  */
 
-const VERSION = "bv5-2026-11-23-d83ad4c3";
+const VERSION = "bv5-2026-11-24-c2aa327e";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
@@ -51,6 +51,7 @@ const PRECACHE = [
   "./data/fragebank-seed.json",
   "./data/bibliotek-del2.json",
   "./data/bibliotek-del1.json",
+  "./data/bibliotek-lektioner.json",
   "./data/tentaanalys.json",
   "./src/views/analysis.js",
   "./src/core/progress.js",

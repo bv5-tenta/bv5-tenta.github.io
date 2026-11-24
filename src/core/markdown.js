@@ -13,6 +13,7 @@ function inline(s) {
     .replace(/(^|[^*])\*([^*\s][^*]*?)\*(?!\*)/g, "$1<em>$2</em>")
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/(^|[\s(])(https:\/\/[^\s<)]+[^\s<).,;:])/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>')
     .replace(/(^|\s)(↑|↓)(?=\s|$|[,.;)])/g, '$1<span class="arrow">$2</span>');
 }
 
@@ -27,10 +28,24 @@ const CALLOUTS = {
   fallgrop: { icon: "⚠", label: "Vanlig fälla på tentan" },
   forklaring: { icon: "?", label: "Varför?" },
   exempel: { icon: "✎", label: "Exempel" },
+  kalla: { icon: "📚", label: "Kompletterande källa" },
+  kontroll: { icon: "✓", label: "Kontrollerad siffra" },
+  konflikt: { icon: "⚖", label: "Olöst avvikelse mellan källor" },
+  lucka: { icon: "?", label: "Kunskapslucka – ingen säker källa" },
 };
+const CALLOUT_KICKER = { kalla: "Kompletterande källa", kontroll: "Kontrollerad siffra", konflikt: "Olöst avvikelse", lucka: "Kunskapslucka" };
 
 const FIG = /^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)\s*$/;
-const KEY_HEADINGS = /^(det viktigaste|tentafokus)$/i;
+const KEY_HEADINGS = /^(det viktigaste|tentafokus|sammanfattning)$/i;
+const ATTRS = /\s*\{([^}]*)\}\s*$/;
+/** "Rubrik {#id mal=1,2}" → { text, id, mal } */
+function headingAttrs(raw) {
+  const m = raw.match(ATTRS);
+  if (!m) return { text: raw, id: "", mal: [] };
+  const id = (m[1].match(/#([\w-]+)/) || [])[1] || "";
+  const mal = ((m[1].match(/mal=([\d,]+)/) || [])[1] || "").split(",").filter(Boolean).map(Number);
+  return { text: raw.replace(ATTRS, ""), id, mal };
+}
 
 function safeSrc(src) {
   return /^(data\/|https:\/\/)[\w\-./%]+\.(jpe?g|png|webp|svg)$/i.test(src) ? src : "";
@@ -60,14 +75,22 @@ function renderBlocks(lines, toc, counter) {
     if (!line.trim()) { i++; continue; }
     const h = line.match(/^(#{2,4})\s+(.+)$/);
     if (h) {
-      const id = slug(h[2]);
+      const a = headingAttrs(h[2]);
+      const id = (counter.prefix || "") + (a.id || slug(a.text));
       if (h[1].length === 2) {
         closeSec();
         counter.n++;
-        toc.push({ id, text: h[2] });
-        out.push(`<section class="md-sec" id="${id}"><h3><span class="md-sec-nr">${counter.n}</span>${inline(h[2])}</h3>`);
+        toc.push({ id, text: a.text, mal: a.mal });
+        const nr = counter.numbers === false ? "" : `<span class="md-sec-nr">${counter.n}</span>`;
+        out.push(`<section class="md-sec" id="${id}"${a.mal.length ? ` data-mal="${a.mal.join(",")}"` : ""}><h3>${nr}${inline(a.text)}</h3>`);
         open = true;
-      } else out.push(`<h4 id="${id}">${inline(h[2])}</h4>`);
+      } else out.push(`<h4 id="${id}">${inline(a.text)}</h4>`);
+      i++;
+      continue;
+    }
+    const slot = line.match(/^\[\[fig:([\w-]+)\]\]\s*$/);
+    if (slot) {
+      out.push(`<div class="fig-slot" data-fig="${esc(slot[1])}"></div>`);
       i++;
       continue;
     }
@@ -94,7 +117,8 @@ function renderBlocks(lines, toc, counter) {
       while (i < lines.length && /^>/.test(lines[i])) body.push(lines[i++].replace(/^>\s?/, ""));
       const inner = renderBlocks(body, [], { n: 0 }).html;
       const c = CALLOUTS[kind];
-      out.push(`<aside class="md-callout ${kind}"><div class="md-callout-head"><span class="md-callout-icon" aria-hidden="true">${c.icon}</span>${inline(co[2] || c.label)}</div>${inner}</aside>`);
+      const kick = CALLOUT_KICKER[kind] && co[2] ? `<span class="md-callout-kicker">${CALLOUT_KICKER[kind]}</span>` : "";
+      out.push(`<aside class="md-callout ${kind}"><div class="md-callout-head"><span class="md-callout-icon" aria-hidden="true">${c.icon}</span><span>${kick}${inline(co[2] || c.label)}</span></div>${inner}</aside>`);
       continue;
     }
     if (/^>\s?/.test(line)) {
@@ -128,7 +152,7 @@ function renderBlocks(lines, toc, counter) {
     }
     const para = [line];
     i++;
-    while (i < lines.length && lines[i].trim() && !/^(#{2,4}\s|\s*[-•]\s|\s*\d+[.)]\s|\s*\||>|!\[|flöde:)/i.test(lines[i])) para.push(lines[i++]);
+    while (i < lines.length && lines[i].trim() && !/^(#{2,4}\s|\s*[-•]\s|\s*\d+[.)]\s|\s*\||>|!\[|\[\[fig:|flöde:)/i.test(lines[i])) para.push(lines[i++]);
     out.push(`<p>${inline(para.join(" "))}</p>`);
   }
   closeSec();
@@ -136,14 +160,14 @@ function renderBlocks(lines, toc, counter) {
 }
 
 /** Returnerar { html, toc, key, figures } – key är nyckelpunkterna (HTML-listpunkter) och figures antal bilder. */
-export function renderMarkdown(src) {
+export function renderMarkdown(src, opts = {}) {
   const lines = String(src || "").replace(/\r/g, "").split("\n");
   const key = [];
   const rest = [];
   let inKey = false;
   for (const l of lines) {
     const h = l.match(/^##\s+(.+)$/);
-    if (h) inKey = KEY_HEADINGS.test(h[1].trim());
+    if (h) inKey = KEY_HEADINGS.test(headingAttrs(h[1]).text.trim());
     if (inKey) {
       const li = l.match(/^\s*[-•]\s+(.+)$/);
       if (li) key.push(inline(li[1]));
@@ -152,7 +176,7 @@ export function renderMarkdown(src) {
     rest.push(l);
   }
   const toc = [];
-  const { html } = renderBlocks(rest, toc, { n: 0 });
+  const { html } = renderBlocks(rest, toc, { n: 0, prefix: opts.prefix || "", numbers: opts.numbers });
   const figures = rest.filter((l) => FIG.test(l)).length;
   return { html, toc, key, figures };
 }
