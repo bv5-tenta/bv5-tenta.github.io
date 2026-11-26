@@ -1454,3 +1454,5 @@ a.feat-card:hover { transform: translateY(-2px); border-color: #c9952a; box-shad
 .lq-stem.pre { white-space: pre-wrap; }
 .chip.teal { background: var(--teal-soft); color: var(--teal); }
 .tfig-step.note { cursor: default; padding: 6px 10px; }
+.lesson-pager { margin-top: 28px; }
+.chapter [data-practice-slot] { min-height: calc(100vh - 120px); }

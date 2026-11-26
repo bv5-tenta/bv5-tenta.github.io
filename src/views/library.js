@@ -551,7 +551,7 @@ function examSectionHtml(ctx, M, objs, filter, { id = "examinerats", select = fa
   const counts = Object.fromEntries(ids.map((x) => [x, all.prim.filter((r) => r.mal === x && r.st !== "preliminar").length || all.prim.filter((r) => r.mal === x).length]));
   const filt = select
     ? `<label class="ex-filter">Visa mål <select data-exselect><option value="">Hela modulen (${ids.length} mål)</option>${objs.map((o) => `<option value="${esc(o.id)}" ${filter === o.id ? "selected" : ""}>${esc(o.id)} ${esc(o.titel)} (${counts[o.id]})</option>`).join("")}</select></label>`
-    : `<div class="ex-chips" role="group" aria-label="Filtrera på lektion"><button type="button" data-exfilter="" aria-pressed="${!filter}">Alla lektioner</button>${objs.map((o) => `<button type="button" data-exfilter="${esc(o.id)}" aria-pressed="${filter === o.id}" title="${esc(o.titel)}">${esc(o.id)} <span class="count">${counts[o.id]}</span></button>`).join("")}</div>`;
+    : objs.length < 2 ? "" : `<div class="ex-chips" role="group" aria-label="Filtrera på lektion"><button type="button" data-exfilter="" aria-pressed="${!filter}">Alla lektioner</button>${objs.map((o) => `<button type="button" data-exfilter="${esc(o.id)}" aria-pressed="${filter === o.id}" title="${esc(o.titel)}">${esc(o.id)} <span class="count">${counts[o.id]}</span></button>`).join("")}</div>`;
   const depth = scope.length === 1 ? goalDepth(objs.find((o) => o.id === scope[0])) : null;
   const domK = Object.entries(k).sort((x, y) => y[1] - x[1]).map(([kk]) => KH[kk]).filter(Boolean);
   return `<section class="lib-exam ex2" id="${id}">
@@ -671,7 +671,7 @@ function practiceSectionHtml(ctx, M, objs, filter, saveUnseen) {
   const short = Math.min(5, t.items.length);
   return `<section class="practice" id="ova">
     <h2>Öva${scope.length === 1 ? ` på ${esc(scope[0])}` : ""}</h2>
-    <div class="ex-chips" role="group" aria-label="Filtrera på lektion"><button type="button" data-exfilter="" aria-pressed="${!filter}">Alla lektioner</button>${objs.map((x) => `<button type="button" data-exfilter="${esc(x.id)}" aria-pressed="${filter === x.id}" title="${esc(x.titel)}">${esc(x.id)}</button>`).join("")}</div>
+    ${objs.length < 2 ? "" : `<div class="ex-chips" role="group" aria-label="Filtrera på lektion"><button type="button" data-exfilter="" aria-pressed="${!filter}">Alla lektioner</button>${objs.map((x) => `<button type="button" data-exfilter="${esc(x.id)}" aria-pressed="${filter === x.id}" title="${esc(x.titel)}">${esc(x.id)}</button>`).join("")}</div>`}
     <div class="pm-grid">
       <article class="pm-card">
         <h3>Gamla tentafrågor</h3>
@@ -691,51 +691,62 @@ function practiceSectionHtml(ctx, M, objs, filter, saveUnseen) {
   </section>`;
 }
 
-/* ---------- submodulkapitel ---------- */
-function chapterPage(ctx, M, sid) {
+/* ---------- submodulkapitel: en lektion per sida ---------- */
+/** Alla lektioner i modulens ordning (för föregående/nästa över submodulgränser). */
+function moduleLessons(M, nr) {
+  return (M.modules.get(nr)?.submoduler || []).flatMap((s) => s.mal);
+}
+function lessonPager(M, s, cur) {
+  const all = moduleLessons(M, s.modul);
+  const i = all.indexOf(cur);
+  const prev = all[i - 1];
+  const next = all[i + 1];
+  const lab = (o) => (o.sub === s.id ? "" : ` · submodul ${esc(o.sub)}`);
+  return `<nav class="lib-pager2 lesson-pager" aria-label="Föregående och nästa lektion">
+    ${prev ? `<a href="#/bibliotek/${encodeURIComponent(prev.id)}"><small>← Föregående lektion${lab(prev)}</small><span>${esc(prev.id)} ${esc(prev.titel)}</span></a>` : `<a href="#/bibliotek/modul/${s.modul}"><small>← Tillbaka</small><span>Modul ${s.modul}</span></a>`}
+    ${next ? `<a class="next" href="#/bibliotek/${encodeURIComponent(next.id)}"><small>Nästa lektion${lab(next)} →</small><span>${esc(next.id)} ${esc(next.titel)}</span></a>` : `<a class="next" href="#/bibliotek/modul/${s.modul}/tentor"><small>Avslutning →</small><span>Så har modul ${s.modul} examinerats</span></a>`}
+  </nav>`;
+}
+function chapterPage(ctx, M, sid, focus = null) {
   const s = M.subs.get(sid);
   if (!s) return { html: notFound() };
   const m = M.modules.get(s.modul);
   const lessons = s.mal;
-  const built = lessons.map((o, i) => ({ o, ...lessonHtml(ctx, M, o, i, lessons.length) }));
+  const cur = focus && lessons.includes(focus) ? focus : lessons[0];
+  if (!cur) return { html: notFound() };
+  const idx = lessons.indexOf(cur);
+  const b = lessonHtml(ctx, M, cur, idx, lessons.length);
   const ids = lessons.map((o) => o.id);
   const read = progress.readCount(ids);
-  const mins = lessons.reduce((n, o) => n + readingMinutes(o.body.replace(/<[^>]+>/g, " ")), 0);
-  const idx = m.submoduler.indexOf(s);
-  const prev = m.submoduler[idx - 1];
-  const next = m.submoduler[idx + 1];
-  const last = progress.last();
-  const resume = last?.hash && lessons.some((o) => last.hash.startsWith(`#/bibliotek/${encodeURIComponent(o.id)}`)) ? last : null;
-  const toc = `<ol>${built
-    .map(({ o, toc: t }) => `<li class="toc-lesson" data-tl="${P(o.id)}"><a href="#" data-jump="${P(o.id)}" data-toc="${P(o.id)}"><span class="toc-check ${progress.isRead(o.id) ? "on" : ""}" aria-label="${progress.isRead(o.id) ? "genomgånget" : ""}">${progress.isRead(o.id) ? "✓" : ""}</span><span class="toc-id">${esc(o.id)}</span> ${esc(o.titel)}</a>
-      <ol class="toc-secs">${t.map((x) => `<li><a href="#" data-jump="${esc(x.id)}" data-toc="${esc(x.id)}">${esc(x.text)}</a></li>`).join("")}</ol></li>`)
+  const mins = readingMinutes(cur.body.replace(/<[^>]+>/g, " "));
+  const toc = `<ol>${lessons
+    .map((o) => o === cur
+      ? `<li class="toc-lesson cur" data-tl="${P(o.id)}"><a href="#" data-jump="${P(o.id)}" data-toc="${P(o.id)}" aria-current="page"><span class="toc-check ${progress.isRead(o.id) ? "on" : ""}">${progress.isRead(o.id) ? "✓" : ""}</span><span class="toc-id">${esc(o.id)}</span> ${esc(o.titel)}</a>
+      <ol class="toc-secs">${b.toc.map((x) => `<li><a href="#" data-jump="${esc(x.id)}" data-toc="${esc(x.id)}">${esc(x.text)}</a></li>`).join("")}
+        <li><a href="#" data-jump="examinerats" data-toc="examinerats">📊 Så har ${esc(o.id)} examinerats</a></li>
+        <li><a href="#" data-jump="ova" data-toc="ova">✎ Öva på ${esc(o.id)}</a></li></ol></li>`
+      : `<li class="toc-lesson" data-tl="${P(o.id)}"><a href="#/bibliotek/${encodeURIComponent(o.id)}"><span class="toc-check ${progress.isRead(o.id) ? "on" : ""}">${progress.isRead(o.id) ? "✓" : ""}</span><span class="toc-id">${esc(o.id)}</span> ${esc(o.titel)}</a></li>`)
     .join("")}
-    <li class="toc-end"><a href="#" data-jump="examinerats" data-toc="examinerats">📊 Så har området examinerats</a></li>
-    <li class="toc-end"><a href="#" data-jump="ova" data-toc="ova">✎ Öva: tentafrågor och övningsfrågor</a></li></ol>`;
+    <li class="toc-end"><a href="#/bibliotek/sub/${encodeURIComponent(s.id)}/quiz">✓ Slutquiz för hela ${esc(s.id)}</a></li></ol>`;
   const html = `<article class="lib2 chapter" style="--mh:${hue(s.modul)}">
-    <header class="lib-hero"><div class="lib-hero-inner">
-      ${crumbs([["Bibliotek", `#/bibliotek?del=${s.del}`], [`Modul ${s.modul} · ${m.titel}`, `#/bibliotek/modul/${s.modul}`], [s.id, null]])}
-      <p class="lib-hero-kicker">Modul ${s.modul} · Submodul ${esc(s.id)}</p>
-      <h1>${esc(s.titel)}</h1>
-      ${s.beskrivning ? `<p class="lib-hero-lead">${esc(s.beskrivning)}</p>` : ""}
-      <div class="lib-hero-meta"><span>${lessons.length} ${lessons.length === 1 ? "lektion" : "lektioner"}</span><span>≈${mins} min läsning</span><span>${read}/${lessons.length} genomgångna</span>
-        ${resume ? `<a href="${esc(resume.hash)}">↩ Fortsätt där du slutade</a>` : ""}<a href="#" data-jump="examinerats">📊 Tentor</a><a href="#" data-jump="ova">✎ Öva</a></div>
+    <header class="lib-hero slim"><div class="lib-hero-inner">
+      ${crumbs([["Bibliotek", `#/bibliotek?del=${s.del}`], [`Modul ${s.modul} · ${m.titel}`, `#/bibliotek/modul/${s.modul}`], [`${s.id} ${s.titel}`, `#/bibliotek/sub/${encodeURIComponent(s.id)}`], [cur.id, null]])}
+      <p class="lib-hero-kicker">Modul ${s.modul} · Submodul ${esc(s.id)} ${esc(s.titel)} · lektion ${idx + 1} av ${lessons.length}</p>
+      <div class="lib-hero-meta"><span>≈${mins} min läsning</span><span>${read}/${lessons.length} lektioner genomgångna i submodulen</span>
+        <a href="#" data-jump="examinerats">📊 Tentor</a><a href="#" data-jump="ova">✎ Öva på ${esc(cur.id)}</a></div>
     </div></header>
     <div class="lib-layout">
-      <aside class="lib-side"><nav class="lib-toc2 ch-toc" aria-label="Kapitlets innehåll"><b>Kapitel ${esc(s.id)}</b>${toc}</nav></aside>
+      <aside class="lib-side"><nav class="lib-toc2 ch-toc" aria-label="Submodulens lektioner"><b>Submodul ${esc(s.id)}</b>${toc}</nav></aside>
       <div class="lib-main">
-        <details class="toc-m"><summary>Innehåll · ${lessons.length} ${lessons.length === 1 ? "lektion" : "lektioner"}</summary><nav class="lib-toc2 ch-toc" aria-label="Kapitlets innehåll (mobil)">${toc}</nav></details>
-        ${built.map((b) => b.html).join("")}
-        <div data-exam-slot>${examSectionHtml(ctx, M, lessons, null)}</div>
-        <div data-practice-slot>${practiceSectionHtml(ctx, M, lessons, null, true)}</div>
-        <nav class="lib-pager2">
-          ${prev ? `<a href="#/bibliotek/sub/${encodeURIComponent(prev.id)}"><small>← Föregående submodul</small><span>${esc(prev.id)} ${esc(prev.titel)}</span></a>` : `<a href="#/bibliotek/modul/${s.modul}"><small>← Tillbaka</small><span>Modul ${s.modul}</span></a>`}
-          ${next ? `<a class="next" href="#/bibliotek/sub/${encodeURIComponent(next.id)}"><small>Nästa submodul →</small><span>${esc(next.id)} ${esc(next.titel)}</span></a>` : `<a class="next" href="#/bibliotek/modul/${s.modul}/tentor"><small>Avslutning →</small><span>Så har modul ${s.modul} examinerats</span></a>`}
-        </nav>
+        <details class="toc-m"><summary>Submodul ${esc(s.id)} · ${lessons.length} ${lessons.length === 1 ? "lektion" : "lektioner"}</summary><nav class="lib-toc2 ch-toc" aria-label="Submodulens lektioner (mobil)">${toc}</nav></details>
+        ${b.html}
+        <div data-exam-slot>${examSectionHtml(ctx, M, [cur], cur.id)}</div>
+        <div data-practice-slot>${practiceSectionHtml(ctx, M, [cur], cur.id, true)}</div>
+        ${lessonPager(M, s, cur)}
       </div>
     </div>
   </article>`;
-  return { html, sub: s, lessons };
+  return { html, sub: s, lessons: [cur], cur };
 }
 
 function moduleExamPage(ctx, M, nr, filter) {
@@ -1000,13 +1011,12 @@ export async function libraryView(ctx, root, route) {
   } else if ((p[0] === "sub" && p[1]) || (p[0] && M.byId.has(p[0]))) {
     const focus = p[0] === "sub" ? null : M.byId.get(p[0]);
     const sid = focus ? focus.sub : p[1];
-    const r = chapterPage(ctx, M, sid);
+    const r = chapterPage(ctx, M, sid, focus);
     html = r.html;
     if (r.sub) {
       page = { kind: "chapter", sub: r.sub, lessons: r.lessons, focus };
-      setTitle(focus ? `${focus.id} ${focus.titel}` : `${r.sub.id} ${r.sub.titel}`);
-      if (focus) progress.setLast(`#/bibliotek/${encodeURIComponent(focus.id)}${q.till ? `?till=${encodeURIComponent(q.till)}` : ""}`, `${focus.id} ${focus.titel}`);
-      else progress.setLast(`#/bibliotek/sub/${encodeURIComponent(sid)}`, `${r.sub.id} ${r.sub.titel}`);
+      setTitle(`${r.cur.id} ${r.cur.titel}`);
+      progress.setLast(`#/bibliotek/${encodeURIComponent(r.cur.id)}${q.till ? `?till=${encodeURIComponent(q.till)}` : ""}`, `${r.cur.id} ${r.cur.titel}`);
     } else setTitle("Bibliotek");
   } else if (p[0]) {
     html = notFound();
@@ -1028,11 +1038,25 @@ export async function libraryView(ctx, root, route) {
   if (page.kind === "chapter") annotateGoals(root, M, page.lessons);
 
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  /* Hopp till ett avsnitt. Bilder som laddas in under hoppet flyttar innehållet, så hoppet görs direkt
+     och upprepas några gånger tills layouten är stilla – om studenten inte själv börjar scrolla. */
+  let jumpGen = 0;
+  let alive = true;
   const jump = (id, flash = false) => {
     const el = id && document.getElementById(id);
     if (!el) return false;
     for (let d = el; d; d = d.parentElement) if (d.tagName === "DETAILS") d.open = true;
-    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    const gen = ++jumpGen;
+    let moved = false;
+    const stop = () => (moved = true);
+    ["wheel", "touchstart", "keydown"].forEach((ev) => addEventListener(ev, stop, { once: true, passive: true }));
+    const go = () => {
+      if (moved || gen !== jumpGen || !alive) return;
+      const t = document.getElementById(id);
+      if (t) t.scrollIntoView({ behavior: "auto", block: "start" });
+    };
+    go();
+    [120, 400, 900, 1600].forEach((ms) => setTimeout(go, ms));
     if (flash) {
       el.classList.remove("flash");
       void el.offsetWidth;
@@ -1059,6 +1083,7 @@ export async function libraryView(ctx, root, route) {
     renderPractice();
   };
   if (page.kind === "modexam" && q.mal) state.filter = q.mal;
+  if (page.kind === "chapter") state.filter = page.lessons[0]?.id || null;
 
   /* --- landning: gamla länkar, sökträffar, tentafrågor och "fortsätt där du slutade" --- */
   const LEGACY = { "testa-dig": "ova", "tidigare-tentor": "examinerats", "du-ska-kunna": "goals", "det-viktigaste": "sammanfattning", "alla-bilder": "figurregister", kompletterande: "kompletterande" };
@@ -1089,7 +1114,7 @@ export async function libraryView(ctx, root, route) {
       if (o && document.getElementById(`${P(o.id)}--${t}`)) return `${P(o.id)}--${t}`;
       if (document.getElementById(t)) return t;
     }
-    return o ? P(o.id) : null;
+    return null;
   };
   /* Stabil landning: hoppa direkt, och hoppa igen när bilder ovanför har laddats – om studenten inte själv har börjat scrolla. */
   const land = () => {
@@ -1099,7 +1124,7 @@ export async function libraryView(ctx, root, route) {
     const stop = () => (moved = true);
     ["wheel", "touchstart", "keydown", "mousedown"].forEach((ev) => addEventListener(ev, stop, { once: true, passive: true }));
     const go = (flash) => {
-      if (moved) return;
+      if (moved || !alive) return;
       const el = document.getElementById(id);
       if (!el) return;
       for (let d = el; d; d = d.parentElement) if (d.tagName === "DETAILS") d.open = true;
@@ -1306,6 +1331,7 @@ export async function libraryView(ctx, root, route) {
   // gamla quizvyer (modul- och submodulquiz) använder samma knappar som tidigare
   const stopSpy = page.kind === "chapter" ? chapterSpy(root, page) : () => {};
   return () => {
+    alive = false;
     offs.forEach((off) => typeof off === "function" && off());
     stopSpy();
     document.querySelector(".lightbox")?.remove();
