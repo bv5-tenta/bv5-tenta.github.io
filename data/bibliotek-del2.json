@@ -6835,6 +6835,14 @@
          "sida": 10,
          "rubrik": "Muskelfibertyper 2A 1 2X /X ↑ Infärgning av oxidativa enzymer, ju mörkare färg desto mer o",
          "text": "**Tre muskelfibertyper.** **Typ I** (långsam, oxidativ) används av långdistanslöpare. **Typ 2A** (snabb, oxidativ) används på 400–800 m. **Typ 2B/X** (snabb, glykolytisk) används vid kort sprint. Uttröttbarheten ökar från typ I till typ 2X. I den histokemiska färgningen för oxidativa enzymer är typ 1 mörkast (flest mitokondrier) och 2X ljusast."
+        },
+        {
+         "fil": "data/del2-slides/m9-4551c1-11.webp",
+         "kalla": "Muskelfysiologi (film 6)",
+         "nyckel": "m9_Pdf_Muskelfysiologi_Film_6-1",
+         "sida": 11,
+         "rubrik": "Egenskaper hos de tre typerna av skelettmuskelfibrer",
+         "text": "**Egenskaper hos de tre fibertyperna:** motorenhetens storlek är liten i typ I, medel i IIa och stor i IIx. Kontraktionshastigheten och myosinets ATPas-aktivitet är låg i typ I och hög i IIa och IIx. ATP-produktionen är aerob i typ I och IIa och **anaerob (glykolys)** i IIx. Glykolytiska enzymer: lågt, medel, högt. Uthållighet: stor, medel, liten. Mitokondrier och kapillärer: många i typ I och IIa, få i IIx. Myoglobin: mest i typ I (röd färg), minst i IIx (ljusröd). Fiberdiameter och glykogen: minst i typ I. Typiska uppgifter: hålla kroppsställning (I), gå och springa (IIa), hoppa och kasta (IIx). Motorenheter rekryteras i storleksordning: typ I först."
         }
        ]
       },
@@ -6847,7 +6855,8 @@
         "Förklara de tre stegen: minskad Ca²⁺-känslighet, hämmad korsbryggecykel och minskad Ca²⁺-frisättning från SR",
         "Förklara laktatets roll (biomarkör och smärta, inte orsak till kraftförlust)"
        ],
-       "sammanfattning": "## Definition\nAnsträngnings- eller träningsinducerad trötthet är **varje arbetsinducerad minskning av muskelns förmåga att producera kraft**. **Central trötthet** (nervsystemet, minskad aktivering av motoriska enheter) ingår inte i kursen. **Perifer trötthet** (vid motorändplattan eller i muskeln) = muskeltrötthet.\n\n![Två typer av trötthet vid normal fysiologisk ansträngning: central (i nervsystemet) och perifer (vid motoriska ändplattan eller inne i muskeln). || den röda streckade linjen vid den motoriska ändplattan: allt ovanför är central trötthet, allt nedanför perifer muskeltrötthet. Kursen fokuserar på den perifera.](data/del2-bilder/9.1.2-1.jpg \"Pdf Muskelfysiologi Film 6-1, s. 12|data/del2-bilder/9.1.2-1-sida.jpg\")\n\n\n## Tre övergripande orsaker\n1. **Otillräcklig syretillförsel** → mer anaerob metabolism (≈3 ATP/glukos i stället för ≥32) → för att hålla jämvikt måste intensiteten och därmed kraften sänkas.\n2. **Glykogenbrist** – att \"gå in i väggen\" efter långvarigt arbete (t.ex. 70 % av VO₂max i flera timmar). Muskeln måste gå över till fettförbränning, som kräver mer syre per ATP → lägre intensitet, kortare steg.\n3. **Metabola förändringar inne i muskeln** vid intensivt arbete, främst **ansamling av oorganiskt fosfat (Pi)** från nedbrytning av kreatinfosfat och ATP. Detta ger tre steg i följd:\n\n## De tre stegen i muskeln\n| Steg | Vad händer | Trolig orsak |\n|---|---|---|\n| 1 | **Minskad Ca²⁺-känslighet hos troponin** → färre korsbryggor | Pi (negativt laddat) attraherar Ca²⁺ vid troponin |\n| 2 | **Hämmade steg 1 och 2 i korsbryggecykeln** (Pi- respektive ADP-frisättningen från myosinhuvudet) | Lokalt höga [Pi] och [ADP] förskjuter jämvikten så att myosinet inte släpper Pi/ADP → färre kraftgenererande korsbryggor |\n| 3 | **Minskad Ca²⁺-frisättning från SR via RyR1** i den helt uttröttade muskeln | Pi tar sig in i SR och fäller ut/binder Ca²⁺ (sekvestrering). SR innehåller fortfarande Ca²⁺ – koffein, som öppnar RyR1, frisätter lika mycket som i en utvilad muskel |\n\n![Steg iii: när fosfat (Pi) ansamlas tar sig en del in i sarkoplasmatiska retiklet och fäller ut kalcium, så att mindre Ca²⁺ frisätts vid nästa impuls. || att Pi (röda) binder Ca²⁺ (gröna prickar) inne i SR. Färre fria Ca²⁺ kan släppas via RyR1, troponin aktiveras mindre och kraften sjunker – trots att ATP finns kvar.](data/del2-bilder/9.1.2-2.jpg \"Pdf Muskelfysiologi Film 6-1, s. 17|data/del2-bilder/9.1.2-2-sida.jpg\")\n\n\nVid kortvarigt (sekunder–minuter) högintensivt arbete är **ansamling av fosfatjoner vid korsbryggorna** den vanligaste orsaken till perifer trötthet.\n\n## Laktat (mjölksyra)\nLaktat är en **biprodukt av anaerob glykolys** och en bra **biomarkör** för att man närmar sig sin gräns, men **orsakar inte direkt kraftförlusten**. Det bidrar till **smärta** (varningssignal) – t.ex. smärtan i framsida lår när en otränad patient går uppför trappor för snabbt: arbetet överstiger laktattröskeln, anaerob glykolys ökar och metaboliter (H⁺, laktat, Pi, K⁺) stimulerar smärtreceptorer. Laktat kan oxideras i andra muskler och i hjärtat eller användas för glukoneogenes i levern (Coricykeln).\n\n![Vid syrebrist är det inte mjölksyran som ger acidosen: protonerna kommer från hydrolysen av ATP. || den inringade H⁺ i reaktionen ATP + H₂O → ADP + Pi + H⁺. Laktat är en markör för syrebrist i blodgasen, inte orsaken till surheten.](data/del2-bilder/9.1.2-3.jpg \"Syrabas 4b-1, s. 11|data/del2-bilder/9.1.2-3-sida.jpg\")\n\n\n## Tentafokus\n- Pi-ansamling är förklaringen – inte laktat, inte \"ATP tar slut\". (ATP sjunker aldrig till noll i en levande muskel; vid ATP-brist uppstår rigor.)\n- Minskad Ca²⁺-frisättning beror på Pi i SR, inte på att SR är tömt eller att SERCA stannar.\n- \"Gå in i väggen\" = glykogenbrist.",
+       "sammanfattning": "## Vad är trötthet? {#definition mal=1}\nBörja med att avgränsa begreppet. Kursens definition: **ansträngnings- eller träningsinducerad trötthet är varje arbetsinducerad minskning av muskelns förmåga att producera kraft.** Det är alltså inte en känsla, utan ett mätbart kraftfall.\n\nTröttheten kan uppstå på två nivåer:\n\n- **Central trötthet** – i nervsystemet, till exempel hämning av motoriska enheter från hjärna och ryggmärg. **Den ingår inte i kursen.**\n- **Perifer trötthet (muskeltrötthet)** – vid den motoriska ändplattan eller inne i själva muskeln. Det är den lektionen handlar om.\n\n[[fig:definition]]\n\n## Tre övergripande orsaker {#tre-orsaker mal=2}\nPerifer trötthet vid normal ansträngning har tre huvudorsaker. De två första följer direkt av energisystemen i 9.1.1; den tredje sitter inne i muskelcellen.\n\n1. **För lite syre.** Räcker inte syretillförseln måste mer ATP komma från anaerob glykolys, som ger ≈3 ATP per glukosenhet i stället för minst det tredubbla aerobt. ATP tar aldrig slut i en levande muskel (det skulle ge rigor), så lösningen är att **sänka intensiteten** – kortare steg, lägre stegfrekvens, mindre kraft.\n2. **För lite glykogen** – att \"gå in i väggen\" efter långvarigt arbete. Muskeln måste växla till fett, som kräver mer syre per ATP och oxideras långsammare, och intensiteten sjunker igen.\n3. **Metabola förändringar inne i muskeln** vid intensivt arbete: **oorganiskt fosfat (Pi) och ADP ansamlas** när kreatinfosfat och ATP bryts ned snabbt. Det ger tre steg i följd, som nästa avsnitt går igenom.\n\n[[fig:orsaker]]\n\n| | För lite syre | För lite glykogen | Pi och ADP i muskeln |\n|---|---|---|---|\n| Typiskt arbete | hög intensitet över syretillförseln | måttlig intensitet i timmar | kortvarigt, mycket intensivt arbete |\n| Vad muskeln gör | mer anaerob ATP-bildning | växlar till fett | – |\n| Varför kraften sjunker | intensiteten måste sänkas | fett ger färre ATP per sekund och per liter O₂ | kontraktionsapparaten och Ca²⁺-frisättningen störs |\n\n## De tre stegen inne i muskeln {#tre-stegen mal=3}\nDe tre stegen sker i ordning, från lätt till helt uttröttad muskel. Alla tre har samma grundorsak: **fosfatjoner (och ADP) som ansamlas**.\n\n**Steg i – troponin får minskad Ca²⁺-känslighet.** Snabb nedbrytning av kreatinfosfat (CrP → Cr + Pi) ger mycket Pi runt troponin–tropomyosin och korsbryggorna. Fosfatjonerna är negativt laddade och drar till sig de positiva kalciumjonerna, som därför binder sämre till troponin. Färre myosinbindningsställen frigörs, **färre korsbryggor** aktiveras och kraften sjunker.\n\n[[fig:steg1]]\n\n**Steg ii – korsbryggecykelns steg 1 och 2 hämmas.** I steg 1 ska Pi släppa från myosinhuvudet så att myosin binder hårt till aktin (ADP-Pi ⇌ ADP + Pi). I steg 2, kraftslaget, ska ADP släppa (myosin-ADP ⇌ myosin + ADP). När Pi och ADP ansamlas lokalt förskjuts båda jämvikterna åt vänster – massverkans lag – så Pi och ADP släpper sämre och **färre korsbryggor bidrar till kraften**.\n\n[[fig:steg2]]\n\n**Steg iii – mindre Ca²⁺ frisätts från SR.** I den helt uttröttade muskeln har SERCA arbetat hårt länge och bildat mycket Pi vid SR. En del Pi tar sig in i SR och **fäller ut kalcium** (Ca²⁺ sekvestreras). Mindre fritt Ca²⁺ kan då släppas via RyR1, och det som släpps möter ett troponin med minskad känslighet – kraften faller kraftigt.\n\n[[fig:steg3]]\n\n> [!viktigt] SR är inte tomt\n> Om man öppnar RyR1 med koffein i en uttröttad muskel frisätts lika mycket Ca²⁺ som i en utvilad. Kalciumet finns alltså kvar i SR men hålls fast och kan inte frisättas. Det är därför förklaringen är \"Pi binder Ca²⁺ i SR\" – inte att SR är tömt eller att SERCA har stannat.\n\n**Tillämpning – läs ett försök.** Gruppövningens instuderingsfråga visar exakt de här stegen i en enskild muskelcell:\n\n[[fig:forsok]]\n\n## Laktat – biomarkör, inte orsak {#laktat mal=4}\nLaktat (mjölksyra) nämns inte i någon av de tre stegen, och det är med avsikt. **Laktat är en biprodukt av anaerob glykolys och en mycket bra biomarkör** – när det ansamlas närmar man sig gränsen för vad man orkar – **men det orsakar inte kraftförlusten**. Det som sänker kraften är Pi och ADP.\n\n[[fig:laktat]]\n\nVad gör laktatet då? Föreläsningen lyfter **smärta** som en varningssignal om att intensiteten inte kan hållas länge. Tillämpning på tentan (Rest VT25, fråga 12): en otränad patient som går för fort uppför trappor får ont i framsida lår, eftersom arbetet kräver anaerob glykolys och metaboliter som H⁺ och laktat ansamlas lokalt.\n\nVar kommer surheten ifrån? Inte från mjölksyran: protonerna frigörs när ATP hydrolyseras, och vid syrebrist hinner de inte tas om hand när andningskedjan står still.\n\n[[fig:proton]]\n\n> [!kalla] Laktat är också ett bränsle\n> Laktat är inte bara en restprodukt. Det föredras som bränsle av arbetande röd (oxidativ) muskel, hjärta, lever och hjärna, och hjärtat är starkt beroende av laktat utifrån när dess arbete ökar. Levern kan dessutom använda laktat för glukoneogenes.\n> Källor: Brooks GA. The science and translation of lactate shuttle theory. *Cell Metab* 2018;27:757–85 (https://pubmed.ncbi.nlm.nih.gov/29617642/). Brooks GA. Role of the heart in lactate shuttling. *Front Nutr* 2021;8:663560 (https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2021.663560/pdf). Brooks GA 2020, PMC7498672 (https://pmc.ncbi.nlm.nih.gov/articles/PMC7498672/).\n\n## Sammanfattning {#sammanfattning}\n- **Trötthet** = varje arbetsinducerad minskning av muskelns förmåga att producera kraft. Kursen handlar om **perifer** trötthet (muskeltrötthet), inte central.\n- Tre orsaker: **för lite syre** (mer anaerob ATP → lägre intensitet), **för lite glykogen** (\"väggen\", fett kräver mer syre per ATP) och **Pi och ADP som ansamlas** inne i muskeln.\n- Pi och ADP ger tre steg i följd: **(i)** minskad Ca²⁺-känslighet hos troponin, **(ii)** hämmade steg 1 och 2 i korsbryggecykeln, **(iii)** minskad Ca²⁺-frisättning från SR eftersom Pi fäller ut Ca²⁺ i SR.\n- SR är inte tomt – koffein frisätter lika mycket Ca²⁺ som i en utvilad muskel.\n- Vid kortvarigt högintensivt arbete är **fosfatjoner vid korsbryggorna** den vanligaste orsaken; ATP tar inte slut.\n- **Laktat** är en biomarkör och ger smärta, men orsakar inte kraftförlusten. Protonerna vid syrebrist kommer från ATP-hydrolysen.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.2-o1",
@@ -6890,19 +6899,67 @@
          "svar": 4,
          "forklaring": "Central trötthet ligger proximalt om den neuromuskulära synapsen – motivation, signalsubstanser och reflexhämning minskar den motoriska drivningen. Det lockande felet \"trötthet i hjärtat\" handlar om ordet central, men hjärtat har inget med begreppet att göra.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.1.2-o4",
+         "q": "I en uttröttad muskelfiber ger koffein, som öppnar RyR1, lika stor Ca²⁺-frisättning som i en utvilad fiber. Vad visar det om steg iii i muskeltröttheten?",
+         "options": [
+          "SR är tömt på kalcium efter långvarigt arbete",
+          "RyR1 har brutits ned och måste nysyntetiseras",
+          "Kalcium finns kvar i SR men hålls fast och frisätts sämre vid normal aktivering",
+          "SERCA har slutat pumpa in kalcium i SR",
+          "Troponin har förlorat förmågan att binda kalcium helt"
+         ],
+         "svar": 2,
+         "forklaring": "Om SR vore tomt skulle koffein inte kunna frisätta mycket Ca²⁺. Att frisättningen blir normal med koffein visar att kalciumet finns kvar men sekvestreras – sannolikt utfällt med fosfat som tagit sig in i SR.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.2-o5",
+         "q": "En muskelcell stimuleras med upprepade maximala tetani. Tidigt i förloppet sjunker kraften något samtidigt som Ca²⁺-transienterna blir större. Vilken mekanism förklarar bäst kraftfallet just då?",
+         "options": [
+          "Minskad Ca²⁺-frisättning från SR",
+          "Laktat som skadar myofibrillerna",
+          "Pi som minskar troponins Ca²⁺-känslighet och hämmar korsbryggecykeln",
+          "Central trötthet med minskad nervimpulsfrekvens",
+          "Att ATP-halten i cellen har sjunkit kraftigt"
+         ],
+         "svar": 2,
+         "forklaring": "När kraften sjunker trots mer Ca²⁺ ligger felet i kontraktionsapparatens svar på kalcium – steg i och ii, orsakade av Pi och ADP. Minskad Ca²⁺-frisättning (steg iii) visar sig som mindre Ca²⁺-transienter, vilket kommer senare.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.2-o6",
+         "q": "Varför hämmar en hög lokal koncentration av Pi korsbryggecykeln?",
+         "options": [
+          "Pi hämmar DHP-receptorn i T-tubuli",
+          "Jämvikten för fosfatfrisättningen från myosinhuvudet förskjuts åt vänster, så färre korsbryggor når det kraftgenererande läget",
+          "Pi binder irreversibelt till aktin och blockerar bindningsställena",
+          "Pi sänker pH så att myosin denatureras",
+          "Pi bryter ned ATP i myosinhuvudet"
+         ],
+         "svar": 1,
+         "forklaring": "Steg 1 i korsbryggecykeln är ADP-Pi ⇌ ADP + Pi. Enligt massverkans lag gör mycket Pi att reaktionen går sämre åt höger, så myosinet behåller sitt Pi och binder inte starkt till aktin.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.2-o7",
+         "q": "En otränad patient får ont i framsida lår när han går fort uppför trappor. Vad är den mest sannolika förklaringen till smärtan?",
+         "options": [
+          "Kreatinfosfatet har tagit slut i hela kroppen",
+          "Anaerob glykolys ger lokal ansamling av metaboliter som H⁺ och laktat som retar smärtreceptorer",
+          "Central trötthet hämmar motoriska enheter",
+          "Laktat skadar muskelfibrerna mekaniskt",
+          "Fettoxidationen kräver för mycket syre"
+         ],
+         "svar": 1,
+         "forklaring": "Arbetet överstiger det syretillförseln klarar, så anaerob glykolys ökar och metaboliter ansamlas lokalt. Laktat bidrar till smärtan som varningssignal men orsakar inte kraftförlusten (Rest VT25, fråga 12).",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 3,
        "url": "#/bibliotek/9.1.2",
        "slides": [
-        {
-         "fil": "data/del2-slides/m9-4551c1-11.webp",
-         "kalla": "Muskelfysiologi (film 6)",
-         "nyckel": "m9_Pdf_Muskelfysiologi_Film_6-1",
-         "sida": 11,
-         "rubrik": "Egenskaper hos de tre typerna av skelettmuskelfibrer",
-         "text": "**Egenskaper hos de tre fibertyperna:** motorenhetens storlek är liten i typ I, medel i IIa och stor i IIx. Kontraktionshastigheten och myosinets ATPas-aktivitet är låg i typ I och hög i IIa och IIx. ATP-produktionen är aerob i typ I och IIa och **anaerob (glykolys)** i IIx. Glykolytiska enzymer: lågt, medel, högt. Uthållighet: stor, medel, liten. Mitokondrier och kapillärer: många i typ I och IIa, få i IIx. Myoglobin: mest i typ I (röd färg), minst i IIx (ljusröd). Fiberdiameter och glykogen: minst i typ I. Typiska uppgifter: hålla kroppsställning (I), gå och springa (IIa), hoppa och kasta (IIx). Motorenheter rekryteras i storleksordning: typ I först."
-        },
         {
          "fil": "data/del2-slides/m9-4551c1-12.webp",
          "kalla": "Muskelfysiologi (film 6)",
@@ -6969,7 +7026,8 @@
         "Förklara hur VO₂, hjärtfrekvens, slagvolym, hjärtminutvolym, blodtryck, blodflödesfördelning och ventilation förändras",
         "Beskriva vad som händer efter arbete (EPOC, laktatelimination, post-exercise hypotension)"
        ],
-       "sammanfattning": "## Grundprincip\nÖkad intensitet → fler muskelkontraktioner → ökat ATP-behov → mer syrerikt blod till arbetande vävnad. Svaret är **intensitetsberoende** och delvis **förberedande** (feed-forward från motorcortex redan innan metaboliterna hunnit öka).\n\n**Ficks princip:** VO₂ = HMV × (a–v)O₂-diff. I vila är VO₂ 200–300 ml/min; vid maximalt arbete kan det öka 5–10 gånger (vältränade ännu mer). Båda faktorerna ökar.\n\n## Hjärtat\n- **Hjärtfrekvensen** ökar **linjärt** med intensiteten. Initialt (första sekunderna) genom **minskad vagustonus**, sedan genom ökad sympatikus och cirkulerande adrenalin. Signalerna kommer från **centralt kommando (motorcortex)** samt **mekanoreceptorer och metaboreceptorer** i arbetande muskel, som signalerar till kardiovaskulära centrum (KVC) i förlängda märgen. Vid konstant submaximal belastning planar frekvensen ut (steady state). *Perifera kemoreceptorer och sänkt PaO₂ är inte drivkraften – PaO₂ är normalt oförändrat vid arbete.*\n- **Slagvolymen** ökar upp till ca 40–60 % av VO₂max och planar sedan ut: ökat venöst återflöde (**muskelpumpen**, andningspumpen, venokonstriktion) ger ökad preload (Frank–Starling), sympatikus ökar kontraktiliteten.\n- **Hjärtminutvolymen** (HMV = HF × SV) ökar från ca 5 till 20–25 l/min (mer hos elitidrottare).\n\n![Slagvolym, hjärtfrekvens och hjärtminutvolym vid stegrad belastning. || att slagvolymen (vänstra diagrammet) planar ut redan vid måttlig belastning medan hjärtfrekvensen fortsätter stiga linjärt. Hjärtminutvolymen (höger) ökar därför linjärt med syreupptaget – i den övre delen helt genom ökad frekvens.](data/del2-bilder/9.1.3-1.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 20|data/del2-bilder/9.1.3-1-sida.jpg\")\n\n\n## Blodtryck och blodflöde\nMAP = HMV × TPR. Vid dynamiskt (konditions)arbete **stiger systoliskt tryck** (måttligt vid submaximalt arbete som joggning, mer ju högre intensitet), medan **diastoliskt tryck är i stort sett oförändrat**, eftersom TPR sjunker genom vasodilatation i arbetande muskel. Vid tungt **statiskt/styrkearbete** komprimeras kärlen och både systoliskt och diastoliskt tryck kan stiga mycket (pressorreflex, Valsalva).\n\n![Systoliskt och diastoliskt blodtryck vid stegrat dynamiskt arbete. || att den övre kurvan (systoliskt) stiger med intensiteten medan den nedre (diastoliskt) ligger kvar – den ökade hjärtminutvolymen höjer systoliskt tryck, men vasodilatationen i musklerna sänker den perifera resistensen (MAP = HMV × TPR).](data/del2-bilder/9.1.3-2.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 21|data/del2-bilder/9.1.3-2-sida.jpg\")\n\n\n![Hjärtminutvolymens fördelning till organen i vila och vid ökande arbetsintensitet. || hur muskelns andel växer från en liten del i vila till den helt dominerande delen vid maximalt arbete, medan flödet till tarm och njure minskar även i absoluta tal. Hjärnans flöde är i stort sett konstant.](data/del2-bilder/9.1.3-3.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 22|data/del2-bilder/9.1.3-3-sida.jpg\")\n\n\n- **Lokal reglering** styr blod till arbetande muskel: **metaboliter** (adenosin, K⁺, H⁺, CO₂, laktat, låg PO₂, ökad temperatur) samt NO ger vasodilatation. Det är den **huvudsakliga orsaken till ökat muskelblodflöde** – inte cirkulerande adrenalin.\n- **Central reglering** (sympatikus) ger vasokonstriktion i inaktiv vävnad, t.ex. mag–tarmkanal och njurar, och upprätthåller MAP. Blodflödet till arbetande muskel kan öka från ca 20 % till 80–85 % av HMV. Hjärnans flöde är i stort sett konstant; huden får mer blod för värmeavgivning (konkurrens vid arbete i värme eller efter en stor måltid).\n- Plasmavolymen minskar under arbete (filtration ut i muskeln + svettning).\n\n## Ventilation\nMinutventilationen ökar först genom **större tidalvolym**, vid hög intensitet även frekvens. Ökningen sker i början snabbt (neurogent: centralt kommando, mekanoreceptorer i leder/muskler), sedan långsammare (humoralt). Vid måttligt arbete är **PaO₂ och PaCO₂ i stort sett oförändrade**. Över den **ventilatoriska tröskeln** (som följer laktattröskeln) ökar ventilationen oproportionerligt: H⁺ från mjölksyra buffras av HCO₃⁻ → extra CO₂ → stimulering av kemoreceptorer → PaCO₂ sjunker (respiratorisk kompensation). Direkt **efter** arbete sjunker ventilationen snabbt eftersom den neurogena drivningen (centralt kommando och mekanoreceptorer) upphör.\n\n![Ventilation och blodgaser vid stegrande arbete – den ventilatoriska tröskeln. || brytpunkten där ventilationen börjar stiga brantare än syreupptaget. Där buffras H⁺ av bikarbonat och extra CO₂ bildas; arteriellt PO₂ ligger kvar normalt hos friska.](data/del2-bilder/9.1.3-4.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 25|data/del2-bilder/9.1.3-4-sida.jpg\")\n\n\n## Metabolism\nSubstratvalet styrs av intensitet och duration (se 9.1.1 och 9.1.6). Vid långvarigt arbete i jämn takt minskar RER successivt (från ca 0,91 till 0,82 under 2,5 timmar) när andelen fett ökar.\n\n## Efter arbete\n- **Syredeficit** i början av arbetet (VO₂ hinner inte upp → CrP och anaerob glykolys täcker) och **EPOC** (excess post-exercise oxygen consumption, \"syreskuld\") efteråt: återbildning av CrP och ATP, laktatoxidation, återmättnad av myoglobin och hemoglobin, förhöjd temperatur och katekolaminer.\n- **Laktat** elimineras snabbare vid lätt aktiv återhämtning (joggning) än vid passiv vila.\n- **Post-exercise hypotension:** blodtrycket kan vara sänkt i upp till ca 13 timmar efter ett träningspass (sannolikt via NTS och dämpad baroreceptorreflex).\n\n![Syrebrist (oxygen deficit) i början av arbetet och syreskuld (EPOC) efteråt. || den ljusa ytan före steady state: syreupptaget hinner inte med behovet och kreatinfosfat och glykolys täcker skillnaden. Den lila ytan efter arbetet är EPOC – återställning av kreatinfosfat, myoglobin, temperatur och laktatomsättning.](data/del2-bilder/9.1.3-5.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 32|data/del2-bilder/9.1.3-5-sida.jpg\")\n\n\n## Tentafokus\n- Ficks ekvation och vad som ökar HMV respektive (a–v)O₂-diff.\n- Största orsak till ökad hjärtfrekvens: centralt kommando + mekano-/metaboreceptorer (vagusuttag, sympatikus), inte kemoreceptorer.\n- Ökat muskelblodflöde: lokala metaboliter.\n- Blodtryck vid joggning: systoliskt ökar något, diastoliskt förändras inte.\n- Tabellfrågor (↑ ↓ =) med HF, SV, VO₂ och RER vid löpning jämfört med vila: HF ↑, SV ↑, VO₂ ↑, RER ↑.",
+       "sammanfattning": "## Grundprincipen: mer ATP kräver mer syrerikt blod {#grundprincip mal=1,2}\nAllt i det akuta svaret följer av en kedja: **ökad intensitet → fler muskelkontraktioner → större ATP-behov → mer syrerikt blod måste fram till den arbetande muskeln.** Svaret är **intensitetsberoende**, och mycket av det är **förberedande**: puls och ventilation stiger redan innan metaboliterna hunnit öka, styrt från hjärnan.\n\n[[fig:princip]]\n\nHur mycket syre kroppen tar upp beskrivs av **Ficks princip**:\n\n**VO₂ = hjärtminutvolym (HMV) × (a–v)O₂-differens**\n\nI vila är VO₂ 200–300 ml/min; vid maximalt arbete kan det öka 5–10 gånger. **Båda faktorerna ökar**: hjärtat pumpar mer blod, och musklerna tar ut mer syre ur varje liter blod. Resten av lektionen går igenom faktorerna i den ordning föreläsningen gör: syreupptag, hjärta, blodtryck och blodflöde, ventilation, njure och vätskebalans, och vad som händer efteråt.\n\n## Syreupptag och kondition {#kondition mal=2}\nSyreupptaget stiger **linjärt med belastningen** tills det inte kan öka mer – då är **VO₂max** nådd. VO₂max är det mått som kallas kondition.\n\n[[fig:vo2]]\n\nKondition är inte bara idrott. Konditionen minskar med åldern, och låg kondition är en stark riskfaktor för sjukdom och död – därför behöver läkare kunna bedöma och främja den. En svensk studie (Ekblom-Bak 2018) visar dessutom att konditionen i den svenska arbetskraften försämrades kraftigt mellan 1995 och 2017.\n\n[[fig:alder]]\n\n[[fig:overlevnad]]\n\n## Hjärtat {#hjartat mal=2}\n**Hjärtfrekvensen** ökar linjärt med intensiteten, upp till maxpulsen.\n\n[[fig:hf]]\n\nVad driver ökningen? Signalerna konvergerar i **kardiovaskulära centrum** i hjärnstammen:\n\n1. **Centralt kommando** från motorcortex och högre centra – förberedande, redan innan arbetet börjar.\n2. **Mekanoreceptorer** och **metaboreceptorer** i arbetande muskel (typ III/IV-afferenter).\n3. **Baroreceptorerna**, vars börvärde förskjuts uppåt så att de inte bromsar ökningen.\n\nUtflödet är **minskad vagustonus** och **ökad sympatikus** (noradrenalin på β1, adrenalin från binjuremärgen): högre frekvens och kontraktilitet.\n\n[[fig:hfreglering]]\n\nFörloppet har två faser – och det är en vanlig tentafråga:\n\n[[fig:hfforlopp]]\n\n> [!fallgrop] Inte kemoreceptorer\n> Arteriellt PO₂ är i stort sett normalt vid arbete hos friska, så det är inte perifera kemoreceptorer som driver pulsökningen. Den största bidragande faktorn är centralt kommando och mekanoreceptorer i muskler och leder (Rest VT23, fråga 6), och den allra första ökningen är ett vagusuttag (Rest VT25, fråga 8).\n\n**Slagvolymen** ökar med intensiteten men **planar ut vid ≈40–60 % av VO₂max**. Ökningen kommer av större fyllnad (venöst återflöde via muskelpumpen och andningspumpen, venokonstriktion → Frank–Starling) och större kontraktilitet (sympatikus).\n\n[[fig:sv]]\n\n**Hjärtminutvolymen** = hjärtfrekvens × slagvolym ökar från ≈5 till 20–25 l/min (mer hos elitidrottare). Över slagvolymens platå kommer hela ökningen från pulsen.\n\n[[fig:hmv]]\n\n## Blodtryck och blodflöde {#blodtryck-och-blodflode mal=2}\nMedelartärtrycket bestäms av **MAP = HMV × TPR**. Vid dynamiskt arbete ökar HMV kraftigt medan TPR sjunker, eftersom arteriolerna i arbetande muskel vidgas. Resultatet:\n\n[[fig:blodtryck]]\n\n- **Systoliskt tryck stiger** – måttligt vid joggning, mer ju högre intensiteten är.\n- **Diastoliskt tryck är i stort sett oförändrat** (Rest HT24, fråga 8). Ett kraftigt stigande diastoliskt tryck vid arbetsprov är patologiskt.\n- Vid tungt **statiskt arbete** (styrketräning) trycks kärlen ihop och både systoliskt och diastoliskt tryck kan stiga mycket.\n\nSamtidigt **omfördelas** hjärtminutvolymen:\n\n[[fig:fordelning]]\n\nTvå regleringsnivåer samarbetar:\n\n| | Lokal reglering | Central reglering |\n|---|---|---|\n| Var | arbetande muskel | inaktiv vävnad (tarm, njure, inaktiv muskel) |\n| Hur | **metaboliter** (adenosin, K⁺, H⁺, CO₂, laktat, låg PO₂, värme) och NO vidgar arteriolerna | **sympatikus och adrenalin** drar ihop kärlen |\n| Effekt | blodet går dit det behövs | håller uppe MAP och styr bort blod |\n\nDen **huvudsakliga orsaken till ökat muskelblodflöde är de lokala metaboliterna** (Rest VT23, fråga 11) – inte cirkulerande adrenalin. Problem uppstår när andra organ konkurrerar om blodet: **huden** vid arbete i värme och **tarmen** efter en stor måltid. Hela hjärtminutvolymen passerar lungan, och plasmavolymen minskar under arbete.\n\n## Ventilation {#ventilation mal=2}\nVentilationen följer samma mönster som pulsen: ett **snabbt neuralt språng** när arbetet börjar (centralt kommando, mekanoreceptorer i leder och muskler), sedan en **långsammare humoral ökning** (CO₂, H⁺, K⁺, temperatur) till steady state. När arbetet slutar faller den först snabbt – den neurala drivningen upphör (Rest VT23, fråga 10) – och sedan långsamt.\n\n[[fig:ventilation]]\n\nVid måttligt arbete räcker ventilationen precis: **PaO₂ och PaCO₂ är i stort sett oförändrade**. Över den **ventilatoriska tröskeln** buffras H⁺ från den anaeroba glykolysen av bikarbonat, extra CO₂ bildas och ventilationen ökar brantare än CO₂-produktionen, så att PaCO₂ sjunker (respiratorisk kompensation).\n\n[[fig:troskel]]\n\n## Njure och vätskebalans {#vatskebalans mal=1}\nArbete ger värme och svettning, ibland flera liter per timme. Kedjan som skyddar blodvolymen:\n\nflöde: svett → lägre plasmavolym, högre osmolalitet → osmoreceptorer i hypotalamus → ADH från neurohypofysen → mer vatten reabsorberas i samlingsrören → mindre urin\n\nSamtidigt ökar **aldosteron** natriumreabsorptionen. Mindre blodflöde till njuren (sympatikus) minskar också urinproduktionen. Hormonerna och figuren som visar kedjan går igenom i 9.1.7.\n\n## Intervall- och styrketräning {#intervall-och-styrka mal=1}\nSamma mekanismer gäller vid andra arbetsformer, men mönstret skiljer sig:\n\n- **Intervallträning:** under varje intensivt intervall stiger puls, ventilation och det anaeroba bidraget (laktat); i vilan faller den neurala drivningen snabbt medan metaboliterna klingar av långsammare. Kreatinfosfatet hinner delvis byggas upp igen (9.1.1).\n- **Styrketräning:** korta, kraftiga kontraktioner trycker ihop kärlen i muskeln. Det ger ett stort blodtryckssvar (både systoliskt och diastoliskt), och vid krystning (Valsalva) ändras trycket ytterligare. Syreupptaget ökar mindre än vid dynamiskt arbete.\n\n## Efter arbetet {#efter-arbete mal=3}\nI början av arbetet hinner syreupptaget inte upp till behovet – ett **syredeficit**, som täcks av kreatinfosfat, glykolys och syre bundet till myoglobin. Efter arbetet förblir syreupptaget förhöjt: **EPOC** (excess post-exercise oxygen consumption, \"syreskuld\").\n\n[[fig:epoc]]\n\nEPOC används till att återbilda kreatinfosfat och ATP, mätta myoglobin och hemoglobin igen, oxidera och omvandla laktat, och täcka den högre temperaturen och katekolaminnivån.\n\n**Laktatet** försvinner snabbare med aktiv återhämtning än med passiv vila:\n\n[[fig:laktat]]\n\n**Blodtrycket** kan vara lägre än före passet i flera timmar efteråt – **post-exercise hypotension**:\n\n[[fig:peh]]\n\n**Tillämpning – essän på Rest HT22, fråga 1:** \"VO₂ kan öka 5–10 gånger. Redogör för mekanismerna.\" Bygg svaret på Ficks princip och gå igenom avsnitten ovan i ordning: HMV (frekvens: vagusuttag, sympatikus via centralt kommando och muskelreceptorer; slagvolym: venöst återflöde och kontraktilitet), omfördelning av blodflödet (metaboliter lokalt, sympatikus centralt), ökad syreextraktion (fler öppna kapillärer, högerförskjuten dissociationskurva) och ventilation som håller arteriell mättnad normal.\n\n## Sammanfattning {#sammanfattning}\n- **Ficks princip:** VO₂ = HMV × (a–v)O₂-diff; båda ökar vid arbete. Svaret är intensitetsberoende och delvis förberedande.\n- **Puls** ökar linjärt: först vagusuttag, sedan sympatikus, styrt av centralt kommando och mekano- och metaboreceptorer – inte kemoreceptorer. **Slagvolymen** planar ut vid ≈40–60 % av VO₂max; därefter ökar HMV via pulsen.\n- **Blodtryck** vid dynamiskt arbete: systoliskt ↑, diastoliskt ≈ oförändrat, eftersom TPR sjunker. Statiskt arbete höjer båda.\n- **Blodflödet** omfördelas till arbetande muskel (80–85 % av HMV) genom **lokala metaboliter**; sympatikus drar ihop kärl i tarm och njure. Hjärnans flöde är oförändrat.\n- **Ventilation:** snabb neural fas och långsam humoral fas, både vid start och slut. PaO₂ och PaCO₂ normala vid måttligt arbete; över ventilatoriska tröskeln sjunker PaCO₂.\n- **Njure:** ADH och aldosteron sparar vatten och salt.\n- **Efter arbete:** EPOC, snabbare laktatelimination vid aktiv återhämtning och post-exercise hypotension.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.3-o1",
@@ -7054,19 +7112,67 @@
          "svar": 2,
          "forklaring": "EPOC är den förhöjda syreförbrukningen efter arbetet. Den liknande termen syrebrist (\"oxygen deficit\") är fördröjningen i början av arbetet – en klassisk förväxling.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.1.3-o7",
+         "q": "Vad förklarar bäst den allra första, snabba ökningen av hjärtfrekvensen när man börjar cykla?",
+         "options": [
+          "Ansamling av metaboliter som stimulerar metaboreceptorer",
+          "Ökat venöst återflöde som sträcker sinusknutan",
+          "Ökat cirkulerande adrenalin från binjuremärgen",
+          "Sänkt arteriellt PO₂ som stimulerar perifera kemoreceptorer",
+          "Minskad vagustonus via centralt kommando och mekanoreceptorer"
+         ],
+         "svar": 4,
+         "forklaring": "Den första ökningen kommer inom sekunder och är neural: centralt kommando och mekanoreceptorer i leder och muskler minskar vagustonus. Sympatikus, adrenalin och metaboreceptorer bidrar till den fortsatta, långsammare ökningen. PO₂ är normalt vid arbete hos friska.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.3-o8",
+         "q": "En frisk person joggar i 10 km/h. Vilken kombination av förändringar jämfört med vila stämmer?",
+         "options": [
+          "Systoliskt ↑, diastoliskt ↑, total perifer resistens ≈ oförändrad",
+          "Systoliskt ↓, diastoliskt ↓, total perifer resistens ↓",
+          "Systoliskt ↑, diastoliskt ↑, total perifer resistens ↑",
+          "Systoliskt tryck ↑, diastoliskt tryck ≈ oförändrat, total perifer resistens ↓",
+          "Systoliskt ≈ oförändrat, diastoliskt ↓, total perifer resistens ↑"
+         ],
+         "svar": 3,
+         "forklaring": "MAP = HMV × TPR. HMV ökar och höjer systoliskt tryck, medan vasodilatationen i arbetande muskel sänker TPR så att diastoliskt tryck ligger kvar. Båda trycken stiger mycket först vid tungt statiskt arbete.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.3-o9",
+         "q": "Vid en VO₂-test passerar personen den ventilatoriska tröskeln. Vad händer med arteriellt PCO₂ därefter?",
+         "options": [
+          "Det sjunker, eftersom musklerna slutar producera CO₂",
+          "Det är oförändrat, eftersom ventilationen matchar CO₂-produktionen exakt",
+          "Det stiger, eftersom mer CO₂ bildas av bikarbonatbuffringen",
+          "Det stiger, eftersom lungornas diffusionskapacitet tar slut",
+          "Det sjunker, eftersom ventilationen ökar mer än CO₂-produktionen"
+         ],
+         "svar": 4,
+         "forklaring": "Över tröskeln buffras H⁺ av bikarbonat och H⁺ stimulerar kemoreceptorerna, så ventilationen ökar mer än proportionellt. PaCO₂ sjunker – en respiratorisk kompensation av den metabola acidosen.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.3-o10",
+         "q": "Varför sjunker blodlaktatet snabbare efter ett maximalt arbete om man joggar lätt i stället för att vila?",
+         "options": [
+          "Joggingen ökar laktatutsöndringen i urinen",
+          "Vila hämmar leverns glukoneogenes helt",
+          "Laktatet oxideras i arbetande muskel och hjärta, och blodflödet är högre",
+          "Svetten för bort laktatet",
+          "Joggingen omvandlar laktat till kreatinfosfat"
+         ],
+         "svar": 2,
+         "forklaring": "Vid lätt aktivitet oxideras laktat i arbetande muskler (särskilt typ I-fibrer) och hjärta, och levern använder det för glukoneogenes. Laktatet når vilonivå på ≈40 min med aktiv återhämtning mot ≈100–120 min vid passiv vila.",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 16,
        "url": "#/bibliotek/9.1.3",
        "slides": [
-        {
-         "fil": "data/del2-slides/m9-415c7a-6.webp",
-         "kalla": "Hormonellt svar på träning",
-         "nyckel": "m9_Hormonellt_svar_pa_traning",
-         "sida": 6,
-         "rubrik": "Reglering av vätske- och elektrolytbalans under arbete Ellinor Kenne Kenney, Wilmore, Cost",
-         "text": "**Vätske- och elektrolytbalans under arbete.** (1) Muskelarbete ger värme och svettning, ibland flera liter per timme. (2) Svettningen sänker plasmavolymen, så blodet blir koncentrerat och **osmolaliteten stiger**. (3) Osmoreceptorer i hypotalamus känner av det. (4–5) Hypotalamus signalerar till neurohypofysen, som frisätter **ADH (vasopressin)**. (6) ADH ökar vattengenomsläppligheten i samlingsrören så att vatten reabsorberas. (7) Urinproduktionen minskar och vätskeförlusten begränsas. Dessutom ökar **aldosteron** natriumreabsorptionen. Både ADH och aldosteron kan vara förhöjda 12–48 h efter arbetet."
-        },
         {
          "fil": "data/del2-slides/m9-4d03ee-43.webp",
          "kalla": "Hälsa, prestation och mekanism",
@@ -7261,7 +7367,8 @@
         "Förklara förändringar i VO₂max, slagvolym, hjärtfrekvens, blodvolym, kapillärisering, mitokondrier och substratanvändning",
         "Beskriva signalvägar för mitokondriell biogenes (PGC-1α) och ROS dubbla roll"
        ],
-       "sammanfattning": "## Varför och hur\nUthållighetsträning ökar den aeroba kapaciteten: **VO₂max ökar** (ofta 15–20 % hos tidigare otränade) och man kan arbeta längre på en given submaximal nivå. Adaptationen beror på intensitet, duration, frekvens och typ av aktivitet. Både de centrala (HMV) och de perifera (a–v)O₂-faktorerna i Ficks ekvation förbättras.\n\n## Hjärta\n- **Fysiologisk (excentrisk) hypertrofi:** ökad kammarvolym (innerdiameter) och något tjockare vägg. Jämför **patologisk koncentrisk hypertrofi** vid hypertoni (tjockare vägg, mindre lumen) och atrofi vid sängläge/cancer.\n- **Slagvolymen ökar** i vila, vid submaximalt och maximalt arbete (ökad preload från större blodvolym, längre fyllnadstid, större kontraktilitet, lägre TPR → lägre ESV).\n- **Hjärtfrekvensen minskar** i vila och vid samma submaximala belastning (troligen ökad vagustonus). Den maximala hjärtfrekvensen ändras inte nämnvärt (bestäms främst av ålder). Hos otränade kan vilopulsen sjunka ett slag per vecka de första veckorna. Snabbare återhämtning av pulsen efter arbete – bra mått för att följa en individ, sämre för att jämföra individer.\n- **HMV**: oförändrad vid samma submaximala belastning (SV ↑, HF ↓), **ökad vid maximal belastning** – en huvudorsak till högre VO₂max.\n\n![Slagvolym vid stigande löphastighet före och efter uthållighetsträning. || att den röda kurvan (efter träning) ligger högre vid alla hastigheter och fortsätter stiga längre innan den planar ut. Den större slagvolymen är huvudförklaringen till högre VO₂max.](data/del2-bilder/9.1.4-1.jpg \"Fysiologiska effekter av traning 1 uthallighetstraning slides, s. 9|data/del2-bilder/9.1.4-1-sida.jpg\")\n\n\n## Blod och vätskebalans\n- **Blodvolymen ökar**: först plasmavolymen (ökad albuminsyntes i levern → ökat kolloidosmotiskt tryck; ökade ADH- och aldosteronnivåer), senare även antalet röda blodkroppar (via EPO, mekanismen oklar).\n- **Hematokriten minskar** något eftersom plasmaökningen dominerar → lägre viskositet, lättare kapillärpassage.\n\n![Plasmavolym och röda blodkroppar före och efter träning. || att den totala blodvolymen ökar och att plasmadelen (gul) ökar mer än erytrocyterna – därför sjunker hematokriten något trots fler röda blodkroppar (utspädning, inte anemi).](data/del2-bilder/9.1.4-2.jpg \"Fysiologiska effekter av traning 1 uthallighetstraning slides, s. 8|data/del2-bilder/9.1.4-2-sida.jpg\")\n\n\n## Kärl och perifer cirkulation\n- Bättre vasodilatation i arbetande muskel (ökat **NOS-uttryck** → mer NO, som också hämmar trombocytaggregation) och effektivare vasokonstriktion i inaktiv vävnad.\n- **Ökad kapillärisering** (fler kapillärer per muskelfiber, märks redan efter 4 veckor) → större utbytesyta, bättre gasutbyte, värmeavgivning och substratleverans → **ökad (a–v)O₂-diff**.\n- Lägre blodtryck vid samma submaximala belastning; hos personer med lätt–måttlig hypertoni sänks vilotrycket (lägre TPR och sympatikustonus). Normotensiva sänker inte sitt vilotryck.\n\n## Andning\nLungstrukturen ändras inte. Ventilationen är oförändrad i vila, **lägre vid samma submaximala belastning** och **högre vid max** (starkare andningsmuskler). Den ventilatoriska tröskeln förskjuts åt höger eftersom laktattröskeln gör det. Träningsinducerad hypoxemi hos elitidrottare beror på kort transittid i lungkapillärerna, inte på lungan.\n\n## Skelettmuskel\n- **Fler och större mitokondrier**, mer oxidativa enzymer (citratsyntas, succinatdehydrogenas; ca 25 % ökning efter 20 min lågintensiv träning/dag hos tidigare stillasittande). Mitokondrieinnehållet kan fördubblas – men det är oftast cirkulationen, inte mitokondrierna, som begränsar VO₂max.\n- **Signalvägar:** Ca²⁺, ROS, ATP-hydrolys (AMP ↑ → **AMPK**) och katekolaminer aktiverar **PGC-1α** → mitokondriell biogenes.\n- Ökat uttryck av **MHC typ I** och oxidativa egenskaper i alla fibertyper; ökad myoglobinhalt.\n- **Laktattröskeln** ligger på en högre andel av VO₂max.\n\n![Aktivitet av två oxidativa enzymer (succinatdehydrogenas och citratsyntas) hos otränade (UT), måttligt tränade (MT) och högt tränade (HT). || att enzymaktiviteten stiger stegvis med träningsgraden – ett mått på fler och effektivare mitokondrier.](data/del2-bilder/9.1.4-3.jpg \"Fysiologiska effekter av traning 1 uthallighetstraning slides, s. 16|data/del2-bilder/9.1.4-3-sida.jpg\")\n\n\n## Substratanvändning\nÖkad förmåga att **lagra glykogen** i tränad muskel och lever, större intramuskulära fettförråd nära mitokondrierna, fler β-oxidationsenzymer och ökad frisättning av FFA under arbete. Resultat: **RER sjunker vid samma submaximala belastning** (mer fett, glykogenbesparing) och mindre anaerob ATP-produktion. RER vid **maximal** belastning är fortfarande >1.\n\n![Laktatkoncentration i blodet vid stigande intensitet före och efter uthållighetsträning. || att kurvan efter träning förskjuts åt höger: laktattröskeln nås vid en högre belastning och en högre andel av VO₂max, eftersom mer ATP bildas aerobt.](data/del2-bilder/9.1.4-4.jpg \"Fysiologiska effekter av traning 1 uthallighetstraning slides, s. 18|data/del2-bilder/9.1.4-4-sida.jpg\")\n\n\n## ROS – dubbel roll\nAkut och kortvarig ROS-ökning under träning (även vid mycket intensiva/explosiva aktiviteter) är en **signal** för adaptation (mitokondriell biogenes, antioxidantförsvar). Uthållighetsträning ökar endogena antioxidanter: **superoxiddismutas (SOD)** reducerar superoxid till väteperoxid, **katalas** och **glutationperoxidas** bryter ner väteperoxid; transkriptionsfaktorn **Nrf2** styr uttrycket. Vid kronisk sjukdom (t.ex. reumatoid artrit) är ROS **kroniskt förhöjda**, vilket är skadligt. **Höga doser antioxidanttillskott före träning kan dämpa träningssvaret** genom att släcka ROS-signalen.\n\n## Tentafokus\n- Tabellfrågor: vid samma submaximala belastning efter konditionsträning – HF ↓, SV ↑, HMV =, VO₂ =, RER ↓, laktat ↓. Vid max: VO₂max ↑, HMV ↑, SV ↑, HF ≈ =.\n- (a–v)O₂-diff ökar p.g.a. kapillärisering och mitokondrier.\n- Blodvolym ↑, hematokrit ↓.\n- Antioxidantenzymer och Nrf2; antioxidanttillskott kan försämra adaptationen.",
+       "sammanfattning": "## Träning är upprepad stress {#varfor-och-hur mal=1}\nUtgå från 9.1.3: varje pass är en akut stress – mer ATP, mer syrerikt blod, mer arbete för hjärta och muskler. **Träning är samma stress upprepad**, och kroppen anpassar sig så att nästa pass blir en mindre påfrestning. Hur stor anpassningen blir beror på passens **intensitet, duration, frekvens och typ**.\n\n[[fig:drivkraft]]\n\nAll träning ger en ökad förmåga att bilda ATP – helst aerobt. Föreläsningen delar upp anpassningen i **centrala** förändringar (hjärta, blodvolym) och **perifera** (muskel, blodkärl). Styrketräning ger dessutom ökad förmåga att bilda kraft, i muskel och nerv (9.1.5). Den uppdelningen är också en bra stomme för ett essäsvar.\n\n[[fig:oversikt]]\n\nDet som mäts är den **aeroba kapaciteten, VO₂max**. Med Ficks princip – **VO₂ = HMV × (a–v)O₂-diff** – blir frågan i resten av lektionen: vad händer med varje länk i kedjan?\n\n[[fig:vo2max]]\n\nVarför ska en läkare kunna detta? De flesta patienter är inte elitidrottare, men för dem kan \"träning\" vara att orka gå uppför en backe i samma takt som sin partner. Samma fysiologi gäller.\n\n## Hjärtat {#hjarta mal=1,2}\n**Strukturen.** Uthållighetsträning ger **fysiologisk hypertrofi**: större innerdiameter i vänster kammare och något tjockare vägg. Kammaren kan fyllas med mer blod i diastole och kontrahera kraftigare i systole. Jämför med **patologisk hypertrofi** vid hypertoni (tjock vägg, mindre kammare) och **atrofi** vid sängläge eller cancer.\n\n[[fig:hypertrofi]]\n\n**Slagvolymen ökar** – i vila, vid submaximalt och vid maximalt arbete. Fyra skäl: större blodvolym (mer preload), längre fyllnadstid (lägre puls), större och starkare kammare (lägre ändsystolisk volym) och lägre perifer resistens.\n\n[[fig:sv]]\n\n**Pulsen sjunker** i vila och vid samma submaximala belastning. Hjärtminutvolymen behöver inte vara större för samma arbete, och med större slagvolym räcker färre slag. Mekanismen är inte helt klarlagd; en trolig förklaring är **starkare vagusinflytande** på hjärtat. Hos en otränad person kan vilopulsen sjunka ungefär ett slag per vecka de första veckorna. **Maxpulsen ändras knappt** (den styrs främst av åldern).\n\n[[fig:hf]]\n\nPulsen återhämtar sig också **snabbare** efter arbete – ett bra mått för att följa en persons utveckling, men sämre för att jämföra personer.\n\n[[fig:aterhamtning]]\n\n**Hjärtminutvolymen** är därför **oförändrad vid samma submaximala belastning** (SV ↑, HF ↓) men **ökar vid maximal belastning**. Den större maximala HMV är en huvudorsak till att VO₂max ökar.\n\n[[fig:hmv]]\n\n## Blod och vätskebalans {#blod mal=1,2}\n**Blodvolymen ökar** – först **plasmavolymen** (levern bildar mer albumin, som höjer det kolloidosmotiska trycket, och ADH och aldosteron ökar), senare även de **röda blodkropparna**. Eftersom plasman ökar mest sjunker **hematokriten** något. Det är inte anemi utan en fördel: blodet blir mindre trögflytande och passerar kapillärerna lättare, och den större volymen höjer preload.\n\n[[fig:blodvolym]]\n\n## Kärl och perifer cirkulation {#karl mal=1,2}\nI den arbetande muskeln blir **vasodilatationen effektivare**, och i inaktiv vävnad blir **vasokonstriktionen effektivare** – mer av hjärtminutvolymen går dit den behövs. Samtidigt ökar **kapillärtätheten**: fler kapillärer per muskelfiber, tydligt redan efter fyra veckor. Det ger större yta och kortare diffusionsavstånd för syre och substrat, och är en huvudförklaring till att **(a–v)O₂-differensen ökar vid maximalt arbete** (Rest HT22, fråga 9: där är svaret mitokondriell biogenes – båda bidrar).\n\n[[fig:kapillarer]]\n\n**Blodtrycket** blir lägre vid samma submaximala belastning, och **vilotrycket sjunker hos personer med lätt eller måttlig hypertoni** – inte hos normotensiva. Mekanismen är lägre perifer resistens och lägre sympatikustonus. En viktig del är att träningen **inducerar NO-syntas (NOS)**: mer NO ger både vasodilatation och hämmad trombocytaggregation, alltså mindre risk för blodproppar.\n\n## Andning {#andning mal=1,2}\nLungornas struktur förändras knappt, och ventilationen begränsar inte prestationen hos friska. Det som ändras är andningsmusklerna och behovet:\n\n[[fig:ventilation]]\n\n- **Lägre ventilation vid samma submaximala belastning**, eftersom mindre CO₂ och H⁺ bildas när arbetet sker mer aerobt.\n- **Högre maximal ventilation**, eftersom andningsmusklerna blir starkare.\n- **Ventilationströskeln flyttas** till en högre andel av VO₂max, parallellt med laktattröskeln.\n\n## Skelettmuskeln blir mer aerob {#skelettmuskel mal=2,3}\nI muskeln blir **mitokondrierna fler, större och effektivare**, och de **oxidativa enzymerna** ökar. Mitokondrieinnehållet kan fördubblas.\n\n[[fig:enzymer]]\n\n> [!viktigt] Det är inte mitokondrierna som begränsar VO₂max\n> Hos en frisk person är musklernas förmåga att använda syre större än hjärt–kärlsystemets förmåga att leverera det. Ökningen av VO₂max kommer därför främst från den större maximala hjärtminutvolymen. De fler mitokondrierna ger i stället bättre uthållighet, mer fettoxidation och bättre metabol hälsa.\n\n**Hur vet muskeln att den ska bilda mitokondrier?** Fyra signaler från varje pass konvergerar på samma huvudregulator, **PGC-1α**:\n\n[[fig:biogenes]]\n\n| Signal under passet | Sensor | Leder till |\n|---|---|---|\n| ↑ Ca²⁺ (varje kontraktion) | CaMK | PGC-1α |\n| ↑ ROS | p38 MAPK | PGC-1α |\n| ↑ AMP/ATP (energiförbrukning) | **AMPK** | PGC-1α |\n| ↑ adrenalin, noradrenalin | cAMP | PGC-1α |\n\nPGC-1α aktiverar transkriptionsfaktorer så att generna för mitokondrieproteiner läses av – **mitokondriell biogenes**. Det är svaret på Rest VT24, fråga 4 (Liam inför maraton: uppreglering av PGC-1α).\n\n## Substrat och laktattröskel {#substrat mal=2}\nDen mer aeroba muskeln bildar mindre laktat vid samma belastning och transporterar bort det bättre. **Laktattröskeln flyttas** till en högre andel av VO₂max – man kan arbeta hårdare utan att laktat ansamlas.\n\n[[fig:laktat]]\n\nSubstraten blir mer lättillgängliga och används effektivare:\n\n- **Kolhydrat:** ökad förmåga att **lagra glykogen** i tränad muskel (Rest VT24, fråga 8).\n- **Fett:** mer triglycerider i muskeln nära mitokondrierna, fler β-oxidationsenzymer och ökad frisättning av fria fettsyror – fettoxidationen blir effektivare och glykogenet räcker längre.\n- Resultatet: **RER sjunker vid samma submaximala belastning** (mer fett), och den anaeroba ATP-produktionen minskar.\n\n[[fig:rer]]\n\n## ROS – signal eller skada? {#ros mal=3}\nReaktiva syreradikaler (ROS) bildas när muskeln arbetar. ROS står som en av signalerna till PGC-1α ovan, och tentorna frågar ofta om deras dubbla roll. Föreläsningsbilderna vi har tillgång till går inte igenom ROS närmare än så, så resten av avsnittet bygger på kompletterande källor.\n\n> [!kalla] ROS dubbla roll vid träning\n> - **Kortvarig ROS-ökning under ett pass är en signal** för anpassning. Den stimulerar mitokondriell biogenes och kroppens eget antioxidantförsvar, delvis via transkriptionsfaktorn **Nrf2**.\n> - Regelbunden uthållighetsträning ökar musklernas **antioxidantenzymer**: **superoxiddismutas (SOD)**, som omvandlar superoxid till väteperoxid, samt glutationperoxidas och katalas, som bryter ned väteperoxid.\n> - **ROS i överskott är skadliga** och kopplas till åldrande och kronisk sjukdom. Vid kronisk inflammatorisk sjukdom, t.ex. reumatoid artrit, är ROS-nivån kroniskt förhöjd – till skillnad från den kortvariga ökningen vid ett pass (Rest HT22 fråga 3, Rest VT23 fråga 9).\n> - **Höga doser antioxidanttillskott före träning kan dämpa träningssvaret.** Vitamin C och E till unga män under fyra veckors träning blockerade träningsinducerad ökning av insulinkänslighet, av PGC-1α och av SOD och glutationperoxidas (Rest VT25, fråga 7).\n>\n> Källor: Ristow M m.fl. Antioxidants prevent health-promoting effects of physical exercise in humans. *PNAS* 2009;106:8665–70 (https://pubmed.ncbi.nlm.nih.gov/19433800/). Done AJ, Traustadóttir T. Nrf2 mediates redox adaptations to exercise. *Redox Biol* 2016 (https://pmc.ncbi.nlm.nih.gov/articles/PMC5078682/). Buresh R, Berg K. A tutorial on oxidative stress and redox signaling with application to exercise and sedentariness. *Sports Med Open* 2015 (https://pmc.ncbi.nlm.nih.gov/articles/PMC4532704/). Powers SK m.fl. Exercise training and skeletal muscle antioxidant enzymes. *Antioxidants* 2022 (https://pmc.ncbi.nlm.nih.gov/articles/PMC9854578/).\n\n> [!lucka] Saknas i kursmaterialet\n> Den föreläsning eller bild som gick igenom ROS och antioxidanter finns inte bland de PDF:er biblioteket bygger på, trots att ämnet återkommer på nästan varje tenta. Avsnittet ovan bör stämmas av mot föreläsningen när den finns tillgänglig.\n\n## Allt på en gång: samma belastning eller max? {#sammantaget mal=1,2}\nTentan frågar ofta med en tabell: hur har värdena ändrats efter några månaders konditionsträning, vid **samma submaximala belastning** respektive vid **maximal belastning**, eller i vila? Tänk igenom varje rad med mekanismerna ovan:\n\n| Efter uthållighetsträning | Vila | Samma submaximala belastning | Maximal belastning |\n|---|---|---|---|\n| Hjärtfrekvens | ↓ | ↓ | ≈ |\n| Slagvolym | ↑ | ↑ | ↑ |\n| Hjärtminutvolym | ≈ | ≈ | ↑ |\n| VO₂ | ≈ | ≈ | **↑ (VO₂max)** |\n| (a–v)O₂-diff | ≈ | ≈ | ↑ |\n| Blodtryck | ≈ (↓ vid hypertoni) | ↓ | – |\n| Ventilation | ≈ | ↓ | ↑ |\n| Laktat | ≈ | ↓ | – |\n| RER | ≈ | ↓ | ≈ (>1) |\n\nRutor med – tas inte upp i föreläsningen. Kontrollera raderna mot Ficks princip: vid samma submaximala belastning är VO₂ och HMV oförändrade, och då måste även (a–v)O₂-differensen vara det.\n\n[[fig:hela]]\n\n## Sammanfattning {#sammanfattning}\n- Uthållighetsträning är upprepad stress som ökar den **aeroba kapaciteten**; VO₂max ökar genom både **centrala** (HMV) och **perifera** ((a–v)O₂-diff) förändringar.\n- **Hjärta:** fysiologisk hypertrofi, **SV ↑**, **HF ↓** i vila och submaximalt (vagus), maxpuls ≈, **HMV ↑ vid max** – huvudorsaken till högre VO₂max.\n- **Blod:** plasmavolym ↑ (albumin, ADH, aldosteron), sedan röda blodkroppar ↑; hematokrit ↓ något.\n- **Kärl:** fler kapillärer per fiber, bättre vasodilatation, NOS ↑; blodtrycket sjunker vid hypertoni.\n- **Muskel:** fler mitokondrier och oxidativa enzymer via **PGC-1α** (Ca²⁺, ROS, AMPK, katekolaminer); laktattröskeln flyttas uppåt; mer glykogen och fettoxidation, **RER ↓** submaximalt.\n- **ROS:** kortvarigt en signal, kroniskt skadliga; antioxidanttillskott kan dämpa träningssvaret.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.4-o1",
@@ -7345,6 +7452,62 @@
          ],
          "svar": 0,
          "forklaring": "Plasmavolymen ökar tidigt (aldosteron, albumin), vilket ger högre preload och bättre termoreglering. Hematokriten kan därför sjunka något – \"idrottsanemi\" är en utspädning, inte en brist.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.4-o7",
+         "q": "En person har tränat kondition i fyra månader och testas på samma submaximala belastning som före träningen. Vilken kombination stämmer?",
+         "options": [
+          "HF ≈, SV ↑, HMV ↑, VO₂ ≈",
+          "HF ↓, SV ↑, HMV ↑, VO₂ ↑",
+          "HF ↑, SV ↑, HMV ↑, VO₂ ↑",
+          "HF ↓, SV ↑, HMV ≈, VO₂ ≈",
+          "HF ↓, SV ≈, HMV ↓, VO₂ ↓"
+         ],
+         "svar": 3,
+         "forklaring": "Samma belastning kräver samma syreupptag och därmed samma hjärtminutvolym. Den större slagvolymen gör att färre slag behövs. Först vid maximal belastning ökar HMV och VO₂.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.4-o8",
+         "q": "Varför sjunker hematokriten något efter några månaders uthållighetsträning?",
+         "options": [
+          "Plasmavolymen ökar mer än mängden röda blodkroppar",
+          "Antalet röda blodkroppar minskar",
+          "Hemoglobinet per blodkropp minskar",
+          "Erytropoetinproduktionen hämmas",
+          "Röda blodkroppar bryts ned snabbare vid träning"
+         ],
+         "svar": 0,
+         "forklaring": "Plasman ökar först och mest (mer albumin, ADH och aldosteron), de röda blodkropparna mindre. Andelen röda blodkroppar sjunker därför trots att antalet ökat – en utspädning, inte anemi.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.4-o9",
+         "q": "Vilken signal kopplar en ökad AMP/ATP-kvot under träning till mitokondriell biogenes?",
+         "options": [
+          "mTOR, som hämmar PGC-1α",
+          "Kortisol via glukokortikoidreceptorn",
+          "Insulin via GLUT4",
+          "AMPK, som aktiverar PGC-1α",
+          "Myostatin, som aktiverar PGC-1α"
+         ],
+         "svar": 3,
+         "forklaring": "När ATP förbrukas stiger AMP, vilket aktiverar AMPK. AMPK, liksom Ca²⁺ (CaMK), ROS (p38 MAPK) och katekolaminer (cAMP), aktiverar PGC-1α – huvudregulatorn för mitokondriell biogenes.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.4-o10",
+         "q": "En idrottare tar höga doser vitamin C och E före varje träningspass för att \"skydda musklerna\". Vad är den mest sannolika effekten på träningssvaret?",
+         "options": [
+          "Det kan dämpas, eftersom ROS-signalen till PGC-1α och antioxidantförsvaret släcks",
+          "Det förstärks, eftersom vitaminerna ökar mitokondriernas antal direkt",
+          "Det dämpas, eftersom vitaminerna hämmar GLUT4",
+          "Det påverkas inte, eftersom ROS inte bildas i muskeln",
+          "Det förstärks, eftersom ROS bara är skadliga"
+         ],
+         "svar": 0,
+         "forklaring": "Kortvariga ROS-toppar under träning är en signal för anpassning. I en studie blockerade vitamin C och E den träningsinducerade ökningen av insulinkänslighet, PGC-1α och antioxidantenzymer (Ristow 2009).",
          "kalla": "ovning"
         }
        ],
@@ -7570,7 +7733,8 @@
         "Beskriva effekter på skelett och bindväv samt anpassningar vid högintensiv sprintträning",
         "Ta ställning till kreatintillskott"
        ],
-       "sammanfattning": "## Två komponenter\nTre till sex månaders styrketräning kan öka styrkan med 25–100 %. Ökningen beror på en **neural komponent** och **hypertrofi**. Styrka kan öka utan hypertrofi, men aldrig utan neurala anpassningar.\n\n## Neural adaptation – dominerar de första veckorna\n- Mer **synkron fyrning** av motorneuron och **rekrytering av fler motoriska enheter**.\n- **Minskad autogen inhibition** (t.ex. Golgis senorgan).\n- Bättre koordination och **hämning av antagonisten**.\n- **Cross-education/spill-over:** träning av ena extremiteten ger viss styrkeökning i den andra (användbart vid immobilisering).\nEn snabb ökning av relativ styrka efter 3 veckors träning beror alltså främst på **neuronala mekanismer**.\n\n![Den neurala komponenten i de tidiga styrkeökningarna. || listan till vänster: bättre synkronisering och rekrytering av motoriska enheter, minskad autogen hämning och bättre antagonisthämning. Muskeln blir starkare innan den blir större.](data/del2-bilder/9.1.5-1.jpg \"Fysiologiska effekter av traning 2 styrketraning, s. 4|data/del2-bilder/9.1.5-1-sida.jpg\")\n\n\n## Hypertrofi – syns efter ca 8 veckor\n- Muskeltillväxt hos människa beror på **hypertrofi** (större fibrer) – **inte hyperplasi** (fler fibrer).\n- Fler myofibriller, mer aktin och myosin, mer sarkoplasma och bindväv. **Typ II-fibrer växer mest.** Ökad specifik kraft (kraft per tvärsnittsyta).\n- Ökad muskelstorlek direkt efter ett pass är svullnad (vätskeinflux p.g.a. metaboliter), inte äkta hypertrofi.\n\n![Satellitceller ger fler cellkärnor när muskelfibern växer. || att satellitcellerna aktiveras, delar sig och smälter in i fibern (A). I B ser du att antalet kärnor ökar när fibern blir tjockare, så att varje kärna styr en ungefär konstant cytoplasmavolym (\"myonukleär domän\").](data/del2-bilder/9.1.5-2.jpg \"Fysiologiska effekter av traning 2 styrketraning, s. 8|data/del2-bilder/9.1.5-2-sida.jpg\")\n\n\n![Ökning av muskelns tvärsnittsarea under ett styrketräningsprogram – tidig transient svullnad och verklig hypertrofi. || den streckade orange kurvan: de första veckornas ökning är till stor del ödem (svullnad). Den gröna kurvan för verklig hypertrofi tar fart först efter ca 8 veckor (x-axeln visar antal träningspass).](data/del2-bilder/9.1.5-3.jpg \"Fysiologiska effekter av traning 2 styrketraning, s. 6|data/del2-bilder/9.1.5-3-sida.jpg\")\n\n\n## Reglering av proteinsyntes\nHypertrofi kräver att proteinsyntesen överstiger nedbrytningen. **Mekanisk belastning**, IGF-1, testosteron och β₂-agonism aktiverar **Akt/mTOR**, som ökar proteinsyntesen och hämmar nedbrytningen. (AMPK, som aktiveras vid energibrist under uthållighetsarbete, hämmar mTOR – därför stimulerar tung styrketräning proteinsyntesen bäst.) **Myostatin** är en negativ regulator av muskelmassa; dess uttryck minskar vid styrketräning.\n\n**Satellitceller** (vilande myogena stamceller) aktiveras av belastning, testosteron och små skador (makrofager frisätter tillväxtfaktorer), prolifererar och fuserar med fibrerna → fler cellkärnor per fiber → större kapacitet för proteinsyntes.\n\n## Skelett och bindväv\nAll viktbärande träning – särskilt styrketräning – **stärker skelettet**, minskar risken för osteoporos och ökar senors och brosks styrka (långsammare än muskeln). Starkare muskler minskar dessutom fallrisken.\n\n## Sprint- och högintensiv intervallträning\nÖkad **anaerob kapacitet**: fler **glykolytiska enzymer**, ökat CrP-förråd, bättre buffertkapacitet och ökad glykogeninlagring framför allt i typ II-fibrer (vid uthållighetsträning lagras glykogen främst i typ I). Även kort sprintträning förbättrar oxidativ kapacitet något.\n\n## Adaptationsspektrum\nHög intensitet och få repetitioner → kraft, tvärsnittsyta, glykolytiska enzymer. Låg intensitet och lång duration → VO₂max, kapillärer, mitokondrier, fettoxidation. De flesta aktiviteter är blandningar; genetik påverkar svaret.\n\n![Hur muskeln anpassar sig olika beroende på träningstyp – styrketräning och uthållighetsträning i var sin ände av spektrat. || att styrketräning ger ökad tvärsnittsarea, glykogenlagring och glykolytiska enzymer, medan uthållighetsträning ger fler kapillärer och mitokondrier och bättre fettoxidation.](data/del2-bilder/9.1.5-4.jpg \"Fysiologiska effekter av traning 2 styrketraning, s. 10|data/del2-bilder/9.1.5-4-sida.jpg\")\n\n\n## Kreatintillskott\nMuskeltillväxt kräver **mekanisk stimulering** (styrketräning → mTOR). Kreatin ökar CrP-förrådet och kan ge 1–2 extra repetitioner per set hos den som **redan tränar hårt**, vilket indirekt ökar stimulit. Det ersätter inte träning och har liten betydelse för en motionär.\n\n## Tentafokus\n- Snabb styrkeökning = neural; varaktig = hypertrofi (inte hyperplasi, inte ökad vätska).\n- Tyngst stimulus för proteinsyntes = tung styrketräning (styrkelyft), inte simning eller långdistans.\n- Osteoporos → viktbärande styrketräning av stora muskelgrupper, progression, gärna med fysioterapeut.\n- Kreatin vs styrketräning.\n\n## Mer från föreläsningarna\n- **Muskelminne:** muskelfibrer har många kärnor, och vid hypertrofi fusionerar satellitceller (myogena förstadieceller) med fibern så att antalet kärnor ökar proportionellt mot fiberns storlek. Kärnorna verkar finnas kvar även om muskeln atrofierar vid inaktivitet, vilket kan förklara att muskeln växer snabbare när man börjar träna igen (”cellulärt muskelminne”).\n- **Tidsförlopp:** de första veckornas styrkeökning är främst neural; mätbar hypertrofi kommer efter ca 6–8 veckor. I klassiska studier ökade styrkan kraftigt redan under de första 12 veckorna medan tvärsnittsarean ökade långsammare.\n- **WHO:s riktlinjer (2020)** gäller även personer med kroniska tillstånd som hypertoni, typ 2-diabetes, hiv och efter cancer: muskelstärkande aktivitet minst två dagar i veckan utöver aerob aktivitet.\n",
+       "sammanfattning": "## Två vägar till mer kraft {#tva-komponenter mal=1}\nTre till sex månaders styrketräning kan öka styrkan med **25–100 %** – muskeln och nervsystemet anpassar sig mycket. Ökningen har två komponenter:\n\n1. **En neural komponent** – nervsystemet blir bättre på att aktivera muskeln.\n2. **Hypertrofi** – muskelfibrerna blir större.\n\nStyrkan kan öka **utan** hypertrofi, men **aldrig utan** neurala anpassningar. Övriga organsystem påverkas mindre, och mest när styrkepassen liknar uthållighetsträning.\n\n## Den neurala komponenten – de första veckorna {#neural mal=1}\nDe första veckornas styrkeökning är främst neural:\n\n[[fig:neural]]\n\n- Motorneuronen fyrar mer **synkront**, och **fler motoriska enheter** rekryteras för samma uppgift.\n- **Fyrningsfrekvensen** ökar.\n- **Den autogena inhibitionen minskar** – Golgis senorgan och andra hämmande mekanismer, som skyddar senor och skelett mot för stor kraft, bromsar mindre.\n- **Antagonisten** hämmas bättre, så den motverkar rörelsen mindre, och koordinationen förbättras.\n- En **spill-over-effekt** (cross-education): träning av den ena armen eller benet ger en viss styrkeökning även i den andra – användbart när en extremitet är immobiliserad.\n\n[[fig:neural2]]\n\n**Tillämpning – Rest VT26, fråga 5:** efter tre veckors styrketräning har relativ styrka ökat 15 %. Det är för tidigt för hypertrofi, så förklaringen är **neuronala mekanismer**.\n\n## Hypertrofi – större fibrer, inte fler {#hypertrofi mal=2}\nDen bestående styrkeökningen kommer av **hypertrofi**: fibrerna får fler **myofibriller**, mer aktin och myosin, mer sarkoplasma och mer bindväv. **Typ II-fibrer** (IIa och IIx) växer mest, och den större muskeln får också högre **specifik kraft** (kraft per tvärsnittsyta).\n\n[[fig:fibrer]]\n\n[[fig:hypertrofi]]\n\nFler fibrer, **hyperplasi**, har visats hos djur men är osäkert hos människa. Hypertrofi är den dominerande mekanismen.\n\n[[fig:hyperplasi]]\n\n> [!fallgrop] Svullnad är inte hypertrofi\n> En muskel kan se större ut direkt efter ett pass, men det är vätska som strömmat in när metaboliterna ökat – inte fler myofibriller. Den äkta hypertrofin syns först efter ungefär åtta veckor.\n\n[[fig:svullnad]]\n\n## Reglering av proteinsyntesen {#proteinsyntes mal=2}\nFör att muskeln ska växa måste **proteinsyntesen överstiga nedbrytningen**. Stimuli från träningen – **mekanisk belastning**, **IGF-1**, **testosteron** och **β₂-agonister** – aktiverar **Akt/mTOR**, som ökar syntesen och hämmar nedbrytningen. På andra sidan finns hämmande signaler som **myostatin** och glukokortikoider.\n\n[[fig:mtor]]\n\nDärför är **tung styrketräning (t.ex. styrkelyft) det starkaste stimulit** för proteinsyntes (Rest VT25 fråga 4, Rest HT25 fråga 5): det är den mekaniska belastningen som aktiverar mTOR.\n\nProteinsyntesen är förhöjd några timmar efter varje pass, och varje pass ger en liten nettoökning som summeras över veckor:\n\n[[fig:mps-tid]]\n\n[[fig:mps-modell]]\n\n**Fördjupning – vad händer i cellkärnan?** Allt detta går via den centrala dogmen: passet ändrar vilka gener som läses av (transkription) och hur mycket protein som bildas (translation). Föreläsningen visar hur stort det akuta svaret är och att fler ribosomer hänger ihop med mer tillväxt:\n\n[[fig:genuttryck]]\n\n[[fig:ribosom]]\n\n[[fig:volym]]\n\n## Satellitceller och muskelminne {#satellitceller mal=2}\nEn muskelfiber har många cellkärnor, och varje kärna kan bara försörja en viss volym cytoplasma (den **myonukleära domänen**). När fibern växer behövs fler kärnor. De kommer från **satellitceller** – vilande myogena stamceller vid fibern – som aktiveras av belastning, testosteron och små skador (makrofager frisätter tillväxtfaktorer), delar sig och **fusionerar med fibern**.\n\n[[fig:satellit]]\n\n[[fig:karnor]]\n\n[[fig:satellit2]]\n\nKurslitteraturen innehåller en läsartikel om vad som händer med kärnorna när muskeln krymper igen (Egner m.fl., *J Physiol* 2013). Möss fick testosteron i 14 dagar: antalet kärnor och fiberytan ökade kraftigt. Tre veckor efter att behandlingen avslutats var fibrerna tillbaka i normal storlek – **men kärnorna fanns kvar**, och vid ny belastning växte fibrerna snabbare än hos kontrollerna.\n\n[[fig:artikel1]]\n\n[[fig:artikel3]]\n\nDet kallas **cellulärt muskelminne**. Författarnas slutsats: eftersom förmågan att bilda nya kärnor minskar med åldern kan styrketräning i ung ålder göra det lättare att behålla muskelmassa senare – och en period med anabola steroider kan ge en prestationsfördel som varar längre än själva dopningen.\n\n## Skelett, bindväv och äldre {#skelett-och-bindvav mal=3}\nAll viktbärande träning – särskilt styrketräning – **stärker skelettet** och förebygger benskörhet. Senor och brosk blir också tjockare och starkare, men **långsammare** än muskeln; ökar man belastningen för snabbt kan senskador uppstå.\n\nDet är aldrig för sent att börja:\n\n[[fig:aldre]]\n\n## Sprint- och högintensiv intervallträning {#sprint mal=3}\nSprintträning (korta maximala intervall med lång vila) tränar framför allt den **anaeroba kapaciteten**. Föreläsningen sammanfattar: styrketräning och högintensiv sprintträning ger **fler glykolytiska enzymer**, och glykogen lagras då främst i **typ II-fibrer** (vid uthållighetsträning i typ I).\n\n**Tillämpning – Rest HT24, fråga 5 och Rest VT25, fråga 10:** vilken anpassning ökar den anaeroba kapaciteten efter sprintträning? **Ökad aktivitet av glykolytiska enzymer** (i typ IIa-fibrer). Fällan är \"minskad andel IIx\" – andelen IIx minskar visserligen vid all träning (IIx → IIa), men det ökar inte den anaeroba kapaciteten.\n\n> [!kalla] Vad sprintträning gör i muskeln\n> Aktiviteten hos glykolytiska enzymer – särskilt laktatdehydrogenas, fosfofruktokinas och glykogenfosforylas – ökar efter både längre (>10 s) och kortare (<10 s) sprintintervall. Ett lämpligt sprintprogram kan också förskjuta fibrerna mot typ IIa, öka tvärsnittsytan och öka volymen sarkoplasmatiskt retikel, vilket underlättar Ca²⁺-frisättningen. Mitokondriella enzymer ökar också, särskilt med längre sprinter eller kort vila.\n> Källa: Ross A, Leveritt M. Long-term metabolic and skeletal muscle adaptations to short-sprint training. *Sports Med* 2001;31:1063–82 (https://doi.org/10.2165/00007256-200131150-00003).\n\n## Ett spektrum mellan styrka och uthållighet {#spektrum mal=3}\nDe flesta aktiviteter hamnar någonstans mellan ytterligheterna:\n\n[[fig:spektrum]]\n\n| | Tung styrketräning | Uthållighetsträning |\n|---|---|---|\n| Fysiologiskt | ↑ kraft och styrka | ↑ uthållighet och VO₂max |\n| Metabolt | ↑ glykogen i **typ II**, ↑ glykolytiska enzymer | ↑ glykogen i **typ I**, ↑ fettanvändning |\n| Strukturellt | ↑ tvärsnittsyta | ↑ kapillärer och mitokondrier |\n\nVar en viss träning hamnar styrs av intensitet, duration och frekvens, och genetiken påverkar hur stort svaret blir.\n\n## Kreatintillskott {#kreatin mal=4}\nTvå tentafrågor (Rest VT25 fråga 13, Rest HT25 fråga 13) frågar om kreatin. Bygg svaret på 9.1.1 och avsnittet om proteinsyntes:\n\n- Kreatin **ökar kreatinfosfatförrådet**, som ger ATP de första ≈10 sekunderna av maximalt arbete.\n- Det kan ge **1–2 extra repetitioner per set** hos den som **redan styrketränar hårt** eller utövar maxstyrke- och explosiva grenar – och därmed lite mer mekaniskt stimulus.\n- Det **ersätter inte träningen**: muskeltillväxt kräver mekanisk belastning som aktiverar mTOR. För en motionär som blandar styrka och kondition är vinsten liten.\n\n## Sammanfattning {#sammanfattning}\n- Styrka ökar 25–100 % på 3–6 månader genom **neural adaptation** (först) och **hypertrofi** (efter ≈8 veckor).\n- **Neuralt:** synkron fyrning, fler motoriska enheter, högre fyrningsfrekvens, mindre autogen inhibition, bättre antagonisthämning, spill-over.\n- **Hypertrofi** = större fibrer med fler myofibriller, främst typ II; inte hyperplasi. Tidig svullnad är inte hypertrofi.\n- **Proteinsyntes > nedbrytning** via **Akt/mTOR** (mekanisk belastning, IGF-1, testosteron, β₂-agonister); tung styrketräning är starkast stimulus.\n- **Satellitceller** ger fler kärnor; kärnorna finns kvar vid atrofi – **muskelminne**.\n- Skelett, senor och brosk stärks (långsammare än muskeln). **Sprintträning** ger fler glykolytiska enzymer.\n- **Kreatin** hjälper bara den som redan tränar hårt; det ersätter inte belastningen.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.5-o1",
@@ -7612,6 +7776,62 @@
          ],
          "svar": 0,
          "forklaring": "Sprintträning förbättrar de anaeroba systemen och buffertkapaciteten. Övergång till typ I är typiskt för uthållighet, inte sprint.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.5-o4",
+         "q": "Efter tre veckors styrketräning har relativ styrka ökat 15 %. Vad förklarar främst ökningen?",
+         "options": [
+          "Fler mitokondrier i muskeln",
+          "Hyperplasi – fler muskelfibrer",
+          "Hypertrofi av typ II-fibrer",
+          "Neuronala mekanismer – bättre rekrytering och synkronisering av motoriska enheter",
+          "Ökad vätskemängd i muskeln"
+         ],
+         "svar": 3,
+         "forklaring": "Hypertrofi syns först efter ungefär åtta veckor. De första veckornas styrkeökning är till största delen neural (Rest VT26, fråga 5).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.5-o5",
+         "q": "Vad är huvudförklaringen till att en muskel blir större efter tre månaders styrketräning?",
+         "options": [
+          "Fler myofibriller i befintliga fibrer (hypertrofi)",
+          "Fler muskelfibrer genom delning (hyperplasi)",
+          "Fler kapillärer runt fibrerna",
+          "Mer intramuskulärt fett",
+          "Mer vätska i interstitiet"
+         ],
+         "svar": 0,
+         "forklaring": "Muskeltillväxt hos människa är hypertrofi: fibrerna får fler myofibriller, mer aktin och myosin och mer sarkoplasma. Hyperplasi är osäker hos människa, och vätska ger bara en tillfällig svullnad.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.5-o6",
+         "q": "Varför finns det ett \"muskelminne\" som gör att en tidigare tränad muskel växer snabbare när man börjar träna igen?",
+         "options": [
+          "Muskeln behåller sitt ökade glykogenförråd",
+          "Myofibrillerna finns kvar men är inaktiva",
+          "Kapillärerna finns kvar och ökar proteinsyntesen",
+          "Nervsystemet glömmer aldrig rörelsen",
+          "Cellkärnor som tillkommit från satellitceller finns kvar när fibern krymper"
+         ],
+         "svar": 4,
+         "forklaring": "Vid hypertrofi fusionerar satellitceller med fibern och ger fler kärnor. Kärnorna finns kvar vid atrofi, så kapaciteten för proteinsyntes finns redan när träningen återupptas (Egner m.fl. 2013).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.5-o7",
+         "q": "En motionär som blandar styrke- och konditionspass frågar om kreatintillskott. Vad är det mest korrekta svaret?",
+         "options": [
+          "Kreatin behövs för att proteinsyntesen ska starta",
+          "Kreatin ökar VO₂max kraftigt",
+          "Kreatin ger muskeltillväxt även utan träning",
+          "Effekten är liten för henne; kreatin ger främst några extra repetitioner hos den som redan tränar maxstyrka eller explosivt",
+          "Kreatin ersätter behovet av styrketräning"
+         ],
+         "svar": 3,
+         "forklaring": "Kreatin ökar kreatinfosfatförrådet och kan ge 1–2 extra repetitioner per set hos den som redan tränar hårt. Muskeltillväxt kräver ändå mekanisk belastning som aktiverar mTOR (Rest VT25 och HT25, fråga 13).",
          "kalla": "ovning"
         }
        ],
@@ -7787,30 +8007,6 @@
          "text": "Titelsida: Hälsa, prestation, mekanism (Eric Emanuelsson, PhD). Föreläsningen binder ihop träningsfysiologin med folkhälsa, könsskillnader och molekylära mekanismer."
         },
         {
-         "fil": "data/del2-slides/m9-4d03ee-2.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 2,
-         "rubrik": "Hypertrofi & styrketräning 2026-04-23 2",
-         "text": "**Forskningsexempel:** en studie som jämför kvinnor 35–50 år med olika träningshistorik: över 15 år uthållighetsträning, över 15 år styrketräning, eller otränade. Syftet är att se hur skelettmuskel och fettväv har anpassats efter decennier av träning. Bilderna visar VO₂max-test på cykel och styrketest av knäextension."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-3.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 3,
-         "rubrik": "Från labbet – Molekylär anpassning till träning Karolinska Institutet 23 april 2026 3",
-         "text": "**Så görs studien i labbet.** (1) Fysisk screening: frågeformulär, maximalt vridmoment i knäextension (Biodex), 1RM-test och VO₂peak-test. (2) Hormonell screening: blod- och urinprov, viktigt hos kvinnor eftersom menscykeln påverkar. (3) Interventionsdagar i **cross-over-design**: samma person gör både ett uthållighetspass (30 min vid 75 % Wmax) och ett styrkepass (8 × 9 rep vid 80 % 1RM), med muskelbiopsier och blodprov före, direkt efter, efter 1 h och efter 3 h. (4) Laboratorieanalyser av muskel- och fettvävnad. Cross-over gör att varje person blir sin egen kontroll."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-22.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 22,
-         "rubrik": "Prestationsanpassningar till regelbunden träning Untrained Control Endurance trained Stren",
-         "text": "**Prestationsanpassningar, män och kvinnor.** Vänster: VO₂peak hos otränade, uthållighetstränade och styrketränade. De uthållighetstränade har klart högst VO₂peak (*). Män har högre värden än kvinnor i varje grupp (¤). Höger: absolut styrka (Nm). De styrketränade är starkast, och män är starkare än kvinnor i absoluta tal. **Kärnan:** träningen ger specifika anpassningar, och könsskillnaden finns kvar i absoluta värden, men kvinnor anpassar sig lika mycket relativt sett."
-        },
-        {
          "fil": "data/del2-slides/m9-4d03ee-23.webp",
          "kalla": "Hälsa, prestation och mekanism",
          "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
@@ -7833,22 +8029,6 @@
          "sida": 25,
          "rubrik": "Hyperplasi • Hyperplasi – ökat antal muskelfibrer • Nybildning av muskelfibrer efter födse",
          "text": "**Hyperplasi = fler muskelfibrer** genom att fibrer delar sig (fiber splitting, se bilden). Nybildning av muskelfibrer efter födseln är begränsad. Hyperplasi har visats hos djur, men det är osäkert hur mycket det förekommer hos människa, eftersom det är svårt att studera. Hypertrofi är den dominerande mekanismen."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-26.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 26,
-         "rubrik": "Mindre totalt fettmassa och specifika fettdepåer hos tränade individer än otränade Emanuel",
-         "text": "**Tränade har mindre fett, även i farliga depåer** (Emanuelsson 2022). Staplarna jämför otränade (grön), uthållighetstränade (mörkblå) och styrketränade (grå) män, samt otränade och uthållighetstränade kvinnor. A: total fettväv. B: subkutant bukfett. C: **visceralt fett**. D: **leverfett**. E: fettfri massa. F: muskelvolym i baksida lår. Tränade har lägre total fettmassa, och framför allt mindre visceralt fett och leverfett, de depåer som är kopplade till insulinresistens och hjärt-kärlsjukdom. Den fettfria massan är högre."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-27.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 27,
-         "rubrik": "Större muskelmassa och mindre intramuskulärt fett hos vältränade individer än otränade Kar",
-         "text": "**Större muskelmassa och mindre intramuskulärt fett hos tränade.** För fyra muskler (pectoralis, ryggsträckare, quadriceps, triceps surae) visas **fettfraktionen** inne i muskeln och **tvärsnittsytan (CSA)**. Tränade har lägre fettfraktion och större CSA. Styrketränade har störst CSA, och uthållighetstränade har också mindre intramuskulärt fett. Fett inne i muskeln är kopplat till insulinresistens."
         },
         {
          "fil": "data/del2-slides/m9-4d03ee-28.webp",
@@ -7921,38 +8101,6 @@
          "sida": 55,
          "rubrik": "Är det försent att börja? Äldre (60-72 år) svarar bra på styrketräning Fördubblad styrka Ö",
          "text": "**Det är aldrig för sent att börja.** Män 60–72 år styrketränade i 12 veckor (Frontera 1988). Vänster: styrkan i knäextension mer än **fördubblades** under 12 veckor (ringad). Höger: muskelns tvärsnittsyta ökade signifikant i båda benen (före, mitten, efter). Äldre muskler är alltså fortfarande plastiska och svarar bra på träning."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-56.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 56,
-         "rubrik": "Förbättrad insulinkänslighet hos friska äldre efter styrketräning",
-         "text": "**Styrketräning förbättrar insulinkänsligheten hos äldre** (metaanalys av RCT). Hög intensitet och lång träningsperiod förbättrade **HOMA-IR** (ett mått på insulinresistens) hos friska äldre. Måttlig intensitet förbättrade **HbA1c** hos äldre med typ 2-diabetes. Musklerna är kroppens största glukosförråd, så mer och friskare muskel ger bättre blodsockerkontroll."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-57.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 57,
-         "rubrik": "Styrketräning för patienter (WHO 2020) People living with chronic conditions (hypertension",
-         "text": "**WHO för personer med kroniska sjukdomar** (hypertoni, typ 2-diabetes, HIV, efter cancer): samma riktlinjer som för friska vuxna, alltså 150–300 min måttlig eller 75–150 min hög intensitet per vecka, plus muskelstärkande träning minst 2 dagar/vecka."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-58.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 58,
-         "rubrik": "Hypertrofi & styrketräning 2026-04-23 63",
-         "text": "**Exercise is the real polypill** (Physiology 2013). En 'polypiller' är en tablett som kombinerar flera läkemedel mot hjärt-kärlsjukdom. Författarna argumenterar att träning ger liknande eller större effekter, är billig och har få biverkningar, och att vårt genom formats av evolutionen för fysisk aktivitet."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-59.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 59,
-         "rubrik": "Träning sänker blodtryck i vila – Men vilken träningsform är mest effektiv? Jamie J Edward",
-         "text": "**Vilken träningsform sänker vilotrycket mest?** En metaanalys (Edwards, BJSM 2023). Graferna visar sänkning av systoliskt (vänster) och diastoliskt (höger) blodtryck för HIIT, aerob träning (AET), dynamisk styrketräning (RT), kombinerad träning (CT) och **isometrisk träning (IET)**. Den gula pilen visar att **isometrisk träning** (t.ex. väggsittning eller handgrepp) gav störst sänkning, ≈8 mmHg systoliskt, men alla former sänker trycket."
         }
        ]
       },
@@ -7964,7 +8112,8 @@
         "Beskriva basalmetabolism, termisk effekt av föda och aktivitetstermogenes",
         "Tillämpa respiratorisk kvot (RER/RQ) som mått på substratanvändning vid olika fysiologiska och patologiska tillstånd"
        ],
-       "sammanfattning": "## Energiomsättningens delar\n- **Basalmetabolism (BMR):** omsättning i vila under standardiserade betingelser (fastande, liggande, termoneutralt). Upp till ca 70 % av dygnsförbrukningen hos stillasittande. Varierar med kroppsstorlek (kroppsyta), ålder, kön och muskelmassa; katekolaminer och thyroideahormon ökar den.\n- **Matens termiska effekt:** ca 10 %.\n- **Fysisk aktivitet:** mest varierande, sällan mer än ca 30 % hos vanliga personer.\n1 kcal = den värme som höjer 1 kg vatten 1 °C = 4,186 kJ.\n\n![Komponenter i den dagliga energiförbrukningen hos en stillasittande och en fysiskt aktiv person. || att basalmetabolismen är den största delen hos den stillasittande (ca 60–75 %), att matens termiska effekt är ca 10 % och att fysisk aktivitet är den del som varierar mest mellan personer.](data/del2-bilder/9.1.6-1.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 11|data/del2-bilder/9.1.6-1-sida.jpg\")\n\n\n## Mätmetoder\n- **Direkt kalorimetri:** personen sitter i en isolerad kammare (Atwaters kammare) och avgiven värme mäts.\n- **Indirekt kalorimetri:** mäter O₂-förbrukning och CO₂-produktion i utandningsluften (andningsmask, VO₂-test). Energiomsättningen räknas fram från syreförbrukningen (≈ 20 kJ per liter O₂).\n\n![Indirekt kalorimetri: energiomsättningen räknas ut ur syreupptag och koldioxidavgivning. || de inringade O₂ och CO₂ i reaktionsformeln – det är de två gaserna som mäts i andningsluften. Direkt kalorimetri (föregående bild, Atwaterkammaren) mäter i stället värmen.](data/del2-bilder/9.1.6-2.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 13|data/del2-bilder/9.1.6-2-sida.jpg\")\n\n\n## Respiratorisk kvot\nRER = VCO₂ / VO₂ (RQ på cellnivå).\n- Glukos: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O → **RQ = 1,0**\n- Fett (t.ex. linolsyra): 18 CO₂ / 26 O₂ → **RQ ≈ 0,7**\n- Protein: **≈ 0,8** (0,83)\n- **RER > 1,0** uppstår vid hög intensitet över laktattröskeln: H⁺ från mjölksyra buffras av HCO₃⁻ → \"icke-metabol\" CO₂ ventileras ut (respiratorisk kompensation vid metabol acidos). Vid maximal belastning är RER därför **över 1** – inte under 0,8.\n\n![Respiratorisk kvot (RER = VCO₂/VO₂) vid olika intensiteter och värdena för fett, protein och kolhydrat. || att RER stiger med intensiteten (ökande kolhydratandel) och att värden över 1,0 inte betyder ett nytt substrat utan att bikarbonat buffrar syra och frigör extra CO₂.](data/del2-bilder/9.1.6-3.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 26|data/del2-bilder/9.1.6-3-sida.jpg\")\n\n\n## Tillämpning\n- Ökande intensitet → RER stiger (mer kolhydrat).\n- Långvarigt arbete i jämn takt → RER sjunker successivt (glykogen förbrukas, mer fett).\n- **Efter uthållighetsträning** → lägre RER vid samma submaximala belastning: fler mitokondrier och β-oxidationsenzymer, mer intramuskulärt fett, bättre kapillärisering och fettsyratransport, mindre anaerob glykolys och lägre katekolaminsvar.\n- **Svält, ketos och obehandlad diabetes** → RER närmar sig 0,7 (fett dominerar). Kraftig kolhydratövernutrition med de novo-lipogenes kan ge RER > 1.\n\n![Tabell över respiratorisk kvot och andelen kolhydrat respektive fett under långvarigt arbete. || hur RER sjunker från ca 0,91 till 0,82 under 2,5 timmars arbete och fettandelen stiger från ca 30 till 60 % när glykogenet förbrukas.](data/del2-bilder/9.1.6-4.jpg \"Introduktion och akut svar pa arbete VT26 canvas, s. 29|data/del2-bilder/9.1.6-4-sida.jpg\")\n\n\n## Tentafokus\n- Beräkna/tolka RER och förklara varför den sjunker efter konditionsträning (vanlig 4-poängsessä).\n- RER > 1 vid maximal ansträngning.\n\n## Mer från föreläsningarna\nflöde: Glukos C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O → RQ = 6/6 = 1,0\nflöde: Fettsyra (stearinsyra) C₁₇H₃₅COOH + 26 O₂ → 18 CO₂ + 18 H₂O → RQ = 18/26 ≈ 0,7\n\nAtt räkna ut RQ ur reaktionsformeln är ett vanligt sätt att visa varför fett ger lägre kvot: fettsyror är mer reducerade (mindre syre i molekylen) och kräver mer syre per bildad koldioxid. **RER** (respiratory exchange ratio) är samma kvot mätt i utandningsluften; vid hård ansträngning kan RER överstiga 1,0 eftersom bikarbonatbuffring av mjölksyra ger extra CO₂.\n",
+       "sammanfattning": "## Vad kroppen gör av med energi {#energiomsattningens-delar mal=2}\nEnergiomsättning är den energi kroppen gör av med per tidsenhet, och nästan all den energin blir till slut **värme**. Det är därför den kan mätas – antingen som värme eller som det syre som går åt för att frigöra den. (1 kcal är den värme som höjer 1 kg vatten 1 °C, och motsvarar 4,186 kJ.)\n\nDygnets förbrukning har tre delar:\n\n| Del | Vad det är | Andel av dygnets förbrukning |\n|---|---|---|\n| **Basalmetabolism (BMR)** | energin för att hålla homeostasen i vila | ≈60–75 % |\n| **Matens termiska effekt** | matspjälkning och upptag | ≈8–10 % |\n| **Fysisk aktivitet** | allt arbete utöver vila | teoretiskt upp till 70 %, sällan mer än ≈30 % |\n\n[[fig:delar]]\n\nBasalmetabolismen mäts under standardiserade betingelser: fastande, i vila och i termoneutral miljö. Den varierar med **kroppsstorlek** (kroppsyta), **ålder**, **kön** och muskelmassa, och **katekolaminer och tyreoideahormon** ökar den.\n\n[[fig:bmr]]\n\n## Två sätt att mäta {#matmetoder mal=1}\nEftersom förbränning ger värme och kräver syre kan energiomsättningen mätas på två sätt:\n\n[[fig:direkt]]\n\n- **Direkt kalorimetri** mäter **värmen**. Personen sitter i en isolerad kammare (Atwaterkammaren), och värmen tas upp av vatten som strömmar i rör genom kammaren. Exakt men dyrt och opraktiskt.\n- **Indirekt kalorimetri** mäter **gaserna**: syreförbrukning och koldioxidavgivning, med mask, huva eller ventilerad huv. Energiomsättningen räknas fram ur syreförbrukningen (≈20 kJ per liter O₂). Det är metoden i klinik och forskning – och vid VO₂max-testet i gruppövningen.\n\n[[fig:indirekt]]\n\n## Respiratorisk kvot – vilket bränsle bränns? {#respiratorisk-kvot mal=3}\nIndirekt kalorimetri ger något mer än energin: kvoten mellan gaserna avslöjar **vilket bränsle** som förbränns.\n\n**RQ = bildad CO₂ / förbrukat O₂** (på cellnivå). Mätt i utandningsluften kallas samma kvot **RER** (respiratory exchange ratio) = V̇CO₂/V̇O₂.\n\nRäkna själv ur reaktionsformlerna:\n\n[[fig:rakna]]\n\n- **Glukos:** C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O → RQ = 6/6 = **1,0**\n- **Fettsyra** (stearinsyra; föreläsningen kallar den linolsyra): C₁₇H₃₅COOH + 26 O₂ → 18 CO₂ + 18 H₂O → RQ = 18/26 ≈ **0,7**\n- **Protein:** ≈ **0,8** (0,83)\n\nVarför lägre för fett? Fettsyror innehåller mycket mindre syre i molekylen än glukos – de är mer **reducerade** – så mer O₂ måste tillföras utifrån per bildad CO₂.\n\n> [!fallgrop] RER över 1,0 är inget nytt bränsle\n> Vid hårt arbete över laktattröskeln buffras H⁺ av bikarbonat: H⁺ + HCO₃⁻ → H₂O + CO₂. Den koldioxiden kommer inte från förbränning, men andas ut ändå. Därför är RER **över 1,0** (ofta över 1,1) vid maximal belastning – inte under 0,8 (Rest VT24, fråga 9).\n\n[[fig:rer]]\n\n## Tillämpning: läs RER i olika situationer {#tillampning mal=3}\n| Situation | RER | Varför |\n|---|---|---|\n| Vila efter en natts fasta | ≈0,7–0,8 | fett dominerar |\n| Ökande intensitet | stiger mot 1,0 | mer kolhydrat (se Romijn-figuren i 9.1.1) |\n| Maximal belastning | **> 1,0** | bikarbonatbuffring ger extra CO₂ |\n| Långvarigt arbete i jämn takt | sjunker successivt | glykogenet förbrukas, mer fett |\n| Samma submaximala belastning **efter uthållighetsträning** | **lägre** | bättre fettoxidation |\n| Svält, ketos, obehandlad diabetes | närmar sig 0,7 | fett dominerar |\n\nLångvarigt arbete i jämn takt visar sig tydligt i föreläsningens tabell:\n\n[[fig:tid]]\n\n**Tillämpning – essän på Rest HT24, fråga 12:** *\"Hur påverkas RER på samma submaximala nivå efter 3 månaders uthållighetsträning? Motivera utförligt.\"* Svaret: RER **sjunker**, eftersom den tränade muskeln oxiderar relativt mer fett vid samma belastning. Mekanismerna: fler mitokondrier och mer β-oxidationsenzymer, mer intramuskulärt fett, fler kapillärer och bättre fettsyratransport, mindre anaerob glykolys och ett lägre katekolaminsvar vid samma absoluta belastning – som nu är en lägre andel av den högre VO₂max (se 9.1.4).\n\n## Sammanfattning {#sammanfattning}\n- Dygnets energiförbrukning = **basalmetabolism** (≈60–75 %) + **matens termiska effekt** (≈10 %) + **fysisk aktivitet** (den del som varierar mest).\n- **Direkt kalorimetri** mäter värme (Atwaterkammaren); **indirekt kalorimetri** mäter O₂ och CO₂ och är den vanliga metoden.\n- **RQ/RER = CO₂/O₂:** kolhydrat **1,0**, protein **≈0,8**, fett **≈0,7**. Fett är mer reducerat och kräver mer O₂ per bildad CO₂.\n- **RER > 1,0** vid maximalt arbete beror på bikarbonatbuffring, inte på ett nytt bränsle.\n- RER **stiger** med intensiteten, **sjunker** under långvarigt arbete och är **lägre vid samma submaximala belastning efter uthållighetsträning**.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.6-o1",
@@ -8006,6 +8155,48 @@
          ],
          "svar": 0,
          "forklaring": "Indirekt kalorimetri räknar fram energiomsättningen ur VO₂ och VCO₂ (ca 20 kJ per liter O₂). Direkt kalorimetri mäter värmen – det är skillnaden mellan metoderna.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.6-o4",
+         "q": "En person cyklar på samma submaximala belastning före och efter 3 månaders uthållighetsträning. Hur förändras RER vid den belastningen?",
+         "options": [
+          "Den sjunker under 0,6 på grund av ketonkroppar",
+          "Den är oförändrad, eftersom belastningen är densamma",
+          "Den stiger över 1,0 på grund av bättre buffring",
+          "Den sjunker, eftersom en större andel fett oxideras",
+          "Den stiger, eftersom mer kolhydrat används"
+         ],
+         "svar": 3,
+         "forklaring": "Uthållighetsträning ger fler mitokondrier, mer β-oxidation, mer intramuskulärt fett och bättre kapillärisering. Samma absoluta belastning blir en lägre andel av VO₂max och kräver mindre anaerob glykolys – RER sjunker.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.6-o5",
+         "q": "Vilket värde på RQ ger fullständig oxidation av palmitinsyra (C₁₆H₃₂O₂ + 23 O₂ → 16 CO₂ + 16 H₂O)?",
+         "options": [
+          "Cirka 0,70",
+          "Cirka 1,4",
+          "1,0",
+          "Cirka 0,83",
+          "Cirka 0,50"
+         ],
+         "svar": 0,
+         "forklaring": "RQ = bildad CO₂ / förbrukat O₂ = 16/23 ≈ 0,70. Fettsyror är reducerade molekyler och kräver mer syre per bildad koldioxid än glukos (6/6 = 1,0).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.6-o6",
+         "q": "Vilken del av dygnets energiförbrukning varierar mest mellan personer?",
+         "options": [
+          "Matens termiska effekt",
+          "Fysisk aktivitet",
+          "Termogenes i brun fettväv",
+          "Basalmetabolismen",
+          "Proteinsyntes"
+         ],
+         "svar": 1,
+         "forklaring": "Basalmetabolismen är den största delen (≈60–75 %) men varierar relativt lite; matens termiska effekt är ≈10 %. Den fysiska aktiviteten kan vara allt från ≈15 % till långt över 30 % och skiljer mest mellan individer.",
          "kalla": "ovning"
         }
        ],
@@ -8110,7 +8301,8 @@
         "Förklara hormonernas påverkan på lever, fettväv och skelettmuskulatur",
         "Förklara hur plasmaglukos hålls konstant trots ökat glukosupptag och hur vätskebalansen återställs"
        ],
-       "sammanfattning": "## Problemet\nArbetande muskel kan öka sitt glukosupptag **7–40 gånger**, men plasmaglukos varierar ändå lite. Det beror främst på levern, styrd av hormoner.\n\n## Hormonförändringar (t.ex. 3 h cykling på 65 % av VO₂max)\n| Hormon | Förändring | Effekt |\n|---|---|---|\n| Adrenalin, noradrenalin | ↑ (mer ju högre intensitet) | Glykogenolys i lever och muskel, lipolys, minskad insulinfrisättning |\n| Glukagon | ↑ (mer ju längre duration) | Glykogenolys och glukoneogenes i levern |\n| Kortisol | ↑ | Proteinnedbrytning → aminosyror för glukoneogenes, lipolys |\n| Tillväxthormon | ↑ | Lipolys |\n| **Insulin** | **↓** | Sympatikushämning av β-cellerna; mindre hämning av leverns glukosproduktion och lipolys |\n\n![Hormon- och glukosnivåer under 3 timmars cykling på 65 % av VO₂max. || till vänster att adrenalin och noradrenalin stiger hela tiden, glukagon stiger och kortisol toppar tidigt. Till höger att insulinet (röd) sjunker medan blodglukos (blå) hålls nästan konstant – leverns glukosproduktion matchar musklernas förbrukning.](data/del2-bilder/9.1.7-1.jpg \"Hormonellt svar pa traning, s. 4|data/del2-bilder/9.1.7-1-sida.jpg\")\n\n\n## Organ för organ\n- **Levern:** ökad glykogenolys och **glukoneogenes** (från laktat via Coricykeln, glycerol, alanin) – särskilt viktigt vid förlängt arbete när muskelglykogenet minskar. Glukagon har sin huvudsakliga effekt här; det **ökar inte muskelns glykogenförråd**.\n- **Fettväven:** sympatikus/adrenalin, kortisol och tillväxthormon ökar lipolysen → mer fria fettsyror och glycerol i blodet. Fett sparar glykogen – fettförrådet är mycket större. (Glukagon har vid fysiologiska nivåer liten direkt effekt på human fettväv; lipolysen drivs främst av katekolaminer och lågt insulin.)\n- **Skelettmuskeln:** adrenalin aktiverar glykogenfosforylas → glykogenolys. Laktat från inaktiva muskler kan oxideras i aktiva muskler.\n\n## Glukosupptag utan insulin\nInsulinet sjunker, men upptaget ökar eftersom **muskelkontraktion ger insulinoberoende translokation av GLUT4** till cellmembranet (via Ca²⁺ och AMPK). Därför ökar också **insulinkänsligheten** efter arbete – grunden för träningens effekt vid typ 2-diabetes (se 9.1.9).\n\n![GLUT4 säkerställer att den arbetande muskeln får glukos. || skillnaden mellan panelerna: utan signal ligger GLUT4 i vesiklar inne i cellen. När insulin binder – eller när muskeln kontraherar – flyttas GLUT4 till membranet och glukos kan tas upp. Kontraktionsvägen fungerar även när insulinnivån är låg.](data/del2-bilder/9.1.7-2.jpg \"Hormonellt svar pa traning, s. 5|data/del2-bilder/9.1.7-2-sida.jpg\")\n\n\n## Vätskebalans\nSvettning (flera liter per timme i värme) och ökad filtration till muskeln (högre kapillärtryck och kolloidosmotiskt tryck i muskeln) minskar plasmavolymen och höjer osmolaliteten → osmoreceptorer i hypothalamus → **ADH (vasopressin)** från neurohypofysen → vattenretention. **Aldosteron** ökar Na⁺-reabsorptionen. Båda kan vara förhöjda 12–48 timmar efter arbetet.\n\n![Reglering av vätske- och elektrolytbalansen under arbete. || kedjan från svettförlust och minskad plasmavolym till ökad osmolalitet, vasopressin (ADH) från hypofysen och aldosteron från binjuren – båda sparar vatten och natrium i njuren.](data/del2-bilder/9.1.7-3.jpg \"Hormonellt svar pa traning, s. 6|data/del2-bilder/9.1.7-3-sida.jpg\")\n\n\n## Tentafokus\n- Vilket hormon sjunker? Insulin. Vilka stiger? Adrenalin, noradrenalin, glukagon, kortisol, GH.\n- Varför plasmaglukos är konstant: leverns glukosproduktion matchar upptaget.\n- GLUT4-translokation vid kontraktion är insulinoberoende.",
+       "sammanfattning": "## Problemet: musklerna tar plötsligt mycket mer glukos {#problemet mal=1}\nUnder arbete kan den arbetande muskeln öka sitt glukosupptag **7–40 gånger**. Ändå varierar blodsockret nästan inte. Det kräver att någon annan levererar lika mycket glukos som musklerna tar – och det är framför allt **levern**, styrd av hormoner. Samtidigt måste fettväven frigöra fettsyror, så att det begränsade glykogenförrådet räcker längre.\n\nLektionen går igenom det i tre steg: vilka hormoner som ändras, vad de gör i lever, fettväv och muskel, och hur muskeln får glukos fast insulinet sjunker. Sist kommer vätskebalansen.\n\n## Vilka hormoner ändras? {#hormonerna mal=1}\nFöreläsningens exempel är 3 timmars cykling på 65 % av VO₂max:\n\n[[fig:kurvor]]\n\n| Hormon | Förändring | Viktigaste effekt |\n|---|---|---|\n| Adrenalin, noradrenalin | ↑, stiger hela tiden (mer ju högre intensitet) | glykogenolys i lever och muskel, lipolys, hämmar insulinfrisättningen |\n| Glukagon | ↑, stiger och planar ut | glykogenolys och glukoneogenes i levern |\n| Kortisol | ↑, toppar tidigt | aminosyror från proteinnedbrytning till glukoneogenes, lipolys |\n| Tillväxthormon | ↑ | lipolys |\n| **Insulin** | **↓** | sympatikus hämmar β-cellerna; mindre broms på leverns glukosproduktion och på lipolysen |\n\nMönstret att lägga på minnet: **alla glukoshöjande hormoner stiger, och insulin sjunker.** Det enda hormonet som går ned är det som annars skulle sänka blodsockret.\n\n## Organ för organ {#organ-for-organ mal=2}\n[[fig:organ]]\n\n**Levern – håller blodsockret.** Ökat glukagon, ökat adrenalin och minskat insulin ger **glykogenolys** och **glukoneogenes**. Glukoneogenesen blir allt viktigare vid förlängt arbete, när glykogenet minskar. Ett substrat är **laktat** från musklerna, som blir glukos igen i levern (**Coricykeln**); andra är glycerol och aminosyror (alanin). Glukagonet ökar alltså blodsockret (Rest HT23, fråga 9) – det verkar i levern och ökar inte muskelns glykogenförråd.\n\n**Fettväven – sparar glykogen.** Sympatikus (adrenalin), kortisol och tillväxthormon ökar **lipolysen**, och fria fettsyror och glycerol frigörs till blodet. Det är viktigt eftersom fettförrådet är mycket större än glykogenförrådet. Muskeln har ett eget, ganska litet fettförråd, men är beroende av lipolysen i fettväven.\n\n**Skelettmuskeln – bryter ned sitt eget glykogen.** Adrenalin binder sin receptor och aktiverar glykogenfosforylas → **glykogenolys** i muskeln. Laktat från inaktiva muskler kan oxideras i de aktiva.\n\n## Glukosupptag utan insulin {#glut4 mal=3}\nOm insulinet sjunker – hur kommer glukosen in i muskeln? Svaret är **GLUT4**:\n\n[[fig:glut4]]\n\nI vila ligger GLUT4 i vesiklar inne i cellen. Insulin flyttar dem till cellmembranet – men det gör också **muskelkontraktionen själv**, oberoende av insulin (via Ca²⁺ och AMPK). Därför får just den **arbetande** muskeln glukos, och **insulinkänsligheten** ökar efter arbetet.\n\n> [!klinik] Grunden för träning vid typ 2-diabetes\n> Den insulinoberoende GLUT4-translokationen är förklaringen till att fysisk aktivitet sänker blodsockret även hos en person med insulinresistens – en återkommande tentafråga (Rest HT22 fråga 4, Rest HT23 fråga 3, Rest HT25 fråga 3). Se 9.1.9.\n\n## Vätskebalansen {#vatskebalans mal=3}\nArbete ger mycket värme, och en person kan svettas flera liter per timme. Dessutom ökar filtrationen ut i muskeln: metaboliterna höjer det kolloidosmotiska trycket i muskelvävnaden och det höjda blodtrycket höjer det hydrostatiska trycket i kapillären. Tillsammans minskar plasmavolymen och osmolaliteten stiger.\n\n[[fig:adh]]\n\nflöde: plasmavolym ↓ och osmolalitet ↑ → osmoreceptorer i hypotalamus → ADH (vasopressin) från neurohypofysen → vattenretention i njuren → plasmavolym och osmolalitet normaliseras\n\n**Aldosteron** ökar också och ger mer natriumreabsorption. Både ADH och aldosteron kan vara förhöjda **12–48 timmar** efter arbetet och ser till att vätskebalansen återställs.\n\n## Sammanfattning {#sammanfattning}\n- Muskelns glukosupptag ökar 7–40 gånger, men **levern** håller blodsockret konstant genom glykogenolys och glukoneogenes (bl.a. från laktat via Coricykeln).\n- **Adrenalin, noradrenalin, glukagon, kortisol och tillväxthormon stiger; insulin sjunker.**\n- **Fettväven** frigör fettsyror (adrenalin, kortisol, GH) och sparar glykogen. **Muskeln** bryter ned sitt glykogen via adrenalin.\n- **Kontraktion flyttar GLUT4 till membranet utan insulin** (Ca²⁺, AMPK) – därför får den arbetande muskeln glukos och insulinkänsligheten ökar.\n- **Vätskebalans:** svett och filtration → osmolalitet ↑ → ADH; aldosteron ökar Na⁺-reabsorptionen; båda förhöjda 12–48 h efter arbetet.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.7-o1",
@@ -8152,6 +8344,48 @@
          ],
          "svar": 3,
          "forklaring": "Svettförluster och minskad plasmavolym ökar ADH och RAAS-aktivitet, vilket sparar vatten och natrium. ANP verkar åt motsatt håll (natriures).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.7-o4",
+         "q": "Vilket hormon minskar i plasma under långvarigt måttligt arbete?",
+         "options": [
+          "Noradrenalin",
+          "Glukagon",
+          "Tillväxthormon",
+          "Kortisol",
+          "Insulin"
+         ],
+         "svar": 4,
+         "forklaring": "Sympatikus hämmar β-cellerna, så insulinet sjunker medan de glukoshöjande hormonerna (adrenalin, noradrenalin, glukagon, kortisol, GH) stiger. Lågt insulin bromsar mindre på leverns glukosproduktion och på lipolysen.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.7-o5",
+         "q": "Vad är den viktigaste funktionen hos ökad glukagonfrisättning vid akut fysisk aktivitet?",
+         "options": [
+          "Att hämma lipolysen i fettväven",
+          "Att öka GLUT4 i muskelns membran",
+          "Att öka leverns glukosproduktion så att plasmaglukos hålls uppe",
+          "Att öka insulinfrisättningen",
+          "Att öka glykogeninlagringen i arbetande muskel"
+         ],
+         "svar": 2,
+         "forklaring": "Glukagon verkar främst i levern och ökar glykogenolys och glukoneogenes, så att glukos släpps ut i blodet i samma takt som musklerna tar upp den (Rest HT23, fråga 9).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.7-o6",
+         "q": "Vad är substratet i Coricykeln, och var bildas glukosen?",
+         "options": [
+          "Laktat från musklerna; glukosen bildas i levern",
+          "Glycerol från fettväven; glukosen bildas i muskeln",
+          "Kreatin från muskeln; glukosen bildas i levern",
+          "Alanin från levern; glukosen bildas i njuren",
+          "Fettsyror från fettväven; glukosen bildas i levern"
+         ],
+         "svar": 0,
+         "forklaring": "Laktat från framför allt glykolytiska muskelfibrer förs med blodet till levern, där det blir glukos igen genom glukoneogenes. Glukosen kan sedan tas upp av arbetande muskel.",
          "kalla": "ovning"
         }
        ],
@@ -8199,6 +8433,14 @@
          "text": "**GLUT4 ser till att den arbetande muskeln får glukos.** (a) I vila utan insulin ligger GLUT4 i vesiklar inne i cellen, och glukos kommer inte in. (b) Insulin binder sin receptor, en signalkaskad startar, vesiklarna fuseras med membranet (exocytos) och glukos kommer in. **Under arbete** sjunker insulinet (sympatikus hämmar pankreas), men **muskelkontraktionen i sig** (via AMPK och Ca²⁺) flyttar GLUT4 till membranet **insulinoberoende**. Det är därför den aktiva muskeln får glukos och träning förbättrar insulinkänsligheten."
         },
         {
+         "fil": "data/del2-slides/m9-415c7a-6.webp",
+         "kalla": "Hormonellt svar på träning",
+         "nyckel": "m9_Hormonellt_svar_pa_traning",
+         "sida": 6,
+         "rubrik": "Reglering av vätske- och elektrolytbalans under arbete Ellinor Kenne Kenney, Wilmore, Cost",
+         "text": "**Vätske- och elektrolytbalans under arbete.** (1) Muskelarbete ger värme och svettning, ibland flera liter per timme. (2) Svettningen sänker plasmavolymen, så blodet blir koncentrerat och **osmolaliteten stiger**. (3) Osmoreceptorer i hypotalamus känner av det. (4–5) Hypotalamus signalerar till neurohypofysen, som frisätter **ADH (vasopressin)**. (6) ADH ökar vattengenomsläppligheten i samlingsrören så att vatten reabsorberas. (7) Urinproduktionen minskar och vätskeförlusten begränsas. Dessutom ökar **aldosteron** natriumreabsorptionen. Både ADH och aldosteron kan vara förhöjda 12–48 h efter arbetet."
+        },
+        {
          "fil": "data/del2-slides/m9-170c67-1.webp",
          "kalla": "Hormonellt svar på träning (kort)",
          "nyckel": "m9_Hormonellt_svar_pa_traning-1",
@@ -8230,7 +8472,8 @@
        "delmal": [
         "Förklara hur det fysiologiska svaret vid och adaptationen till träning kan skilja mellan män och kvinnor"
        ],
-       "sammanfattning": "## Utgångsläge\nMän har i genomsnitt större muskelmassa (högre testosteron), större hjärta, högre Hb-koncentration och blodvolym och därför högre **absolut** VO₂max och styrka. Kvinnor har i genomsnitt högre andel kroppsfett. Uttryckt per kg fettfri massa är skillnaderna betydligt mindre.\n\n![Fenotypiska könsskillnader innan påbörjad träning (Lauersen m.fl.). || vilka egenskaper som skiljer i utgångsläget: VO₂max, muskelstyrka, kroppssammansättning och substratmetabolism (kvinnor oxiderar relativt mer fett vid arbete). Skillnaderna gäller grupper – inte individer.](data/del2-bilder/9.1.8-1.jpg \"Halsa prestation mekanism EE VT26, s. 39|data/del2-bilder/9.1.8-1-sida.jpg\")\n\n\n## Under arbete\n- Kvinnor använder i genomsnitt en **större andel fett** som substrat vid samma relativa intensitet (lägre RER) – östrogen ökar lipolys och fettoxidation och sparar glykogen.\n- Kvinnor har ofta **högre andel typ I-fibrer** och kan vara mer uttröttningsresistenta vid submaximalt och isometriskt arbete.\n- Kvinnor har lägre Hb och därmed lägre syretransportkapacitet per liter blod.\n\n## Adaptation\n- Den **relativa** förbättringen av VO₂max och styrka efter träning är **ungefär lika stor** hos kvinnor och män. Kvinnor kan få lika stor relativ hypertrofi och styrkeökning, men den absoluta muskelmassan blir mindre.\n- Rekommendationerna för fysisk aktivitet (FYSS) är i princip desamma för kvinnor och män. Det finns inget stöd för att kvinnor behöver träna \"lättare\" eller annorlunda för att få effekt.\n- Påståenden om att män skulle ha överlägsen syretransport efter träningen som förklaring till muskeluppbyggnad är inte korrekta – skillnaden i absolut muskelmassa förklaras främst av testosteron.\n\n![Konditionsträning verkar minska könsskillnaderna i genuttryck i skelettmuskeln. || att den tränade muskelns genuttryck blir mer likt mellan könen än hos otränade – träningssvaret är i stort sett detsamma hos kvinnor och män.](data/del2-bilder/9.1.8-2.jpg \"Halsa prestation mekanism EE VT26, s. 50|data/del2-bilder/9.1.8-2-sida.jpg\")\n\n\n## Tentafokus\n- Relativ träningseffekt likvärdig; absoluta värden skiljer.\n- Kvinnor: högre andel fettoxidation vid submaximalt arbete.\n\n## Mer från föreläsningarna\n- Studier på idrottsmedicinsk forskning har länge haft få kvinnliga deltagare, så kunskapen om kvinnors träningssvar är sämre.\n- **VO₂max:** i några studier ökar män sitt VO₂max (ml/min/kg) något mer än kvinnor efter träning, men skillnaden är liten. När man normaliserar för fettfri kroppsmassa har män ca 10 % högre Hb och syretransportkapacitet.\n- **Styrketräning:** inga tydliga skillnader i hypertrofi; kvinnor kan ha högre relativ potential att öka överkroppsstyrkan. Studierna skiljer sig mycket metodologiskt.\n- **Genuttryck:** könsskillnaderna i genuttryck mellan vävnader är små (median ca 0,2 % av generna skiljer sig).\n- Slutsats för patientråd: män och kvinnor ska i princip träna på samma sätt.\n",
+       "sammanfattning": "## Utgångsläget: skillnader före träning {#utgangslage mal=1}\nBörja med att skilja två frågor åt: *hur skiljer sig kvinnor och män åt innan de tränar?* och *svarar de olika på samma träning?* Svaren är olika.\n\n**Före träning** finns tydliga skillnader i genomsnitt:\n\n[[fig:fore]]\n\n| Egenskap | Högre hos | Varför (främst) |\n|---|---|---|\n| Absolut VO₂max | män | större muskelmassa, större hjärta, högre Hb och blodvolym |\n| Muskelstyrka, fibertvärsnittsyta | män | högre testosteron, mer muskelmassa |\n| Andel typ I-fibrer | kvinnor | – |\n| Fettoxidation vid arbete (lägre RER) | kvinnor | bl.a. östrogen, som ökar lipolys och sparar glykogen |\n| Andel kroppsfett | kvinnor | – |\n\nSkillnaderna gäller **grupper, inte individer**, och de krymper mycket när man räknar per kg fettfri massa.\n\nKunskapen är dessutom ojämn: idrottsmedicinsk forskning har länge haft få kvinnliga deltagare.\n\n[[fig:fa-studier]]\n\n## Varför har män högre VO₂max? {#vo2max mal=1}\nEn invasiv studie på högtränade cyklister och triathleter jämförde kvinnor och män efter normalisering för fettfri kroppsmassa:\n\n[[fig:mekanism]]\n\nMännen hade fortfarande **≈10 % högre VO₂max** per kg fettfri massa, och det förklarades av **≈10 % högre hemoglobinkoncentration** och därmed syretransport. Slagvolym, hjärtminutvolym, benblodflöde, syreextraktion, kapillärtäthet och mitokondrietäthet var **lika** efter normaliseringen. Kvinnors lägre VO₂max beror alltså på mindre muskelmassa och lägre Hb – inte på att deras hjärta eller muskler fungerar sämre.\n\n## Svarar kvinnor och män olika på träning? {#adaptation mal=1}\nNu den andra frågan. **Den relativa träningseffekten är i stort sett densamma.**\n\n[[fig:efter]]\n\n**Konditionsträning:** i några studier ökar män sitt VO₂max (ml/min/kg) något mer än kvinnor, men skillnaden är liten.\n\n[[fig:vo2-meta]]\n\n**Styrketräning:** ingen skillnad i hypertrofi och underkroppsstyrka; kvinnor kan ha en högre relativ potential att öka **överkroppsstyrkan** (de börjar från en lägre nivå). Studierna skiljer sig mycket i metod, så slutsatserna är osäkra.\n\n[[fig:styrka-meta]]\n\n[[fig:styrka-forest]]\n\nOch träningen ger **specifika** anpassningar: uthållighetstränade har högst VO₂peak och styrketränade är starkast, hos båda könen – medan skillnaden i absoluta värden mellan könen finns kvar.\n\n[[fig:prestation]]\n\n**Tillämpning – Rest VT26, fråga 6:** *\"Behöver män och kvinnor planera sin träning olika?\"* Nej. **Träningssvaret är i stort sett lika** för både kondition och styrka, och rekommendationerna (FYSS, WHO) är desamma. Det finns inget stöd för att kvinnor behöver träna \"lättare\" eller annorlunda. Skillnaden i absolut muskelmassa förklaras främst av testosteron, inte av olika träningssvar.\n\n## Molekylär nivå: genuttryck {#molekylart mal=1}\nFöreläsningen går också ned på gennivå. Mönstret är detsamma: små skillnader, och träning gör dem ännu mindre.\n\n[[fig:vavnader]]\n\n[[fig:muskel-baslinje]]\n\n[[fig:gener-efter]]\n\n[[fig:mindre-skillnad]]\n\n- I 29 vävnader skiljer sig i median bara **≈0,2 % av generna** mellan könen; de som skiljer rör ofta metabolism och immunförsvar.\n- I skelettmuskeln före träning har kvinnor högre uttryck av **mitokondriella** gener – i linje med fler typ I-fibrer och mer fettoxidation.\n- **Långvarig uthållighetsträning minskar könsskillnaderna i genuttryck**; könshormonerna verkar viktiga för de skillnader som finns.\n\n## Sammanfattning {#sammanfattning}\n- **Före träning:** män har i genomsnitt högre absolut VO₂max och styrka (muskelmassa, testosteron, Hb); kvinnor har fler typ I-fibrer och oxiderar relativt mer fett vid arbete.\n- Per kg fettfri massa har män ≈10 % högre VO₂max, förklarat av ≈10 % högre Hb – hjärta, kärl och muskel fungerar lika.\n- **Träningssvaret är i stort sett lika:** liknande relativ ökning av VO₂max och styrka, ingen skillnad i hypertrofi; kvinnor kan öka överkroppsstyrkan relativt mer.\n- **Råd till patienter:** kvinnor och män ska i princip träna på samma sätt.\n- På gennivå är skillnaderna små, och uthållighetsträning minskar dem.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.8-o1",
@@ -8273,11 +8516,55 @@
          "svar": 1,
          "forklaring": "Trots lägre testosteron är den procentuella förbättringen likartad; de absoluta skillnaderna beror på utgångsläget.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.1.8-o4",
+         "q": "Efter normalisering för fettfri massa har män fortfarande ≈10 % högre VO₂max. Vad förklarar det enligt invasiva mätningar?",
+         "options": [
+          "Fler mitokondrier per kg muskel",
+          "Större syreextraktion i muskeln",
+          "≈10 % högre hemoglobinkoncentration och därmed syretransport",
+          "Högre maximal hjärtfrekvens",
+          "Högre kapillärtäthet"
+         ],
+         "svar": 2,
+         "forklaring": "Slagvolym, hjärtminutvolym, benblodflöde, syreextraktion, kapillär- och mitokondrietäthet var lika efter normalisering. Skillnaden förklarades av ≈10 % högre [Hb].",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.8-o5",
+         "q": "En patient frågar om kvinnor ska träna på ett annat sätt än män för att få effekt. Vad stämmer bäst med nuvarande kunskap?",
+         "options": [
+          "Kvinnor får ingen hypertrofi av styrketräning",
+          "Träningssvaret är i stort sett likartat för både kondition och styrka, så samma rekommendationer gäller",
+          "Män får dubbelt så stor relativ ökning av VO₂max",
+          "Kvinnor bör bara träna uthållighet",
+          "Kvinnor behöver lägre intensitet för att inte skada musklerna"
+         ],
+         "svar": 1,
+         "forklaring": "Den relativa förbättringen av VO₂max, styrka och muskelmassa är ungefär lika stor. Rekommendationerna (FYSS, WHO) är desamma (Rest VT26, fråga 6).",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 1,
        "url": "#/bibliotek/9.1.8",
        "slides": [
+        {
+         "fil": "data/del2-slides/m9-4d03ee-2.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 2,
+         "rubrik": "Hypertrofi & styrketräning 2026-04-23 2",
+         "text": "**Forskningsexempel:** en studie som jämför kvinnor 35–50 år med olika träningshistorik: över 15 år uthållighetsträning, över 15 år styrketräning, eller otränade. Syftet är att se hur skelettmuskel och fettväv har anpassats efter decennier av träning. Bilderna visar VO₂max-test på cykel och styrketest av knäextension."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-3.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 3,
+         "rubrik": "Från labbet – Molekylär anpassning till träning Karolinska Institutet 23 april 2026 3",
+         "text": "**Så görs studien i labbet.** (1) Fysisk screening: frågeformulär, maximalt vridmoment i knäextension (Biodex), 1RM-test och VO₂peak-test. (2) Hormonell screening: blod- och urinprov, viktigt hos kvinnor eftersom menscykeln påverkar. (3) Interventionsdagar i **cross-over-design**: samma person gör både ett uthållighetspass (30 min vid 75 % Wmax) och ett styrkepass (8 × 9 rep vid 80 % 1RM), med muskelbiopsier och blodprov före, direkt efter, efter 1 h och efter 3 h. (4) Laboratorieanalyser av muskel- och fettvävnad. Cross-over gör att varje person blir sin egen kontroll."
+        },
         {
          "fil": "data/del2-slides/m9-4d03ee-6.webp",
          "kalla": "Hälsa, prestation och mekanism",
@@ -8293,6 +8580,14 @@
          "sida": 15,
          "rubrik": "Träning för ett friskare liv?",
          "text": "Avsnittsrubrik: Träning för ett friskare liv?"
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-22.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 22,
+         "rubrik": "Prestationsanpassningar till regelbunden träning Untrained Control Endurance trained Stren",
+         "text": "**Prestationsanpassningar, män och kvinnor.** Vänster: VO₂peak hos otränade, uthållighetstränade och styrketränade. De uthållighetstränade har klart högst VO₂peak (*). Män har högre värden än kvinnor i varje grupp (¤). Höger: absolut styrka (Nm). De styrketränade är starkast, och män är starkare än kvinnor i absoluta tal. **Kärnan:** träningen ger specifika anpassningar, och könsskillnaden finns kvar i absoluta värden, men kvinnor anpassar sig lika mycket relativt sett."
         },
         {
          "fil": "data/del2-slides/m9-4d03ee-36.webp",
@@ -8415,30 +8710,6 @@
          "text": "Avsnittsrubrik: Träning som (istället för?) medicin."
         },
         {
-         "fil": "data/del2-slides/m9-4d03ee-60.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 60,
-         "rubrik": "Träning vs Blodtrycksmedicin? Karolinska Institutet - ett medicinskt universitet 23 april ",
-         "text": "**Träning jämfört med blodtrycksmedicin** (nätverksmetaanalys, 391 RCT). Hos personer med hypertoni verkar träningens blodtryckssänkande effekt vara **lik den hos vanliga blodtrycksmediciner**, men studiepopulationerna skiljer sig, så jämförelsen är osäker."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-61.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 61,
-         "rubrik": "Träning tillsammans med läkemedel vid viktnedgång – bättre effekt än enbart läkemedel Lund",
-         "text": "**Träning + läkemedel ger bäst vikthållning** (Lundgren, NEJM 2021). Efter en initial viktnedgång på ≈13 kg (lågkalorikost) randomiserades deltagarna till placebo, träning, liraglutid (GLP-1-analog) eller träning + liraglutid i 52 veckor. Placebogruppen gick upp ≈6 kg igen. Både träning och liraglutid för sig bromsade viktuppgången. **Kombinationen** (röd linje) gav fortsatt viktminskning, alltså bäst effekt."
-        },
-        {
-         "fil": "data/del2-slides/m9-4d03ee-62.webp",
-         "kalla": "Hälsa, prestation och mekanism",
-         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
-         "sida": 62,
-         "rubrik": "Ett pass fysisk aktivitet dagen innan gav lägre blodfettsstegring efter fettrik frukost Ot",
-         "text": "**Ett träningspass dagen innan ger lägre blodfettstegring efter en fettrik frukost.** Kurvorna visar serumtriglycerider timmarna efter en fettrik måltid, med och utan ett 90-minuterspass promenad dagen innan, hos otränade och uthållighetstränade kvinnor. Kurvan efter träning (svarta punkter) ligger lägre i båda grupperna. Ett enda pass ökar fettclearance (via ökad lipoproteinlipas i muskeln). Akuta effekter av träning är alltså också viktiga."
-        },
-        {
          "fil": "data/del2-slides/m9-b07d75-8.webp",
          "kalla": "Introduktion och akut svar på arbete",
          "nyckel": "m9_Introduktion_och_akut_svar_pa_arbete_VT26_canvas",
@@ -8455,7 +8726,8 @@
         "Förklara hur fysisk aktivitet kan påverka sjukdomsförlopp vid kardiovaskulär sjukdom, typ 2-diabetes, obesitas, osteoporos, cancer, depression och reumatism",
         "Känna till FYSS och fysisk aktivitet på recept (FaR)"
        ],
-       "sammanfattning": "## Bakgrund\nFysisk aktivitet minskar mortaliteten **dosberoende** (stora kohortstudier, t.ex. >400 000 personer i Taiwan). **FYSS** (Fysisk aktivitet i sjukdomsprevention och sjukdomsbehandling) är en evidensbaserad handbok med rekommendationer för 35 diagnoser; **FaR** (fysisk aktivitet på recept) kan förskrivas av legitimerad vårdpersonal.\n\n## Kardiovaskulär sjukdom och hypertoni\n- Ökad kapillärisering och vasodilatation i hjärtmuskeln (NO och adenosin) → bättre syreleverans.\n- **HDL ↑, LDL och triglycerider ↓** → minskad aterosklerosrisk; ökad NO minskar trombocytaggregationen.\n- Blodtrycket sänks hos de flesta med hypertoni (det finns responders och non-responders): lägre TPR (ökat NOS-uttryck, flödesmedierad vasodilatation), lägre sympatikustonus, post-exercise hypotension i upp till 13 timmar.\n- Vid ett **konditionspass** stiger systoliskt tryck medan diastoliskt är oförändrat; vid tung **styrketräning** stiger båda tillfälligt. Efter passet sjunker trycket under utgångsnivån. Regelbunden träning är säker och rekommenderas vid hypertoni.\n\n![Träning sänker blodtrycket i vila – jämförelse av olika träningsformer (metaanalys). || att alla träningsformer (aerob, dynamisk styrka, kombinerad, isometrisk) sänker systoliskt och diastoliskt tryck; den gula pilen visar en sänkning av samma storleksordning som ett blodtrycksläkemedel i låg dos.](data/del2-bilder/9.1.9-1.jpg \"Halsa prestation mekanism EE VT26, s. 59|data/del2-bilder/9.1.9-1-sida.jpg\")\n\n\n## Typ 2-diabetes och obesitas\n- **Ökat uttryck och kontraktionsinducerad translokation av GLUT4** → insulinoberoende glukosupptag och **ökad insulinkänslighet** – den viktigaste mekanismen vid tidig typ 2-diabetes/pre-diabetes. Även fler mitokondrier och kapillärer, mer glykogenlagring och minskat visceralt fett bidrar.\n- Minskad systemisk låggradig inflammation och bättre blodfettsprofil vid övervikt.\n- För viktnedgång måste träning kombineras med kostförändring.\n\n![Förbättrad insulinkänslighet efter 7 dagars träning hos personer med typ 2-diabetes. || stapeln efter träning (svart) jämfört med före: insulinkänsligheten ökar redan efter en vecka – effekten kommer snabbt men försvinner också om träningen upphör.](data/del2-bilder/9.1.9-2.jpg \"Halsa prestation mekanism EE VT26, s. 63|data/del2-bilder/9.1.9-2-sida.jpg\")\n\n\n## Cancer\n- Regelbunden fysisk aktivitet **minskar risken för vissa, men inte alla, cancerformer** (tydligast kolon-, bröst- och endometriecancer).\n- Trolig mekanism: **förbättrad immunfunktion och minskad låggradig kronisk inflammation**, samt effekter på insulin, könshormoner och vikt.\n- Under behandling: minskad fatigue, bibehållen kondition och styrka, minskad depression. Befolkningsstudier visar minskad återfallsrisk och bättre överlevnad vid bröst-, prostata- och kolorektalcancer (låg evidens – inte randomiserade studier).\n\n![Mer fysisk aktivitet på fritiden minskar risken för 13 olika cancerformer. || att riskkvoterna (punkterna) ligger under 1 för bland annat esofagus-, lever-, njur-, kolon- och bröstcancer. Det är observationsdata – sambandet är tydligt men delvis förmedlat via lägre vikt.](data/del2-bilder/9.1.9-3.jpg \"Halsa prestation mekanism EE VT26, s. 20|data/del2-bilder/9.1.9-3-sida.jpg\")\n\n\n## Osteoporos\nMekanisk belastning stärker skelettet (stillasittande aktiverar nedbrytande signalvägar). Rekommendation: **viktbärande styrketräning** av stora muskelgrupper med progression samt balansträning – minskar både benskörhet och fallrisk.\n\n## Depression\nÖkad självkänsla och påverkan på dopamin, noradrenalin, serotonin, endorfiner (och BDNF) ger effekt på mild–måttlig depression.\n\n## Reumatism (t.ex. reumatoid artrit)\nÖkad muskelstyrka och kapacitet minskar symtomen. Vid RA är ROS och inflammation **kroniskt** förhöjda, medan träning ger **kortvariga** ROS-toppar som stimulerar antioxidantförsvaret.\n\n## Tentafokus\n- Insulinkänslighet ↑ via GLUT4 (inte \"sänkt insulinkänslighet\", inte typ IIx-hyperplasi).\n- Cancer: minskad risk för vissa former; immunfunktion och inflammation.\n- Patientgrupper som gynnas av styrke- respektive konditionsträning (essä): t.ex. osteoporos, sarkopeni/äldre, typ 2-diabetes (styrka); hypertoni, hjärtsvikt, kranskärlssjukdom, obesitas (kondition).\n\n## Mer från föreläsningarna\n- Hälsa bestäms ungefär till 40 % av beteende och livsstil, ca 30 % av genetik, och resten av sociala förhållanden, miljö och sjukvård – sjukvården står bara för ca 10 %.\n- **Rekommendationer (WHO/FYSS):** vuxna bör vara fysiskt aktiva minst 150–300 min/vecka på måttlig intensitet eller 75–150 min på hög intensitet, plus muskelstärkande aktivitet minst två dagar per vecka, och minska stillasittandet. För ytterligare hälsoeffekter kan aktiviteten ökas.\n- **Fysisk aktivitet på recept (FaR)** med stöd av FYSS (Fysisk aktivitet i sjukdomsprevention och sjukdomsbehandling) används för att skriva individuellt anpassade ordinationer.\n- Konditionsträning förbättrar främst aerob kapacitet; styrketräning ger hypertrofi och styrka – båda behövs vid de flesta folksjukdomar (hjärt-kärlsjukdom, typ 2-diabetes, obesitas, cancer, depression, reumatism).\n",
+       "sammanfattning": "## Varför fysisk aktivitet är medicin {#bakgrund mal=1}\nLektionerna 9.1.3–9.1.8 handlade om hur kroppen svarar på och anpassar sig till träning. Den här lektionen vänder på perspektivet: **vad betyder anpassningarna för sjukdom?**\n\nUtgångspunkten är att fysisk aktivitet minskar dödligheten – och att effekten är **dosberoende**. Redan en kvart om dagen gör skillnad:\n\n[[fig:mortalitet]]\n\nDet är också den del av hälsan som vården kan påverka mest genom råd: beteende och livsstil väger tyngre än själva sjukvården för risken att dö i förtid.\n\n[[fig:schroeder]]\n\nTräning har kallats *the real polypill*: den påverkar samma riskfaktorer som en kombinationstablett mot hjärt-kärlsjukdom, är billig och har få biverkningar. Kroppen är byggd för rörelse – dagens stillasittande är nytt i evolutionärt perspektiv – och fysisk inaktivitet är ett stort folkhälsoproblem. De två vanligaste dödsorsakerna i Sverige – hjärt-kärlsjukdom och cancer – minskar båda med fysisk aktivitet, och enligt WHO kan hundratals miljoner nya sjukdomsfall till 2030 förebyggas.\n\n[[fig:dodsorsaker]]\n\n[[fig:who-fall]]\n\n[[fig:kostnad]]\n\n## Rekommendationer, FYSS och FaR {#rekommendationer mal=2}\n**WHO:s riktlinjer (2020)** för vuxna:\n\n- **150–300 minuter i veckan** med måttlig aerob aktivitet, **eller 75–150 minuter** med hög intensitet, eller en kombination.\n- **Muskelstärkande aktivitet minst två dagar i veckan.**\n- **Minska stillasittandet** – lite är bättre än inget.\n- Äldre: dessutom balans- och styrketräning minst tre dagar i veckan. Personer med kroniska sjukdomar (hypertoni, typ 2-diabetes, hiv, efter cancer) har samma rekommendationer.\n\n[[fig:every-move]]\n\nIntensiteten och träningsformen spelar roll – och kondition och styrka kompletterar varandra:\n\n[[fig:intensitet]]\n\n[[fig:bada]]\n\nI Sverige används **FYSS** (*Fysisk aktivitet i sjukdomsprevention och sjukdomsbehandling*), en evidensbaserad handbok från Yrkesföreningar för Fysisk Aktivitet med en allmän del och diagnosspecifika rekommendationer. **FaR** (fysisk aktivitet på recept) är en individuellt anpassad, skriftlig ordination som legitimerad vårdpersonal kan skriva med stöd av FYSS.\n\n## Hur träningen verkar i hela kroppen {#mekanismer mal=1}\nEffekterna på sjukdomar bygger på samma anpassningar som du redan har gått igenom, men nu i hela kroppen:\n\n[[fig:spektrum]]\n\n[[fig:organ]]\n\n[[fig:molekyl]]\n\nTränade har dessutom mindre fett i de farliga depåerna – visceralt fett och leverfett – och mindre fett inne i musklerna:\n\n[[fig:fett]]\n\n[[fig:muskelfett]]\n\n## Hjärt-kärlsjukdom och hypertoni {#kardiovaskular mal=1}\nFöreläsningen sammanfattar effekterna på hjärt-kärlsystemet:\n\n- **Hjärtat** får bättre syreleverans: fler kapillärer, större utbyteskapacitet och NO- och adenosinmedierad vasodilatation.\n- **Blodfetterna** förbättras: **HDL ökar och LDL minskar**, och därmed risken för ateroskleros (Rest VT24, fråga 3). Redan ett pass dagen innan minskar blodfettsstegringen efter en fettrik måltid.\n- **Trombocyterna** aggregerar mindre (via NO).\n- **Blodtrycket** sjunker hos de flesta med hypertoni – det finns *responders* och *non-responders* – genom post-exercise hypotension, förbättrad flödesmedierad vasodilatation (ökat NOS-uttryck) och minskad sympatikustonus.\n\n[[fig:blodfett]]\n\nHur stor är effekten? Alla träningsformer sänker vilotrycket, isometrisk träning mest, och hos personer med hypertoni verkar effekten vara i samma storleksordning som vanliga blodtrycksläkemedel – men jämförelsen är osäker eftersom studiepopulationerna skiljer sig.\n\n[[fig:blodtryck]]\n\n[[fig:vs-medicin]]\n\n**Tillämpning – Rest VT26, fråga 12:** en patient med hypertoni är orolig för att blodtrycket stiger vid träning. Svara med 9.1.3 och den här lektionen: under ett konditionspass stiger systoliskt tryck medan diastoliskt är i stort sett oförändrat (TPR sjunker); vid tung styrketräning stiger båda tillfälligt. Efter passet sjunker trycket under utgångsnivån i flera timmar, och regelbunden träning sänker vilotrycket. Träning är alltså säker och rekommenderas.\n\n## Typ 2-diabetes och obesitas {#diabetes-obesitas mal=1}\nDet här är den mest examinerade delen av lektionen. Kärnan är muskelcellen:\n\n[[fig:diabetes]]\n\n- **GLUT4 uppregleras och translokeras vid kontraktion** – glukosupptaget i muskeln ökar **oberoende av insulin**, och **insulinkänsligheten ökar** (se 9.1.7). Det är svaret på Rest HT22 fråga 4, Rest HT23 fråga 3, Rest HT24 fråga 3 och Rest HT25 fråga 3.\n- Fler mitokondrier, mer glykogensyntas och större glykogenlager, och mindre visceralt fett bidrar.\n- Vid övervikt minskar den systemiska låggradiga inflammationen och blodfettsprofilen förbättras.\n- **För viktnedgång måste träningen kombineras med kostförändring.**\n\nEffekten på insulinkänsligheten kommer snabbt – efter en vecka – men försvinner också om träningen upphör. Och redan korta avbrott i stillasittandet hjälper:\n\n[[fig:sju-dagar]]\n\n[[fig:avbrott]]\n\nStyrketräning förbättrar också insulinkänsligheten (HOMA-IR) hos äldre och HbA1c hos äldre med typ 2-diabetes, eftersom musklerna är kroppens största glukoslager.\n\nVid behandling av obesitas med läkemedel är kombinationen bäst:\n\n[[fig:glp1]]\n\n## Cancer {#cancer mal=1}\nRegelbunden fysisk aktivitet **minskar risken för vissa, men inte alla, cancerformer** (Rest VT26, fråga 4):\n\n[[fig:cancerformer]]\n\nTräning verkar på flera sätt – mot själva cancern och mot behandlingens biverkningar:\n\n[[fig:cancerhjul]]\n\n- **Risk:** förbättrad immunfunktion och minskad låggradig inflammation (Rest VT26, fråga 3), samt effekter på insulin, könshormoner och vikt.\n- **Under behandling:** mindre trötthet (fatigue), bibehållen kondition och styrka (Rest VT25, fråga 3).\n- **Prognos:** observationsstudier visar bättre prognos och överlevnad.\n\n## Osteoporos, depression och reumatism {#fler-sjukdomar mal=1}\n[[fig:skelett]]\n\n- **Osteoporos:** mekanisk belastning styr mesenkymala stamceller mot benbildande osteoblaster; inaktivitet styr dem mot fettceller och ökar benresorptionen. Rekommendation: **viktbärande styrketräning** av stora muskelgrupper med gradvis ökad belastning, plus balansträning – den minskar både benskörheten och fallrisken (Rest HT24 fråga 13, Rest VT26 fråga 13).\n- **Depression:** bättre självkänsla och positiv effekt på dopamin, noradrenalin, serotonin och endorfiner.\n- **Reumatism (t.ex. reumatoid artrit):** ökad muskelstyrka och kapacitet minskar besvären. Vid RA är ROS och inflammation kroniskt förhöjda, medan ett träningspass ger kortvariga ROS-toppar som stärker antioxidantförsvaret (se 9.1.4).\n\nLivslång träning bevarar också musklerna vid åldrande:\n\n[[fig:aldrande]]\n\n## Arbete och sjukfrånvaro {#arbete mal=1}\nFysisk aktivitet på fritiden hänger ihop med lägre sjukfrånvaro – men tungt fysiskt arbete gör det inte:\n\n[[fig:sjukfranvaro]]\n\n[[fig:fritid-jobb]]\n\n## Sammanfattning {#sammanfattning}\n- Fysisk aktivitet minskar mortaliteten **dosberoende**; livsstil påverkar förtida död mer än sjukvården.\n- **WHO:** 150–300 min/vecka måttligt eller 75–150 min högintensivt, muskelstärkande ≥2 dagar/vecka, mindre stillasittande; samma för personer med kroniska sjukdomar. **FYSS** ger diagnosspecifika råd; **FaR** är ordinationen.\n- **Hjärt-kärl:** HDL ↑, LDL ↓, mindre trombocytaggregation, bättre kapillärisering; **blodtrycket sjunker** vid hypertoni (post-exercise hypotension, NOS, lägre sympatikus).\n- **Typ 2-diabetes:** **GLUT4** ↑ och kontraktionsstyrd translokation → insulinoberoende glukosupptag och ökad insulinkänslighet; kombinera med kost vid viktnedgång.\n- **Cancer:** lägre risk för vissa former (immunfunktion, mindre inflammation); mindre trötthet under behandling.\n- **Osteoporos:** viktbärande styrketräning och balans. **Depression:** signalsubstanser och självkänsla. **RA:** styrka och kapacitet; kortvariga ROS-toppar är skyddande.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.1.9-o1",
@@ -8497,6 +8769,48 @@
          ],
          "svar": 4,
          "forklaring": "Rekommendationen är 150 min måttlig eller 75 min hög intensitet per vecka, gärna fördelat, plus muskelstärkande träning minst 2 ggr per vecka.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.9-o4",
+         "q": "Vilken fysiologisk anpassning till regelbunden träning bidrar mest till förbättrad insulinkänslighet hos en patient med prediabetes?",
+         "options": [
+          "Ökad insulinfrisättning från β-cellerna",
+          "Ökad andel typ IIx-fibrer",
+          "Ökat uttryck och kontraktionsstyrd translokation av GLUT4 i skelettmuskeln",
+          "Minskat antal insulinreceptorer",
+          "Ökad glukoneogenes i levern"
+         ],
+         "svar": 2,
+         "forklaring": "Muskelkontraktion flyttar GLUT4 till membranet oberoende av insulin, och träning ökar GLUT4-uttrycket. Glukosupptaget i muskeln ökar och insulinkänsligheten förbättras (Rest HT24, fråga 3).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.9-o5",
+         "q": "Vilket påstående om fysisk aktivitet och cancer stämmer bäst med nuvarande evidens?",
+         "options": [
+          "Fysisk aktivitet botar etablerad cancer",
+          "Mer fysisk aktivitet på fritiden minskar risken för vissa, men inte alla, cancerformer",
+          "Fysisk aktivitet påverkar inte cancerrisken",
+          "Fysisk aktivitet ökar risken för hudcancer men inget annat",
+          "Fysisk aktivitet minskar risken för alla cancerformer lika mycket"
+         ],
+         "svar": 1,
+         "forklaring": "Observationsstudier visar lägre risk för 13 cancerformer, tydligast för t.ex. esofagusadenokarcinom, kolon och bröst – men inte för alla. Troliga mekanismer är bättre immunfunktion och mindre låggradig inflammation (Rest VT26, fråga 4).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.1.9-o6",
+         "q": "En äldre kvinna med osteoporos har aldrig tränat. Vilken träning rekommenderar du främst?",
+         "options": [
+          "Simning, eftersom det skonar skelettet",
+          "Cykling på hög intensitet utan belastning",
+          "Viktbärande styrketräning av stora muskelgrupper med gradvis ökad belastning, och balansträning",
+          "Vila för att undvika frakturer",
+          "Enbart stretching"
+         ],
+         "svar": 2,
+         "forklaring": "Mekanisk belastning stimulerar benbildningen; starkare muskler och bättre balans minskar fallrisken. Simning ger lite belastning på skelettet (Rest HT24 och VT26, fråga 13).",
          "kalla": "ovning"
         }
        ],
@@ -8712,6 +9026,22 @@
          "text": "Avsnittsrubrik: Vilka anpassningar leder regelbunden träning till?"
         },
         {
+         "fil": "data/del2-slides/m9-4d03ee-26.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 26,
+         "rubrik": "Mindre totalt fettmassa och specifika fettdepåer hos tränade individer än otränade Emanuel",
+         "text": "**Tränade har mindre fett, även i farliga depåer** (Emanuelsson 2022). Staplarna jämför otränade (grön), uthållighetstränade (mörkblå) och styrketränade (grå) män, samt otränade och uthållighetstränade kvinnor. A: total fettväv. B: subkutant bukfett. C: **visceralt fett**. D: **leverfett**. E: fettfri massa. F: muskelvolym i baksida lår. Tränade har lägre total fettmassa, och framför allt mindre visceralt fett och leverfett, de depåer som är kopplade till insulinresistens och hjärt-kärlsjukdom. Den fettfria massan är högre."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-27.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 27,
+         "rubrik": "Större muskelmassa och mindre intramuskulärt fett hos vältränade individer än otränade Kar",
+         "text": "**Större muskelmassa och mindre intramuskulärt fett hos tränade.** För fyra muskler (pectoralis, ryggsträckare, quadriceps, triceps surae) visas **fettfraktionen** inne i muskeln och **tvärsnittsytan (CSA)**. Tränade har lägre fettfraktion och större CSA. Styrketränade har störst CSA, och uthållighetstränade har också mindre intramuskulärt fett. Fett inne i muskeln är kopplat till insulinresistens."
+        },
+        {
          "fil": "data/del2-slides/m9-4d03ee-53.webp",
          "kalla": "Hälsa, prestation och mekanism",
          "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
@@ -8726,6 +9056,62 @@
          "sida": 54,
          "rubrik": "Regelbunden träning håller muskelstrukturer intakta vid åldrande (70+ som tränat hela live",
          "text": "**Livslång träning bevarar musklerna vid åldrande** (Chambers 2020). MR-tvärsnitt av lår (Quad) och vad (Calf) hos unga som tränar, 70+-åringar som tränat hela livet, och friska otränade 70+-åringar. De otränade äldre har mindre muskel (atrofi) och mer **fett inne i muskeln** (ljusare områden). De livslångt tränade ser ut nästan som de unga. Styrketräning är viktig för att bevara typ II-fibrerna. Det ger bättre styrka, kondition, insulinkänslighet och **förmåga att klara sig själv i vardagen**."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-56.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 56,
+         "rubrik": "Förbättrad insulinkänslighet hos friska äldre efter styrketräning",
+         "text": "**Styrketräning förbättrar insulinkänsligheten hos äldre** (metaanalys av RCT). Hög intensitet och lång träningsperiod förbättrade **HOMA-IR** (ett mått på insulinresistens) hos friska äldre. Måttlig intensitet förbättrade **HbA1c** hos äldre med typ 2-diabetes. Musklerna är kroppens största glukosförråd, så mer och friskare muskel ger bättre blodsockerkontroll."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-57.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 57,
+         "rubrik": "Styrketräning för patienter (WHO 2020) People living with chronic conditions (hypertension",
+         "text": "**WHO för personer med kroniska sjukdomar** (hypertoni, typ 2-diabetes, HIV, efter cancer): samma riktlinjer som för friska vuxna, alltså 150–300 min måttlig eller 75–150 min hög intensitet per vecka, plus muskelstärkande träning minst 2 dagar/vecka."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-58.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 58,
+         "rubrik": "Hypertrofi & styrketräning 2026-04-23 63",
+         "text": "**Exercise is the real polypill** (Physiology 2013). En 'polypiller' är en tablett som kombinerar flera läkemedel mot hjärt-kärlsjukdom. Författarna argumenterar att träning ger liknande eller större effekter, är billig och har få biverkningar, och att vårt genom formats av evolutionen för fysisk aktivitet."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-59.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 59,
+         "rubrik": "Träning sänker blodtryck i vila – Men vilken träningsform är mest effektiv? Jamie J Edward",
+         "text": "**Vilken träningsform sänker vilotrycket mest?** En metaanalys (Edwards, BJSM 2023). Graferna visar sänkning av systoliskt (vänster) och diastoliskt (höger) blodtryck för HIIT, aerob träning (AET), dynamisk styrketräning (RT), kombinerad träning (CT) och **isometrisk träning (IET)**. Den gula pilen visar att **isometrisk träning** (t.ex. väggsittning eller handgrepp) gav störst sänkning, ≈8 mmHg systoliskt, men alla former sänker trycket."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-60.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 60,
+         "rubrik": "Träning vs Blodtrycksmedicin? Karolinska Institutet - ett medicinskt universitet 23 april ",
+         "text": "**Träning jämfört med blodtrycksmedicin** (nätverksmetaanalys, 391 RCT). Hos personer med hypertoni verkar träningens blodtryckssänkande effekt vara **lik den hos vanliga blodtrycksmediciner**, men studiepopulationerna skiljer sig, så jämförelsen är osäker."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-61.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 61,
+         "rubrik": "Träning tillsammans med läkemedel vid viktnedgång – bättre effekt än enbart läkemedel Lund",
+         "text": "**Träning + läkemedel ger bäst vikthållning** (Lundgren, NEJM 2021). Efter en initial viktnedgång på ≈13 kg (lågkalorikost) randomiserades deltagarna till placebo, träning, liraglutid (GLP-1-analog) eller träning + liraglutid i 52 veckor. Placebogruppen gick upp ≈6 kg igen. Både träning och liraglutid för sig bromsade viktuppgången. **Kombinationen** (röd linje) gav fortsatt viktminskning, alltså bäst effekt."
+        },
+        {
+         "fil": "data/del2-slides/m9-4d03ee-62.webp",
+         "kalla": "Hälsa, prestation och mekanism",
+         "nyckel": "m9_Halsa_prestation_mekanism_EE_VT26",
+         "sida": 62,
+         "rubrik": "Ett pass fysisk aktivitet dagen innan gav lägre blodfettsstegring efter fettrik frukost Ot",
+         "text": "**Ett träningspass dagen innan ger lägre blodfettstegring efter en fettrik frukost.** Kurvorna visar serumtriglycerider timmarna efter en fettrik måltid, med och utan ett 90-minuterspass promenad dagen innan, hos otränade och uthållighetstränade kvinnor. Kurvan efter träning (svarta punkter) ligger lägre i båda grupperna. Ett enda pass ökar fettclearance (via ökad lipoproteinlipas i muskeln). Akuta effekter av träning är alltså också viktiga."
         },
         {
          "fil": "data/del2-slides/m9-4d03ee-63.webp",

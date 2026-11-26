@@ -1453,3 +1453,4 @@ a.feat-card:hover { transform: translateY(-2px); border-color: #c9952a; box-shad
 .lq-self .btn[aria-pressed="true"] { background: var(--h); color: #fff; border-color: var(--h); }
 .lq-stem.pre { white-space: pre-wrap; }
 .chip.teal { background: var(--teal-soft); color: var(--teal); }
+.tfig-step.note { cursor: default; padding: 6px 10px; }

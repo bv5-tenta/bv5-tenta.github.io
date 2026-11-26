@@ -322,7 +322,7 @@ function inlineMd(t) {
 
 /* ---------- lektion ---------- */
 function figCard(f, id, pre) {
-  const src = `${f.kalla || "Föreläsning"}, s. ${f.sida}`;
+  const src = f.sida ? `${f.kalla || "Föreläsning"}, s. ${f.sida}` : f.kalla || "Kursmaterial";
   const extras = [...(f.steg || []).map((x) => ({ ...x, typ: "Uppbyggnadssteg" })), ...(f.dubbletter || []).map((x) => ({ ...x, typ: "Samma figur" }))];
   return `<figure class="tfig" id="${pre}--fig-${esc(id)}">
     ${f.intro ? `<p class="tfig-intro">${slideMd(f.intro)}</p>` : ""}
@@ -332,7 +332,9 @@ function figCard(f, id, pre) {
       ${f.las ? `<div class="tfig-read"><b>Så läser du figuren.</b> ${slideMd(f.las)}</div>` : ""}
       ${f.fraga ? `<details class="tfig-q"><summary><span class="tfig-q-label">Tolka själv</span> ${slideMd(f.fraga)}</summary><p>${slideMd(f.svar || "")}</p></details>` : ""}
       ${extras.length ? `<div class="tfig-steps"><span class="small muted">Också på föreläsningen:</span>${extras
-        .map((x) => `<button type="button" class="tfig-step" data-zoom="${esc(x.bild || x.fil)}" data-caption="${esc(`${x.typ}: ${x.text || ""}`)}"><img src="${esc(x.bild || x.fil)}" alt="" loading="lazy"><span>${esc(x.typ)} · ${esc(x.kalla || f.kalla || "")} s. ${esc(String(x.sida || (x.nyckel || "").split("#")[1] || ""))}</span></button>`)
+        .map((x) => (x.bild || x.fil)
+          ? `<button type="button" class="tfig-step" data-zoom="${esc(x.bild || x.fil)}" data-caption="${esc(`${x.typ}: ${x.text || ""}`)}"><img src="${esc(x.bild || x.fil)}" alt="" loading="lazy"><span>${esc(x.typ)} · ${esc(x.kalla || f.kalla || "")} s. ${esc(String(x.sida || (x.nyckel || "").split("#")[1] || ""))}</span></button>`
+          : `<span class="tfig-step note">${esc(x.text || x.typ)}</span>`)
         .join("")}</div>` : ""}
     </figcaption></figure>`;
 }
@@ -432,7 +434,7 @@ function registerHtml(M, o, toc) {
   return `<details class="fig-reg" id="${pre}--figurregister"><summary>Figurregister · ${reg.length} föreläsningssidor${L.figurer ? ` · alla placerade för hand` : ` · ${reg.filter((r) => r.plats).length} placerade automatiskt`}</summary>
     <p class="small muted">En rad per föreläsningssida som hör till lektionen: var den visas och vad som eventuellt återstår.${done ? "" : ""}</p>
     <div class="md-table"><table><thead><tr><th>Föreläsning och sida</th><th>Vad bilden lär ut</th><th>Var den visas</th><th>Status</th></tr></thead><tbody>${reg
-      .map((r) => `<tr><td data-label="Föreläsning och sida"><button type="button" class="linklike" data-zoom="${esc(r.bild || r.fil || "")}" data-caption="${esc(`${r.kalla}, s. ${r.sida}`)}">${esc(r.kalla)}, s. ${r.sida}</button></td><td data-label="Vad bilden lär ut">${esc(r.larut || "")}</td><td data-label="Var den visas">${where(r)}</td><td data-label="Status">${rest(r)}</td></tr>`)
+      .map((r) => `<tr><td data-label="Föreläsning och sida">${r.bild || r.fil ? `<button type="button" class="linklike" data-zoom="${esc(r.bild || r.fil)}" data-caption="${esc(`${r.kalla}, s. ${r.sida}`)}">${esc(r.kalla)}, s. ${r.sida}</button>` : `${esc(r.kalla)}, s. ${r.sida}`}</td><td data-label="Vad bilden lär ut">${esc(r.larut || "")}</td><td data-label="Var den visas">${where(r)}</td><td data-label="Status">${rest(r)}</td></tr>`)
       .join("")}</tbody></table></div></details>`;
 }
 
