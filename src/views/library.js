@@ -707,6 +707,54 @@ function lessonPager(M, s, cur) {
     ${next ? `<a class="next" href="#/bibliotek/${encodeURIComponent(next.id)}"><small>Nästa lektion${lab(next)} →</small><span>${esc(next.id)} ${esc(next.titel)}</span></a>` : `<a class="next" href="#/bibliotek/modul/${s.modul}/tentor"><small>Avslutning →</small><span>Så har modul ${s.modul} examinerats</span></a>`}
   </nav>`;
 }
+/** Submodulens översikt: en rad per lektion (öppnas på egen sida). */
+function subListPage(ctx, M, sid) {
+  const s = M.subs.get(sid);
+  if (!s) return { html: notFound() };
+  const m = M.modules.get(s.modul);
+  const lessons = s.mal;
+  const ids = lessons.map((o) => o.id);
+  const read = progress.readCount(ids);
+  const pct = lessons.length ? Math.round((read / lessons.length) * 100) : 0;
+  const mins = lessons.reduce((n, o) => n + readingMinutes(o.body.replace(/<[^>]+>/g, " ")), 0);
+  const idx = m.submoduler.indexOf(s);
+  const prev = m.submoduler[idx - 1];
+  const next = m.submoduler[idx + 1];
+  const last = progress.last();
+  const resume = last?.hash && lessons.find((o) => last.hash.startsWith(`#/bibliotek/${encodeURIComponent(o.id)}`));
+  const rows = lessons.map((o) => {
+    const done = progress.isRead(o.id);
+    const c = practiceCounts(ctx, M, [o.id]);
+    const st = progress.objectiveStats(o.id);
+    const nq = c.ovning + c.tenta;
+    const meta = [`${o.delmal.length} delmål`, `${nq} frågor`, st.answered ? `senaste: ${st.sure} säkert rätt av ${st.answered}` : ""].filter(Boolean).join(" · ");
+    return `<li><a class="sl-row ${done ? "done" : ""}" href="#/bibliotek/${encodeURIComponent(o.id)}">
+      <span class="sl-check" aria-label="${done ? "genomgånget" : "inte genomgånget"}">${done ? "✓" : ""}</span>
+      <span class="sl-id">${esc(o.id)}</span>
+      <span class="sl-body"><span class="sl-title">${esc(o.titel)}</span><span class="sl-meta">${esc(meta)}</span></span>
+      <span class="sl-arrow" aria-hidden="true">→</span></a></li>`;
+  }).join("");
+  const html = `<article class="lib2 sublist" style="--mh:${hue(s.modul)}">
+    <header class="lib-hero slim"><div class="lib-hero-inner">
+      ${crumbs([["Bibliotek", `#/bibliotek?del=${s.del}`], [`Modul ${s.modul} · ${m.titel}`, `#/bibliotek/modul/${s.modul}`], [s.id, null]])}
+      <p class="lib-hero-kicker">Modul ${s.modul} · Submodul ${esc(s.id)}</p>
+      <h1>${esc(s.titel)}</h1>
+      ${s.beskrivning ? `<p class="lib-hero-lead">${esc(s.beskrivning)}</p>` : ""}
+      <div class="lib-hero-meta"><span>${lessons.length} ${lessons.length === 1 ? "lektion" : "lektioner"}</span><span>≈${mins} min läsning</span>
+        ${resume ? `<a href="${esc(last.hash)}">↩ Fortsätt: ${esc(resume.id)}</a>` : ""}<a href="#/bibliotek/sub/${encodeURIComponent(s.id)}/quiz">✓ Slutquiz för ${esc(s.id)}</a></div>
+    </div></header>
+    <div class="lib-layout single"><div class="lib-main">
+      <div class="sl-prog"><span class="sl-bar"><i style="width:${pct}%"></i></span><span>${read}/${lessons.length} klara · ${pct}%</span></div>
+      <ol class="sl-list">${rows}</ol>
+      <nav class="lib-pager2">
+        ${prev ? `<a href="#/bibliotek/sub/${encodeURIComponent(prev.id)}"><small>← Föregående submodul</small><span>${esc(prev.id)} ${esc(prev.titel)}</span></a>` : `<a href="#/bibliotek/modul/${s.modul}"><small>← Tillbaka</small><span>Modul ${s.modul}</span></a>`}
+        ${next ? `<a class="next" href="#/bibliotek/sub/${encodeURIComponent(next.id)}"><small>Nästa submodul →</small><span>${esc(next.id)} ${esc(next.titel)}</span></a>` : `<a class="next" href="#/bibliotek/modul/${s.modul}/tentor"><small>Avslutning →</small><span>Så har modul ${s.modul} examinerats</span></a>`}
+      </nav>
+    </div></div>
+  </article>`;
+  return { html, sub: s };
+}
+
 function chapterPage(ctx, M, sid, focus = null) {
   const s = M.subs.get(sid);
   if (!s) return { html: notFound() };
@@ -1008,8 +1056,13 @@ export async function libraryView(ctx, root, route) {
   } else if (p[0] === "sub" && p[1] && p[2] === "quiz") {
     setTitle(`Slutquiz ${p[1]} – Bibliotek`);
     html = quizPage(ctx, M, "sub", p[1]);
-  } else if ((p[0] === "sub" && p[1]) || (p[0] && M.byId.has(p[0]))) {
-    const focus = p[0] === "sub" ? null : M.byId.get(p[0]);
+  } else if (p[0] === "sub" && p[1]) {
+    const r = subListPage(ctx, M, p[1]);
+    html = r.html;
+    setTitle(r.sub ? `${r.sub.id} ${r.sub.titel}` : "Bibliotek");
+    if (r.sub) progress.setLast(`#/bibliotek/sub/${encodeURIComponent(p[1])}`, `${r.sub.id} ${r.sub.titel}`);
+  } else if (p[0] && M.byId.has(p[0])) {
+    const focus = M.byId.get(p[0]);
     const sid = focus ? focus.sub : p[1];
     const r = chapterPage(ctx, M, sid, focus);
     html = r.html;
