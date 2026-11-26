@@ -7007,14 +7007,6 @@
          "sida": 18,
          "rubrik": "Mjölksyra är en biprodukt av anaerob glykolys och en väldigt bra biomarkör, men påverkar i",
          "text": "**Mjölksyra (laktat), en vanlig missuppfattning!** Mjölksyra är en **biprodukt** av anaerob glykolys och en mycket bra **biomarkör** för anaerob metabolism, men den **påverkar inte kraftutvecklingen vid perifer trötthet**. Det är ansamlingen av **Pi och ADP** som ger muskeltröttheten. Laktat är i stället ett viktigt bränsle för hjärta och typ I-fibrer."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-11.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 11,
-         "rubrik": "Vid O2-brist (laktacidos): det är inte mjölksyra som ger upphov till acidosen! Robergs et ",
-         "text": "**Vid syrebrist (laktacidos) är det inte mjölksyran som ger acidosen!** (Robergs 2004.) **Hydrolysen av ATP ger protoner:** ATP + H₂O → ADP + Pi + **H⁺**. Normalt tas protonerna om hand när ATP återbildas i elektrontransportkedjan, men vid O₂-brist stannar den. Protonerna ansamlas och ger metabol acidos. Den anaeroba glykolysen ger samtidigt laktat, mjölksyrans korresponderande bas. **Ökat laktat är ändå en bra indikator** på metabol acidos orsakad av O₂-brist, så kontrollera laktat vid blodgasanalys."
         }
        ]
       },
@@ -9234,7 +9226,8 @@
         "Redogöra för värmeavgivande och värmeproducerande mekanismer",
         "Redogöra för temperaturavkännande sensorer och hur hypothalamus integrerar afferenta och efferenta system"
        ],
-       "sammanfattning": "## Människan är homeoterm\nKärntemperaturen hålls kring 37 °C (varierar ca ±0,5 °C med dygnsrytmen, styrd av suprachiasmatiska kärnan; högre på eftermiddagen och i lutealfasen). Mätställen: rektalt (närmast kärnan), oralt, i örat (tympanalt), axillärt (lägst). Huden och extremiteterna (skalet) varierar mycket mer.\n\n## Värmeproduktion\n- Basalmetabolism, matens termiska effekt och muskelarbete (ca 75–80 % av energin vid arbete blir värme).\n- **Huttring** (ofrivilliga muskelkontraktioner) – kan öka värmeproduktionen flera gånger.\n- **Icke-huttrande termogenes** i brun fettväv (UCP1) via sympatikus/noradrenalin och thyroideahormon; viktigast hos nyfödda.\n- I vila i termoneutral miljö (ca 29 °C för en naken vuxen) produceras mest värme av de inre organen; vid fysisk aktivitet och huttring är **skelettmuskeln** den dominerande värmekällan.\n\n## Värmeavgivning\n**Strålning** (största vägen i vila i rumstemperatur), **konduktion**, **konvektion** och **evaporation** (avdunstning av svett; den enda vägen som fungerar när omgivningen är varmare än huden). Hudens blodflöde styr hur mycket värme som förs till ytan.\n\n![Värmeproduktion och värmeavgivning: strålning, konduktion, konvektion och avdunstning. || de fyra vägarna för värmeutbyte. Strålning, konvektion och konduktion kräver att omgivningen är kallare än huden – när den inte är det återstår bara avdunstning av svett.](data/del2-bilder/9.2.1-1.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 8|data/del2-bilder/9.2.1-1-sida.jpg\")\n\n\n## Sensorer och central integration\n- **Termoreceptorer** i huden (kall- och värmereceptorer, TRP-kanaler) och centrala sensorer i hypothalamus, ryggmärg och buken.\n- **Hypothalamus (preoptiska området)** jämför kärntemperatur (Tc) och hudtemperatur (Tsk) med ett börvärde (**set-point**) och styr efferenta svar via autonoma nervsystemet, motoriska banor och beteende.\n\n![Kroppens termostat: hypotalamus jämför uppmätt temperatur med ett börvärde. || reglerkretsen: termoreceptorer i hud och kärna skickar signaler till hypotalamus, som jämför med börvärdet (set point) och aktiverar värmeproduktion (huttring) eller värmeavgivning (vasodilatation, svettning). Pyrogener verkar genom att flytta börvärdet.](data/del2-bilder/9.2.1-2.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 16|data/del2-bilder/9.2.1-2-sida.jpg\")\n\n\n## Svar på kyla och värme\n| Kroppstemperatur under börvärdet | Kroppstemperatur över börvärdet |\n|---|---|\n| Vasokonstriktion i huden (sympatikus) | Vasodilatation i huden |\n| Huttring | Svettning (sympatiska kolinerga fibrer) |\n| Icke-huttrande termogenes, piloerektion (gåshud) | Minskad värmeproduktion |\n| Svettningen upphör | |\n| Beteende: kläder, söka värme | Beteende: avklädning, söka svalka |\n\n## Feber\nPyrogener (IL-1, IL-6, TNF-α från infektion/inflammation) inducerar **COX-2 → prostaglandin E₂** i hypothalamus, som **höjer set-point**. Kroppstemperaturen är då lägre än börvärdet → man **fryser** och får frossa: vasokonstriktion i huden, huttring, beteende. Det är inte vasodilatation som får febern att kännas kall. När febern bryts (set-point sjunker) blir man varm, svettas och får vasodilatation.\n\n![Temperaturreglering vid feber (A) jämfört med fysisk aktivitet (B). || skillnaden mellan panelerna: vid feber höjs börvärdet först och kroppstemperaturen följer efter (man fryser under uppgången). Vid arbete är börvärdet oförändrat – temperaturen stiger för att värmeproduktionen tillfälligt överstiger avgivningen.](data/del2-bilder/9.2.1-3.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 17|data/del2-bilder/9.2.1-3-sida.jpg\")\n\n\n**Febernedsättande läkemedel** (paracetamol, NSAID/ASA) hämmar COX och PGE₂-bildningen och **sänker set-point** i hypothalamus.\n\nExempel: set-point 37,4 °C och kroppstemperatur 35,2 °C → huttring ja, svettning nej, vasokonstriktion i huden ja, vasodilatation nej. Kroppstemperatur över set-point → svettning och vasodilatation (inte huttring).\n\n## Tentafokus\n- Varför man fryser vid feber (höjt börvärde).\n- Kombinationsfrågor om huttring/svettning/vasokonstriktion vid givet börvärde och kroppstemperatur.\n- Kyla: ökad cirkulation till perifera kärl är fel – kroppen gör vasokonstriktion.\n\n## Mer från föreläsningarna\n- **Energi och värme:** värme kan förloras eller lagras; metabolismen och andra reaktioner bildar värme. 1 kcal är den värmemängd som höjer temperaturen i 1 kg vatten med 1 °C (1 kcal = 4 186 J).\n- **Klimatförändringar** och fler värmeböljor leder till fler akuta sjukhusinläggningar, högre risk för äldre, ökad spridning av infektioner, större belastning på hjärta och kärl och mer dehydrering.\n",
+       "sammanfattning": "## Människan är homeoterm {#homeoterm mal=1}\nMänniskan håller sin **kärntemperatur** inom ett snävt intervall kring 37 °C, oavsett om det är –20 °C eller +35 °C ute. Det kallas att vara homeoterm. Regleringen fungerar mellan ungefär 36 och 41 °C (upp till ≈41 °C vid hårt arbete); under det (hypotermi, kliniskt under 35 °C) och över det (värmeslag) sviktar den.\n\n[[fig:homeoterm]]\n\nDet är **kärnan** – de inre organen – som hålls konstant. **Skalet** (hud, underhud, extremiteter) får variera: i kyla krymper kärnan till bål och huvud och händer och fötter kan vara 28–34 °C, i värme sträcker sig kärnan ut i armar och ben. Skalet fungerar alltså som ett reglerbart isoleringsskikt.\n\n[[fig:karna-skal]]\n\nHur mäter man kärntemperaturen? Rektalt och i örat (trumhinnan) ligger närmast; axillärt är lägst och påverkas mest av huden. Normalintervallet beror därför på var man mäter:\n\n[[fig:matning]]\n\nTemperaturen följer också en **dygnsrytm**, styrd av suprachiasmatiska kärnan (SCN) i hypotalamus: lägst tidigt på morgonen och högst sent på eftermiddagen, med ≈0,5–1 °C skillnad.\n\n[[fig:dygnsrytm]]\n\n## Värmeproduktion {#varmeproduktion mal=2}\nAll metabolism bildar värme. Kroppen kan dessutom öka produktionen när det behövs:\n\n- **Basalmetabolism och matens termiska effekt** – den ständiga värmekällan.\n- **Muskelarbete** – det mesta av energin vid arbete blir värme.\n- **Huttring** – ofrivilliga, rytmiska muskelkontraktioner som kan öka värmeproduktionen flera gånger.\n- **Icke-huttrande termogenes** i brun fettväv: proteinet **UCP1** frikopplar den oxidativa fosforyleringen så att energin blir värme i stället för ATP. Styrs av sympatikus (noradrenalin) och tyreoideahormon och är viktigast hos nyfödda.\n\nVar värmen bildas beror på aktiviteten:\n\n[[fig:produktion]]\n\n> [!konflikt] Vad är huvudkällan vid 29 °C?\n> Föreläsningens tabell visar att i vila kommer mest värme från **bålens inre organ** (≈56 %) och bara ≈18 % från muskler och hud. Men tentans facit på Rest HT22, fråga 5 (*huvudsaklig värmekälla vid 29 °C för en naken vuxen*) är **skelettmuskel**, med motiveringen att en naken person vid 29 °C måste öka värmeproduktionen genom muskeltonus och huttring. Det går ihop om 29 °C ses som under den termoneutrala zonen – men föreläsningen själv anger ingen sådan gräns. Svara som facit på just den frågan, och kom ihåg principen: **i vila dominerar de inre organen, vid arbete och huttring skelettmuskeln** (≈90 % vid tungt arbete).\n\n## Värmeavgivning {#varmeavgivning mal=2}\nVärmen lämnar kroppen på fyra sätt:\n\n[[fig:avgivning]]\n\n| Väg | Hur | Kräver |\n|---|---|---|\n| **Strålning** | infraröd strålning till kallare ytor | omgivningen kallare än huden |\n| **Konduktion** | direkt kontakt med kallare föremål | kontakt, kallare yta |\n| **Konvektion** | luft eller vatten som strömmar förbi och för bort värme | kallare luft eller vatten |\n| **Evaporation** | avdunstning av svett och fukt från luftvägarna | torr luft – fungerar även när det är varmare ute än huden |\n\nStrålning är den största vägen i vila i rumstemperatur. När omgivningen är varmare än huden fungerar bara **avdunstning** – därför är hög luftfuktighet så farlig vid värme. **Hudens blodflöde** avgör hur mycket värme som förs ut från kärnan till ytan.\n\n## Sensorer och kroppens termostat {#sensorer mal=3}\nTemperaturen känns av på två ställen:\n\n- **Perifert:** termoreceptorer i huden är **TRP-jonkanaler** som öppnas vid olika temperaturer – från smärtsam kyla (TRPA1) och kyla (TRPM8, som också aktiveras av mentol) till behaglig värme (TRPV3, TRPV4) och smärtsam hetta (TRPV1, som också aktiveras av capsaicin).\n- **Centralt:** sensorer i hypotalamus, ryggmärgen och buken känner av kärntemperaturen.\n\n[[fig:trp]]\n\nInformationen integreras i **hypotalamus (preoptiska området)**, som fungerar som en termostat med negativ återkoppling. Den jämför kärntemperatur (Tc) och hudtemperatur (Tsk) med ett **börvärde (set point)**. Skillnaden blir en felsignal som styr värmeproduktion, kärlreglering och svettning.\n\n[[fig:termostat]]\n\n## Svaren på kyla och värme {#svar mal=1,2,3}\nRegleringen sker både med **beteende** (kläder, söka skugga eller värme) och **fysiologiskt**, styrt av hypotalamus:\n\n| Temperatur **under** börvärdet (kyla) | Temperatur **över** börvärdet (värme) |\n|---|---|\n| **Vasokonstriktion** i huden – noradrenerga sympatiska fibrer | **Vasodilatation** i huden |\n| **Huttring** – somatiska motorneuron | **Svettning** – **kolinerga** sympatiska fibrer |\n| Icke-huttrande termogenes (brunt fett) | Minskad värmeproduktion |\n| Piloerektion (gåshud, liten betydelse hos människa) | |\n| Svettningen upphör | |\n\n[[fig:oversikt]]\n\n> [!fallgrop] Kyla ger vasokonstriktion – inte ökad perifer cirkulation\n> I kyla drar kärlen i huden ihop sig så att skalet blir isolering (Rest HT24, fråga 7). Vid hög omgivningstemperatur ökar i stället hudens blodflöde och svettkörtlarna aktiveras – börvärdet ändras inte (Rest VT25, fråga 9).\n\n## Feber {#feber mal=1}\nVid infektion frisätts **pyrogener** – cytokinerna IL-1, IL-6 och TNF-α. De inducerar **COX-2** i hypotalamus, som bildar **prostaglandin E₂**, och PGE₂ **höjer börvärdet**.\n\nDet förklarar varför man **fryser** i början av en feber: kroppstemperaturen är nu *lägre än det nya börvärdet*, så hypotalamus startar samma svar som i kyla – vasokonstriktion i huden (kalla händer), huttring (frossa) och beteende (filtar). Temperaturen stiger tills den når börvärdet. När febern bryts sjunker börvärdet, och man blir varm, svettas och får vasodilatation.\n\n[[fig:feber]]\n\n**Febernedsättande läkemedel** (paracetamol, NSAID, ASA) hämmar COX och därmed PGE₂-bildningen, så att **börvärdet sänks** (Rest HT25, fråga 8).\n\n**Räkneexempel – Rest VT23, fråga 12:** börvärdet är 37,4 °C och kroppstemperaturen 35,2 °C. Temperaturen ligger *under* börvärdet → **huttring ja, svettning nej, vasokonstriktion ja, vasodilatation nej.** Vid feber (Rest HT23, fråga 7) är logiken densamma: pyrogenerna har höjt börvärdet, så 38,5 °C upplevs som för kallt.\n\n## Sammanfattning {#sammanfattning}\n- **Kärntemperaturen** hålls kring 37 °C; skalet varierar och fungerar som isolering. Rektal och tympanal mätning ligger närmast kärnan; temperaturen följer en dygnsrytm (SCN).\n- **Värmeproduktion:** metabolism, muskelarbete, **huttring** och **icke-huttrande termogenes** (brunt fett, UCP1). I vila dominerar inre organ, vid arbete skelettmuskeln.\n- **Värmeavgivning:** strålning, konduktion, konvektion och **evaporation** – den enda som fungerar när omgivningen är varmare än huden.\n- **Sensorer:** TRP-kanaler i huden och centrala sensorer. **Hypotalamus** jämför med ett **börvärde** och styr svaren.\n- **Kyla:** vasokonstriktion, huttring, termogenes. **Värme:** vasodilatation och svettning (kolinerga sympatiska fibrer).\n- **Feber:** pyrogener → COX-2 → PGE₂ → **höjt börvärde**; man fryser tills temperaturen nått det. Febernedsättande läkemedel sänker börvärdet.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.2.1-o1",
@@ -9291,6 +9284,90 @@
          "svar": 4,
          "forklaring": "När omgivningen närmar sig hudtemperaturen fungerar strålning och konvektion dåligt; avdunstning blir den viktigaste vägen. Vid hög luftfuktighet försämras den kraftigt.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.2.1-o5",
+         "q": "Börvärdet i hypotalamus är 37,4 °C och kroppstemperaturen 35,2 °C. Vilken kombination väntar du dig?",
+         "options": [
+          "Huttring och vasokonstriktion i huden, ingen svettning",
+          "Inga förändringar, eftersom temperaturen ligger inom normalintervallet",
+          "Svettning och vasokonstriktion i huden",
+          "Huttring och vasodilatation i huden",
+          "Svettning och vasodilatation i huden"
+         ],
+         "svar": 0,
+         "forklaring": "Kroppen är kallare än börvärdet, så hypotalamus startar värmebevarande och värmeproducerande svar: vasokonstriktion och huttring, och svettningen stängs av (Rest VT23, fråga 12).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.1-o6",
+         "q": "Hur bildar brun fettväv värme?",
+         "options": [
+          "Genom vasokonstriktion runt fettcellerna",
+          "UCP1 frikopplar den oxidativa fosforyleringen så att protongradientens energi blir värme i stället för ATP",
+          "Genom snabba muskelkontraktioner i fettvävnaden",
+          "Genom att lagra värme från maten och frisätta den senare",
+          "Genom anaerob glykolys med laktatbildning"
+         ],
+         "svar": 1,
+         "forklaring": "Icke-huttrande termogenes: protonerna läcker tillbaka genom UCP1 utan att driva ATP-syntas. Den styrs sympatiskt (noradrenalin, β3) och är viktigast hos nyfödda.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.1-o7",
+         "q": "Varför fryser man och huttrar i början av en feber, trots att temperaturen redan är förhöjd?",
+         "options": [
+          "Hypotalamus förlorar kontakten med huden",
+          "Termoreceptorerna i huden slutar fungera",
+          "Muskulaturen är för trött för att producera värme",
+          "Pyrogenerna sänker börvärdet",
+          "Börvärdet har höjts av pyrogener, så den aktuella temperaturen är lägre än börvärdet"
+         ],
+         "svar": 4,
+         "forklaring": "Pyrogener → PGE₂ → höjt börvärde. Hypotalamus uppfattar kroppen som för kall och startar vasokonstriktion och huttring tills temperaturen når det nya börvärdet (Rest HT23, fråga 7).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.1-o8",
+         "q": "Varför känns mentol svalt?",
+         "options": [
+          "Mentol ger vasokonstriktion i huden",
+          "Mentol sänker hudtemperaturen genom avdunstning",
+          "Mentol sänker börvärdet i hypotalamus",
+          "Mentol hämmar TRPV1",
+          "Mentol aktiverar TRPM8, en jonkanal i huden som normalt aktiveras av kyla"
+         ],
+         "svar": 4,
+         "forklaring": "Termoreceptorerna är TRP-kanaler. TRPM8 öppnas av kyla och av mentol, TRPV1 av smärtsam hetta och av capsaicin – därför känns chili hett.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.1-o9",
+         "q": "Vilken transmittor frisätts från de sympatiska nerver som stimulerar svettkörtlarna?",
+         "options": [
+          "Adrenalin",
+          "Acetylkolin",
+          "Noradrenalin",
+          "Serotonin",
+          "Dopamin"
+         ],
+         "svar": 1,
+         "forklaring": "Svettkörtlarna innerveras av sympatiska men kolinerga postganglionära fibrer. Hudens vasokonstriktion är däremot noradrenerg.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.1-o10",
+         "q": "En person ligger i vila i rumstemperatur. Var bildas den största andelen av kroppens värme?",
+         "options": [
+          "I skelettet",
+          "I huden",
+          "I brun fettväv",
+          "I bålens inre organ",
+          "I skelettmuskulaturen"
+         ],
+         "svar": 3,
+         "forklaring": "I vila står bålens inre organ (lever, hjärta, njurar, tarm) för ≈56 % av värmen trots ≈34 % av massan. Vid tungt arbete tar skelettmuskeln över (≈90 %).",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 7,
@@ -9303,14 +9380,6 @@
          "sida": 1,
          "rubrik": "Temperaturreglering – Basvetenskap 5 Modul homeostas Ellinor Kenne (ellinor.kenne@ki.se)",
          "text": "Titelsida: Temperaturreglering, Basvetenskap 5, modul Homeostas (Ellinor Kenne)."
-        },
-        {
-         "fil": "data/del2-slides/m9-269187-2.webp",
-         "kalla": "Temperaturreglering",
-         "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
-         "sida": 2,
-         "rubrik": "Varför är det viktigt med temperaturreglering… • Ett varmare klimat leder till: → Fler aku",
-         "text": "**Varför är temperaturreglering viktig?** Ett varmare klimat (värmeböljor) ger fler akuta inläggningar, ökad risk för äldre, ökad spridning av infektioner, belastning på hjärta och kärl samt dehydrering."
         },
         {
          "fil": "data/del2-slides/m9-269187-3.webp",
@@ -9401,30 +9470,6 @@
          "text": "**Feber jämfört med fysisk aktivitet**, en klassisk tentafråga. **A, feber:** pyrogener (IL-1, IL-6, TNF-α leder till PGE2 i hypotalamus) **höjer börvärdet (Tset)**. Kärntemperaturen är då för låg i förhållande till börvärdet, och kroppen producerar och sparar värme (frossa, huttring, kalla händer) tills Tc når det nya börvärdet. Felsignalen korrigeras alltså. **B, arbete:** **börvärdet är oförändrat**, men värmeproduktionen ökar så att Tc stiger. Det kvarstår en felsignal som driver värmeavgivningen (svettning, kärlvidgning) så länge arbetet pågår."
         },
         {
-         "fil": "data/del2-slides/m9-269187-18.webp",
-         "kalla": "Temperaturreglering",
-         "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
-         "sida": 18,
-         "rubrik": "Tillämpa cirkulationsfysiologiska principer för att förklara risker med överhettning. (Fys",
-         "text": "**Arbete i värme minskar den centrala blodvolymen.** Hjärtat (pumparna) fylls från en central blodvolym. I värme vidgas **hudkärlen** kraftigt för att avge värme, och mycket blod hamnar i huden (nedtill). Samtidigt behöver **musklerna** mycket blod, och svettningen minskar plasmavolymen. Den centrala blodvolymen och fyllnaden av hjärtat minskar, så slagvolymen sjunker och pulsen måste öka. Det kan leda till blodtrycksfall, svimning och värmeutmattning. Splanknikus- och leverflödet stryps för att kompensera."
-        },
-        {
-         "fil": "data/del2-slides/m9-269187-19.webp",
-         "kalla": "Temperaturreglering",
-         "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
-         "sida": 19,
-         "rubrik": "Redogöra för temperaturreglering vid friska förhållanden och vid feber. Acklimatisering ti",
-         "text": "**Acklimatisering till värme** efter ≈1–2 veckors upprepad exponering. Graferna visar ett 4 timmar långt arbete i värme före (grönt, oacklimatiserad) och efter (svart, acklimatiserad). Acklimatiseringen ger **lägre rektaltemperatur** (≈38,3 jämfört med 39,8 °C), **lägre puls** (≈125 jämfört med 175) och **mer svettning** (≈1,1 jämfört med 0,5 L/h). Mekanismerna är ökad plasmavolym (aldosteron), svettning som startar tidigare och blir rikligare, och svett med lägre saltinnehåll."
-        },
-        {
-         "fil": "data/del2-slides/m9-269187-20.webp",
-         "kalla": "Temperaturreglering",
-         "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
-         "sida": 20,
-         "rubrik": "Redogöra för temperaturreglering vid friska förhållanden och vid feber. Kroppens svar på k",
-         "text": "**Kroppens svar på kyla:** svettningen avbryts, **piloerektion** (gåshud, av liten betydelse hos människa), **vasokonstriktion** i huden (skalet blir isolering), **huttring** (ofrivilliga muskelkontraktioner ger värme) och **icke-huttrande termogenes** (brunt fett med UCP1 som frikopplar oxidativ fosforylering, styrt av noradrenalin via β3-receptorer, särskilt viktigt hos spädbarn)."
-        },
-        {
          "fil": "data/del2-slides/m9-269187-21.webp",
          "kalla": "Temperaturreglering",
          "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
@@ -9441,7 +9486,8 @@
         "Tillämpa cirkulationsfysiologiska principer för att förklara risker med överhettning",
         "Beskriva acklimatisering till värme och kroppens svar på kyla"
        ],
-       "sammanfattning": "## Konkurrens om blodet\nVid fysiskt arbete i värme ska blodet både försörja arbetande muskler och föra värme till huden. Hudens kärl dilateras och fylls → **den centrala blodvolymen minskar**, venöst återflöde och **slagvolym minskar**, och hjärtfrekvensen måste öka (kardiovaskulär drift) för att hålla HMV. Samtidigt minskar plasmavolymen genom svettning och filtration.\n\n![Vid fysiskt arbete i värme minskar den centrala blodvolymen. || hur blodet fördelas mellan arbetande muskler och hud: när huden behöver mycket blod för värmeavgivning (nedtill) minskar volymen som återvänder till hjärtat, slagvolymen sjunker och hjärtfrekvensen stiger (\"cardiovascular drift\").](data/del2-bilder/9.2.2-1.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 18|data/del2-bilder/9.2.2-1-sida.jpg\")\n\n\n## Dehydrering\nSvettförlust utan ersättning → minskad plasmavolym (hypovolemi) och ökad osmolalitet → ytterligare minskad slagvolym, sämre hudgenomblödning och svettning → **minskad värmeavgivning** → stigande kärntemperatur. Dehydrering ökar alltså risken för överhettning genom minskad blodvolym och därmed nedsatt förmåga att föra bort värme (inte genom minskad viskositet).\n\n## Konsekvenser för arbetet\nMindre blodflöde till muskeln → mer kolhydrat- och anaerob metabolism, snabbare glykogentömning, högre hjärtfrekvens och snabbare uttröttning. Samma cykeltur i ett 30-gradigt rum blir därför en tyngre belastning än i oktoberkylan. Värmeutmattning kan övergå i **värmeslag** (kärntemperatur > 40 °C, CNS-påverkan, cirkulationssvikt). Riskgrupper: äldre, barn, hjärtsjuka, personer på diuretika eller betablockerare – och ett varmare klimat ökar akuta inläggningar.\n\n## Acklimatisering till värme (ca 1–2 veckor)\nÖkad plasmavolym, tidigare och större svettning med lägre saltinnehåll (aldosteron), lägre hjärtfrekvens och kärntemperatur vid samma arbete.\n\n![Acklimatisering till värme under ca 10 dagar: kroppstemperatur, hjärtfrekvens och svettning. || att den gröna kurvan (acklimatiserade) visar lägre rektaltemperatur och puls vid samma arbete, medan svettmängden ökar. Det mesta av anpassningen sker de första 5–7 dagarna.](data/del2-bilder/9.2.2-2.jpg \"Temperaturreglering modul homeostasHT25 canvas, s. 19|data/del2-bilder/9.2.2-2-sida.jpg\")\n\n\n## Kyla\nSvettningen avbryts, piloerektion, **vasokonstriktion** i huden, huttring och icke-huttrande termogenes. Vid hypotermi minskar metabolism och nervledning; köldskador uppstår perifert.\n\n## Tentafokus\n- Varför dehydrering ökar risken för överhettning (minskad plasmavolym → minskad central blodvolym och hudgenomblödning).\n- Essä: cykling i värme jämfört med normal temperatur.",
+       "sammanfattning": "## Två organ som vill ha samma blod {#konkurrens mal=1}\nVid arbete i värme ska blodet göra två saker samtidigt: **leverera syre till arbetande muskler** och **föra värme från kärnan till huden**. Båda kräver stort flöde, men hjärtminutvolymen räcker inte till hur mycket som helst.\n\n[[fig:central-volym]]\n\nFölj kedjan i figuren:\n\nflöde: hudkärlen vidgas för att avge värme → mycket blod blir kvar i huden → den centrala blodvolymen minskar → venöst återflöde och slagvolym minskar → hjärtfrekvensen måste öka för att hålla hjärtminutvolymen\n\nSamtidigt minskar **plasmavolymen** genom svettning och filtration ut i muskeln, vilket förstärker problemet. Det gradvisa pulsstegringen vid samma belastning kallas *kardiovaskulär drift*.\n\n## Dehydrering {#dehydrering mal=1}\nOm svettförlusten inte ersätts med dryck blir det värre:\n\nflöde: svettförlust → plasmavolym ↓, osmolalitet ↑ → slagvolym ↓ → kroppen prioriterar blodtrycket → hudens blodflöde och svettproduktion ↓ → värmeavgivningen ↓ → kärntemperaturen stiger snabbare\n\n**Tillämpning – omtentan aug 2026, fråga 8:** *Varför ökar dehydrering risken för överhettning?* Facit: **minskad svettproduktion försämrar värmeavgivningen** – och bakom det ligger den minskade plasmavolymen. Fällan är \"minskad blodviskositet\": dehydrering ger tvärtom tjockare blod.\n\n## Konsekvenser för arbete och hälsa {#konsekvenser mal=1}\nMindre blod till musklerna betyder mer kolhydrat- och anaerob metabolism, snabbare glykogentömning, högre puls och tidigare uttröttning. Samma arbete känns därför tyngre och ger högre puls i värme än i svalare väder.\n\nVid för stor värmebelastning kan **värmeutmattning** gå över i **värmeslag**: kärntemperaturen överstiger ≈40–41 °C, kompensationen sviktar och CNS påverkas (förvirring, kramper, medvetslöshet). Riskgrupper är äldre, barn, hjärtsjuka och personer som tar läkemedel som påverkar vätskebalans eller cirkulation. Ett varmare klimat med fler värmeböljor ger fler akuta inläggningar:\n\n[[fig:klimat]]\n\n## Acklimatisering till värme {#acklimatisering mal=2}\nEfter ungefär 1–2 veckors upprepad exponering för värme anpassar sig kroppen:\n\n[[fig:acklimatisering]]\n\n- **Plasmavolymen ökar** – större central blodvolym och slagvolym.\n- **Svettningen startar tidigare och blir rikligare**, med lägre saltinnehåll (aldosteron).\n- **Lägre puls och kärntemperatur** vid samma arbete.\n\nResultatet är mindre cirkulatorisk belastning och lägre risk för överhettning. Det mesta av anpassningen sker de första dagarna.\n\n## Kyla {#kyla mal=2}\nKroppens svar på kyla går igenom i 9.2.1: svettningen avbryts, piloerektion, **vasokonstriktion** i huden (skalet blir isolering), huttring och icke-huttrande termogenes i brunt fett. Anpassningen till kyla är mindre uttalad än till värme. Vid hypotermi sjunker metabolism och nervledningshastighet, och köldskador uppstår perifert, där vasokonstriktionen är starkast.\n\n## Sammanfattning {#sammanfattning}\n- Vid arbete i värme **konkurrerar huden och musklerna om blodet**: hudkärlen vidgas, den centrala blodvolymen och slagvolymen minskar, och pulsen stiger (kardiovaskulär drift).\n- **Dehydrering** minskar plasmavolymen ytterligare; kroppen prioriterar blodtrycket, så hudgenomblödning och svettning minskar och kärntemperaturen stiger.\n- Följden är tidigare uttröttning och risk för **värmeslag** (>40–41 °C, CNS-påverkan). Riskgrupper: äldre, barn, hjärtsjuka.\n- **Värmeacklimatisering** (1–2 veckor): plasmavolym ↑, tidigare och rikligare svettning med mindre salt, lägre puls och kärntemperatur.\n- **Kyla:** vasokonstriktion, huttring, termogenes; anpassningen är mindre än till värme.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.2.2-o1",
@@ -9484,6 +9530,62 @@
          "svar": 2,
          "forklaring": "Värmeacklimatisering ger tidigare svettstart, större svettvolym, saltsparande (aldosteron) och större plasmavolym – därmed lägre puls och temperatur vid samma arbete.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.2.2-o4",
+         "q": "Varför ökar dehydrering risken för överhettning vid fysisk aktivitet?",
+         "options": [
+          "Dehydrering stimulerar huttring",
+          "Dehydrering ökar avdunstningen från huden",
+          "Minskad plasmavolym gör att svettproduktion och hudens blodflöde minskar, så värmeavgivningen försämras",
+          "Dehydrering ökar blodflödet till huden",
+          "Minskad blodviskositet leder till hypotermi"
+         ],
+         "svar": 2,
+         "forklaring": "Kroppen prioriterar blodtrycket när plasmavolymen minskar; svettning och hudgenomblödning stryps och kärntemperaturen stiger snabbare (omtenta aug 2026, fråga 8).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.2-o5",
+         "q": "Under ett långt cykelpass i värme stiger pulsen gradvis trots oförändrad belastning. Vad är den viktigaste orsaken?",
+         "options": [
+          "Hjärtmuskeln blir svagare av värme",
+          "Blod samlas i hudens vidgade kärl och plasmavolymen minskar, så slagvolymen sjunker",
+          "Blodtrycket stiger kraftigt",
+          "Syrebehovet i musklerna minskar",
+          "Börvärdet i hypotalamus stiger under arbetet"
+         ],
+         "svar": 1,
+         "forklaring": "Kardiovaskulär drift: den centrala blodvolymen minskar när huden tar mer blod och svett drar plasma, så slagvolymen faller och hjärtfrekvensen måste öka för att hålla minutvolymen.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.2-o6",
+         "q": "Efter två veckors träning i värme har en löpare lägre puls vid samma fart i värmen. Vilken förändring förklarar det bäst?",
+         "options": [
+          "Ökad plasmavolym ger större central blodvolym och slagvolym",
+          "Ökad halt salt i svetten",
+          "Minskat blodflöde till huden från början",
+          "Högre börvärde i hypotalamus",
+          "Minskad svettning sparar vätska"
+         ],
+         "svar": 0,
+         "forklaring": "Värmeacklimatisering ökar plasmavolymen och gör svettningen tidigare och rikligare (med mindre salt). Slagvolymen blir större och pulsen lägre vid samma arbete.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.2.2-o7",
+         "q": "Varför drabbas fingrar och tår först av köldskador?",
+         "options": [
+          "Svettningen ökar i fingrarna i kyla",
+          "Brun fettväv finns bara i extremiteterna",
+          "Fingrarna har ingen sympatisk innervation",
+          "Vasokonstriktionen i kyla är starkast i extremiteterna, som därför får lite varmt blod",
+          "Huttringen sker bara i bålen"
+         ],
+         "svar": 3,
+         "forklaring": "I kyla krymper kärnan och skalet får kallna: kraftig vasokonstriktion i händer och fötter bevarar kärnvärmen, men vävnaden där riskerar köldskada.",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 1,
@@ -9504,6 +9606,22 @@
          "sida": 18,
          "rubrik": "Tillämpa cirkulationsfysiologiska principer för att förklara risker med överhettning. (Fys",
          "text": "**Arbete i värme minskar den centrala blodvolymen.** Hjärtat (pumparna) fylls från en central blodvolym. I värme vidgas **hudkärlen** kraftigt för att avge värme, och mycket blod hamnar i huden (nedtill). Samtidigt behöver **musklerna** mycket blod, och svettningen minskar plasmavolymen. Den centrala blodvolymen och fyllnaden av hjärtat minskar, så slagvolymen sjunker och pulsen måste öka. Det kan leda till blodtrycksfall, svimning och värmeutmattning. Splanknikus- och leverflödet stryps för att kompensera."
+        },
+        {
+         "fil": "data/del2-slides/m9-269187-19.webp",
+         "kalla": "Temperaturreglering",
+         "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
+         "sida": 19,
+         "rubrik": "Redogöra för temperaturreglering vid friska förhållanden och vid feber. Acklimatisering ti",
+         "text": "**Acklimatisering till värme** efter ≈1–2 veckors upprepad exponering. Graferna visar ett 4 timmar långt arbete i värme före (grönt, oacklimatiserad) och efter (svart, acklimatiserad). Acklimatiseringen ger **lägre rektaltemperatur** (≈38,3 jämfört med 39,8 °C), **lägre puls** (≈125 jämfört med 175) och **mer svettning** (≈1,1 jämfört med 0,5 L/h). Mekanismerna är ökad plasmavolym (aldosteron), svettning som startar tidigare och blir rikligare, och svett med lägre saltinnehåll."
+        },
+        {
+         "fil": "data/del2-slides/m9-269187-20.webp",
+         "kalla": "Temperaturreglering",
+         "nyckel": "m9_Temperaturreglering_modul_homeostasHT25_canvas",
+         "sida": 20,
+         "rubrik": "Redogöra för temperaturreglering vid friska förhållanden och vid feber. Kroppens svar på k",
+         "text": "**Kroppens svar på kyla:** svettningen avbryts, **piloerektion** (gåshud, av liten betydelse hos människa), **vasokonstriktion** i huden (skalet blir isolering), **huttring** (ofrivilliga muskelkontraktioner ger värme) och **icke-huttrande termogenes** (brunt fett med UCP1 som frikopplar oxidativ fosforylering, styrt av noradrenalin via β3-receptorer, särskilt viktigt hos spädbarn)."
         }
        ]
       }
@@ -9522,7 +9640,8 @@
         "Förklara hur fostret får syre trots låg syregradient (fetalt Hb, dubbel Bohr- och Haldaneeffekt)",
         "Redogöra för de kardiopulmonella omställningarna vid födseln och stängningen av shuntarna"
        ],
-       "sammanfattning": "## Det viktigaste\n- Fostrets \"lunga\" är **placentan**. Lungorna är vätskefyllda och har **hög kärlresistens**, så blodet leds förbi dem genom **foramen ovale** och **ductus arteriosus**.\n- Syregradienten i placentan är bara ca **2 kPa** (mot 8 kPa i lungan). Fostret klarar sig ändå tack vare **hög Hb-halt**, **HbF med vänsterförskjuten kurva** och **dubbel Bohr-/Haldane-effekt**.\n- HbF har **γ-kedjor som binder 2,3-BPG sämre** → högre syreaffinitet än mammans HbA.\n- Vid födseln: första andetaget → **lungresistensen rasar**, lungblodflödet ökar och trycket i **höger förmak sjunker**. Navelsträngen stängs → systemresistensen och trycket i **vänster förmak stiger**.\n- Därför stängs **foramen ovale** (tryck vänster > höger) och **ductus arteriosus** (högt PO₂, mindre PGE₂).\n\n## Placentan – fostrets lunga, tarm och njure\nFostret kan inte andas, äta eller utsöndra själv. Allt utbyte sker i **placentan**, där fostrets blod i villi badar i mammans blod i de **intervillösa rummen**. Blodet blandas aldrig – utbytet sker genom diffusion över ett tunt lager trofoblastceller.\n\n![Placentan i genomskärning. Mammans blod (spiralartärer) strömmar in i de intervillösa rummen och badar fostrets villi. Fostrets blod kommer via två navelsträngsartärer och lämnar via en navelsträngsven. || att mammans och fostrets blod aldrig blandas – fostrets kapillärer ligger inne i villi som badar i mammans blod. Följ pilarna: från fostret via navelsträngsartärerna, tillbaka via venen.](data/del2-bilder/9.3.1-1.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 2|data/del2-bilder/9.3.1-1-sida.jpg\")\n\n- **Två navelsträngsartärer** för syrefattigt blod *från* fostret till placentan.\n- **En navelsträngsven** för syrerikt blod *tillbaka* till fostret.\n- Placentan sköter gasutbyte, näring, avfall och vätskebalans och producerar hormoner (hCG, progesteron, östrogen). Barriären är ofullständig – vissa virus, alkohol och läkemedel passerar.\n\n> [!fallgrop] Artär = bort från fostret\n> I navelsträngen är det **venen** som har det syrerika blodet. Namnen följer riktningen (från/till fostrets hjärta), inte syrehalten – precis som i lungkretsloppet.\n\n## Hur fostret får tillräckligt med syre\nProblemet är att gradienten som driver diffusionen är liten. I mammans lunga är skillnaden mellan alveolerna (13,3 kPa) och det venösa blodet (5,3 kPa) ca 8 kPa. I placentan är PO₂ i mammans blod bara ca **6,6 kPa** och i navelvenen ca **4 kPa** – en skillnad på ungefär **2,6 kPa**. Fostret har därför fyra knep:\n\n1. **Hög hematokrit och Hb-koncentration** (180–200 g/l mot ca 120 g/l hos den gravida kvinnan) → mer syre per liter blod.\n2. **Fetalt hemoglobin (HbF, α₂γ₂).** γ-kedjan binder **2,3-BPG sämre** än β-kedjan. Eftersom 2,3-BPG normalt sänker syreaffiniteten får HbF **högre affinitet** – det \"drar\" syre från mammans HbA.\n3. **Dubbel Bohr-effekt:** fostrets CO₂ och syror diffunderar över till mamman. Mammans blod blir surare (affiniteten sjunker → hon *släpper* syre) och fostrets blod blir mindre surt (affiniteten stiger → det *tar upp* syre). Effekten verkar alltså åt båda hållen samtidigt.\n4. **Dubbel Haldane-effekt:** när mammans Hb lämnar ifrån sig syre kan det binda mer CO₂, och när fostrets Hb tar upp syre släpper det CO₂ – vilket underlättar CO₂-transporten bort från fostret.\n\n![Fostrets dissociationskurva ligger till vänster om mammans: vid samma PO₂ är fostrets Hb mer mättat. || att den röda (fetala) kurvan ligger till vänster om den blå (maternella). Läs av vid PO₂ 30 mmHg: fostrets Hb är betydligt mer mättat.](data/del2-bilder/9.3.1-2.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 5|data/del2-bilder/9.3.1-2-sida.jpg\")\n![Globinkedjornas utveckling. γ-kedjorna (HbF) dominerar under fosterlivet och ersätts av β-kedjor (HbA) efter födseln. || hur γ-kurvan faller och β-kurvan stiger kring födseln (den streckade linjen). α-kedjorna är oförändrade.](data/del2-bilder/9.3.1-3.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 4|data/del2-bilder/9.3.1-3-sida.jpg\")\n\n> [!minne] V som i \"Vill ha syre\"\n> **Fostrets** kurva är **vänsterförskjuten** = högre affinitet = det vill ha syret. Mammans kurva är (relativt) högerförskjuten = hon lämnar ifrån sig syret. Fostrets kurva är *inte* högerförskjuten – det är en klassisk tentafälla.\n\nγ-kedjorna byts successivt ut mot β-kedjor; vid ca 30 veckor efter födseln har barnet huvudsakligen HbA.\n\n## Fostrets cirkulation och de tre shuntarna\nFostrets cirkulation är byggd för att låta blodet gå förbi organ som ännu inte gör nytta – främst **lungorna** och delvis **levern** – och skicka det mest syrerika blodet till **hjärtat och hjärnan**.\n\n![Fostrets cirkulation med shuntarna markerade: ductus venosus (förbi levern), foramen ovale (höger → vänster förmak) och ductus arteriosus (lungartären → aorta). Siffrorna anger syremättnad i procent. || de tre rödmarkerade shuntarna och siffrorna för syremättnad: högst i navelvenen (80 %), lägre efter inblandning i v. cava inferior (67 %).](data/del2-bilder/9.3.1-4.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 6|data/del2-bilder/9.3.1-4-sida.jpg\")\n\n| Shunt | Vad den förbigår | Varför blodet tar den vägen |\n|---|---|---|\n| **Ductus venosus** | Levern: navelvenblod → v. cava inferior | Leder det syrerikaste blodet direkt mot hjärtat |\n| **Foramen ovale** | Lungorna: **höger → vänster förmak** | Trycket är högre i höger förmak eftersom lungresistensen är hög |\n| **Ductus arteriosus** | Lungorna: a. pulmonalis → aorta | Hålls öppen av **PGE₂** och lågt PO₂; lungresistensen är högre än systemresistensen |\n| **Placentan** | – | Mycket låg resistens, får ca 40 % av hjärtminutvolymen |\n\n> [!forklaring] Varför är lungresistensen så hög hos fostret?\n> Lungorna är **vätskefyllda och hopfallna**, vilket trycker ihop kärlen. Dessutom ger det låga PO₂ **hypoxisk pulmonell vasokonstriktion**. Höger sida av hjärtat får därför arbeta mot ett högt tryck, och blodet tar hellre vägen genom shuntarna.\n\nBlodet från v. cava inferior (med det syrerika navelvenblodet) riktas genom foramen ovale till vänster förmak → vänster kammare → aorta → **hjärta och hjärna**. Blodet från v. cava superior (syrefattigt) går till höger kammare → lungartären → genom ductus arteriosus till nedåtgående aorta → underkroppen och placentan.\n\n## Surfaktant och för tidigt födda\nSurfaktant (fosfolipider + proteiner) bildas av **typ II-pneumocyter** och sänker ytspänningen i alveolerna. Utan surfaktant kollapsar alveolerna vid utandning och varje andetag blir ett \"första andetag\".\n\n- Produktionen startar sent, från ca vecka 24, och ökar mot slutet av graviditeten.\n- Brist ger **RDS (respiratory distress syndrome)** – vanligast hos barn födda före vecka 28.\n\n![Lungans utveckling under fosterlivet. Surfaktant bildas först sent i utvecklingen. || att surfaktant (överst till höger i tidslinjen) börjar bildas först i den sackulära fasen, efter ca vecka 24.](data/del2-bilder/9.3.1-5.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 7|data/del2-bilder/9.3.1-5-sida.jpg\")\n\n> [!klinik] Kortison före förtidsbörd\n> Vid hotande förtidsbörd ges mamman **kortikosteroider** (betametason) som påskyndar surfaktantproduktionen i fostrets lungor. Nyfödda med RDS kan få surfaktant direkt i luftvägarna.\n\n## Omställningen vid födseln steg för steg\nFödseln är en av de största fysiologiska omställningarna i livet. Inom minuter ska barnet gå från placenta till egen andning, och de parallellkopplade kretsloppen ska bli seriekopplade.\n\n**1. Katekolaminstormen.** Halterna av adrenalin och noradrenalin blir högre än vid maximalt arbete hos en vuxen. Det ökar frisättningen av surfaktant och absorptionen av lungvätska, ger bronkdilatation, omfördelar blod till hjärta och hjärna, mobiliserar energi (lipolys, glykogenolys, glukoneogenes) och gör barnet vaket med vida pupiller.\n\n**2. Första andetaget.** Utlöses av köldchock, stigande PCO₂ (när navelsträngen stängs) och sensoriska stimuli. Lungorna är vätskefyllda och har låg compliance, så det första andetaget kräver ett **mycket stort undertryck**. Efter några andetag är lungorna luftfyllda och efter ca 40 minuter är andningen normal.\n\n![Tryck–volymkurvor för det första, andra och fyrtionde andetaget. Det första andetaget kräver ett mycket större undertryck. || x-axeln: det första andetaget kräver ett undertryck på ca –40 till –60 cm H₂O, efter 40 minuter räcker några få.](data/del2-bilder/9.3.1-6.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 9|data/del2-bilder/9.3.1-6-sida.jpg\")\n\n**3. Lungcirkulationen öppnas.** Luft i alveolerna och stigande PO₂ häver kompressionen och den hypoxiska vasokonstriktionen.\n\nflöde: Luft + högre PO₂ i lungan → Lungresistensen sjunker kraftigt → Lungblodflödet ökar → Trycket i lungartären, höger kammare och höger förmak sjunker\n\n![Lungkärlens resistens rasar vid födseln samtidigt som lungblodflödet ökar och medeltrycket i lungartären sjunker. || den streckade linjen vid födseln: resistensen (överst) faller, flödet (mitten) ökar och trycket (nederst) sjunker – samtidigt.](data/del2-bilder/9.3.1-7.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 10|data/del2-bilder/9.3.1-7-sida.jpg\")\n\n**4. Navelsträngen stängs.** Kärlen drar ihop sig av sträckning och högt PO₂. Artärerna stängs inom ca 90 sekunder, venen något senare (så att barnet inte förlorar blodvolym). När den lågresistenta placentan kopplas bort **stiger systemresistensen och trycket i aorta och vänster förmak**.\n\n**5. Shuntarna stängs.**\n\nflöde: Tryck i vänster förmak > höger förmak → Klaffen i foramen ovale trycks igen → Funktionell stängning direkt, anatomisk senare\n\nflöde: Högt PO₂ + minskat PGE₂ → Ductus arteriosus kontraherar → Stängd inom 1–8 dygn → Mer blod till lungorna\n\n![Vid födseln stängs både ductus arteriosus och foramen ovale, och kretsloppen blir seriekopplade. || var ductus arteriosus (överst) och foramen ovale (mellan förmaken) sitter. Båda stängs när trycken på vänster sida blir högre än på höger.](data/del2-bilder/9.3.1-8.jpg \"Perinatalfysiologi (Ellinor Kenne), s. 12|data/del2-bilder/9.3.1-8-sida.jpg\")\n\n**Ductus venosus** stängs inom 1–3 timmar (mekanismen är oklar).\n\n> [!klinik] Läkemedel som styr ductus\n> **NSAID** (indometacin, ibuprofen) hämmar prostaglandinsyntesen och kan användas för att **stänga** en öppetstående ductus hos för tidigt födda. **PGE₁** (alprostadil) ges för att **hålla den öppen** vid duktusberoende hjärtfel tills barnet kan opereras.\n\n## Sammanfattning: före och efter födseln\n| | Fostret | Efter födseln |\n|---|---|---|\n| Gasutbyte | Placentan | Lungorna |\n| Lungresistens | **Hög** | **Låg** |\n| Systemresistens | Låg (placentan) | Hög |\n| Tryck i höger förmak | Högre än vänster | Lägre än vänster |\n| Foramen ovale | Öppet (höger → vänster) | Stängt |\n| Ductus arteriosus | Öppen (PGE₂, lågt PO₂) | Stängs av högt PO₂ |\n| Kretslopp | Parallellkopplade | Seriekopplade |\n\n## Mer från föreläsningarna\n- **Katekolaminpåslaget vid förlossningen** är högre hos det nyfödda barnet än hos en vuxen som tränar maximalt. Katekolaminerna ökar surfaktantfrisättningen, ökar absorptionen av lungvätska och lungans compliance, vidgar bronker och bronkioler, ökar blodflödet till hjärta och hjärna, mobiliserar substrat (lipolys, glykogenolys och glukoneogenes i levern) och ökar vakenheten och pupillstorleken, vilket främjar anknytningen till mamman.\n- **Det första andetaget** drivs av en temperaturchock (luften är mycket kallare än fostervattnet), taktila stimuli när barnet trycks genom förlossningskanalen, samt hypoxi och hyperkapni när navelsträngen kopplas bort. Det första skriket ger ett högt negativt intratorakalt tryck som vecklar ut alveolerna.\n- Barn som föds för tidigt har ofta för lite surfaktant och kan behöva ventilator (respiratory distress syndrome).\n",
+       "sammanfattning": "## Placenta – fostrets lunga, tarm och njure {#placenta mal=1}\nFostret lever i fostervatten och får allt via navelsträngen. **Placenta** gör därför jobbet för nästan alla organ: den är lunga (gasutbyte), mag-tarmkanal (näring), lever och njure (avfall och vätskebalans) och en hormonproducerande körtel. Den är också en barriär, men inte en fullständig – vissa virus och läkemedel passerar.\n\n[[fig:placenta]]\n\nBlodflödena är skilda åt. Fostrets blod kommer till placenta i **två navelsträngsartärer**, går genom kapillärer i chorionvilli och tillbaka i **en navelsträngsven**. Mammans blod strömmar från spiralartärer ut i stora hålrum (intervillösa rummet) som omger villi. Utbytet sker med **diffusion** över en yta på bara några kvadratmeter.\n\n## Hur fostret får tillräckligt med syre {#syre mal=2}\nDiffusionen drivs av skillnaden i partialtryck – samma princip som i lungan. Men gradienten är liten:\n\n| | pO₂ på \"givarsidan\" | pO₂ på \"mottagarsidan\" | Skillnad |\n|---|---|---|---|\n| **Lungan (vuxen)** | alveoler 13,3 kPa | venöst blod 5,3 kPa | **8 kPa** |\n| **Placenta (foster)** | mammans sinus 6,6 kPa | navelsträngsvenen 4 kPa | **2,6 kPa** |\n\n[[fig:syre]]\n\nSyret har dessutom lång väg att gå. Fostret kompenserar på tre sätt:\n\n1. **Högre hematokrit** – Hb 180–200 g/l, jämfört med ≈120 g/l hos en gravid kvinna. Mer hemoglobin binder mer syre per liter blod.\n2. **Fosterhemoglobin (HbF)** – två α- och två **γ-kedjor** i stället för β. 2,3-BPG binder sämre till γ-kedjan, så HbF har **högre syreaffinitet**.\n3. **Vänsterförskjuten dissociationskurva** – av HbF och av den **dubbla Bohr- och Haldane-effekten** i placenta.\n\n[[fig:hbf]]\n\n[[fig:dissociation]]\n\nDubbel Bohr-effekt betyder att den rör båda sidor samtidigt: fostrets CO₂ och H⁺ diffunderar över till mamman. Fostrets blod blir mindre surt (affiniteten **ökar**, det tar upp syre lättare), och mammans blir surare (affiniteten **minskar**, hon släpper syre lättare). Haldane-effekten verkar åt andra hållet: mammans blod, som just lämnat ifrån sig syre, kan ta emot mer CO₂ från fostret.\n\n> [!fallgrop] Alla tre är rätt – men frågan avgör vilket som ska väljas\n> Rest VT25, fråga 2 (*Vilken mekanism säkerställer att fostret får syre?*) har facit **högre hematokrit**. Rest HT25, fråga 2 (*Vilken funktion har γ-enheten?*) har facit **ökar den syrebindande kapaciteten** – genom att 2,3-BPG binder sämre. Fosterhemoglobin ger alltså *högre* affinitet, inte lägre.\n\n## Fostrets cirkulation och shuntarna {#shuntar mal=1}\nFostrets lungor och lever är ofärdiga, och en stor del av hjärtminutvolymen måste gå till placenta. Blodet leds därför förbi dem genom fyra shuntar:\n\n[[fig:fetal-cirkulation]]\n\n| Shunt | Från → till | Varför den fungerar |\n|---|---|---|\n| **Ductus venosus** | navelsträngsvenen → v. cava inferior, förbi levern | det syrerika blodet från placenta når hjärtat direkt |\n| **Foramen ovale** | höger → vänster förmak | trycket är högre i höger förmak eftersom lungorna har hög resistens |\n| **Ductus arteriosus** | a. pulmonalis → aorta | samma skäl – blodet tar vägen med lägst motstånd, förbi lungorna |\n| **Placenta** | aorta → navelsträngsartärerna | mycket låg resistens ger ett stort flöde, förbi underkroppen och njurarna |\n\nLungornas höga resistens har två orsaker: lungan är vätskefylld och kollapsad, så kapillärerna trycks ihop (**mekanisk kompression**), och fostrets låga pO₂ ger **hypoxisk vasokonstriktion**. Ductus arteriosus hålls öppen av **PGE₂**.\n\n## Lungan och surfaktant {#surfaktant mal=3}\n**Surfaktant** sänker ytspänningen i alveolerna och ökar lungans compliance. Typ II-cellerna börjar bilda surfaktant först runt **graviditetsvecka 24**, när epitelet tunnas ut och kapillärerna växer in.\n\n[[fig:surfaktant]]\n\nBarn som föds mer än ≈8 veckor för tidigt har ofta brist på surfaktant och utvecklar **RDS** (*respiratory distress syndrome*). Alveolerna kollapsar efter varje utandning, och barnet kan behöva ventilator. RDS är vanligast hos barn födda före vecka 28.\n\n## Födseln – en stressreaktion {#stress mal=3}\nFörlossningen ger en kraftig **katekolaminfrisättning** – högre koncentrationer än hos en vuxen som tränar maximalt. Katekolaminerna hjälper barnet att klara övergången:\n\n- **Andning:** mer surfaktant, ökad absorption av lungvätska, högre compliance, vidgade bronker och bronkioler.\n- **Cirkulation:** ökat blodflöde till hjärta och hjärna – **vitala organ** (Rest HT23, fråga 2).\n- **Energi:** lipolys, glykogenolys och glukoneogenes i levern, eftersom näringen från navelsträngen upphör.\n- **Anknytning:** vidgade pupiller och ökad vakenhet.\n\n## Det första andetaget {#forsta-andetaget mal=3}\nDet första andetaget utlöses av **temperaturchocken** (luften är mycket kallare än livmodern), **stigande pCO₂** när navelsträngen stängs, **sensoriska stimuli** under passagen genom födelsekanalen samt nervösa och hormonella signaler.\n\n[[fig:andetag]]\n\nDen vätskefyllda, kollapsade lungan har mycket låg compliance, så det krävs ett enormt undertryck för att få in den första luften. Redan andra andetaget är lättare, och efter ≈40 minuter är andningen normal.\n\n## Omställningen av cirkulationen {#omstallning mal=3}\nNär lungorna fylls med luft händer två saker: den mekaniska kompressionen försvinner och syretrycket stiger, så den hypoxiska vasokonstriktionen släpper. Den **pulmonella kärlresistensen faller kraftigt**, flödet genom lungorna ökar flera gånger och trycket i a. pulmonalis sjunker.\n\n[[fig:lungcirkulation]]\n\nDärefter stängs shuntarna i tur och ordning:\n\nflöde: lungan fylls med luft → pulmonell resistens ↓ → tryck i höger förmak ↓ → vänster förmak får högre tryck än höger → foramen ovale stängs\n\n| Shunt | Stängs av | När |\n|---|---|---|\n| **Navelsträngen (placentashunten)** | vasokonstriktion av sträckning och ökat pO₂; artärerna före venen | sekunder–1,5 min |\n| **Foramen ovale** | tryckomkastningen mellan förmaken trycker ihop klaffen | vid första andetagen; växer sedan oftast fast |\n| **Ductus arteriosus** | **ökat pO₂** ger kontraktion i kärlväggen, och **PGE₂ sjunker** | 1–8 dagar |\n| **Ductus venosus** | vasokonstriktion, mekanismen oklar | 1–3 timmar |\n\n[[fig:navelstrang]]\n\n[[fig:stangning]]\n\nNär navelsträngsartärerna stängs försvinner placentas låga resistens, så det **systemiska** motståndet och trycket i aorta stiger samtidigt som det pulmonella faller. Venen stängs senare än artärerna, så att barnet inte förlorar blodvolym. När ductus arteriosus stängs måste allt blod från höger kammare gå genom lungorna – **lungflödet ökar** (Rest HT24, fråga 2).\n\n> [!konflikt] Vilken shunt stängs när systemresistensen blir högre än den pulmonella?\n> Rest VT24, fråga 2 har facit **foramen ovale**: när systemresistensen överstiger den pulmonella blir trycket högre i vänster förmak än i höger, och klaffen trycks igen. Ductus arteriosus påverkas också av tryckomkastningen (flödet byter riktning), men den **stängs** framför allt av det stigande pO₂ och fallande PGE₂. Svara foramen ovale på den formuleringen.\n\n> [!kalla] Kompletterande källa – öppetstående ductus\n> Hos för tidigt födda stängs ductus arteriosus ofta inte (PDA, *patent ductus arteriosus*), eftersom kärlväggen svarar sämre på syre och PGE₂-nivåerna är höga. COX-hämmare (ibuprofen, indometacin) kan då användas för att stänga den, medan PGE₁ ges för att *hålla den öppen* vid ductusberoende hjärtfel. Källa: Hamrick m.fl. 2020, *Pediatrics* 146:e20201209 (Patent ductus arteriosus of the preterm infant). Föreläsningen tar inte upp detta.\n\n## Sammanfattning {#sammanfattning}\n- **Placenta** sköter gasutbyte, näring, avfall och hormonproduktion. Två navelsträngsartärer går till placenta, en ven tillbaka.\n- Syregradienten över placenta är liten (≈2,6 kPa mot 8 kPa i lungan). Fostret kompenserar med **högre hematokrit**, **HbF** (γ-kedjor binder 2,3-BPG sämre → högre affinitet) och **vänsterförskjuten kurva** (dubbel Bohr och Haldane).\n- **Shuntar:** ductus venosus (förbi levern), foramen ovale och ductus arteriosus (förbi lungorna) och placenta. Lungorna har hög resistens av kompression och hypoxisk vasokonstriktion.\n- **Surfaktant** bildas från ≈vecka 24; brist ger RDS hos för tidigt födda.\n- **Katekolaminer** vid födseln: andning, blodflöde till vitala organ, substratmobilisering.\n- **Första andetaget** utlöses av kyla, stigande pCO₂ och sensoriska stimuli och kräver ett enormt undertryck.\n- **Omställningen:** pulmonell resistens ↓ och systemisk ↑ → foramen ovale stängs av tryckomkastningen, ductus arteriosus av ökat pO₂ och minskad PGE₂, navelsträngen av vasokonstriktion.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.3.1-o1",
@@ -9564,6 +9683,104 @@
          ],
          "svar": 2,
          "forklaring": "γ-kedjan har sämre bindning av 2,3-BPG, vilket ger vänsterförskjuten kurva och högre affinitet. Fostret \"drar\" syre från mammans HbA trots den låga gradienten.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o4",
+         "q": "Gradienten för syre över placenta är bara ≈2,6 kPa. Vilken anpassning hos fostret ökar mängden syre som kan bindas per liter blod?",
+         "options": [
+          "Lägre hemoglobinkoncentration för att minska viskositeten",
+          "Högerförskjuten dissociationskurva",
+          "Högre pCO₂ i fostrets blod",
+          "Högre hemoglobinkoncentration (hematokrit) än hos mamman",
+          "Högre halt 2,3-BPG i fostrets erytrocyter"
+         ],
+         "svar": 3,
+         "forklaring": "Fostret har Hb 180–200 g/l mot ≈120 g/l hos den gravida kvinnan. Det är en av tre kompensationer, tillsammans med HbF och den vänsterförskjutna kurvan (Rest VT25, fråga 2).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o5",
+         "q": "Vad innebär den dubbla Bohr-effekten i placenta?",
+         "options": [
+          "Mammans kurva förskjuts åt vänster och fostrets åt höger",
+          "CO₂ och H⁺ från fostret gör mammans blod surare så att hon släpper syre, medan fostrets blod blir mindre surt och binder syre lättare",
+          "Syre diffunderar från fostret till mamman",
+          "Det är samma sak som Haldane-effekten",
+          "Fostret och mamman har samma dissociationskurva"
+         ],
+         "svar": 1,
+         "forklaring": "Samma överföring av CO₂ och H⁺ förskjuter mammans kurva åt höger och fostrets åt vänster – båda förändringarna gynnar syretransporten till fostret.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o6",
+         "q": "Vilken shunt leder syrerikt blod från navelsträngsvenen förbi levern?",
+         "options": [
+          "Sinus coronarius",
+          "Foramen ovale",
+          "Ductus venosus",
+          "Navelsträngsartären",
+          "Ductus arteriosus"
+         ],
+         "svar": 2,
+         "forklaring": "Ductus venosus för blodet från navelsträngsvenen till v. cava inferior. Den drar ihop sig inom 1–3 timmar efter födseln.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o7",
+         "q": "Efter de första andetagen blir trycket i vänster förmak högre än i höger. Vilken shunt stängs som direkt följd av det?",
+         "options": [
+          "Foramen ovale",
+          "Navelsträngsvenen",
+          "Sinus venosus",
+          "Ingen – tryckskillnaden mellan förmaken påverkar inga shuntar",
+          "Ductus venosus"
+         ],
+         "svar": 0,
+         "forklaring": "När systemresistensen överstiger den pulmonella blir trycket högre i vänster förmak än i höger, och klaffen över foramen ovale trycks igen (Rest VT24, fråga 2).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o8",
+         "q": "Vilken funktion har de höga katekolaminnivåerna hos ett nyfött barn?",
+         "options": [
+          "De sänker hjärtfrekvensen för att spara syre",
+          "De minskar absorptionen av lungvätska",
+          "De håller ductus arteriosus öppen",
+          "De hämmar surfaktantbildningen",
+          "De ökar blodflödet till vitala organ och mobiliserar energisubstrat"
+         ],
+         "svar": 4,
+         "forklaring": "Katekolaminerna skyddar hjärta och hjärna, ökar surfaktant och vätskeabsorption i lungan och startar lipolys, glykogenolys och glukoneogenes (Rest HT23, fråga 2).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o9",
+         "q": "Vad är den viktigaste orsaken till att det första andetaget kräver så stort undertryck?",
+         "options": [
+          "Andningsmuskulaturen är inte färdigutvecklad",
+          "Luftvägarna är blockerade av slem",
+          "Det finns ingen surfaktant hos fullgångna barn",
+          "Lungan är vätskefylld och kollapsad med mycket låg compliance",
+          "pCO₂ är för lågt för att driva andningen"
+         ],
+         "svar": 3,
+         "forklaring": "Den första luften måste öppna vätskefyllda alveoler. Redan andra andetaget är lättare, och efter ≈40 minuter är andningen normal.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.3.1-o10",
+         "q": "Vilken förändring sker i lungcirkulationen direkt efter födseln?",
+         "options": [
+          "Den pulmonella kärlresistensen ökar",
+          "Hypoxisk vasokonstriktion förstärks",
+          "Trycket i a. pulmonalis ökar",
+          "Den pulmonella kärlresistensen minskar kraftigt och lungflödet ökar",
+          "Lungflödet minskar"
+         ],
+         "svar": 3,
+         "forklaring": "Luften tar bort kompressionen av kapillärerna och pO₂ stiger, så resistensen faller, flödet ökar flera gånger och trycket sjunker (omtenta aug 2026, fråga 2).",
          "kalla": "ovning"
         }
        ],
@@ -9713,7 +9930,8 @@
        "delmal": [
         "Förklara akut svar och kronisk adaptation till vistelse på hög höjd genom att integrera andningsfysiologi och reglering av syra–basbalans"
        ],
-       "sammanfattning": "## Problemet\nLufttrycket sjunker med höjden; syrgasandelen är fortfarande 21 %, men **inandat PO₂ och alveolärt PO₂ sjunker**. Lägre PaO₂ → lägre Hb-mättnad och syreleverans.\n\n## Akut svar (minuter–timmar)\n- Perifera kemoreceptorer (glomus caroticum) känner av lågt PaO₂ → **hyperventilation** → **PaCO₂ sjunker** → **respiratorisk alkalos** (högt pH).\n- Alkalosen och den låga PCO₂ dämpar via centrala kemoreceptorer ventilationsökningen (broms).\n- Hjärtfrekvens och HMV ökar; hypoxisk vasokonstriktion i lungan → pulmonell hypertension.\n\n## Ventilatorisk acklimatisering (dagar)\n- **Njurarna kompenserar alkalosen** genom ökad **utsöndring av bikarbonat (HCO₃⁻) i urinen** (minskad reabsorption) → BE blir negativt och pH normaliseras **(metabol kompensation)**. Den ökade filtrationen/utsöndringen av NaHCO₃ under de första dagarna har just denna funktion – den sänker pH mot det normala, så att bromsen på andningen släpper och ventilationen kan öka ytterligare.\n- Även likvors pH korrigeras (HCO₃⁻ transporteras ut) → centrala kemoreceptorerna \"accepterar\" lägre PCO₂.\n\n## Hematologisk acklimatisering\n- **2,3-BPG ökar** i erytrocyterna inom ca 1–2 dygn → **högerförskjutning av dissociationskurvan** → lättare **syreavgivning till vävnaderna** (inte bättre upptag i lungan).\n- **EPO** från njurarna ökar inom timmar–dagar → fler röda blodkroppar. Ökad Hb och hematokrit tar **veckor** – det är den adaptation som tar längst tid. Initialt stiger hematokriten också för att plasmavolymen minskar.\n- Ökad kapillärisering, myoglobin och mitokondrier i muskeln på sikt.\n\n## Ordning i tid\nHyperventilation (minuter) → renal HCO₃⁻-utsöndring (dagar) → 2,3-BPG (dagar) → ökat Hb/hematokrit (veckor). Efter 2–3 veckor på högre höjd är det ökningen av erytrocyter och Hb som är den nya förändringen.\n\n## Höjdsjuka\nAkut bergsjuka (huvudvärk, illamående), höghöjdslungödem och hjärnödem. Acetazolamid (karbanhydrashämmare) påskyndar acklimatiseringen genom att öka renal HCO₃⁻-utsöndring.\n\n## Tentafokus\n- Kompensation för hyperventilationen = ökad renal bikarbonatutsöndring.\n- 2,3-BPG ↑ → högerförskjutning → bättre syreavgivning i vävnaden.\n- Vad tar längst tid: ökad erytrocytmassa.",
+       "sammanfattning": "> [!lucka] Ingen föreläsning i kursmaterialet\n> Bland de PDF:er biblioteket bygger på finns ingen föreläsning eller bild om hög höjd, trots att lärandemålet examineras som fråga 1 på nästan varje tenta. Lektionen bygger därför på andnings- och syra–basfysiologin från tidigare moduler och på kompletterande källor (angivna nedan). Stäm av mot föreläsningen om den finns tillgänglig.\n\n## Problemet: lägre tryck, inte mindre syre {#problemet mal=1}\nLuften på hög höjd innehåller fortfarande **21 % syre**. Det som sjunker är **lufttrycket**, och därmed syrets partialtryck. Inandat pO₂ räknas fram som 0,21 × (lufttrycket − vattenångans tryck, 6,3 kPa):\n\n| Höjd | Lufttryck | Inandat pO₂ |\n|---|---|---|\n| Havsnivå | ≈101 kPa | ≈20 kPa |\n| 3 000 m | ≈70 kPa | ≈13 kPa |\n| 5 000 m | ≈54 kPa | ≈10 kPa |\n| Mount Everest, 8 849 m | ≈34 kPa | ≈6 kPa |\n\nLägre inandat pO₂ ger lägre alveolärt och arteriellt pO₂, lägre Hb-mättnad och sämre syreleverans till vävnaderna. Kroppens svar kan delas in i det som händer inom minuter, inom dagar och inom veckor.\n\n## Akut svar: hyperventilation {#akut mal=1}\nDet låga arteriella pO₂ känns av i de **perifera kemoreceptorerna** (glomus caroticum). De driver andningscentrum, och ventilationen ökar inom minuter.\n\nflöde: lågt pO₂ i artärblodet → perifera kemoreceptorer → hyperventilation → mer CO₂ vädras ut → pCO₂ ↓ → pH ↑ = respiratorisk alkalos\n\nHyperventilationen höjer det alveolära pO₂ något, men får ett pris: **respiratorisk alkalos**. Den låga pCO₂ och det höga pH:t hämmar de **centrala kemoreceptorerna**, som då bromsar andningen. Därför ökar ventilationen bara måttligt de första timmarna.\n\nSamtidigt ökar **hjärtfrekvensen och hjärtminutvolymen** (sympatikus), och **hypoxisk vasokonstriktion** i lungan höjer trycket i lungkretsloppet.\n\n## Njurarna kompenserar alkalosen {#njuren mal=1}\nUnder de följande dagarna kompenserar **njurarna** den respiratoriska alkalosen. Mer bikarbonat filtreras ut och mindre återresorberas, så **utsöndringen av HCO₃⁻ (som NaHCO₃) i urinen ökar**. Plasma-HCO₃⁻ sjunker, BE blir negativt och **pH normaliseras** – en metabol kompensation.\n\nflöde: respiratorisk alkalos → njuren utsöndrar mer HCO₃⁻ → HCO₃⁻ ↓, BE negativt → pH normaliseras → bromsen på andningen släpper → ventilationen kan öka ytterligare\n\nSamtidigt sjunker HCO₃⁻ i likvor, så de centrala kemoreceptorerna \"accepterar\" den lägre pCO₂. Den gradvisa ventilationsökningen under de första dagarna kallas **ventilatorisk acklimatisering**.\n\n> [!fallgrop] Kompensationen sker i njuren – inte genom att andas mindre\n> Tentan frågar om och om igen hur den akuta hyperventilationen kompenseras. Svaret är **ökad utsöndring av bikarbonat i urinen** (Rest HT23 och VT25, fråga 1), och funktionen är att **normalisera pH** (Rest VT23, fråga 4). Ventilationen minskar inte – den ökar tvärtom ytterligare när pH normaliserats.\n\n**Acetazolamid** hämmar karbanhydras i proximala tubuli, så bikarbonatutsöndringen ökar direkt. Det ger en lätt metabol acidos som stimulerar andningen – och påskyndar acklimatiseringen. Därför används det i förebyggande syfte mot höjdsjuka.\n\n## Blodets anpassning: 2,3-BPG och fler röda blodkroppar {#blod mal=1}\n**2,3-BPG** (2,3-bisfosfoglycerat) ökar i erytrocyterna inom ett par dygn. Det binder till deoxyhemoglobin och **sänker syreaffiniteten**, så dissociationskurvan förskjuts **åt höger**. Hemoglobinet släpper då syret lättare **i vävnaden** – det är där vinsten finns (Rest VT24, HT24 och VT26, fråga 1).\n\n| Förändring | Effekt på kurvan | Syreupptag i lungan | Syreavgivning i vävnaden |\n|---|---|---|---|\n| **2,3-BPG ↑** | högerförskjutning | marginellt sämre | **bättre** |\n| Respiratorisk alkalos (pH ↑, pCO₂ ↓) | vänsterförskjutning | bättre | sämre |\n\n**Erytropoietin (EPO)** frisätts från njurarna inom timmar när pO₂ i njurvävnaden sjunker. Det stimulerar benmärgen, men nya röda blodkroppar tar tid att bilda: **ökad erytrocytmassa, Hb och hematokrit tar veckor** och är den adaptation som tar längst tid (Rest HT25, fråga 1).\n\nHematokriten stiger dock redan de första dagarna, av ett annat skäl: **plasmavolymen minskar** (diures och minskad törst). Det ger högre Hb-koncentration utan att antalet röda blodkroppar ökat.\n\n**Tillämpning – Rest HT22, fråga 7:** Kajsa bor tre veckor på 3 000 m innan hon bestiger en topp på 5 000 m. Vad har förändrats efter tre veckor jämfört med de första dagarna? Facit: **ökad hematokrit** – nu på grund av fler röda blodkroppar, eftersom EPO-svaret hunnit få effekt.\n\nPå längre sikt ökar också kapillärtätheten och myoglobinet i musklerna.\n\n## Allt i tidsordning {#tidsordning mal=1}\n\n| Tid | Anpassning | Mekanism |\n|---|---|---|\n| **Minuter** | hyperventilation, högre puls | perifera kemoreceptorer, sympatikus |\n| **Timmar** | EPO frisätts | hypoxi i njuren |\n| **1–2 dygn** | 2,3-BPG ↑ | högerförskjutning, bättre avgivning i vävnaden |\n| **Dagar** | renal HCO₃⁻-utsöndring, ventilatorisk acklimatisering | pH normaliseras, bromsen släpper |\n| **Dagar** | hematokrit ↑ | minskad plasmavolym |\n| **Veckor** | fler röda blodkroppar, högre Hb | EPO-stimulerad erytropoes |\n\n## Höjdsjuka {#hojdsjuka mal=1}\nOm man stiger för snabbt hinner anpassningarna inte med:\n\n- **Akut bergsjuka** – huvudvärk, illamående, trötthet och sömnstörning, oftast första dygnen över ≈2 500 m.\n- **Höghöjdslungödem (HAPE)** – den hypoxiska vasokonstriktionen i lungan är ojämn, så trycket blir mycket högt i de delar som fortfarande genomblöds. Vätska läcker ut i alveolerna.\n- **Höghöjdshjärnödem (HACE)** – förvirring och ataxi; livshotande.\n\nBehandlingen av allvarlig höjdsjuka är **att gå ned**, ge syrgas och läkemedel. Förebyggande: stig långsamt (högst ≈300–500 m ökning av sovhöjden per dygn över 3 000 m) och acetazolamid vid hög risk.\n\n> [!kalla] Kompletterande källor\n> - West JB. High-altitude medicine. *Am J Respir Crit Care Med* 2012;186:1229–1237 – lufttryck, inandat pO₂, ventilatorisk acklimatisering och ett lätt vänsterförskjutet kurvläge på extrem höjd av alkalosen.\n> - Mairbäurl H. Red blood cells in sports: effects of exercise and training on oxygen supply by red blood cells. *Front Physiol* 2013;4:332 – 2,3-BPG och höjd.\n> - Luks AM m.fl. Wilderness Medical Society Clinical Practice Guidelines for the Prevention, Diagnosis, and Treatment of Acute Altitude Illness: 2024 Update. *Wilderness Environ Med* 2024;35(1 Suppl):2S–19S – höjdsjuka, stigtakt och acetazolamid.\n\n## Sammanfattning {#sammanfattning}\n- På hög höjd är syrgasandelen 21 %, men **lufttrycket och därmed pO₂ sjunker**.\n- **Minuter:** perifera kemoreceptorer → **hyperventilation** → pCO₂ ↓ → **respiratorisk alkalos**, som via centrala kemoreceptorer bromsar andningen.\n- **Dagar:** njuren **utsöndrar mer HCO₃⁻** → pH normaliseras → ventilationen kan öka ytterligare. Acetazolamid påskyndar detta.\n- **1–2 dygn:** **2,3-BPG ↑** → högerförskjuten kurva → **bättre syreavgivning i vävnaden**.\n- **Veckor:** EPO → **fler röda blodkroppar** – den adaptation som tar längst tid. Tidig hematokritstegring beror på minskad plasmavolym.\n- **Höjdsjuka:** akut bergsjuka, HAPE (ojämn hypoxisk vasokonstriktion) och HACE. Stig långsamt; behandla med nedstigning.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.4.1-o1",
@@ -9770,6 +9988,90 @@
          "svar": 2,
          "forklaring": "Hypoxisk vasokonstriktion blir ojämn och övertrycket i de kärl som är öppna skadar kapillärväggen. Det är ett icke-kardiogent ödem; nifedipin och syrgas samt nedstigning behandlar.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.4.1-o5",
+         "q": "Varför sjunker det inandade syretrycket på hög höjd?",
+         "options": [
+          "Luftens temperatur sänker syrets löslighet",
+          "Syrgasandelen i luften sjunker till under 15 %",
+          "Kolldioxidhalten i luften ökar",
+          "Lufttrycket sjunker, medan syrgasandelen är kvar på 21 %",
+          "Vattenångans tryck ökar med höjden"
+         ],
+         "svar": 3,
+         "forklaring": "Inandat pO₂ = 0,21 × (lufttryck − 6,3 kPa). På 5 000 m är lufttrycket ≈54 kPa och inandat pO₂ ≈10 kPa, mot ≈20 kPa vid havsnivå.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.4.1-o6",
+         "q": "Varför ökar ventilationen bara måttligt de första timmarna på hög höjd?",
+         "options": [
+          "Andningsmuskulaturen tröttas ut",
+          "2,3-BPG hämmar andningscentrum",
+          "Njurarna håller kvar bikarbonat",
+          "Den respiratoriska alkalosen hämmar de centrala kemoreceptorerna och bromsar andningen",
+          "De perifera kemoreceptorerna känner inte av lågt pO₂"
+         ],
+         "svar": 3,
+         "forklaring": "Hyperventilationen sänker pCO₂ och höjer pH. Det hämmar de centrala kemoreceptorerna. När njuren utsöndrat bikarbonat och pH normaliserats släpper bromsen.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.4.1-o7",
+         "q": "Vilken funktion har den ökade utsöndringen av NaHCO₃ i urinen under de första dagarna på hög höjd?",
+         "options": [
+          "Den ökar plasmavolymen",
+          "Den höjer pH ytterligare",
+          "Den ökar syreaffiniteten",
+          "Den stimulerar EPO-frisättningen",
+          "Den normaliserar pH så att bromsen på andningen släpper"
+         ],
+         "svar": 4,
+         "forklaring": "Bikarbonatutsöndringen kompenserar den respiratoriska alkalosen metabolt. pH sjunker mot det normala, och ventilationen kan öka ytterligare (Rest VT23, fråga 4).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.4.1-o8",
+         "q": "Hur påverkar en ökad halt 2,3-BPG syretillgången i vävnaden?",
+         "options": [
+          "Den påverkas inte",
+          "Den ökar, eftersom hemoglobinets affinitet för syre minskar och syret släpps lättare",
+          "Den ökar, eftersom syreupptaget i lungan blir mycket bättre",
+          "Den minskar, eftersom affiniteten ökar",
+          "Den minskar, eftersom kurvan förskjuts åt vänster"
+         ],
+         "svar": 1,
+         "forklaring": "2,3-BPG binder till deoxyhemoglobin och förskjuter kurvan åt höger. Vinsten är bättre avgivning i vävnaden, inte bättre upptag i lungan.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.4.1-o9",
+         "q": "Hematokriten har stigit redan efter tre dagar på 4 000 m. Vad är den främsta orsaken?",
+         "options": [
+          "Plasmavolymen har minskat",
+          "Antalet röda blodkroppar har fördubblats",
+          "2,3-BPG ökar storleken på de röda blodkropparna",
+          "Mjälten har tömt sina reserver av röda blodkroppar",
+          "Njuren håller kvar natrium"
+         ],
+         "svar": 0,
+         "forklaring": "Nya röda blodkroppar tar veckor att bilda. Den tidiga hematokritstegringen beror på minskad plasmavolym (diures och minskad törst).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.4.1-o10",
+         "q": "Hur påskyndar acetazolamid acklimatiseringen till hög höjd?",
+         "options": [
+          "Det ökar EPO-frisättningen direkt",
+          "Det hämmar karbanhydras i njuren så att bikarbonatutsöndringen ökar och andningen stimuleras",
+          "Det vidgar lungkärlen",
+          "Det ökar 2,3-BPG i erytrocyterna",
+          "Det hämmar de perifera kemoreceptorerna"
+         ],
+         "svar": 1,
+         "forklaring": "Ökad bikarbonaturi ger en lätt metabol acidos som motverkar alkalosen och driver ventilationen – samma kompensation som njuren annars gör under flera dagar.",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 7,
@@ -9791,7 +10093,8 @@
         "Förklara hur lungor och njurar reglerar pH (flyktig och icke-flyktig syra, NH₄⁺, titrerbar syra)",
         "Förklara hur buffertjämvikterna förskjuts vid olika rubbningar"
        ],
-       "sammanfattning": "## Syror i kroppen\n- **Flyktig syra:** CO₂ (ca 15 000 mmol/dygn) ventileras ut via lungorna. CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ (karbanhydras).\n- **Icke-flyktig (fast) syra:** ca 50–100 mmol H⁺/dygn från proteinmetabolism (svavelsyra, fosforsyra) samt organiska syror (laktat, ketonkroppar). Måste utsöndras via njurarna.\n\n## Buffertar\n- **Vätekarbonatbufferten** (HCO₃⁻/CO₂) är den viktigaste extracellulära bufferten eftersom systemet är öppet: CO₂ regleras av lungorna och HCO₃⁻ av njurarna.\n  Henderson–Hasselbalch: pH = 6,1 + log ([HCO₃⁻] / (0,23 × PCO₂ i kPa)).\n- **Proteinbufferten (prot⁻)**, särskilt hemoglobin i erytrocyterna och plasmaproteiner (albumin).\n- **Fosfat** (främst intracellulärt och i urinen).\n- **Buffer base (BB)** = summan av buffrande baser (HCO₃⁻ + prot⁻): normalt ca **48 mM i helblod** och **ca 41,5 mM i plasma**.\n- **Base excess (BE)** = avvikelsen i BB från det normala (normalt **0 ± 3**). BE påverkas av **metabola** förändringar men **inte** av förändringar i PCO₂ (CO₂ förskjuter bara fördelningen mellan HCO₃⁻ och prot⁻, inte summan).\n\n![Syra–basstatus beskrivs med tre variabler: pH, PCO₂ och basöverskott (BE). Kroppens buffertar delas i karbonatbufferten och alla andra (främst proteiner). || att karbonatbufferten är öppen åt båda hållen – CO₂ till vänster regleras av andningen och HCO₃⁻ av njuren – medan proteinbuffertarna är slutna. Buffertbasen (BB, ca 48 mM) är summan av alla korresponderande baser.](data/del2-bilder/9.5.1-1.jpg \"Syrabas 4b-1, s. 2|data/del2-bilder/9.5.1-1-sida.jpg\")\n\n\n## Hur buffertarna förskjuts\n- **Akut respiratorisk acidos:** CO₂ ↑ → vätekarbonatjämvikten förskjuts åt **höger** (mer H⁺ och HCO₃⁻); H⁺ tas upp av prot⁻ (prot-jämvikten förskjuts åt **vänster**, prot⁻ minskar). HCO₃⁻ ökar lika mycket som prot⁻ minskar → **BB och BE oförändrade**.\n- **Metabol acidos:** H⁺ från en tillförd syra binds av både HCO₃⁻ och prot⁻ → båda minskar → **BB minskar, BE negativt**.\n- **Metabol alkalos:** förlust av H⁺ → buffertarna förskjuts så att både HCO₃⁻ och prot⁻ ökar → **BB ökar, BE positivt**.\n\n## Lungorna\nSnabb kompensation (minuter–timmar) genom ändrad ventilation via centrala (likvor-pH) och perifera kemoreceptorer.\n\n## Njurarna\nLångsam men kraftfull reglering (dagar):\n1. **Reabsorption av filtrerat HCO₃⁻** (ca 85 % i proximala tubuli via H⁺-sekretion och karbanhydras).\n2. **Nybildning av HCO₃⁻** genom utsöndring av H⁺ som **titrerbar syra** (H₂PO₄⁻) och som **ammonium (NH₄⁺)** från glutaminmetabolism. NH₄⁺-utsöndringen ökar kraftigt vid kronisk metabol acidos och är den mest anpassningsbara mekanismen.\n3. Vid alkalos utsöndras HCO₃⁻ (typ B-interkalerade celler).\n\n![Metabol acidos och kroppens försvar: buffring direkt, andning inom minuter och njure inom timmar. || pilarna: tillkommande syra förbrukar korresponderande baser (BE blir negativt), andningen ökar och vädrar ut CO₂ (minuter), och njuren ökar utsöndringen av syra som H₂PO₄⁻ och NH₄⁺ (timmar–dygn) och bildar därmed nytt bikarbonat.](data/del2-bilder/9.5.1-2.jpg \"Syrabas 4b-1, s. 10|data/del2-bilder/9.5.1-2-sida.jpg\")\n\n\n## Tentafokus\n- BE ändras inte av akuta respiratoriska rubbningar.\n- Riktning för vätekarbonat- och prot-buffertarna vid respektive rubbning.\n- Ökad urinutsöndring av NH₄⁺ vid metabol acidos (inte vid akut respiratorisk alkalos).\n\n## Mer från föreläsningarna\n- Tre centrala variabler i syra–basstatus är **pH, PCO₂ och base excess (BE)**. Med kännedom om pH och PCO₂ kan man avgöra om rubbningen är metabol eller respiratorisk.\n- **Kroppens försvar i tidsordning:** buffertar (sekunder), andning som ändrar PCO₂ (minuter) och njure/lever som ökar utsöndringen av syra som H₂PO₄⁻ och NH₄⁺ och nybildar HCO₃⁻ (timmar–dygn).\n- **Massverkans lag och Le Chateliers princip** förklarar buffertarnas förskjutning: ökat CO₂ förskjuter CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ åt höger så att pH sjunker. Proteiner är **amfolyter** – de kan både ta upp och avge protoner – och bidrar därför till buffringen.\n",
+       "sammanfattning": "## Kroppen bildar hela tiden syra {#syror mal=2}\nBlodets pH hålls kring **7,40 ± 0,05** trots att ämnesomsättningen hela tiden bildar syra av två slag:\n\n- **Flyktig syra – CO₂.** Ungefär 15 000 mmol per dygn från förbränningen. CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ (katalyseras av karbanhydras). CO₂ vädras ut via **lungorna**.\n- **Icke-flyktig syra.** Ungefär 50–100 mmol H⁺ per dygn, främst svavelsyra och fosforsyra från proteinomsättningen, och organiska syror som laktat och ketonkroppar. Den kan inte andas ut utan måste utsöndras via **njurarna**.\n\n> [!lucka] Föreläsningarna om grunderna saknas\n> Syra–basavsnittet består av fyra inspelningar. Biblioteket har bara den fjärde (bilder och manus): de tre första – definitioner, buffertformeln och njurens syrautsöndring – finns inte bland PDF:erna. Njurens roll nedan bygger på en kompletterande källa.\n\n## Tre variabler: pH, pCO₂ och BE {#tre-variabler mal=1}\nSyra–basstatus beskrivs med tre variabler, och alla tre finns i blodets buffertar:\n\n[[fig:tre-variabler]]\n\n- **Vätekarbonatbufferten:** CO₂ + H₂O ⇌ H₂CO₃ ⇌ HCO₃⁻ + H⁺. Kolsyran är korresponderande syra, **HCO₃⁻ korresponderande bas**. Det är blodets viktigaste buffert, eftersom systemet är **öppet**: CO₂ regleras av lungorna och HCO₃⁻ av njurarna.\n- **Alla andra buffertar:** framför allt proteiner (hemoglobin, albumin) och fosfat. protH ⇌ **prot⁻** + H⁺, där prot⁻ är korresponderande bas.\n- **Buffer base (BB)** är summan av alla korresponderande baser: HCO₃⁻ + prot⁻. Normalt **48 mM i helblod** och **41,5 mM i plasma**.\n- **Base excess (BE)** är avvikelsen i BB från det normala: **0 ± 3 mM**. Ökad BB ger positivt BE, minskad BB negativt BE.\n\nFör vätekarbonatbufferten ger **Henderson–Hasselbalchs ekvation** sambandet mellan de tre:\n\n**pH = 6,1 + log ( [HCO₃⁻] / (0,23 × pCO₂) )**, med pCO₂ i kPa (0,23 × pCO₂ är löst CO₂ i mmol/l).\n\nNormalt: 24 / (0,23 × 5,3) ≈ 20, log 20 ≈ 1,3 och pH ≈ 7,4. Det är **kvoten** mellan HCO₃⁻ (njurarna) och pCO₂ (lungorna) som bestämmer pH.\n\npH och pCO₂ mäts direkt. BE och HCO₃⁻ lästes tidigare av i **Siggaard-Andersens nomogram**; i dag räknar blodgasapparaten fram dem.\n\n[[fig:nomogram]]\n\n> [!fallgrop] Acidos och acidemi är inte samma sak\n> **Acidos** är en rubbning med tendens att sänka pH. **Acidemi** är ett konstaterat arteriellt pH under 7,35. På samma sätt är alkalos en tendens och alkalemi pH över 7,45. En fullständigt kompenserad acidos har alltså normalt pH – ingen acidemi.\n\n## Tre försvarslinjer {#forsvar mal=2}\nKroppen försvarar pH med tre mekanismer som arbetar på olika tidsskalor:\n\n[[fig:forsvar]]\n\n| Försvar | Tid | Hur |\n|---|---|---|\n| **Buffring** | omedelbart | buffertarna tar upp eller avger H⁺, så ändringen slår inte igenom fullt |\n| **Andning** | sekunder–minuter | ökad ventilation vädrar ut CO₂ och höjer pH; minskad ventilation sänker det |\n| **Njuren** | timmar–dygn | utsöndrar icke-flyktig syra och återbildar eller utsöndrar HCO₃⁻ |\n\nKompensationen kan i sig ge en **sekundär** rubbning. En metabol acidos kompenseras med en sekundär respiratorisk alkalos (lägre pCO₂); en respiratorisk acidos kompenseras med en sekundär metabol alkalos (högre BE).\n\n## Njurens roll {#njuren mal=2}\nNjuren gör tre saker:\n\n1. **Återresorberar filtrerat HCO₃⁻** – ≈85 % i proximala tubuli, med H⁺-sekretion och karbanhydras.\n2. **Nybildar HCO₃⁻** genom att utsöndra H⁺ bundet till buffertar i urinen: som **titrerbar syra** (H₂PO₄⁻) och som **ammonium (NH₄⁺)** från glutamin. För varje H⁺ som utsöndras så återförs ett nytt HCO₃⁻ till blodet.\n3. **Utsöndrar HCO₃⁻** vid alkalos.\n\nNH₄⁺-utsöndringen kan öka mångfaldigt vid kronisk metabol acidos och är den mest anpassningsbara delen. Den ökar därför vid metabol acidos, men inte vid en akut respiratorisk rubbning (Rest HT25, fråga 11).\n\n> [!kalla] Kompletterande källa\n> Hamm LL, Nakhoul N, Hering-Smith KS. Acid–base homeostasis. *Clin J Am Soc Nephrol* 2015;10:2232–2242 – syraproduktion, återresorption av bikarbonat, titrerbar syra och ammonium.\n\n## Hur buffertjämvikterna förskjuts {#forskjutning mal=3}\nNyckeln till hela syra–basanalysen är att följa vad som händer med de två jämvikterna. Skriv upp dem bredvid varandra:\n\n> CO₂ + H₂O ⇌ H₂CO₃ ⇌ **HCO₃⁻** + H⁺\n>\n> protH ⇌ **prot⁻** + H⁺\n\n**Metabol acidos – syra tillförs.** Tillförda H⁺ tas upp av *båda* baserna. Båda jämvikterna förskjuts åt **vänster**, HCO₃⁻ och prot⁻ minskar, **BB minskar och BE blir negativt**. Därefter ökar andningen inom minuter (CO₂ vädras ut, pH stiger) och njuren ökar sin syrautsöndring inom timmar.\n\n[[fig:metabol-acidos]]\n\n**Respiratorisk acidos – CO₂ ansamlas.** Mer CO₂ förskjuter vätekarbonatbufferten åt **höger**: HCO₃⁻ och H⁺ bildas. De nya H⁺ buffras av proteinerna, så protbufferten förskjuts åt **vänster** och prot⁻ minskar. **HCO₃⁻ ökar lika mycket som prot⁻ minskar – BB och BE är oförändrade.** Med tiden ökar njuren sin syrautsöndring, prot⁻ återhämtar sig delvis, och **BB och BE stiger** – det är den metabola kompensationen.\n\n[[fig:resp-acidos]]\n\n| Rubbning | Vätekarbonatbufferten | Protbufferten | HCO₃⁻ | prot⁻ | BB / BE |\n|---|---|---|---|---|---|\n| **Metabol acidos** | vänster | vänster | ↓ | ↓ | ↓ / negativt |\n| **Metabol alkalos** | höger | höger | ↑ | ↑ | ↑ / positivt |\n| **Akut respiratorisk acidos** | höger | vänster | ↑ | ↓ | oförändrat |\n| **Akut respiratorisk alkalos** | vänster | höger | ↓ | ↑ | oförändrat |\n\n> [!fallgrop] BE påverkas inte av en akut ändring i pCO₂\n> CO₂ flyttar bara laddningar mellan HCO₃⁻ och prot⁻ – summan är densamma. Därför är BE det mått som visar den **metabola** komponenten, medan HCO₃⁻ ändras av både metabola och respiratoriska rubbningar (Rest HT25, fråga 7).\n\nOm man inte kan andas alls, till exempel vid andningsstillestånd, får man båda samtidigt: respiratorisk acidos av CO₂-retentionen och metabol acidos av den syrebrist som följer.\n\n## Sammanfattning {#sammanfattning}\n- Kroppen bildar **flyktig syra** (CO₂, ut via lungorna) och **icke-flyktig syra** (ut via njurarna).\n- **Tre variabler:** pH (7,40 ± 0,05), pCO₂ (5,3 ± 0,5 kPa) och **BE** (0 ± 3). BB = HCO₃⁻ + prot⁻, 48 mM i helblod och 41,5 mM i plasma.\n- **Acidos** är en tendens, **acidemi** ett konstaterat pH under 7,35.\n- **Tre försvar:** buffring (direkt), andning (minuter), njure (timmar–dygn). Kompensationen ger en sekundär rubbning av motsatt typ.\n- **Njuren** återresorberar HCO₃⁻ och nybildar det genom att utsöndra H⁺ som titrerbar syra och **NH₄⁺**.\n- **Metabol acidos:** båda buffertarna åt vänster, BB ↓, BE negativt. **Akut respiratorisk acidos:** vätekarbonat åt höger, prot åt vänster, BB och BE oförändrade.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.5.1-o1",
@@ -9834,51 +10137,95 @@
          "svar": 4,
          "forklaring": "pH bestäms av kvoten mellan bikarbonat (metabol komponent) och löst CO₂ (respiratorisk komponent). Det är kvoten, inte absolutvärdena, som avgör pH.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.5.1-o4",
+         "q": "Vilka komponenter summeras till buffer base (BB)?",
+         "options": [
+          "Na⁺ och Cl⁻",
+          "H₂CO₃ och protH",
+          "HCO₃⁻ och prot⁻",
+          "H⁺ och HCO₃⁻",
+          "CO₂ och HCO₃⁻"
+         ],
+         "svar": 2,
+         "forklaring": "BB är summan av de korresponderande baserna i karbonatbufferten och i alla andra buffertar – 48 mM i helblod och 41,5 mM i plasma.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.1-o5",
+         "q": "Hur förskjuts buffertjämvikterna vid akut, okompenserad respiratorisk acidos?",
+         "options": [
+          "Vätekarbonatbufferten åt vänster, protbufferten åt höger – BB oförändrad",
+          "Ingen förskjutning sker förrän njuren kompenserat",
+          "Båda åt höger – BB ökar",
+          "Vätekarbonatbufferten åt höger, protbufferten åt vänster – BB oförändrad",
+          "Båda åt vänster – BB minskar"
+         ],
+         "svar": 3,
+         "forklaring": "Mer CO₂ bildar HCO₃⁻ och H⁺; H⁺ binds av prot⁻. HCO₃⁻ ökar lika mycket som prot⁻ minskar, så BB och BE står still (Rest HT25, fråga 7).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.1-o6",
+         "q": "En syra tillförs blodet (metabol acidos). Hur påverkas HCO₃⁻, prot⁻ och BE?",
+         "options": [
+          "HCO₃⁻ minskar, prot⁻ ökar, BE oförändrat",
+          "Alla tre minskar – BE blir negativt",
+          "HCO₃⁻ och prot⁻ oförändrade, BE negativt",
+          "HCO₃⁻ ökar, prot⁻ minskar, BE oförändrat",
+          "Alla tre ökar"
+         ],
+         "svar": 1,
+         "forklaring": "Tillförda H⁺ förbrukar båda baserna, så båda jämvikterna förskjuts åt vänster och BB minskar.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.1-o7",
+         "q": "Vilken försvarslinje mot en metabol acidos verkar inom minuter?",
+         "options": [
+          "Ökad bildning av prot⁻ i levern",
+          "Ökad renal NH₄⁺-utsöndring",
+          "Nybildning av HCO₃⁻ i njuren",
+          "Ökad ventilation som vädrar ut CO₂",
+          "Minskad CO₂-produktion i musklerna"
+         ],
+         "svar": 3,
+         "forklaring": "Buffring sker direkt, andningen inom minuter och njuren inom timmar–dygn.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.1-o8",
+         "q": "Vad är skillnaden mellan acidos och acidemi?",
+         "options": [
+          "Acidemi är en rubbning i cellerna, acidos i blodet",
+          "Acidos är en rubbning med tendens att sänka pH; acidemi är ett uppmätt arteriellt pH under 7,35",
+          "Acidos gäller bara metabola rubbningar",
+          "Acidemi kräver att pCO₂ är förhöjt",
+          "De betyder exakt samma sak"
+         ],
+         "svar": 1,
+         "forklaring": "En fullständigt kompenserad acidos har normalt pH och därmed ingen acidemi.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.1-o9",
+         "q": "Hur nybildar njuren bikarbonat?",
+         "options": [
+          "Genom att filtrera mer HCO₃⁻",
+          "Genom att bryta ned albumin",
+          "Genom att utsöndra H⁺ bundet till buffertar i urinen, som titrerbar syra (H₂PO₄⁻) och NH₄⁺",
+          "Genom att andas ut CO₂",
+          "Genom att utsöndra Cl⁻"
+         ],
+         "svar": 2,
+         "forklaring": "För varje H⁺ som utsöndras som H₂PO₄⁻ eller NH₄⁺ förs ett nytt HCO₃⁻ tillbaka till blodet. NH₄⁺-utsöndringen kan öka kraftigt vid metabol acidos.",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 3,
        "url": "#/bibliotek/9.5.1",
        "slides": [
-        {
-         "fil": "data/del2-slides/m9-5333d3-1.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 1,
-         "rubrik": "ELEKTROLYTER OCH SYRA-BAS Typiska variationer av elektrolyterna i blodplasma vid acidos/al",
-         "text": "**Gamblegrammet** är ett stapeldiagram med två lika höga staplar: de positiva jonerna i plasma på ena sidan och de negativa på den andra. De måste vara lika höga eftersom plasma är elektriskt neutral. På plussidan dominerar Na⁺ (≈140), sedan lite K⁺, Ca²⁺ och Mg²⁺. På minussidan finns Cl⁻ (störst), HCO₃⁻, proteinernas negativa laddningar (prot⁻) och en restpost, **residualanjonerna** (≈8 mEkv/l). HCO₃⁻ + prot⁻ = **buffer base (BB)**: 41,5 i plasma och ≈48 i helblod (där Hb också buffrar). Enheten är mEkv/l och inte mmol/l, så tvåvärda joner (Ca²⁺, Mg²⁺) räknas dubbelt."
-        },
-        {
-         "fil": "data/del2-slides/m9-5333d3-2.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 2,
-         "rubrik": "kloridjonhalten, residualanjoner och kalciumjonerna. Jag kommer inte att skriva i siffror ",
-         "text": "Här fylls staplarna i för en **metabol acidos orsakad av syratillskott**. Vanliga orsaker är laktacidos (anaerob metabolism), ketoacidos (obehandlad typ 1-diabetes), njursvikt och metanol eller etylenglykol. Siffrorna i exemplet: pH 7,31, pCO₂ 4,0 kPa (respiratorisk kompensation) och BE −10, avläst i ett Siggaard-Andersen-nomogram. BB sjunker lika mycket som BE, alltså från 41,5 till 31,5. K⁺ stiger lite, eftersom cellerna tar upp H⁺ och släpper ut K⁺. Eftersom minusstapeln ändå måste vara lika hög som plusstapeln måste något annat ha ökat, och det är residualanjonerna (förklaras på nästa sida)."
-        },
-        {
-         "fil": "data/del2-slides/m9-5333d3-4.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 4,
-         "rubrik": "Vanliga orsaker till metabol acidos Summering av vanliga orsaker till metabol acidos som m",
-         "text": "Den andra typen är **metabol acidos orsakad av bikarbonatförlust**, t.ex. diarré, vissa diuretika eller förlust av HCO₃⁻ i tubulus. Exemplet har BE −8, så BB sjunker till 33,5. Här finns ingen ny syra-anjon. Därför är det **kloriden** som ökar för att fylla ut minusstapeln, eftersom njuren sparar Cl⁻. Anjongapet blir normalt (≈15). **Kärnan:** högt anjongap talar för syratillskott (keto-, laktat-, njursvikts- eller förgiftningsacidos), normalt anjongap talar för basförlust."
-        },
-        {
-         "fil": "data/del2-slides/m9-5333d3-5.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 5,
-         "rubrik": "kloridjonhalten ökat, men inte residualanjonhalten. Fortfarande så är det en acidos så del",
-         "text": "Basförlustacidosen kallas därför också **hyperkloremisk acidos**. **Metabol alkalos** ger samma mönster oavsett om orsaken är tillförsel av bas (bikarbonat eller Tris i dropp) eller förlust av syra (ihållande kräkningar, primär aldosteronism där Na⁺ sparas och K⁺ och H⁺ utsöndras). Exemplet: pH 7,53, pCO₂ 6,0 kPa (kompensatorisk hypoventilation), BE +13, så BB stiger till 54,5. Minusstapeln får plats genom att **Cl⁻ sjunker**. Metabol alkalos går alltså alltid ihop med **hypokloremi**, och ofta med lätt hypokalemi. Anjongapet är normalt."
-        },
-        {
-         "fil": "data/del2-slides/m9-5333d3-6.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 6,
-         "rubrik": "Så då kan vi fylla i variablerna för metabol alkalos här. Det blir samam oavsett om det är",
-         "text": "Vid metabol alkalos binds mer Ca²⁺ till proteinerna, så det **fria kalciumet sjunker**. **Respiratoriska rubbningar:** BB som summa är oförändrad. Vid respiratorisk acidos (CO₂-ansamling) stiger HCO₃⁻ och prot⁻ sjunker lika mycket. Vid respiratorisk alkalos (hyperventilation) gäller det omvända, och det fria kalciumet sjunker, vilket ger **myrkrypningar och parestesier**. Fällan: anjongapet stiger vid respiratorisk alkalos och sjunker vid respiratorisk acidos, men bara för att HCO₃⁻ ingår i formeln. Det har ingen diagnostisk betydelse där."
-        },
         {
          "fil": "data/del2-slides/m9-badfd1-1.webp",
          "kalla": "Integrering av kroppens buffertsystem",
@@ -9968,6 +10315,22 @@
          "text": "**Normalvärden och beräkning.** pH **7,35–7,45**, pCO₂ **5,3 kPa**, BE **0 ± 3 mM**, HCO₃⁻ **24 mM**, total CO₂ 25,5 mM (CO₂ + H₂CO₃ + HCO₃⁻). BE lästes förr av i Siggaard-Andersen-nomogrammet men räknas i dag ut direkt. Kalkylatorerna använder Henderson–Hasselbalch: **HCO₃⁻ = 0,03 × pCO₂ (mmHg) × 10^(pH − 6,1)**, och en förenklad formel för BE."
         },
         {
+         "fil": "data/del2-slides/m9-b7e98b-4.webp",
+         "kalla": "Syra–bas 4b",
+         "nyckel": "m9_Syrabas_4b-1",
+         "sida": 4,
+         "rubrik": "Syrabasrubbningar • Acidos: syrabasrubbning med tendens att sänka p",
+         "text": "**Acidos och acidemi, alkalos och alkalemi.** **Acidos** är en syra-basrubbning med tendens att sänka pH. **Acidemi** betyder att artär-pH faktiskt är **< 7,35**. **Alkalos** har tendens att höja pH, och vid **alkalemi** är pH **> 7,45**. Man kan alltså ha en acidos utan acidemi om den är kompenserad, eller om det finns en samtidig alkalos."
+        },
+        {
+         "fil": "data/del2-slides/m9-b7e98b-6.webp",
+         "kalla": "Syra–bas 4b",
+         "nyckel": "m9_Syrabas_4b-1",
+         "sida": 6,
+         "rubrik": "Kroppens försvar mot syrabasrubbingar 1. Omedelbart försvar: buffring 2. Snabbt försvar: a",
+         "text": "**Kroppens försvar mot syra-basrubbningar, i tre tidsskalor.** (1) **Buffring**, omedelbart. (2) **Andning**, inom minuter. (3) **Njure**, inom timmar till dygn. Kompensationen kan ses som en sekundär rubbning: kompensation av en metabol acidos eller alkalos är en sekundär respiratorisk alkalos eller acidos, och tvärtom."
+        },
+        {
          "fil": "data/del2-slides/m9-b7e98b-8.webp",
          "kalla": "Syra–bas 4b",
          "nyckel": "m9_Syrabas_4b-1",
@@ -10024,22 +10387,6 @@
          "text": "**Respiratorisk acidos med metabol kompensation.** Med tiden (timmar till dagar) ökar **njuren utsöndringen av syra** (H₂PO₄⁻, NH₄⁺) och behåller mer HCO₃⁻. Då ökar HCO₃⁻ mer än prot⁻ minskar, så **BB↑ och BE↑**. pH↓ (mindre än tidigare) och pCO₂↑. Typiskt vid KOL med kronisk CO₂-retention: högt pCO₂, högt BE och nästan normalt pH."
         },
         {
-         "fil": "data/del2-slides/m9-b7e98b-18.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 18,
-         "rubrik": "Om man inte alls kan andas, vad händer då? Dels metabol acidos pga syrgasbrist samt respir",
-         "text": "**Om man inte kan andas alls**, t.ex. vid andningsstillestånd, uppstår **både metabol acidos** (syrgasbrist ger anaerob metabolism och protoner från ATP-hydrolys) **och respiratorisk acidos** (CO₂-retention). Det ger en kombinerad acidos med mycket lågt pH."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-20.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 20,
-         "rubrik": "Hur sker p",
-         "text": "**Varför påverkar pH kalium?** (1) Organiska syror (HA) bildas i vävnaderna och dissocierar till H⁺ + A⁻. H⁺ buffras intracellulärt (HPO₄²⁻ + H⁺ → H₂PO₄⁻), och K⁺ som satt i jonpar med fosfat blir fritt. När A⁻ transporteras ut ur cellen följer K⁺ med som motjon, så plasma-K⁺ stiger. (2) Vid acidemi minskar aktiviteten i Na⁺/H⁺-utbytaren, vilket i sin tur minskar Na⁺/K⁺-pumpens aktivitet, och plasma-K⁺ stiger. (3) Njuren påverkas också. **Summaeffekt:** S-K⁺ stiger ungefär linjärt när pH sjunker."
-        },
-        {
          "fil": "data/del2-slides/m9-b7e98b-28.webp",
          "kalla": "Syra–bas 4b",
          "nyckel": "m9_Syrabas_4b-1",
@@ -10054,38 +10401,6 @@
          "sida": 29,
          "rubrik": "Summering, syrabas Inspelning 3 • Översikt kroppens syrabasreglering • Karbonatsystemet – ",
          "text": "**Sammanfattning, inspelning 3–4:** syra-basregleringen i stort. Karbonatsystemet är ett **öppet system** med gasutbyte i lungan. Njurens roll: utsöndring av icke-flyktiga syror, H₂PO₄⁻ och NH₄⁺, och nybildning och resorption av HCO₃⁻. Syra-basstatus (pH, pCO₂, BE, buffertbas). Acidos/acidemi och alkalos/alkalemi. Metabola rubbningar (särskilt laktacidos och ketoacidos), respiratoriska rubbningar med kompensation, pH-effekter på K⁺ och Ca²⁺, samt Gamblegram, residualanjoner och anjongap."
-        },
-        {
-         "fil": "data/del2-slides/m9-f47ee1-6.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 6,
-         "rubrik": "Förklaringsmodeller Metabol acidos (laktacidos/ketoacidos): Ökad produktion av organiska s",
-         "text": "**Förklaringsmodeller, metabola störningar.** **Laktacidos och ketoacidos:** organiska syror protolyseras. H⁺ tas upp av buffrande baser, så BB↓ och BE blir negativt. Ventilationen ökar och CO₂ sjunker. K⁺ och fritt Ca²⁺ stiger, Cl⁻ påverkas inte. **Residualanjonerna** (syrans anjoner) ökar, så **AG↑**. **Diarré:** förlust av HCO₃⁻, och en del av protontillskottet buffras av prot⁻. BB↓, BE negativt. För att bibehålla elektroneutraliteten ökar **Cl⁻** (njuren). Inga nya anjoner tillkommer, så **AG är oförändrat**. **Kräkningar:** förlust av H⁺ (HCl). Buffertjämvikterna förskjuts, prot⁻ och HCO₃⁻ ökar, BB↑ och BE blir positivt. Ventilationen minskar och CO₂ stiger. K⁺ och fritt Ca²⁺ sjunker. **Cl⁻ sjunker** för att ge 'elektrisk plats' åt ökningen av BB. AG är oförändrat."
-        },
-        {
-         "fil": "data/del2-slides/m9-f47ee1-7.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 7,
-         "rubrik": "Förklaringsmodeller Respiratorisk acidos (tillstånd med alveolär hypoventilation) utan met",
-         "text": "**Förklaringsmodeller, respiratoriska störningar utan metabol kompensation.** **Respiratorisk acidos** (alveolär hypoventilation): CO₂ ansamlas och bildar kolsyra, som protolyseras, så H⁺ och HCO₃⁻ ökar. Protonerna buffras främst av prot⁻, som minskar ungefär lika mycket som HCO₃⁻ ökar. **BB och BE är alltså oförändrade.** K⁺ påverkas sällan nämnvärt. Fritt Ca²⁺ stiger. AG sjunker lite (eftersom HCO₃⁻ ökat). **Respiratorisk alkalos** (hyperventilation): CO₂ sjunker, HCO₃⁻ minskar och prot⁻ ökar lika mycket, så BB och BE är oförändrade. Fritt Ca²⁺ sjunker (parestesier). AG stiger lite. **Kärnan:** BE ändras inte vid rent respiratoriska störningar, och därför används BE för att mäta den metabola komponenten."
-        },
-        {
-         "fil": "data/del2-slides/m9-f47ee1-8.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 8,
-         "rubrik": "Elektrolyter och Syrabas BV5 vt-23, modul5/8, Olof Rådmark Typiska variationer av elektrol",
-         "text": "**Bikarbonat- och proteinbuffertarna.** CO₂ + H₂O ⇌ H₂CO₃ ⇌ **HCO₃⁻** + H₃O⁺ (kolsyra/CO₂ är den korresponderande syran, bikarbonat basen). protH ⇌ **prot⁻** + H₃O⁺. Summan av de två baserna (gula rutan) = **buffertbasen (BB)**. När syra tillförs förbrukas basen, så BB sjunker. När CO₂ ökar förskjuts den översta jämvikten åt höger, och protonerna tas upp av prot⁻. Därför ändras inte BB som summa."
-        },
-        {
-         "fil": "data/del2-slides/m9-f47ee1-15.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 15,
-         "rubrik": "Vanliga orsaker till metabol acidos • Generell O2 brist vid cirkulatorisk chock, anaerob m",
-         "text": "**Vanliga orsaker till metabol acidos med syratillskott:** generell syrebrist vid **cirkulatorisk chock** (anaerob metabolism, **laktacidos**), **ketoacidos** vid obehandlad typ 1-diabetes, **njursvikt** (icke-flyktig syra utsöndras inte), intag av **metanol** (ger myrsyra) eller **etylenglykol** (ger oxalsyra), och stora mängder **acetylsalicylsyra**. Ekvationerna visar att tillförd H₃O⁺ förskjuter båda buffertjämvikterna åt vänster, så HCO₃⁻ och prot⁻ förbrukas och **BB sjunker**. CO₂ vädras ut via lungorna."
         }
        ]
       },
@@ -10097,7 +10412,8 @@
         "Avgöra acidemi/alkalemi, metabol eller respiratorisk orsak och graden av kompensation (akut, akut kombinerad, partiellt kompenserad, fullständigt kompenserad)",
         "Skilja mellan anjongap och residualanjonhalt"
        ],
-       "sammanfattning": "## Normalvärden\n| Parameter | Normalvärde |\n|---|---|\n| pH | 7,40 ± 0,05 (7,35–7,45) |\n| pCO₂ | 5,3 ± 0,5 kPa |\n| BE | 0 ± 3 mM |\n| HCO₃⁻ (standardbikarbonat) | 24 ± 3 mM |\n| Anjongap (Na⁺ + K⁺ − Cl⁻ − HCO₃⁻) | ca 15–20 mM (utan K⁺: ca 8–16) |\n\n## Steg för steg\n1. **pH:** under 7,35 = acidemi (acidos), över 7,45 = alkalemi (alkalos).\n2. **pCO₂ och BE:** Är **en** parameter onormal → **akut** störning. Är **båda** onormala → **partiellt kompenserad** störning *eller* **kombinerad akut** störning.\n3. **Orsak:** Kan den onormala pCO₂ förklara pH-förändringen → **respiratorisk** störning. Kan det onormala BE förklara pH-förändringen → **metabol** störning. Kan **båda** förklara pH-förändringen (de drar åt samma håll) → **kombinerad** störning (t.ex. respiratorisk + metabol acidos vid hjärtstopp).\n4. **Kompensation:** den parameter som drar pH **mot** det normala är kompensationen. **Normalt pH** men onormala pCO₂ och/eller BE → **fullständigt kompenserad** störning.\n\n## Typiska mönster\n| Störning | pH | pCO₂ | BE | HCO₃⁻ |\n|---|---|---|---|---|\n| Akut respiratorisk acidos | ↓ | ↑ | 0 | (↑) |\n| Akut respiratorisk alkalos | ↑ | ↓ | 0 | (↓) |\n| Akut metabol acidos | ↓ | 0 | ↓ | ↓ |\n| Akut metabol alkalos | ↑ | 0 | ↑ | ↑ |\n| Partiellt kompenserad respiratorisk acidos | ↓ | ↑ | ↑ | ↑ |\n| Partiellt kompenserad respiratorisk alkalos | ↑ | ↓ | ↓ | ↓ |\n| Partiellt kompenserad metabol acidos | ↓ | ↓ | ↓ | ↓ |\n| Partiellt kompenserad metabol alkalos | ↑ | ↑ | ↑ | ↑ |\n\n![Huvudtyper av syra–basstörningar i ett diagram med pH på x-axeln och bikarbonat på y-axeln. || att varje störning har sitt eget fält: akut respiratorisk acidos ligger till vänster nära normalt HCO₃⁻, kronisk respiratorisk acidos högre upp (renal kompensation), metabol acidos nere till vänster och metabol alkalos uppe till höger. De böjda linjerna är isobarer för PCO₂.](data/del2-bilder/9.5.2-1.jpg \"Syrabas 4b-1, s. 5|data/del2-bilder/9.5.2-1-sida.jpg\")\n\n\n## Exempel från tentorna\n- pH 7,51, pCO₂ 6,5, BE +14 (kräkningar) → **partiellt kompenserad metabol alkalos**.\n- pH 7,25, pCO₂ 3,8, BE −6 efter intensiv cykling → **partiellt kompenserad metabol acidos (laktacidos)**.\n- pH 7,33, anjongap 25, laktat 7, pCO₂ 4,2 vid hjärtsvikt → **metabol acidos med respiratorisk kompensation** (laktacidos).\n- pH 7,30, pCO₂ 9,5, HCO₃⁻ 35, BE +5 vid KOL → **partiellt kompenserad respiratorisk acidos** (kronisk hypoventilation, renal kompensation).\n- Aspirin: vuxen med måttlig överdos (pH 7,55, pCO₂ 3,1, BE ±0) → **akut respiratorisk alkalos** (stimulerat andningscentrum); äldre barn med kraftig överdos (pH 7,2, pCO₂ 3,0, BE −19) → **metabol acidos med respiratorisk kompensation**.\n\n## Anjongap och residualanjonhalt\n- **Anjongapet** (Na⁺ + K⁺ − Cl⁻ − HCO₃⁻) är en beräknad storhet som rymmer prot⁻ och residualanjoner. **Ökat anjongap** visar att en omätt anjon har tillkommit, t.ex. **laktat** vid laktacidos eller **ketonkroppar** vid ketoacidos (eller njursvikt, förgiftning med metanol/etylenglykol/salicylat). Vid **diarré** är anjongapet **normalt** (HCO₃⁻-förlusten ersätts av Cl⁻ – hyperkloremisk acidos).\n- **Residualanjonhalten** är de anjoner som inte är HCO₃⁻, prot⁻ eller Cl⁻ (laktat, ketonkroppar, sulfat, fosfat m.m.), normalt ca 8 mM i plasma. Den ökar vid laktacidos och ketoacidos men inte vid diarré, kräkning eller respiratoriska störningar.\n- **Skillnaden:** residualanjonhalten kan bara beräknas när **alla övriga elektrolyter** i plasma har analyserats (inklusive prot⁻, Ca²⁺ och Mg²⁺), medan anjongapet är en **förenklad uppskattning** som bara bygger på Na⁺, K⁺, Cl⁻ och HCO₃⁻. Därför påverkas anjongapet även av förändringar i HCO₃⁻ och prot⁻ som inte beror på nya syror – det **stiger t.ex. något vid respiratorisk alkalos** (HCO₃⁻ minskar) och **sjunker vid respiratorisk acidos**, utan att residualanjonerna ändras. Anjongapet räcker i kliniken för att upptäcka en tillkommen syraanjon.\n\n![Residualanjonhalt och anjongap illustrerade i ett gamblegram. || att stapelns två sidor alltid är lika höga (elektroneutralitet). Den inringade luckan – anjoner som inte mäts rutinmässigt – växer när laktat, ketoner eller toxiner tillkommer, medan bikarbonatet krymper.](data/del2-bilder/9.5.2-2.jpg \"Syrabas 4b-1, s. 25|data/del2-bilder/9.5.2-2-sida.jpg\")\n\n\n## Tentafokus\n- Klassificera och motivera (1 p per moment i essäerna): typ, orsak, kompensation, K⁺, fritt Ca²⁺, anjongap.\n- Diarré: normalt anjongap. Laktacidos/ketoacidos: ökat.",
+       "sammanfattning": "## Normalvärden {#normalvarden mal=1}\n| Variabel | Normalvärde |\n|---|---|\n| pH | 7,40 ± 0,05 (7,35–7,45) |\n| pCO₂ | 5,3 ± 0,5 kPa |\n| BE | 0 ± 3 mM |\n| HCO₃⁻ | 24 ± 3 mM |\n| Buffer base i plasma | 41,5 mM (helblod 48 mM) |\n| Residualanjoner i plasma | ≈8 mEkv/l |\n| Anjongap, Na⁺ + K⁺ − (Cl⁻ + HCO₃⁻) | se rutan nedan |\n\n## Analysen i tre steg {#steg mal=1,2}\nFöreläsningen ger en fast ordning. Följ den varje gång:\n\n[[fig:steg]]\n\n1. **pH:** 7,35–7,45 = ingen acidemi eller alkalemi. Under 7,35 = **acidemi**, över 7,45 = **alkalemi**.\n2. **pCO₂ och BE:** är **en** av dem onormal → **akut** störning. Är **båda** onormala → **partiellt kompenserad** störning *eller* **kombinerad akut** störning.\n3. **Orsak och kompensation:**\n   - Kan den onormala **pCO₂** förklara pH-förändringen → **respiratorisk** störning.\n   - Kan det onormala **BE** förklara pH-förändringen → **metabol** störning.\n   - Kan **båda** förklara pH-förändringen (de drar åt samma håll) → **kombinerad** störning.\n   - Den variabel som drar pH **mot** det normala är **kompensationen**.\n\n**Normalt pH men onormal pCO₂ och/eller BE** = fullständigt kompenserad störning.\n\n> [!fallgrop] Fråga alltid: åt vilket håll drar den här variabeln pH?\n> Högt pCO₂ drar pH nedåt (acidos), lågt drar uppåt. Negativt BE drar pH nedåt, positivt uppåt. Om pH är lågt, pCO₂ lågt och BE negativt drar bara BE åt rätt håll – det är en metabol acidos, och det låga pCO₂ är kompensationen.\n\n## De akuta störningarna {#akuta mal=2}\nVid en akut störning är bara en av pCO₂ och BE onormal:\n\n[[fig:akuta]]\n\n| Störning | pH | pCO₂ | BE | HCO₃⁻ |\n|---|---|---|---|---|\n| Akut respiratorisk acidos | < 7,35 | **> 5,8** | 0 ± 3 | > 24 |\n| Akut respiratorisk alkalos | > 7,45 | **< 4,8** | 0 ± 3 | < 24 |\n| Akut metabol acidos | < 7,35 | 5,3 ± 0,5 | **< −3** | < 24 |\n| Akut metabol alkalos | > 7,45 | 5,3 ± 0,5 | **> +3** | > 24 |\n\nHCO₃⁻ följer med vid respiratoriska störningar (höger- eller vänsterförskjutning av vätekarbonatbufferten), medan BE står still. Därför är **BE**, inte HCO₃⁻, det bästa måttet på den metabola komponenten.\n\n## Kombinerade och kompenserade störningar {#kompenserade mal=2}\nNär både pCO₂ och BE är onormala finns två möjligheter.\n\n**Kombinerad akut störning** – båda drar pH åt samma håll:\n\n[[fig:kombinerade]]\n\n- Respiratorisk + metabol acidos: pH lågt, pCO₂ **högt**, BE **negativt**. Typexemplet är hjärtstopp eller andningsstillestånd: CO₂ ansamlas och syrebristen ger laktacidos.\n- Respiratorisk + metabol alkalos: pH högt, pCO₂ **lågt**, BE **positivt**.\n- HCO₃⁻ kan bli högt eller lågt – de två rubbningarna drar åt olika håll på det.\n\n**Partiellt kompenserad störning** – den ena drar pH bort från det normala, den andra tillbaka:\n\n[[fig:partiellt]]\n\n| Störning | pH | pCO₂ | BE | Kompensationen |\n|---|---|---|---|---|\n| Respiratorisk acidos | < 7,35 | ↑ | **↑** | njuren behåller HCO₃⁻ |\n| Respiratorisk alkalos | > 7,45 | ↓ | **↓** | njuren utsöndrar HCO₃⁻ |\n| Metabol acidos | < 7,35 | **↓** | ↓ | hyperventilation |\n| Metabol alkalos | > 7,45 | **↑** | ↑ | hypoventilation |\n\nDiagrammet med pH mot HCO₃⁻ visar var de olika störningarna hamnar:\n\n[[fig:huvudtyper]]\n\n## Tentafall {#tentafall mal=1,2}\nGå igenom de tre stegen på varje fall innan du läser svaret.\n\n| Fall | pH | pCO₂ | BE / HCO₃⁻ | Analys |\n|---|---|---|---|---|\n| Efter intensiv cykling (Rest HT22, fråga 2) | 7,25 | 3,8 | BE −6 | **metabol acidos, partiellt respiratoriskt kompenserad** – laktacidos, ökat anjongap |\n| Hjärtsvikt, laktat 7, AG 25 (Rest HT23, fråga 6) | 7,33 | 4,2 | – | **metabol acidos med respiratorisk kompensation** |\n| KOL, långsam andning (Rest VT25, fråga 11) | 7,30 | 9,5 | BE +5, HCO₃⁻ 35 | **respiratorisk acidos, partiellt kompenserad** (njuren) |\n| Flera dagars kräkningar (omtenta aug 2026, fråga 11) | 7,51 | 6,5 | BE +14, HCO₃⁻ 40 | **metabol alkalos, partiellt kompenserad** (hypoventilation) |\n| Aspirin, vuxen 10 g (Rest HT25, fråga 11, B) | 7,55 | 3,1 | BE ±0 | **akut respiratorisk alkalos** – andningscentrum stimuleras |\n| Aspirin, äldre barn 10 g (Rest HT25, fråga 11, A) | 7,2 | 3,0 | BE −19 | **metabol acidos med respiratorisk kompensation** – syratillskott |\n\n## Elektrolyterna i plasma: Gamblegrammet {#gamblegram mal=3}\nFör att förstå anjongapet behöver man se plasmas joner som två staplar – positiva och negativa laddningar – som alltid är lika höga (elektroneutralitet). Måttet är **mEkv/l**: för envärda joner samma som mmol/l, för tvåvärda (Ca²⁺, Mg²⁺) det dubbla.\n\n[[fig:gamblegram]]\n\n- **Positiva:** Na⁺ 142, K⁺ 4,2, Mg²⁺ 2, Ca²⁺ 5 – summa 153.\n- **Negativa:** Cl⁻ 103, HCO₃⁻ 25,6, prot⁻ 15,9, **residualanjoner 8** – summa 153.\n- HCO₃⁻ + prot⁻ = **buffer base i plasma, 41,5 mM**.\n\n**Residualanjonerna** är alla anjoner som *inte* är Cl⁻, HCO₃⁻ eller prot⁻: sulfat, fosfat, laktat, ketosyrornas anjoner och andra organiska anjoner.\n\n## Residualanjonhalt och anjongap {#anjongap mal=3}\nResidualanjonhalten **ökar vid metabol acidos av syratillskott** – laktacidos, ketoacidos, njursvikt, metanol och glykol. Varje syramolekyl HA lämnar en proton, som förbrukar en buffrande bas, och en anjon A⁻ som hamnar bland residualanjonerna. BB minskar alltså lika mycket som residualanjonerna ökar.\n\n[[fig:residual]]\n\nMen residualanjonhalten kan bara räknas ut om man har analyserat **alla** övriga elektrolyter och BB (kräver arteriell blodgas). I stället används **anjongapet**, som bara kräver ett venöst prov med Na⁺, K⁺, Cl⁻ och HCO₃⁻:\n\n**AG = [Na⁺] + [K⁺] − ([Cl⁻] + [HCO₃⁻])**\n\nAnjongapet är ingen verklig delmängd i stapeln utan ett beräkningsresultat. Det rymmer både prot⁻ och residualanjonerna, så ett ökat anjongap **indikerar** att residualanjonhalten ökat – att en omätt anjon som laktat har tillkommit (Rest VT24, fråga 6; Rest HT24, fråga 6).\n\n> [!konflikt] Normalvärdet för anjongapet skiljer sig mellan föreläsarna\n> - **Syrabas del 4 (Håkan Andersson):** med K⁺ **12 ± 2 mmol/l**, utan K⁺ **8 ± 2 mmol/l**.\n> - **Elektrolyter och syra–bas (Olof Rådmark):** med K⁺ **15–20 mmol/l**.\n> - **Tentornas facit:** ofta \"ca 10–14 mM\" utan K⁺.\n>\n> Värdet beror på formel, metod och laboratorium. Om en fråga anger ett normalintervall – använd det. Annars: räkna med samma formel som i frågan och bedöm om AG är **ökat, normalt eller minskat** – det är det som examineras.\n\nAlbumin bidrar till prot⁻. Vid **hypoalbuminemi** blir anjongapet lägre, och det kan korrigeras: AG_korr = AG + 2,5 × (albumin_normal − albumin_uppmätt).\n\n## Räkneexempel: tre metabola rubbningar {#exempel mal=1,3}\n**1. Metabol acidos av syratillskott** (ketoacidos, laktacidos): pH 7,31, pCO₂ 4,0, BE −10.\n\n[[fig:syratillskott]]\n\nBB i plasma = 41,5 − 10 = **31,5**. Residualanjonerna har ökat med lika mycket: 8 + 10 = **18**. K⁺ har stigit till 6. **AG = 140 + 6 − (103 + 17) = 26 – ökat.** Klorid är oförändrad.\n\n**2. Metabol acidos av HCO₃⁻-förlust** (diarré, diuretika som hämmar HCO₃⁻-återresorptionen): pH 7,32, pCO₂ 4,5, BE −8.\n\n[[fig:hco3-forlust]]\n\nBB = 41,5 − 8 = 33,5. Nu finns ingen syra som ger nya anjoner, så residualanjonerna ökar inte. I stället sparar njuren **klorid**: Cl⁻ 112,5. **AG = 141 + 5,5 − (112,5 + 17) = 17 – normalt.** Detta kallas **hyperkloremisk metabol acidos**.\n\n> [!fallgrop] Räknefel på bilden\n> Bilden anger AG = 15, men 141 + 5,5 − (112,5 + 17) blir **17**. Båda ligger inom föreläsarens normalintervall 15–20, så slutsatsen – normalt anjongap – står sig.\n\n**3. Metabol alkalos** (kräkningar, bastillförsel, primär aldosteronism): pH 7,53, pCO₂ 6,0, BE +13.\n\n[[fig:alkalos]]\n\nBB = 41,5 + 13 = 54,5. Något annat på den negativa sidan måste minska – det blir **klorid** (90). K⁺ sjunker (3,5). **AG = 143 + 3,5 − (90 + 38) = 18,5 – normalt.** Metabol alkalos är *alltid* förenad med hypokloremi.\n\n## Anjongapet vid respiratoriska rubbningar {#respiratoriska mal=3}\nAnjongapet kan vara lurigt, eftersom HCO₃⁻ ändras även när BB inte gör det:\n\n[[fig:resp-alkalos-ag]]\n\n- **Respiratorisk alkalos** (pH 7,55, pCO₂ 3,1, BE ±0): HCO₃⁻ sjunker till 20,5 när vätekarbonatbufferten förskjuts. **AG = 142 + 4,2 − (103 + 20,5) = 22,7 – ökat**, fast inga nya anjoner tillkommit.\n- **Respiratorisk acidos** (pH 7,22, pCO₂ 10, BE ±0): HCO₃⁻ stiger till 30,5. **AG = 12,7 – minskat** (Rest VT25, fråga 11: \"anjongap något sänkt\" vid KOL).\n\n[[fig:resp-acidos-ag]]\n\nDen diagnostiska nyttan finns alltså vid de **metabola acidoserna**: ökat AG = syratillskott, normalt AG = basförlust.\n\n## Hela mönstret i en tabell {#tabell mal=1,3}\n\n[[fig:tabell]]\n\n| | HCO₃⁻ | prot⁻ | BE | Cl⁻ | K⁺ | Fritt Ca²⁺ | Residual | AG |\n|---|---|---|---|---|---|---|---|---|\n| **Metabol acidos, syratillskott** | ↓ | ↓ | ↓ | – | ↑ | ↑ | ↑ | **↑** |\n| **Metabol acidos, basförlust** | ↓ | ↓ | ↓ | **↑** | ↑ | ↑ | – | – |\n| **Metabol alkalos** | ↑ | ↑ | ↑ | **↓** | ↓ | ↓ | – | – |\n| **Respiratorisk acidos** | ↑ | ↓ | – | – | – | ↑ | – | ↓ |\n| **Respiratorisk alkalos** | ↓ | ↑ | – | – | – | ↓ | – | ↑ |\n\nKalium och kalcium förklaras i 9.5.3.\n\n## Sammanfattning {#sammanfattning}\n- **Tre steg:** (1) pH, (2) pCO₂ och BE – en onormal = akut, båda onormala = kompenserad eller kombinerad, (3) vilken variabel *förklarar* pH-förändringen = orsaken; den som drar mot det normala = kompensationen. Normalt pH med onormala värden = fullständigt kompenserad.\n- **BE** är det metabola måttet; HCO₃⁻ påverkas också av pCO₂.\n- **Gamblegrammet:** positiva = negativa laddningar. BB i plasma 41,5, residualanjoner ≈8.\n- **Residualanjonhalt** kräver alla elektrolyter; **anjongapet** (Na⁺ + K⁺ − Cl⁻ − HCO₃⁻) är en förenklad uppskattning från ett venöst prov.\n- **Ökat AG** = metabol acidos av syratillskott (laktat, ketoner, njursvikt, förgiftning). **Normalt AG** = basförlust (diarré; hyperkloremisk) och metabol alkalos (hypokloremisk).\n- Respiratorisk alkalos ger falskt högt AG, respiratorisk acidos lågt.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.5.2-o1",
@@ -10139,6 +10455,104 @@
          ],
          "svar": 3,
          "forklaring": "Högt pH med högt bikarbonat = metabol alkalos; det förhöjda PCO₂ är hypoventilation som kompensation. Vid respiratorisk alkalos vore PCO₂ lågt.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o4",
+         "q": "pH 7,25, pCO₂ 3,8 kPa, BE −6 efter intensiv cykling. Vad är det?",
+         "options": [
+          "Metabol acidos, partiellt respiratoriskt kompenserad",
+          "Respiratorisk acidos, partiellt kompenserad",
+          "Kombinerad respiratorisk och metabol acidos",
+          "Respiratorisk alkalos med metabol kompensation",
+          "Fullständigt kompenserad metabol acidos"
+         ],
+         "svar": 0,
+         "forklaring": "Lågt pH = acidemi. Negativt BE förklarar pH-sänkningen (metabol), och lågt pCO₂ drar pH uppåt – kompensation. Laktacidos ger ökat anjongap (Rest HT22, fråga 2).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o5",
+         "q": "pH 7,30, pCO₂ 9,5 kPa, HCO₃⁻ 35 mmol/l, BE +5 hos en KOL-patient. Vad är det?",
+         "options": [
+          "Akut respiratorisk acidos utan kompensation",
+          "Metabol alkalos med respiratorisk kompensation",
+          "Kombinerad respiratorisk och metabol acidos",
+          "Fullständigt kompenserad respiratorisk acidos",
+          "Respiratorisk acidos, partiellt metabolt kompenserad"
+         ],
+         "svar": 4,
+         "forklaring": "Högt pCO₂ förklarar acidemin. Positivt BE drar pH uppåt – njuren har behållit HCO₃⁻. pH är fortfarande lågt, så kompensationen är partiell (Rest VT25, fråga 11).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o6",
+         "q": "pH 7,22, pCO₂ 7,8 kPa, BE −8 vid hjärtstopp. Vad är det?",
+         "options": [
+          "Partiellt kompenserad respiratorisk acidos",
+          "Kombinerad respiratorisk och metabol acidos",
+          "Respiratorisk alkalos",
+          "Partiellt kompenserad metabol acidos",
+          "Akut metabol acidos"
+         ],
+         "svar": 1,
+         "forklaring": "Både högt pCO₂ och negativt BE drar pH nedåt – ingen av dem är kompensation. CO₂-retention och laktacidos samtidigt.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o7",
+         "q": "pH 7,40, pCO₂ 4,0 kPa, BE −7. Hur tolkas det?",
+         "options": [
+          "Akut respiratorisk alkalos",
+          "Kombinerad akut störning",
+          "Fullständigt kompenserad störning",
+          "Ingen syra–basrubbning",
+          "Akut metabol acidos"
+         ],
+         "svar": 2,
+         "forklaring": "Normalt pH men onormala pCO₂ och BE = fullständigt kompenserad. De drar åt var sitt håll och tar ut varandra.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o8",
+         "q": "Vad skiljer residualanjonhalten från anjongapet?",
+         "options": [
+          "Residualanjonhalten kräver analys av alla elektrolyter och BB, medan anjongapet är en förenklad uppskattning från Na⁺, K⁺, Cl⁻ och HCO₃⁻",
+          "Residualanjonhalten påverkas inte av metabol acidos",
+          "Anjongapet används bara vid respiratoriska rubbningar",
+          "Anjongapet tar hänsyn till alla proteiner, residualanjonhalten inte",
+          "De är samma sak"
+         ],
+         "svar": 0,
+         "forklaring": "Anjongapet rymmer både prot⁻ och residualanjoner och kan räknas från ett venöst prov. Ett ökat anjongap indikerar ökade residualanjoner (Rest HT24, fråga 6).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o9",
+         "q": "Na⁺ 141, K⁺ 5,5, Cl⁻ 112,5, HCO₃⁻ 17 mmol/l vid metabol acidos. Vad talar anjongapet för?",
+         "options": [
+          "Basförlust, t.ex. diarré – anjongapet är normalt och Cl⁻ högt",
+          "Respiratorisk acidos – anjongapet är lågt",
+          "Ketoacidos – anjongapet är ökat",
+          "Metanolförgiftning – anjongapet är ökat",
+          "Laktacidos – anjongapet är ökat"
+         ],
+         "svar": 0,
+         "forklaring": "AG = 141 + 5,5 − (112,5 + 17) = 17, normalt. Förlorat HCO₃⁻ har ersatts av Cl⁻ – hyperkloremisk metabol acidos.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.2-o10",
+         "q": "Varför ökar anjongapet vid en okompenserad respiratorisk alkalos?",
+         "options": [
+          "Kloriden ökar",
+          "Laktat bildas i stora mängder",
+          "Residualanjonerna ökar",
+          "Natrium sjunker kraftigt",
+          "HCO₃⁻ sjunker när vätekarbonatbufferten förskjuts, fast inga nya anjoner tillkommit"
+         ],
+         "svar": 4,
+         "forklaring": "Lägre HCO₃⁻ i formeln ger högre anjongap. Den diagnostiska nyttan av anjongapet finns vid de metabola acidoserna.",
          "kalla": "ovning"
         }
        ],
@@ -10202,44 +10616,12 @@
          "text": "**Sammanfattningstabellen**, med residualanjoner och anjongap bredvid varandra för alla rubbningar: metabol acidos med syratillskott ger ↑ residualanjoner och ↑ anjongap. Metabol acidos med basförlust ger ett oförändrat anjongap. Metabol alkalos ger ett oförändrat eller lätt sänkt anjongap. Vid de respiratoriska rubbningarna ändras gapet bara räknemässigt. **Slutsatsen:** anjongapet är ett verktyg för att skilja de metabola acidoserna åt."
         },
         {
-         "fil": "data/del2-slides/m9-b7e98b-1.webp",
+         "fil": "data/del2-slides/m9-b7e98b-5.webp",
          "kalla": "Syra–bas 4b",
          "nyckel": "m9_Syrabas_4b-1",
-         "sida": 1,
-         "rubrik": "Integrering av kroppens buffertsystem Håkan Andersson, MBB • Redogöra för kroppens olika b",
-         "text": "**Integrering av kroppens buffertsystem** (Håkan Andersson, MBB), lärandemålen. Redogöra för de snabba och långsamma buffertsystemen. **Kunna normalvärden för pH, pO₂, pCO₂, HCO₃⁻, BE och laktat.** Definiera buffertbas (BB), basöverskott (BE) och standardbikarbonat. Redogöra för metabola och respiratoriska rubbningar och deras kompensation, för de vanligaste syrorna och baserna bakom dem, och för hur K⁺ och Ca²⁺ påverkas. Bedöma en syra-basstatus (metabol eller respiratorisk, akut eller kompenserad). De fetstilta målen är centrala."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-4.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 4,
-         "rubrik": "Syrabasrubbningar • Acidos: syrabasrubbning med tendens att sänka p",
-         "text": "**Acidos och acidemi, alkalos och alkalemi.** **Acidos** är en syra-basrubbning med tendens att sänka pH. **Acidemi** betyder att artär-pH faktiskt är **< 7,35**. **Alkalos** har tendens att höja pH, och vid **alkalemi** är pH **> 7,45**. Man kan alltså ha en acidos utan acidemi om den är kompenserad, eller om det finns en samtidig alkalos."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-8.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 8,
-         "rubrik": "Metabol acidos – hur tillkommer syra? 1. p",
-         "text": "**Metabol acidos, hur tillkommer syra?** H₃O⁺ tillförs (röda pilar) och tas upp av de buffrande baserna HCO₃⁻ och prot⁻. **Buffertbasen förbrukas**, så BB sjunker och BE blir negativt. Klinik: laktacidos, ketoacidos, metanol, glykol och njursvikt."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-11.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 11,
-         "rubrik": "Vid O2-brist (laktacidos): det är inte mjölksyra som ger upphov till acidosen! Robergs et ",
-         "text": "**Vid syrebrist (laktacidos) är det inte mjölksyran som ger acidosen!** (Robergs 2004.) **Hydrolysen av ATP ger protoner:** ATP + H₂O → ADP + Pi + **H⁺**. Normalt tas protonerna om hand när ATP återbildas i elektrontransportkedjan, men vid O₂-brist stannar den. Protonerna ansamlas och ger metabol acidos. Den anaeroba glykolysen ger samtidigt laktat, mjölksyrans korresponderande bas. **Ökat laktat är ändå en bra indikator** på metabol acidos orsakad av O₂-brist, så kontrollera laktat vid blodgasanalys."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-12.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 12,
-         "rubrik": "Vid insulinbrist bildar levern ketonkroppar från acetyl-Co",
-         "text": "**Vid insulinbrist bildar levern ketonkroppar från acetyl-CoA, vilket ger ketoacidos.** Fettsyror bryts ner till acetyl-CoA. Två acetyl-CoA blir acetoacetyl-CoA, och med ytterligare en acetyl-CoA bildas **HMG-CoA**. I det steget frigörs en **H⁺** (röd ring), och protonerna sänker pH. HMG-CoA spjälkas till **acetoacetat**, som antingen reduceras till **3-hydroxibutyrat** eller spontant dekarboxyleras till **aceton** (som ger fruktig andedräkt)."
+         "sida": 5,
+         "rubrik": "Huvudtyper av syrabasstörningar R&B fig 24.12",
+         "text": "**Davenport-diagrammet** (Rhoades & Bell fig. 24.12). Artär-HCO₃⁻ (y) mot pH (x), med isobarer för pCO₂ (de böjda linjerna). Normal ligger i mitten (pH 7,4, HCO₃⁻ 24). **Akut respiratorisk acidos:** längs en buffertlinje, uppåt och åt vänster. **Kronisk respiratorisk acidos:** högre HCO₃⁻ (njurkompensation). **Akut och kronisk respiratorisk alkalos:** åt höger och neråt. **Metabol acidos:** nere till vänster (lågt HCO₃⁻). **Metabol alkalos:** uppe till höger (högt HCO₃⁻). Med pH och pCO₂ kan du placera patienten i en zon och avgöra typen av rubbning."
         },
         {
          "fil": "data/del2-slides/m9-b7e98b-24.webp",
@@ -10264,14 +10646,6 @@
          "sida": 26,
          "rubrik": "Anjongapet Anjongapet beräknas enligt följande: AG = [K+]+[Na+]-[Cl-]-[HCO3-] Normalvärden",
          "text": "**Anjongapet: AG = [K⁺] + [Na⁺] − [Cl⁻] − [HCO₃⁻].** Normalvärde **12 ± 2 mmol/l** (exkl. K⁺: 8 ± 2). Referensvärdena varierar mellan laboratorier. **Albuminkorrigerat AG:** AGkorr = AG + 2,5 × (albumin normal − albumin uppmätt). Albumin är en stor del av prot⁻, så **vid hypoalbuminemi blir AGkorr högre än AG**. Annars kan en acidos med högt anjongap missas."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-27.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 27,
-         "rubrik": "Anjongapet ger ledning om typen av metabol rubbning Metabol acidos med högt anjongap Metan",
-         "text": "**Anjongapet ger ledning om typen av metabol acidos.** **Högt anjongap:** metanol (myrsyra), uremi (fosforsyra, urinsyra, hippursyra), laktat, etylenglykol (glyoxyl-, glykol- och oxalsyra), paraldehyd (ättiksyra), **ketoacidos** (β-hydroxismörsyra, acetoacetat) och salicylat (ättiksyra och ketosyror plus salicylat). **Normalt anjongap:** diarré (HCO₃⁻-förlust, njuren sparar Cl⁻), renal tubulär acidos (HCO₃⁻-förlust i urin eller för lite H⁺-utsöndring) och överintag av NH₄Cl (konsumerar HCO₃⁻, och mycket Cl⁻ tillförs). Minnesregel för högt AG: **MUDPILES**."
         },
         {
          "fil": "data/del2-slides/m9-f47ee1-1.webp",
@@ -10386,14 +10760,6 @@
          "text": "**Tabellen fylls i steg för steg, rad 1:** metabol acidos med syratillskott (laktacidos, ketoacidos) ger HCO₃⁻↓, prot⁻↓, K⁺↑, Cl⁻ oförändrat, residualanjoner↑ och **fritt** Ca²⁺↑."
         },
         {
-         "fil": "data/del2-slides/m9-f47ee1-15.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 15,
-         "rubrik": "Vanliga orsaker till metabol acidos • Generell O2 brist vid cirkulatorisk chock, anaerob m",
-         "text": "**Vanliga orsaker till metabol acidos med syratillskott:** generell syrebrist vid **cirkulatorisk chock** (anaerob metabolism, **laktacidos**), **ketoacidos** vid obehandlad typ 1-diabetes, **njursvikt** (icke-flyktig syra utsöndras inte), intag av **metanol** (ger myrsyra) eller **etylenglykol** (ger oxalsyra), och stora mängder **acetylsalicylsyra**. Ekvationerna visar att tillförd H₃O⁺ förskjuter båda buffertjämvikterna åt vänster, så HCO₃⁻ och prot⁻ förbrukas och **BB sjunker**. CO₂ vädras ut via lungorna."
-        },
-        {
          "fil": "data/del2-slides/m9-f47ee1-16.webp",
          "kalla": "Syra–basstatus och analys",
          "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
@@ -10491,7 +10857,8 @@
         "Redogöra för hur koncentrationen av K⁺ och fritt Ca²⁺ påverkas av syra–basstatus",
         "Tillämpa på kliniska tillstånd: diarré, kräkning, ketoacidos, laktacidos, KOL, hyperventilation, aspirinförgiftning, sepsis"
        ],
-       "sammanfattning": "## Orsaker\n| Störning | Vanliga orsaker |\n|---|---|\n| **Respiratorisk acidos** | Alveolär hypoventilation: KOL, opioider/sedering, neuromuskulär svikt, fetma-hypoventilation |\n| **Respiratorisk alkalos** | Hyperventilation: ångest, smärta, hög höjd, feber, sepsis (tidigt), lungemboli, salicylater (stimulerar andningscentrum) |\n| **Metabol acidos med ökat anjongap** | Laktacidos (hypoperfusion, sepsis, hjärtsvikt, intensivt arbete), ketoacidos (obehandlad typ 1-diabetes, svält, alkohol), njursvikt, förgiftningar (salicylat i hög dos, metanol, etylenglykol) |\n| **Metabol acidos med normalt anjongap** | Diarré (HCO₃⁻-förlust), renal tubulär acidos, karbanhydrashämmare |\n| **Metabol alkalos** | Kräkningar/ventrikelsond (H⁺- och Cl⁻-förlust), diuretika, hyperaldosteronism, hypokalemi |\n\n![Anjongapet ger ledning om typen av metabol acidos. || de två listorna: högt anjongap (metanol, uremi, laktat, etylenglykol, ketoacidos, salicylat) beror på tillkommande syra, medan normalt anjongap (diarré, renal tubulär acidos) beror på förlust av bikarbonat som ersätts av klorid.](data/del2-bilder/9.5.3-1.jpg \"Syrabas 4b-1, s. 27|data/del2-bilder/9.5.3-1-sida.jpg\")\n\n\n## Kompensation\n- **Metabola** störningar kompenseras **respiratoriskt** (snabbt): acidos → hyperventilation (Kussmaul-andning vid ketoacidos), pCO₂ ↓; alkalos → hypoventilation, pCO₂ ↑ (begränsas av hypoxi).\n- **Respiratoriska** störningar kompenseras **renalt** (dagar): acidos → ökad H⁺/NH₄⁺-utsöndring och HCO₃⁻-nybildning, BE ↑; alkalos → ökad HCO₃⁻-utsöndring, BE ↓.\n- **Metabol acidos vid diarré:** den primära störningen är HCO₃⁻-förlust; kompensationen är **respiratorisk** (ökad ventilation → lägre pCO₂ → pH stiger mot det normala) och på längre sikt renal (ökad NH₄⁺-utsöndring). Anjongapet är normalt (Cl⁻ ökar).\n- Kompensationen är nästan aldrig fullständig och överkorrigerar aldrig.\n\n## Kalium (K⁺)\n- **Metabol acidos (särskilt med normalt anjongap/mineralsyror) → hyperkalemi:** H⁺ tas upp i cellerna i utbyte mot K⁺ (H⁺/K⁺-utbyte och minskad Na⁺/K⁺-ATPas-aktivitet) – en **extrarenal** mekanism för ökat P-K⁺. Även minskad renal K⁺-utsöndring bidrar.\n- **Metabol alkalos → hypokalemi:** K⁺ förskjuts intracellulärt; vid kräkningar dessutom renala K⁺-förluster (sekundär hyperaldosteronism). Hypokalemi kan i sin tur underhålla alkalosen.\n- **Respiratoriska rubbningar** påverkar K⁺ **sällan nämnvärt**.\n- **Obehandlad diabetes typ 1:** osmotisk diures → dehydrering (minskat kroppsvatten), ketoacidos med ökat anjongap, **P-K⁺ ofta normalt eller högt** trots total kaliumbrist (insulinbrist + acidos driver K⁺ ut ur cellerna) – insulinbehandling sänker P-K⁺ snabbt.\n\n![Sekundära effekter av acidos och alkalos på plasmakalium. || att metabol acidos ger hyperkalemi och metabol alkalos hypokalemi, och diagrammet över vilomembranpotentialen: högt K⁺ gör membranet mindre negativt (risk för kammarflimmer), lågt K⁺ gör det svårare att utlösa en aktionspotential.](data/del2-bilder/9.5.3-2.jpg \"Syrabas 4b-1, s. 19|data/del2-bilder/9.5.3-2-sida.jpg\")\n\n\n## Fritt (joniserat) kalcium\nCa²⁺ binder till albumin och andra proteiner på samma ställen som H⁺:\n- **Acidos (metabol och respiratorisk) → fritt Ca²⁺ ökar** (H⁺ konkurrerar ut Ca²⁺ från albumin).\n- **Alkalos (metabol och respiratorisk) → fritt Ca²⁺ minskar** (mer bindning till albumin) → parestesier, tetani, kramper (t.ex. vid hyperventilation).\nTotalkalcium är oförändrat. Vid sepsis med metabol acidos stiger alltså fritt Ca²⁺ initialt.\n\n![Fri plasma-[Ca²⁺] ökar när pH sjunker. || att H⁺ tränger undan Ca²⁺ från albuminets negativa bindningsställen. Vid alkalos binds alltså mer kalcium och den fria fraktionen sjunker – därför ger hyperventilation stickningar och kramp (tetani) trots normalt totalkalcium.](bild:m9_Syrabas_4b-1#23)\n\n\n## Tentafokus\n- K⁺ och fritt Ca²⁺ vid respektive rubbning (återkommande SBA och essädel).\n- Extrarenal mekanism för hyperkalemi vid metabol acidos: H⁺ in i cellerna i utbyte mot K⁺.\n- Diabetes typ 1 obehandlad: vatten, syra–bas, K⁺.\n- Kräkning (metabol alkalos, K⁺ ↓, fritt Ca²⁺ ↓, Cl⁻ ↓) och diarré (metabol acidos, normalt anjongap, Cl⁻ ↑).\n\n## Mer från föreläsningarna\n- **Begrepp:** *acidos* är en syra–basrubbning med tendens att sänka pH, *acidemi* är pH i arteriellt blod < 7,35. *Alkalos* har tendens att höja pH, *alkalemi* är pH > 7,45. En patient kan alltså ha en acidos utan acidemi om den är kompenserad.\n- **Respiratorisk acidos** orsakas av alveolär hypoventilation: KOL, thoraxskada, neuromuskulär sjukdom eller hämmat andningscentrum (t.ex. morfin och andra opioider).\n- **Metabol acidos med högt anjongap:** laktacidos, ketoacidos, njursvikt, samt förgiftningar – metanol omvandlas till myrsyra och etylenglykol (kylarvätska) till oxalsyra och glykolsyra, som ger svåra acidoser.\n- **Laktacidos vid arbete:** det är inte laktatet i sig som försurar. Vid syrebrist stannar elektrontransportkedjan, så att ATP inte återbildas aerobt; protonerna från ATP-hydrolysen ansamlas och ger acidos, medan laktat (mjölksyrans korresponderande bas) bildas vid anaerob glykolys.\n",
+       "sammanfattning": "## Metabola rubbningar: orsaker {#metabola-orsaker mal=1}\nEn metabol rubbning börjar utanför lungorna – med syra eller bas som tillförs eller förloras:\n\n| Rubbning | Mekanism | Exempel |\n|---|---|---|\n| **Metabol acidos** | överskott av icke-flyktig syra | **laktacidos** (syrebrist, chock), **ketoacidos** (obehandlad typ 1-diabetes), **njursvikt**, förgiftning med **metanol** (→ myrsyra) eller **glykol** (→ oxalsyra), stora mängder acetylsalicylsyra |\n| **Metabol acidos** | förlust av bas (HCO₃⁻) | **diarré**, diuretika som hämmar HCO₃⁻-återresorptionen |\n| **Metabol alkalos** | förlust av icke-flyktig syra | **kräkningar** (HCl) |\n| **Metabol alkalos** | tillförsel av bas eller H⁺-förlust via njuren | överbehandling med bikarbonat, **primär aldosteronism** |\n\n[[fig:orsaker-acidos]]\n\nAnjongapet skiljer de två sorternas metabola acidos åt (se 9.5.2):\n\n[[fig:anjongap-orsaker]]\n\n## Laktacidos och ketoacidos {#laktat-keton mal=1,3}\nVid **laktacidos** är det inte mjölksyran som sänker pH. Glykolysen bildar laktat, alltså den korresponderande basen utan proton. Protonerna kommer från **ATP-hydrolysen**: ATP → ADP + Pᵢ + **H⁺**. Normalt tas protonen åter när ATP återbildas i mitokondrierna, men vid syrebrist står elektrontransportkedjan still och protonerna ansamlas. Laktatet stiger samtidigt och är därför en bra **indikator** på syrebristacidos – inte orsaken. Figuren och resonemanget finns i 9.1.2, *Laktat – biomarkör, inte orsak*.\n\nVid **ketoacidos** är det annorlunda: ketonkropparna acetoättiksyra och β-hydroxismörsyra bildas som syror i levern (via HMG-CoA), och protonen frisätts i själva syntesen. Insulinbrist ökar lipolysen och leverns ketonkroppsbildning.\n\n[[fig:ketoacidos]]\n\n## Respiratoriska rubbningar: orsaker {#respiratoriska-orsaker mal=1}\n- **Respiratorisk acidos – CO₂-retention vid alveolär hypoventilation:** KOL, revbensfrakturer och thoraxskada, opioider och sedering (hämmat andningscentrum), neuromuskulär svikt.\n- **Respiratorisk alkalos – för stor CO₂-utvädring vid hyperventilation:** ångest och oro, smärta, **hög höjd** (9.4.1), feber och tidig sepsis, salicylater i måttlig dos (stimulerar andningscentrum).\n\nOm man inte kan andas alls får man **både** respiratorisk acidos (CO₂-retention) och metabol acidos (laktacidos av syrebristen) – en kombinerad akut acidos.\n\n## Primär orsak och kompensation {#kompensation mal=1}\nDen primära rubbningen sitter i ett organsystem, kompensationen i ett annat:\n\n| Primär rubbning | Organ som orsakar | Kompenseras av | Hur | Tid |\n|---|---|---|---|---|\n| Metabol acidos | t.ex. vävnad (syrebrist), lever (ketoner), njure, tarm | **lungorna** | hyperventilation, pCO₂ ↓ (Kussmaul-andning vid ketoacidos) | minuter |\n| Metabol alkalos | t.ex. magsäck (kräkning), binjure | **lungorna** | hypoventilation, pCO₂ ↑ – begränsas av att pO₂ sjunker | minuter–timmar |\n| Respiratorisk acidos | lungor, andningscentrum, bröstkorg | **njuren** | ökad syrautsöndring (H₂PO₄⁻, NH₄⁺) och HCO₃⁻-nybildning, BE ↑ | dagar |\n| Respiratorisk alkalos | andningscentrum | **njuren** | ökad HCO₃⁻-utsöndring, BE ↓ | dagar |\n\nVid metabol acidos med fungerande njurar ökar dessutom njuren sin syrautsöndring – **NH₄⁺ i urinen ökar**. Kompensationen tar pH mot det normala men går aldrig förbi.\n\n## Kalium {#kalium mal=2}\nK⁺ är en intracellulär jon, och plasmanivån är strikt reglerad (**3,5–5 mmol/l**). Både höga och låga värden är farliga:\n\n[[fig:kalium]]\n\n- **Hyperkalemi** (> 7 mmol/l → risk för kammarflimmer): vilopotentialen blir mindre negativ, närmare tröskeln – ökad retbarhet.\n- **Hypokalemi** (< 1,5 mmol/l → arytmier och andningsförlamning): vilopotentialen blir mer negativ – svårare att utlösa en aktionspotential.\n\n**Metabol acidos höjer plasma-K⁺, metabol alkalos sänker det.** Sambandet är nästan linjärt. Föreläsningen ger tre förklaringar:\n\n[[fig:kalium-mekanism]]\n\n1. **Intracellulär buffring:** organiska syror (HA) bildas i cellerna och dissocierar. H⁺ buffras av HPO₄²⁻ (→ H₂PO₄⁻). K⁺ sitter normalt i lösligt jonpar med HPO₄²⁻ och frigörs när fosfatet tar upp protonen. När anjonerna A⁻ transporteras ut ur cellen följer K⁺ med som motjon.\n2. **Pumparna:** acidemi minskar Na⁺/H⁺-utbytarens aktivitet, så mindre Na⁺ kommer in i cellen och Na⁺/K⁺-ATPaset pumpar in mindre K⁺.\n3. **Njuren:** akut minskar återupptaget av filtrerat K⁺; på längre sikt ökar det, så sekundärt kan hypokalemi uppstå.\n\nPunkt 1 och 2 är **extrarenala** mekanismer – svaret på Rest HT23, fråga 12.\n\n**Respiratoriska rubbningar påverkar K⁺ obetydligt** (Rest VT25, fråga 6).\n\n> [!konflikt] Kalium vid diarré\n> Föreläsningens tabell anger **ökat K⁺** vid metabol acidos av basförlust (diarré), eftersom acidosen förskjuter K⁺ ut ur cellerna. Tentans facit för Rest VT23, fråga 3 skriver i stället att **hypokalemi är vanlig** vid svår diarré. Båda stämmer: diarrévätska innehåller mycket kalium, så den direkta förlusten kan väga tyngre än förskjutningen. Utgå från vad som ges i frågan – och använd normalt anjongap och högt Cl⁻ för att känna igen diarrén.\n\n## Fritt kalcium {#kalcium mal=2}\nPlasma-kalcium är **2,45 mM**, och ungefär hälften är **proteinbundet** (mest till albumin). Bara den **fria** fraktionen (≈1,06 mM) är fysiologiskt aktiv.\n\n[[fig:kalcium-fraktioner]]\n\nCa²⁺ sitter koordinerat till karboxylgrupper på proteinerna. Vid acidos tar proteinerna upp H⁺ – på histidin och karboxylgrupper – så att de negativa laddningarna minskar och Ca²⁺ släpper:\n\n[[fig:kalcium-bindning]]\n\n- **Acidos** – metabol *och* respiratorisk – → **fritt Ca²⁺ ökar** (Rest VT25, fråga 6; omtentan aug 2026, fråga 7 om sepsis).\n- **Alkalos** → mer bindning → **fritt Ca²⁺ minskar** → myrkrypningar, parestesier och tetani, till exempel vid hyperventilation.\n- **Totalkalcium är oförändrat** – det är fördelningen som ändras.\n\n## Kliniska tillstånd {#kliniska mal=3}\n| Tillstånd | Syra–bas | AG | K⁺ | Fritt Ca²⁺ | Kompensation |\n|---|---|---|---|---|---|\n| **Diarré** | metabol acidos (HCO₃⁻-förlust) | normalt, Cl⁻ ↑ | ↑ av förskjutning, ofta ↓ av förlust | ↑ | hyperventilation, NH₄⁺ ↑ |\n| **Kräkningar** | metabol alkalos (HCl-förlust) | normalt, Cl⁻ ↓ | ↓ | ↓ | hypoventilation |\n| **Obehandlad typ 1-diabetes** | metabol acidos (ketoacidos) | ↑ | normalt–↑ trots total K⁺-brist | ↑ | Kussmaul-andning |\n| **Laktacidos** (chock, hjärtsvikt, sepsis) | metabol acidos | ↑ | ↑ | ↑ | hyperventilation |\n| **KOL-exacerbation** | respiratorisk acidos | något ↓ | obetydligt | ↑ | njuren behåller HCO₃⁻ |\n| **Hyperventilation** (ångest) | respiratorisk alkalos | något ↑ | obetydligt | ↓ – parestesier | njuren (om långvarig) |\n| **Aspirin, måttlig dos** | respiratorisk alkalos | (marginellt ↑) | – | ↓ | – |\n| **Aspirin, kraftig dos** | metabol acidos | ↑ | ↑ | ↑ | hyperventilation, NH₄⁺ ↑ |\n\n**Obehandlad typ 1-diabetes** (Rest VT24, fråga 11) samlar tre homeostasstörningar:\n\nflöde: insulinbrist → hyperglykemi → glukosuri → osmotisk diures → dehydrering\n\nflöde: insulinbrist → lipolys och ketonkroppsbildning → ketoacidos med ökat anjongap → Kussmaul-andning\n\nflöde: insulinbrist och acidos → K⁺ lämnar cellerna samtidigt som det förloras i urinen → plasma-K⁺ normalt eller högt trots total brist → sjunker snabbt när insulin ges\n\n**Kräkningar** (omtentan aug 2026, fråga 11): förlust av H⁺ och Cl⁻ → metabol alkalos, partiellt kompenserad med hypoventilation. K⁺ sjunker (förskjutning in i cellerna och renala förluster), fritt Ca²⁺ sjunker (ökad bindning till albumin).\n\n## Sammanfattning {#sammanfattning}\n- **Metabol acidos:** syratillskott (laktat, ketoner, njursvikt, metanol, glykol, ASA) eller basförlust (diarré). **Metabol alkalos:** kräkning, bastillförsel, aldosteronism.\n- **Laktacidos:** protonerna kommer från ATP-hydrolys vid syrebrist – laktat är en markör, inte orsaken. **Ketoacidos:** protonen frisätts i ketonkroppssyntesen.\n- **Respiratorisk acidos:** hypoventilation (KOL, thoraxskada, opioider). **Respiratorisk alkalos:** hyperventilation (ångest, hög höjd, ASA).\n- Metabola rubbningar kompenseras av **lungorna** (minuter), respiratoriska av **njuren** (dagar).\n- **K⁺:** metabol acidos → ↑, metabol alkalos → ↓, respiratoriska → obetydligt. Extrarenalt via intracellulär buffring och minskad Na⁺/H⁺- och Na⁺/K⁺-pumpaktivitet.\n- **Fritt Ca²⁺:** all acidos → ↑, all alkalos → ↓ (parestesier). Totalkalcium oförändrat.",
+       "kurerad": true,
        "quiz": [
         {
          "id": "9.5.3-o1",
@@ -10534,67 +10901,109 @@
          "svar": 4,
          "forklaring": "Förlust av H⁺ och Cl⁻ vid kräkningar ger metabol alkalos, ofta med hypokalemi och volymbrist som vidmakthåller den. Hyperventilation ger respiratorisk – inte metabol – alkalos.",
          "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o4",
+         "q": "Vad orsakar acidosen vid laktacidos?",
+         "options": [
+          "Förlust av HCO₃⁻ i urinen",
+          "Ketonkroppar som bildas i levern",
+          "Ökad CO₂-produktion",
+          "Mjölksyra som bildas i glykolysen och dissocierar",
+          "Protoner från ATP-hydrolys ansamlas när elektrontransportkedjan står still av syrebrist"
+         ],
+         "svar": 4,
+         "forklaring": "Glykolysen bildar laktat utan proton. Protonen kommer från ATP → ADP + Pᵢ + H⁺, som inte balanseras när ATP inte återbildas. Laktat är en markör.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o5",
+         "q": "Ange en extrarenal mekanism som höjer plasma-K⁺ vid metabol acidos.",
+         "options": [
+          "Minskad Na⁺/H⁺-utbytaraktivitet minskar Na⁺/K⁺-ATPasets upptag av K⁺ i cellerna",
+          "Ökad aldosteronfrisättning",
+          "Ökad K⁺-sekretion i distala tubuli",
+          "Ökad insulinfrisättning",
+          "Ökat K⁺-upptag i tarmen"
+         ],
+         "svar": 0,
+         "forklaring": "Även intracellulär buffring av H⁺ på fosfat frigör K⁺, som följer med anjonerna ut ur cellen (Rest HT23, fråga 12).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o6",
+         "q": "Hur påverkas K⁺ och fritt Ca²⁺ vid en akut respiratorisk acidos?",
+         "options": [
+          "K⁺ minskar, fritt Ca²⁺ oförändrat",
+          "K⁺ ökar kraftigt, fritt Ca²⁺ minskar",
+          "Båda oförändrade",
+          "K⁺ obetydligt, fritt Ca²⁺ ökar",
+          "Båda minskar"
+         ],
+         "svar": 3,
+         "forklaring": "Respiratoriska rubbningar påverkar K⁺ lite. Alla acidoser minskar Ca²⁺-bindningen till albumin, så den fria fraktionen ökar (Rest VT25, fråga 6).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o7",
+         "q": "En patient hyperventilerar av ångest och får stickningar i fingrarna. Varför?",
+         "options": [
+          "CO₂ binder direkt till nervcellerna",
+          "Metabol acidos ger lågt pH i nerverna",
+          "Totalkalcium sjunker",
+          "Respiratorisk alkalos ökar Ca²⁺-bindningen till albumin så att fritt Ca²⁺ sjunker",
+          "Hyperkalemi ger ökad retbarhet"
+         ],
+         "svar": 3,
+         "forklaring": "Vid alkalos avger proteinerna H⁺ och binder mer Ca²⁺. Den lägre fria fraktionen ökar nervernas retbarhet – parestesier och i värsta fall tetani.",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o8",
+         "q": "Varför är plasma-K⁺ ofta normalt eller högt vid diabetesketoacidos trots att kroppens totala kalium är lågt?",
+         "options": [
+          "Hyperventilationen höjer K⁺",
+          "Insulinbrist och acidos förskjuter K⁺ ut ur cellerna samtidigt som K⁺ förloras i urinen",
+          "Ketonkroppar binder K⁺ i plasma",
+          "Njuren håller kvar K⁺ vid osmotisk diures",
+          "Dehydreringen späder ut K⁺"
+         ],
+         "svar": 1,
+         "forklaring": "Insulin driver normalt in K⁺ i cellerna. När insulin ges sjunker plasma-K⁺ snabbt – därför måste K⁺ följas noga under behandlingen (Rest VT24, fråga 11).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o9",
+         "q": "En man har kräkts i flera dagar. Vilken kombination väntar du dig?",
+         "options": [
+          "Metabol alkalos, lågt K⁺, lågt fritt Ca²⁺ och lågt Cl⁻",
+          "Metabol acidos, högt K⁺ och högt Cl⁻",
+          "Metabol acidos med ökat anjongap",
+          "Metabol alkalos, högt K⁺ och högt fritt Ca²⁺",
+          "Respiratorisk alkalos, normalt K⁺"
+         ],
+         "svar": 0,
+         "forklaring": "Förlust av HCl ger metabol alkalos med hypokloremi. K⁺ förskjuts in i cellerna och fritt Ca²⁺ sjunker av ökad albuminbindning (omtentan aug 2026, fråga 11).",
+         "kalla": "ovning"
+        },
+        {
+         "id": "9.5.3-o10",
+         "q": "Hur kompenseras en metabol acidos av diarré?",
+         "options": [
+          "Ökad ventilation sänker pCO₂, och på sikt ökar njuren NH₄⁺-utsöndringen",
+          "Ingen kompensation sker vid diarré",
+          "Minskad ventilation höjer pCO₂",
+          "Tarmen ökar sin HCO₃⁻-sekretion",
+          "Njuren utsöndrar mer HCO₃⁻"
+         ],
+         "svar": 0,
+         "forklaring": "Lågt pH stimulerar kemoreceptorerna, pCO₂ sjunker och pH stiger mot det normala. Anjongapet är normalt eftersom HCO₃⁻ ersätts av Cl⁻ (Rest VT23, fråga 2).",
+         "kalla": "ovning"
         }
        ],
        "antal_fragor": 3,
        "url": "#/bibliotek/9.5.3",
        "slides": [
-        {
-         "fil": "data/del2-slides/m9-5333d3-2.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 2,
-         "rubrik": "kloridjonhalten, residualanjoner och kalciumjonerna. Jag kommer inte att skriva i siffror ",
-         "text": "Här fylls staplarna i för en **metabol acidos orsakad av syratillskott**. Vanliga orsaker är laktacidos (anaerob metabolism), ketoacidos (obehandlad typ 1-diabetes), njursvikt och metanol eller etylenglykol. Siffrorna i exemplet: pH 7,31, pCO₂ 4,0 kPa (respiratorisk kompensation) och BE −10, avläst i ett Siggaard-Andersen-nomogram. BB sjunker lika mycket som BE, alltså från 41,5 till 31,5. K⁺ stiger lite, eftersom cellerna tar upp H⁺ och släpper ut K⁺. Eftersom minusstapeln ändå måste vara lika hög som plusstapeln måste något annat ha ökat, och det är residualanjonerna (förklaras på nästa sida)."
-        },
-        {
-         "fil": "data/del2-slides/m9-5333d3-5.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 5,
-         "rubrik": "kloridjonhalten ökat, men inte residualanjonhalten. Fortfarande så är det en acidos så del",
-         "text": "Basförlustacidosen kallas därför också **hyperkloremisk acidos**. **Metabol alkalos** ger samma mönster oavsett om orsaken är tillförsel av bas (bikarbonat eller Tris i dropp) eller förlust av syra (ihållande kräkningar, primär aldosteronism där Na⁺ sparas och K⁺ och H⁺ utsöndras). Exemplet: pH 7,53, pCO₂ 6,0 kPa (kompensatorisk hypoventilation), BE +13, så BB stiger till 54,5. Minusstapeln får plats genom att **Cl⁻ sjunker**. Metabol alkalos går alltså alltid ihop med **hypokloremi**, och ofta med lätt hypokalemi. Anjongapet är normalt."
-        },
-        {
-         "fil": "data/del2-slides/m9-5333d3-6.webp",
-         "kalla": "Elektrolyter och syra–bas",
-         "nyckel": "m9_Elektrolyter_och_syra_bas",
-         "sida": 6,
-         "rubrik": "Så då kan vi fylla i variablerna för metabol alkalos här. Det blir samam oavsett om det är",
-         "text": "Vid metabol alkalos binds mer Ca²⁺ till proteinerna, så det **fria kalciumet sjunker**. **Respiratoriska rubbningar:** BB som summa är oförändrad. Vid respiratorisk acidos (CO₂-ansamling) stiger HCO₃⁻ och prot⁻ sjunker lika mycket. Vid respiratorisk alkalos (hyperventilation) gäller det omvända, och det fria kalciumet sjunker, vilket ger **myrkrypningar och parestesier**. Fällan: anjongapet stiger vid respiratorisk alkalos och sjunker vid respiratorisk acidos, men bara för att HCO₃⁻ ingår i formeln. Det har ingen diagnostisk betydelse där."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-1.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 1,
-         "rubrik": "Integrering av kroppens buffertsystem Håkan Andersson, MBB • Redogöra för kroppens olika b",
-         "text": "**Integrering av kroppens buffertsystem** (Håkan Andersson, MBB), lärandemålen. Redogöra för de snabba och långsamma buffertsystemen. **Kunna normalvärden för pH, pO₂, pCO₂, HCO₃⁻, BE och laktat.** Definiera buffertbas (BB), basöverskott (BE) och standardbikarbonat. Redogöra för metabola och respiratoriska rubbningar och deras kompensation, för de vanligaste syrorna och baserna bakom dem, och för hur K⁺ och Ca²⁺ påverkas. Bedöma en syra-basstatus (metabol eller respiratorisk, akut eller kompenserad). De fetstilta målen är centrala."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-4.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 4,
-         "rubrik": "Syrabasrubbningar • Acidos: syrabasrubbning med tendens att sänka p",
-         "text": "**Acidos och acidemi, alkalos och alkalemi.** **Acidos** är en syra-basrubbning med tendens att sänka pH. **Acidemi** betyder att artär-pH faktiskt är **< 7,35**. **Alkalos** har tendens att höja pH, och vid **alkalemi** är pH **> 7,45**. Man kan alltså ha en acidos utan acidemi om den är kompenserad, eller om det finns en samtidig alkalos."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-5.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 5,
-         "rubrik": "Huvudtyper av syrabasstörningar R&B fig 24.12",
-         "text": "**Davenport-diagrammet** (Rhoades & Bell fig. 24.12). Artär-HCO₃⁻ (y) mot pH (x), med isobarer för pCO₂ (de böjda linjerna). Normal ligger i mitten (pH 7,4, HCO₃⁻ 24). **Akut respiratorisk acidos:** längs en buffertlinje, uppåt och åt vänster. **Kronisk respiratorisk acidos:** högre HCO₃⁻ (njurkompensation). **Akut och kronisk respiratorisk alkalos:** åt höger och neråt. **Metabol acidos:** nere till vänster (lågt HCO₃⁻). **Metabol alkalos:** uppe till höger (högt HCO₃⁻). Med pH och pCO₂ kan du placera patienten i en zon och avgöra typen av rubbning."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-6.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 6,
-         "rubrik": "Kroppens försvar mot syrabasrubbingar 1. Omedelbart försvar: buffring 2. Snabbt försvar: a",
-         "text": "**Kroppens försvar mot syra-basrubbningar, i tre tidsskalor.** (1) **Buffring**, omedelbart. (2) **Andning**, inom minuter. (3) **Njure**, inom timmar till dygn. Kompensationen kan ses som en sekundär rubbning: kompensation av en metabol acidos eller alkalos är en sekundär respiratorisk alkalos eller acidos, och tvärtom."
-        },
         {
          "fil": "data/del2-slides/m9-b7e98b-7.webp",
          "kalla": "Syra–bas 4b",
@@ -10602,30 +11011,6 @@
          "sida": 7,
          "rubrik": "Metabola syrabasrubbningar Metabol acidos pga översko",
          "text": "**Metabola rubbningar och deras orsaker.** **Metabol acidos pga överskott av icke-flyktig syra:** laktacidos (O₂-brist, anaerob metabolism), ketoacidos (obehandlad typ 1-diabetes), metanol- och glykolförgiftning. **Metabol acidos pga förlust av bas (HCO₃⁻):** diarré. **Metabol alkalos pga förlust av icke-flyktig syra:** kräkningar."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-8.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 8,
-         "rubrik": "Metabol acidos – hur tillkommer syra? 1. p",
-         "text": "**Metabol acidos, hur tillkommer syra?** H₃O⁺ tillförs (röda pilar) och tas upp av de buffrande baserna HCO₃⁻ och prot⁻. **Buffertbasen förbrukas**, så BB sjunker och BE blir negativt. Klinik: laktacidos, ketoacidos, metanol, glykol och njursvikt."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-9.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 9,
-         "rubrik": "Metabol acidos – hur tillkommer syra? 1. p",
-         "text": "**Steg 2: andningen kompenserar.** När H₃O⁺ reagerar med HCO₃⁻ bildas H₂CO₃ och sedan CO₂, som **vädras ut via lungorna** (pilen upp från CO₂). Andningen ökar inom minuter eftersom H⁺ stimulerar de perifera kemoreceptorerna. Jämvikten dras åt vänster, och pH stiger mot det normala."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-10.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 10,
-         "rubrik": "Metabol acidos – hur tillkommer syra? 1. p",
-         "text": "**Resultatet vid metabol acidos:** pH↓, **pCO₂↓** (respiratorisk kompensation) och **BE↓**, BB↓. **Njure och lever** ökar dessutom utsöndringen av syra som H₂PO₄⁻ och NH₄⁺ under timmar, och njuren nybildar HCO₃⁻."
         },
         {
          "fil": "data/del2-slides/m9-b7e98b-11.webp",
@@ -10650,38 +11035,6 @@
          "sida": 13,
          "rubrik": "Respiratoriska syrabasrubbningar Respiratorisk acidos pga CO2-retention, alveolär hypovent",
          "text": "**Respiratoriska syra-basrubbningar.** **Respiratorisk acidos** beror på CO₂-retention vid alveolär hypoventilation: KOL, revbensbrott. **Respiratorisk alkalos** beror på hyperventilation med för stor CO₂-eliminering: ångest, oro, hög höjd."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-14.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 14,
-         "rubrik": "Respiratorisk acidos 1. p",
-         "text": "**Respiratorisk acidos: CO₂ kan inte vädras ut** (den blockerade pilen). Klinik: tillstånd med alveolär hypoventilation, t.ex. **KOL, thoraxskada och morfin** (som hämmar andningscentrum)."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-15.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 15,
-         "rubrik": "Respiratorisk acidos 1. p",
-         "text": "**När CO₂ ansamlas förskjuts karbonatjämvikten åt höger:** mer H₂CO₃ bildas, och mer HCO₃⁻ och H₃O⁺. Orsaken är minskat gasutbyte av CO₂ via andningen."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-16.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 16,
-         "rubrik": "Respiratorisk acidos 1. p",
-         "text": "**Resultatet vid akut respiratorisk acidos:** pH↓, **pCO₂↑**, **BE oförändrat**. HCO₃⁻ ökar, men protonerna buffras av prot⁻, som minskar lika mycket. **Buffertbasen är därför oförändrad (→).** Det är därför BE används som rent metabolt mått."
-        },
-        {
-         "fil": "data/del2-slides/m9-b7e98b-17.webp",
-         "kalla": "Syra–bas 4b",
-         "nyckel": "m9_Syrabas_4b-1",
-         "sida": 17,
-         "rubrik": "Respiratorisk acidos, metabol kompensation 1. p",
-         "text": "**Respiratorisk acidos med metabol kompensation.** Med tiden (timmar till dagar) ökar **njuren utsöndringen av syra** (H₂PO₄⁻, NH₄⁺) och behåller mer HCO₃⁻. Då ökar HCO₃⁻ mer än prot⁻ minskar, så **BB↑ och BE↑**. pH↓ (mindre än tidigare) och pCO₂↑. Typiskt vid KOL med kronisk CO₂-retention: högt pCO₂, högt BE och nästan normalt pH."
         },
         {
          "fil": "data/del2-slides/m9-b7e98b-18.webp",
@@ -10740,36 +11093,12 @@
          "text": "**Anjongapet ger ledning om typen av metabol acidos.** **Högt anjongap:** metanol (myrsyra), uremi (fosforsyra, urinsyra, hippursyra), laktat, etylenglykol (glyoxyl-, glykol- och oxalsyra), paraldehyd (ättiksyra), **ketoacidos** (β-hydroxismörsyra, acetoacetat) och salicylat (ättiksyra och ketosyror plus salicylat). **Normalt anjongap:** diarré (HCO₃⁻-förlust, njuren sparar Cl⁻), renal tubulär acidos (HCO₃⁻-förlust i urin eller för lite H⁺-utsöndring) och överintag av NH₄Cl (konsumerar HCO₃⁻, och mycket Cl⁻ tillförs). Minnesregel för högt AG: **MUDPILES**."
         },
         {
-         "fil": "data/del2-slides/m9-f47ee1-6.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 6,
-         "rubrik": "Förklaringsmodeller Metabol acidos (laktacidos/ketoacidos): Ökad produktion av organiska s",
-         "text": "**Förklaringsmodeller, metabola störningar.** **Laktacidos och ketoacidos:** organiska syror protolyseras. H⁺ tas upp av buffrande baser, så BB↓ och BE blir negativt. Ventilationen ökar och CO₂ sjunker. K⁺ och fritt Ca²⁺ stiger, Cl⁻ påverkas inte. **Residualanjonerna** (syrans anjoner) ökar, så **AG↑**. **Diarré:** förlust av HCO₃⁻, och en del av protontillskottet buffras av prot⁻. BB↓, BE negativt. För att bibehålla elektroneutraliteten ökar **Cl⁻** (njuren). Inga nya anjoner tillkommer, så **AG är oförändrat**. **Kräkningar:** förlust av H⁺ (HCl). Buffertjämvikterna förskjuts, prot⁻ och HCO₃⁻ ökar, BB↑ och BE blir positivt. Ventilationen minskar och CO₂ stiger. K⁺ och fritt Ca²⁺ sjunker. **Cl⁻ sjunker** för att ge 'elektrisk plats' åt ökningen av BB. AG är oförändrat."
-        },
-        {
-         "fil": "data/del2-slides/m9-f47ee1-7.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 7,
-         "rubrik": "Förklaringsmodeller Respiratorisk acidos (tillstånd med alveolär hypoventilation) utan met",
-         "text": "**Förklaringsmodeller, respiratoriska störningar utan metabol kompensation.** **Respiratorisk acidos** (alveolär hypoventilation): CO₂ ansamlas och bildar kolsyra, som protolyseras, så H⁺ och HCO₃⁻ ökar. Protonerna buffras främst av prot⁻, som minskar ungefär lika mycket som HCO₃⁻ ökar. **BB och BE är alltså oförändrade.** K⁺ påverkas sällan nämnvärt. Fritt Ca²⁺ stiger. AG sjunker lite (eftersom HCO₃⁻ ökat). **Respiratorisk alkalos** (hyperventilation): CO₂ sjunker, HCO₃⁻ minskar och prot⁻ ökar lika mycket, så BB och BE är oförändrade. Fritt Ca²⁺ sjunker (parestesier). AG stiger lite. **Kärnan:** BE ändras inte vid rent respiratoriska störningar, och därför används BE för att mäta den metabola komponenten."
-        },
-        {
          "fil": "data/del2-slides/m9-f47ee1-15.webp",
          "kalla": "Syra–basstatus och analys",
          "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
          "sida": 15,
          "rubrik": "Vanliga orsaker till metabol acidos • Generell O2 brist vid cirkulatorisk chock, anaerob m",
          "text": "**Vanliga orsaker till metabol acidos med syratillskott:** generell syrebrist vid **cirkulatorisk chock** (anaerob metabolism, **laktacidos**), **ketoacidos** vid obehandlad typ 1-diabetes, **njursvikt** (icke-flyktig syra utsöndras inte), intag av **metanol** (ger myrsyra) eller **etylenglykol** (ger oxalsyra), och stora mängder **acetylsalicylsyra**. Ekvationerna visar att tillförd H₃O⁺ förskjuter båda buffertjämvikterna åt vänster, så HCO₃⁻ och prot⁻ förbrukas och **BB sjunker**. CO₂ vädras ut via lungorna."
-        },
-        {
-         "fil": "data/del2-slides/m9-f47ee1-21.webp",
-         "kalla": "Syra–basstatus och analys",
-         "nyckel": "m9_Modul_8_SyBa_Status_Analys_Reviderad",
-         "sida": 21,
-         "rubrik": "Elektrolyt-halter vid acidoser, alkaloser Buffer base HCO3- prot- K+ Cl- residual Ca2+ Met",
-         "text": "**Tabellen, rad 3–4:** metabol alkalos (bastillskott eller kräkning) ger HCO₃⁻↑, prot⁻↑, K⁺↓, **Cl⁻↓**, residualanjoner oförändrade och fritt Ca²⁺↓."
         }
        ]
       }

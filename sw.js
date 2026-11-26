@@ -5,7 +5,7 @@
  * - VERSION uppdateras av scripts/release.mjs när filerna ändras.
  */
 
-const VERSION = "bv5-2026-11-26-65519ca1";
+const VERSION = "bv5-2026-11-26-f9ae4b92";
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
